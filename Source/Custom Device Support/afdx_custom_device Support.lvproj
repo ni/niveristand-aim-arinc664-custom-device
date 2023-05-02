@@ -859,7 +859,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Built/Support/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E7084F60-6A07-47AA-BA5E-86F44C1925B1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{279313F7-7784-4374-AED9-E85D0B88A704}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/afdx_custom_device Engine.lvlib</Property>
