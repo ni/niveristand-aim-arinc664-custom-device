@@ -309,9 +309,9 @@
 		<Item Name="afdx_custom_device Scripting.lvlib" Type="Library" URL="../Scripting/afdx_custom_device Scripting.lvlib"/>
 		<Item Name="afdx_custom_device System Explorer.lvlib" Type="Library" URL="../System Explorer/Implementation/System Explorer/afdx_custom_device System Explorer.lvlib"/>
 		<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Engine/Implementation/Rx Execution Unit/channel_settings_rx.ctl"/>
-		<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Engine/Implementation/Rx Execution Unit/channel_settings_tx.ctl"/>
+		<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Engine/Implementation/Tx Execution Unit/channel_settings_tx.ctl"/>
 		<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Engine/Implementation/Rx Execution Unit/hardware_channels_rx.ctl"/>
-		<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Engine/Implementation/Rx Execution Unit/hardware_channels_tx.ctl"/>
+		<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Engine/Implementation/Tx Execution Unit/hardware_channels_tx.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Cleanup Monitor Queue.vi" Type="VI" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/bsp/AFDX_Monitor/Cleanup Monitor Queue.vi"/>
