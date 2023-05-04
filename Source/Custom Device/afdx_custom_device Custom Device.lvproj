@@ -161,7 +161,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/afdx_custom_device/Windows/afdx_custom_device Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A485A12F-4ACF-482C-9872-C0BEE341E0B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6E7FA500-61F2-47C5-93F2-0A5431556E37}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Custom Device afdx_custom_device.xml</Property>
@@ -257,7 +257,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/afdx_custom_device/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A485A12F-4ACF-482C-9872-C0BEE341E0B7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6E7FA500-61F2-47C5-93F2-0A5431556E37}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/afdx_custom_device Engine.lvlib/RT Driver VI.vi</Property>
@@ -500,7 +500,7 @@
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{37AEE687-D8DF-45BC-BCA0-E8620DE12FD5}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9407591E-C50F-4546-B88C-0BFEB15BB120}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Linux x64/afdx_custom_device Engine.lvlib/RT Driver VI.vi</Property>
