@@ -231,6 +231,7 @@
 		<Item Name="afdx_custom_device Engine.lvlib" Type="Library" URL="../Engine/afdx_custom_device Engine.lvlib"/>
 		<Item Name="afdx_custom_device Scripting.lvlib" Type="Library" URL="../Scripting/afdx_custom_device Scripting.lvlib"/>
 		<Item Name="afdx_custom_device System Explorer.lvlib" Type="Library" URL="../System Explorer/Implementation/System Explorer/afdx_custom_device System Explorer.lvlib"/>
+		<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
