@@ -52,5 +52,8 @@
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
+	<Item Name="Tx Status" Type="Folder">
+		<Item Name="Add Tx Status Section.vi" Type="VI" URL="../Tx Status/Add Tx Status Section.vi"/>
+	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
