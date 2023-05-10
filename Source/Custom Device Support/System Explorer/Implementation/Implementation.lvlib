@@ -22,6 +22,7 @@
 		<Item Name="Ports.vi" Type="VI" URL="../System Explorer/Pages/Ports.vi"/>
 		<Item Name="Protocol.vi" Type="VI" URL="../System Explorer/Pages/Protocol.vi"/>
 		<Item Name="Timing.vi" Type="VI" URL="../System Explorer/Pages/Timing.vi"/>
+		<Item Name="Tx Queue Status Generic Channel.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Generic Channel.vi"/>
 		<Item Name="Vendor.vi" Type="VI" URL="../System Explorer/Pages/Vendor.vi"/>
 	</Item>
 	<Item Name="RTM" Type="Folder">
@@ -45,4 +46,5 @@
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
+	<Item Name="Tx Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Section.vi"/>
 </Library>

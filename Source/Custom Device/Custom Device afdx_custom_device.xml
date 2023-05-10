@@ -131,6 +131,40 @@
 		</Page>
 		<Page>
 			<Name>
+				<eng>Tx Queue Status Section</eng>
+				<loc>Tx Queue Status Section</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>C7869D6F-30D0-4274-87C5-5BE67BEEE020</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\databases.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Tx Queue Status Generic Channel</eng>
+				<loc>Tx Queue Status Generic Channel</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>4F18D536-EE77-43DD-87DF-7965B9424EF3</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\databases.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
 				<eng>Databases</eng>
 				<loc>Databases</loc>
 			</Name>
