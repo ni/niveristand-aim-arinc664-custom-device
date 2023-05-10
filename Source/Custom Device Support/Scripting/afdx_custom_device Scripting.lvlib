@@ -53,8 +53,8 @@
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
 	<Item Name="Tx Queue Status" Type="Folder">
-		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Status/Add Tx Queue Status Section.vi"/>
-		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Status/Get Tx Queue Status Section and Channels.vi"/>
+		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
+		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
