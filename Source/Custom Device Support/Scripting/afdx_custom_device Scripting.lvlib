@@ -38,6 +38,10 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Monitor Queue Status" Type="Folder">
+		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Rx Queue Status/Add Monitor Queue Status Section.vi"/>
+		<Item Name="Get Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Rx Queue Status/Get Monitor Queue Status Section and Channels.vi"/>
+	</Item>
 	<Item Name="Port" Type="Folder">
 		<Item Name="Add Port Incoming Section.vi" Type="VI" URL="../Port/Add Port Incoming Section.vi"/>
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>

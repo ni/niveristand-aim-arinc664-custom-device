@@ -17,12 +17,14 @@
 		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
 		<Item Name="Incoming.vi" Type="VI" URL="../System Explorer/Pages/Incoming.vi"/>
 		<Item Name="Main Page.vi" Type="VI" URL="../System Explorer/Pages/Main Page.vi"/>
+		<Item Name="Monitor Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Monitor Queue Status Section.vi"/>
 		<Item Name="Outgoing.vi" Type="VI" URL="../System Explorer/Pages/Outgoing.vi"/>
 		<Item Name="Port.vi" Type="VI" URL="../System Explorer/Pages/Port.vi"/>
 		<Item Name="Ports.vi" Type="VI" URL="../System Explorer/Pages/Ports.vi"/>
 		<Item Name="Protocol.vi" Type="VI" URL="../System Explorer/Pages/Protocol.vi"/>
+		<Item Name="Queue Status Generic Channel.vi" Type="VI" URL="../System Explorer/Pages/Queue Status Generic Channel.vi"/>
 		<Item Name="Timing.vi" Type="VI" URL="../System Explorer/Pages/Timing.vi"/>
-		<Item Name="Tx Queue Status Generic Channel.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Generic Channel.vi"/>
+		<Item Name="Tx Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Section.vi"/>
 		<Item Name="Vendor.vi" Type="VI" URL="../System Explorer/Pages/Vendor.vi"/>
 	</Item>
 	<Item Name="RTM" Type="Folder">
@@ -46,5 +48,4 @@
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
-	<Item Name="Tx Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Section.vi"/>
 </Library>
