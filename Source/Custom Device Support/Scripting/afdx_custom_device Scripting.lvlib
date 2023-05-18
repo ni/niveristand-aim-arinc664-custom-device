@@ -40,7 +40,9 @@
 	</Item>
 	<Item Name="Main Page" Type="Folder">
 		<Item Name="Get Main Page Config File Path.vi" Type="VI" URL="../Main Page/Get Main Page Config File Path.vi"/>
+		<Item Name="Get Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Get Main Page Monitor Log Directory.vi"/>
 		<Item Name="Set Main Page Config File Path.vi" Type="VI" URL="../Main Page/Set Main Page Config File Path.vi"/>
+		<Item Name="Set Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Set Main Page Monitor Log Directory.vi"/>
 	</Item>
 	<Item Name="Monitor Queue Status" Type="Folder">
 		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>

@@ -19,6 +19,7 @@
 		<Item Name="Build EthernetFrame (IP).vi" Type="VI" URL="../Build EthernetFrame (IP).vi"/>
 		<Item Name="Build EthernetFrame (MAC).vi" Type="VI" URL="../Build EthernetFrame (MAC).vi"/>
 		<Item Name="Build EthernetFrame (UDP).vi" Type="VI" URL="../Build EthernetFrame (UDP).vi"/>
+		<Item Name="Compute IP Header Checksum.vi" Type="VI" URL="../Compute IP Header Checksum.vi"/>
 	</Item>
 	<Item Name="Header Strip" Type="Folder">
 		<Item Name="Strip EthernetFrame (IP).vi" Type="VI" URL="../Strip EthernetFrame (IP).vi"/>
@@ -34,5 +35,11 @@
 		<Item Name="Create AFDX MAC (Dest).vi" Type="VI" URL="../Create AFDX MAC (Dest).vi"/>
 		<Item Name="Create AFDX MAC (Source).vi" Type="VI" URL="../Create AFDX MAC (Source).vi"/>
 		<Item Name="Create AFDX IP (Dest).vi" Type="VI" URL="../Create AFDX IP (Dest).vi"/>
+	</Item>
+	<Item Name="Payload" Type="Folder">
+		<Item Name="Create Payload (Constant).vi" Type="VI" URL="../Create Payload (Constant).vi"/>
+		<Item Name="Create Payload (Increment).vi" Type="VI" URL="../Create Payload (Increment).vi"/>
+		<Item Name="Create Payload (Random).vi" Type="VI" URL="../Create Payload (Random).vi"/>
+		<Item Name="Create Payload.vi" Type="VI" URL="../Create Payload.vi"/>
 	</Item>
 </Library>
