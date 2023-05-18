@@ -38,6 +38,14 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Main Page" Type="Folder">
+		<Item Name="Get Main Page Config File Path.vi" Type="VI" URL="../Main Page/Get Main Page Config File Path.vi"/>
+		<Item Name="Set Main Page Config File Path.vi" Type="VI" URL="../Main Page/Set Main Page Config File Path.vi"/>
+	</Item>
+	<Item Name="Monitor Queue Status" Type="Folder">
+		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
+		<Item Name="Get Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Monitor Queue Status/Get Monitor Queue Status Section and Channels.vi"/>
+	</Item>
 	<Item Name="Port" Type="Folder">
 		<Item Name="Add Port Incoming Section.vi" Type="VI" URL="../Port/Add Port Incoming Section.vi"/>
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
@@ -51,6 +59,10 @@
 	<Item Name="Timing" Type="Folder">
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
+	</Item>
+	<Item Name="Tx Queue Status" Type="Folder">
+		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
+		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
