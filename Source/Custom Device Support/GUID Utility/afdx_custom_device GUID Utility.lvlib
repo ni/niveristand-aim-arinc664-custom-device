@@ -4,5 +4,6 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Get Monitor Channel Array.vi" Type="VI" URL="../Get Monitor Channel Array.vi"/>
+	<Item Name="Get Rx Channel Array.vi" Type="VI" URL="../Get Rx Channel Array.vi"/>
 	<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Get Tx Channel Array.vi"/>
 </Library>
