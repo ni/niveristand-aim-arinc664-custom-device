@@ -182,6 +182,23 @@
 		</Page>
 		<Page>
 			<Name>
+				<eng>Configuration File Page</eng>
+				<loc>Configuration File Page</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>C40B493B-66E6-407A-B069-3D0F2F03B0B0</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\databases.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
 				<eng>Databases</eng>
 				<loc>Databases</loc>
 			</Name>

@@ -13,6 +13,4 @@
 	<Item Name="Custom Device.lvlib" Type="Library" URL="../Custom Device/Custom Device.lvlib"/>
 	<Item Name="Implementation.lvlib" Type="Library" URL="../Implementation/Implementation.lvlib"/>
 	<Item Name="Interfaces.lvlib" Type="Library" URL="../Interfaces/Interfaces.lvlib"/>
-	<Item Name="write_data_to_console_modded.vi" Type="VI" URL="../../../../../../Users/Administrator/Downloads/rt_remote_console 2020/rt_remote_console/rt_remote_console/debug_vis/modded/write_data_to_console_modded.vi"/>
-	<Item Name="format_data_for_console_modded.vi" Type="VI" URL="../../../../../../Users/Administrator/Downloads/rt_remote_console 2020/rt_remote_console/rt_remote_console/debug_vis/modded/format_data_for_console_modded.vi"/>
 </Library>

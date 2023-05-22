@@ -12,6 +12,7 @@
 	</Item>
 	<Item Name="Pages" Type="Folder">
 		<Item Name="Channel.vi" Type="VI" URL="../System Explorer/Pages/Channel.vi"/>
+		<Item Name="Configuration File.vi" Type="VI" URL="../System Explorer/Pages/Configuration File.vi"/>
 		<Item Name="Database.vi" Type="VI" URL="../System Explorer/Pages/Database.vi"/>
 		<Item Name="Databases.vi" Type="VI" URL="../System Explorer/Pages/Databases.vi"/>
 		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
@@ -38,12 +39,14 @@
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="Check if Custom Device is Enabled.vi" Type="VI" URL="../Check if Custom Device is Enabled.vi"/>
+		<Item Name="Configuration File Handler.vi" Type="VI" URL="../System Explorer/Configuration File Handler.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>
 	</Item>
 	<Item Name="Types" Type="Folder">
 		<Item Name="Browse Button.ctl" Type="VI" URL="../System Explorer/Types/Browse Button.ctl"/>
+		<Item Name="Configuration File Page Data.ctl" Type="VI" URL="../System Explorer/Types/Configuration File Page Data.ctl"/>
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
