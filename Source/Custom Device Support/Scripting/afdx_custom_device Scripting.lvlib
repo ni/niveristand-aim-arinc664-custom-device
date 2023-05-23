@@ -14,8 +14,11 @@
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
 		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
+		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
+		<Item Name="Build Tx Cluster.vi" Type="VI" URL="../Configuration File/Build Tx Cluster.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
 		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
+		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
@@ -70,5 +73,4 @@
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Set Configuration File Parameters.vi" Type="VI" URL="../Configuration File/Set Configuration File Parameters.vi"/>
 </Library>
