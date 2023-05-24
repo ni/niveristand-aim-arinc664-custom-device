@@ -14,6 +14,7 @@
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
 		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
+		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
 		<Item Name="Build Tx Cluster.vi" Type="VI" URL="../Configuration File/Build Tx Cluster.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
