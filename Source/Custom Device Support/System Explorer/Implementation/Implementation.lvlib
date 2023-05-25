@@ -15,6 +15,7 @@
 		<Item Name="Configuration File.vi" Type="VI" URL="../System Explorer/Pages/Configuration File.vi"/>
 		<Item Name="Database.vi" Type="VI" URL="../System Explorer/Pages/Database.vi"/>
 		<Item Name="Databases.vi" Type="VI" URL="../System Explorer/Pages/Databases.vi"/>
+		<Item Name="Frame Array File.vi" Type="VI" URL="../System Explorer/Pages/Frame Array File.vi"/>
 		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
 		<Item Name="Incoming.vi" Type="VI" URL="../System Explorer/Pages/Incoming.vi"/>
 		<Item Name="Main Page.vi" Type="VI" URL="../System Explorer/Pages/Main Page.vi"/>
@@ -50,5 +51,6 @@
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
+	<Item Name="Frame Array File Handler.vi" Type="VI" URL="../System Explorer/Frame Array File Handler.vi"/>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 </Library>
