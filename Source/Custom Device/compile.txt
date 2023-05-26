@@ -1,13 +1,9 @@
-#### Starting Mass Compile: Wed, May 10, 2023 11:42:06 AM
+#### Starting Mass Compile: Fri, May 26, 2023 12:44:02 PM
   Directory: "C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device"
-Skipping project already in memory: C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\afdx_custom_device Custom Device.lvproj
-  ### Bad VI:    "afdx_custom_device Engine.lvlib:RT Driver VI.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\Engine\RT Driver VI.vi"
-  ### Bad VI:    "afdx_custom_device System Explorer.lvlib:Compile Shared Resources.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Shared Resources.vi"
-  ### Bad VI:    "afdx_custom_device System Explorer.lvlib:Compile Asynchronous Execution Units.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Asynchronous Execution Units.vi"
-  ### Bad VI:    "afdx_custom_device System Explorer.lvlib:Compile Inline Execution Units.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Inline Execution Units.vi"
-  ### Bad VI:    "afdx_custom_device System Explorer.lvlib:ActionVIOnCompile.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\ActionVIOnCompile.vi"
-C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\Tests\Unit\Communication Bus Template Unit Tests\test Connector Pane.vi (Communication Bus Template Unit Tests.lvclass:test Connector Pane.vi)
-    - The VI expected to be at "C:\repos\niveristand-custom-device-testing-tools\VeriStandTestUtilities\AssertConnectorPanesMatchExpected.vi" was loaded from "C:\Program Files (x86)\National Instruments\LabVIEW 2020\vi.lib\NI\VeriStand Custom Device Testing Tools\VeriStandTestUtilities\AssertConnectorPanesMatchExpected.vi".
-C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\Tests\Unit\Communication Bus Template Unit Tests\test Source Separated.vi (Communication Bus Template Unit Tests.lvclass:test Source Separated.vi)
-    - The VI expected to be at "C:\repos\niveristand-custom-device-testing-tools\VeriStandTestUtilities\AssertSourceSeparatedFromCompiledCode.vi" was loaded from "C:\Program Files (x86)\National Instruments\LabVIEW 2020\vi.lib\NI\VeriStand Custom Device Testing Tools\VeriStandTestUtilities\AssertSourceSeparatedFromCompiledCode.vi".
-#### Finished Mass Compile: Wed, May 10, 2023 11:42:20 AM
+Skipping project already in memory: C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\AIM ARINC 664 Custom Device.lvproj
+  ### Bad VI:    "AIM ARINC 664 Engine.lvlib:RT Driver VI.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\Engine\RT Driver VI.vi"
+  ### Bad VI:    "AIM ARINC 664 System Explorer.lvlib:Compile Shared Resources.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Shared Resources.vi"
+  ### Bad VI:    "AIM ARINC 664 System Explorer.lvlib:Compile Asynchronous Execution Units.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Asynchronous Execution Units.vi"
+  ### Bad VI:    "AIM ARINC 664 System Explorer.lvlib:Compile Inline Execution Units.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\Compile Inline Execution Units.vi"
+  ### Bad VI:    "AIM ARINC 664 System Explorer.lvlib:ActionVIOnCompile.vi"	Path="C:\repos\niveristand-aim-afdx-custom-device\Source\Custom Device\System Explorer\ActionVIOnCompile.vi"
+#### Finished Mass Compile: Fri, May 26, 2023 12:44:08 PM
