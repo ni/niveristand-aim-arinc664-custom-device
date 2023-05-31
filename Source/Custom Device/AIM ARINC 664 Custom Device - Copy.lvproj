@@ -63,6 +63,7 @@
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get Current LV Bitness.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/Get Current LV Bitness.vi"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
@@ -94,12 +95,26 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Async.Engine.Close.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Methods/Async.Engine.Close.vi"/>
+			<Item Name="Async.Engine.Initialize.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Methods/Async.Engine.Initialize.vi"/>
+			<Item Name="Async.Engine.Read Data from HW.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Methods/Async.Engine.Read Data from HW.vi"/>
+			<Item Name="Async.Engine.Start.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Methods/Async.Engine.Start.vi"/>
+			<Item Name="Async.Engine.Write Data to HW.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Methods/Async.Engine.Write Data to HW.vi"/>
+			<Item Name="Custom Device Item Ref.ctl" Type="VI" URL="../../../Includes/afdx_custom_device Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device Item Ref.ctl"/>
+			<Item Name="Data Access Engine.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Data Access Engine.lvclass/Data Access Engine.ctl"/>
 			<Item Name="Data Access Engine.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Data Access Engine.lvclass"/>
+			<Item Name="Data.Engine.Read Data from HW.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Data.Engine.Read Data from HW.vi"/>
+			<Item Name="Data.Engine.Write Data to HW.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Data.Engine.Write Data to HW.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Error Handling Settings.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/Types/Error Handling Settings.ctl"/>
+			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Implementation/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Interfaces/Execution Unit Factory/Execution Unit Factory.lvclass"/>
+			<Item Name="Execution Unit Information.ctl" Type="VI" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Interfaces/Controls/Execution Unit Information.ctl"/>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Interfaces/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Execution Unit/Execution Unit.lvclass"/>
+			<Item Name="Inline Execution Unit Runtime Information.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/Inline Execution Unit Runtime Information.ctl"/>
 			<Item Name="Monitor Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Monitor Execution Unit/Monitor Execution Unit.lvclass"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -113,15 +128,27 @@
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
 			<Item Name="Process.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/Process/Process.lvclass"/>
-			<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Shared Resources Factory/Shared Resources Factory.lvclass"/>
+			<Item Name="Read.Data.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Read.Data.vi"/>
+			<Item Name="Read.Lookup.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Read.Lookup.vi"/>
+			<Item Name="ReadWrite.Data.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/ReadWrite.Data.vi"/>
+			<Item Name="ReadWrite.Lookup.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/ReadWrite.Lookup.vi"/>
+			<Item Name="ReadWrite.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Access Type Classes/ReadWrite/ReadWrite.lvclass"/>
+			<Item Name="RTStateVariables.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/RTStateVariables.ctl"/>
+			<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Implementation/Shared Resources Factory/Shared Resources Factory.lvclass"/>
+			<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Interfaces/Shared Resources Factory/Shared Resources Factory.lvclass"/>
+			<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device Engine.lvlibp/Engine/Interfaces/Shared Resources/Shared Resources.lvclass"/>
 			<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Shared Resources/Shared Resources.lvclass"/>
+			<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device System Explorer.lvlibp/System Explorer/Implementation/System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
+			<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../../../Includes/afdx_custom_device System Explorer.lvlibp/System Explorer/Interfaces/System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Tx Generic Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Tx Execution Unit/Tx Generic Execution Unit.lvclass"/>
+			<Item Name="VS Inline Async API.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/VS Inline Async API.lvclass/VS Inline Async API.ctl"/>
 			<Item Name="VS Inline Async API.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API/VS Inline Async API.lvclass"/>
+			<Item Name="Write.Data.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Write.Data.vi"/>
+			<Item Name="Write.Lookup.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Methods/Write.Lookup.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -173,7 +200,7 @@
 				<Property Name="Destination[2].path" Type="Path">../Built/AIM ARINC 664/Windows/AIM ARINC 664 Configuration.llb</Property>
 				<Property Name="Destination[2].type" Type="Str">LLB</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{73CDDC0E-C523-4B21-A14E-25013F794EBE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D10A2BCA-4F52-4CDE-BD7D-D973B7EB3E8C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
@@ -193,43 +220,23 @@
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Custom Device AIM ARINC 664.xml</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/AIM ARINC 664 System Explorer.lvlib/System Explorer</Property>
-				<Property Name="Source[3].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[3].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[3].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[3].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[3].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 			<Item Name="Engine Debug" Type="Source Distribution">
 				<Property Name="Bld_buildCacheID" Type="Str">{C67C1B30-A649-4BB4-8780-C96741B30EB4}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Debug</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/AIM ARINC 664/Windows/AIM ARINC 664 Engine Windows.llb</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/afdx_custom_device/Windows/AIM ARINC 664 Engine Windows.llb</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1E93022C-2E5B-4058-865F-DEB05CE955D3}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/AIM ARINC 664/Windows/AIM ARINC 664 Engine Windows.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/afdx_custom_device/Windows/AIM ARINC 664 Engine Windows.llb</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/AIM ARINC 664/Windows</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/afdx_custom_device/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].itemID" Type="Str">{067C5FF1-76C1-46E8-B66F-ED574A9C9085}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
@@ -244,41 +251,45 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Release</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/AIM ARINC 664/Windows/AIM ARINC 664 Engine Windows.llb</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/afdx_custom_device/Windows/AIM ARINC 664 Engine Windows.llb</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{32214451-43E2-4D3E-92C8-CE819321FAC4}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../Built/AIM ARINC 664/Windows/AIM ARINC 664 Engine Windows.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/afdx_custom_device/Windows/AIM ARINC 664 Engine Windows.llb</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Built/AIM ARINC 664/Windows</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/afdx_custom_device/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{73CDDC0E-C523-4B21-A14E-25013F794EBE}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CE60D8A0-928E-402D-BDB8-6EEE3A0333DB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NI VeriStand APIs</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[1].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[2].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[3].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[1].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[4].type" Type="Str">Auto error handling</Property>
-				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
-				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
-				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/AIM ARINC 664 Engine.lvlib/RT Driver VI.vi</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">3</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applySaveSettings" Type="Bool">true</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/NI VeriStand APIs</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[2].properties[2].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[3].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[2].properties[4].type" Type="Str">Auto error handling</Property>
+				<Property Name="Source[2].properties[4].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">5</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>
@@ -413,14 +424,14 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_buildSpecName" Type="Str">Engine Debug</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Built/AIM ARINC 664</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/afdx_custom_device</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F8517384-886E-4E23-8DE4-15D71E4DEE23}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">Linux_x64/AIM ARINC 664 Engine Linux64.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">Linux_x64/afdx_custom_device Engine Linux64.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">Linux_x64/AIM ARINC 664 Engine Linux64.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">Linux_x64/afdx_custom_device Engine Linux64.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
@@ -444,17 +455,17 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Copy .LLB to NI VeriStand dir.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E24CF77A-EDD5-435E-91DE-CAC6522BEA2A}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path">Linux_x64/AIM ARINC 664 Engine Linux64.llb</Property>
+				<Property Name="Bld_targetDestDir" Type="Path">Linux_x64/afdx_custom_device Engine Linux64.llb</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">Linux_x64/AIM ARINC 664 Engine Linux64.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">Linux_x64/afdx_custom_device Engine Linux64.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4F3AFD8D-8223-43A0-B2C1-8EED4ECCEC0F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7751AC9B-5D27-4ED1-8A4B-7F1346F96E4E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
@@ -471,18 +482,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].properties[4].value" Type="Bool">false</Property>
 				<Property Name="Source[1].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/RT PXI Target/AIM ARINC 664 Engine.lvlib/RT Driver VI.vi</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[1].type" Type="Str">Remove front panel</Property>
-				<Property Name="Source[2].properties[1].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[2].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[2].properties[2].value" Type="Bool">true</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">3</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
 		</Item>
 	</Item>
