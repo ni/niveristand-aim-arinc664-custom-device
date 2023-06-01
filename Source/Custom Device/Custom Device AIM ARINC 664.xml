@@ -2,8 +2,8 @@
 <CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
 	<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
 	<AddMenu>
-		<eng>afdx_custom_device</eng>
-		<loc>afdx_custom_device</loc>
+		<eng>AIM ARINC 664</eng>
+		<loc>AIM ARINC 664</loc>
 	</AddMenu>
 	<Version>1.0.0</Version>
 	<Type>Inline HW Interface</Type>
@@ -13,7 +13,7 @@
 		<Type>Action</Type>
 		<Item2Launch>
 			<Type>To Common Doc Dir</Type>
-			<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Initialization VI.vi</Path>
+			<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Initialization VI.vi</Path>
 		</Item2Launch>
 	</InitializationVI>
 	<CustomDeviceVI>
@@ -22,17 +22,17 @@
 				<SupportedTarget>Windows</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Engine Windows.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Engine Windows.llb\RT Driver VI.vi</Path>
 				</Source>
-				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\afdx_custom_device\afdx_custom_device Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
 			<Source>
 				<SupportedTarget>Linux_x64</SupportedTarget>
 				<Source>
 					<Type>To Common Doc Dir</Type>
-					<Path>Custom Devices\afdx_custom_device\Linux_x64\afdx_custom_device Engine Linux64.llb\RT Driver VI.vi</Path>
+					<Path>Custom Devices\AIM ARINC 664\Linux_x64\AIM ARINC 664 Engine Linux64.llb\RT Driver VI.vi</Path>
 				</Source>
-				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\afdx_custom_device\afdx_custom_device Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
 			</Source>
 		</SourceDistribution>
 	</CustomDeviceVI>
@@ -41,16 +41,16 @@
 			<SupportedTarget>Linux_x64</SupportedTarget>
 			<Source>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Linux_x64\afdx_custom_device Engine.lvlibp</Path>
+				<Path>Custom Devices\AIM ARINC 664\Linux_x64\AIM ARINC 664 Engine.lvlibp</Path>
 			</Source>
-			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\afdx_custom_device\afdx_custom_device Engine.lvlibp</RealTimeSystemDestination>
+			<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine.lvlibp</RealTimeSystemDestination>
 		</Dependency>
 	</Dependencies>
 	<Pages>
 		<Page>
 			<Name>
-				<eng>afdx_custom_device</eng>
-				<loc>afdx_custom_device</loc>
+				<eng>AIM ARINC 664</eng>
+				<loc>AIM ARINC 664</loc>
 			</Name>
 			<GUID>E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646</GUID>
 			<Glyph>
@@ -59,7 +59,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -71,21 +71,21 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
 			<ActionVIOnLoad>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\ActionVIOnLoad.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\ActionVIOnLoad.vi</Path>
 			</ActionVIOnLoad>
 			<ActionVIOnCompile>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\ActionVIOnCompile.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\ActionVIOnCompile.vi</Path>
 			</ActionVIOnCompile>
 		</Page>
 		<Page>
@@ -100,7 +100,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -112,21 +112,21 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
 			<ActionVIOnLoad>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\ActionVIOnLoad.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\ActionVIOnLoad.vi</Path>
 			</ActionVIOnLoad>
 			<ActionVIOnCompile>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\ActionVIOnCompile.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\ActionVIOnCompile.vi</Path>
 			</ActionVIOnCompile>
 		</Page>
 		<Page>
@@ -143,7 +143,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 		</Page>
 		<Page>
@@ -160,7 +160,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 		</Page>
 		<Page>
@@ -177,7 +177,41 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Configuration File Page</eng>
+				<loc>Configuration File Page</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>C40B493B-66E6-407A-B069-3D0F2F03B0B0</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\databases.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Frame Array File Page</eng>
+				<loc>Frame Array File Page</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>066565B1-6FEE-4367-A12F-9A63DF9C36A4</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\databases.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 		</Page>
 		<Page>
@@ -192,7 +226,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -204,11 +238,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -225,7 +259,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -237,11 +271,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -259,7 +293,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -271,11 +305,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -293,7 +327,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -305,11 +339,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -326,7 +360,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -338,11 +372,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -359,7 +393,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -371,11 +405,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -392,7 +426,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -404,11 +438,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -425,7 +459,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -437,11 +471,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -458,7 +492,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -470,11 +504,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -491,7 +525,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -503,11 +537,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
@@ -524,7 +558,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\Page Wrapper.vi</Path>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 			<RunTimeMenu>
 				<MenuItem>
@@ -536,11 +570,11 @@
 					</Name>
 					<Item2Launch>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
 					</Item2Launch>
 					<CustomPopulation>
 						<Type>To Common Doc Dir</Type>
-						<Path>Custom Devices\afdx_custom_device\Windows\afdx_custom_device Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>

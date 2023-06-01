@@ -12,6 +12,15 @@
 	<Item Name="Channel" Type="Folder">
 		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
 	</Item>
+	<Item Name="Configuration File" Type="Folder">
+		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
+		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
+		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
+		<Item Name="Build Tx Cluster.vi" Type="VI" URL="../Configuration File/Build Tx Cluster.vi"/>
+		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
+		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
+		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
+	</Item>
 	<Item Name="Custom Device" Type="Folder">
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
 		<Item Name="Check if Custom Device Enabled.vi" Type="VI" URL="../Custom Device/Check if Custom Device Enabled.vi"/>
@@ -38,9 +47,12 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Frame Array File" Type="Folder">
+		<Item Name="Get Frame Array File Path.vi" Type="VI" URL="../Frame Array File/Get Frame Array File Path.vi"/>
+	</Item>
 	<Item Name="Main Page" Type="Folder">
-		<Item Name="Get Main Page Config File Path.vi" Type="VI" URL="../Main Page/Get Main Page Config File Path.vi"/>
-		<Item Name="Set Main Page Config File Path.vi" Type="VI" URL="../Main Page/Set Main Page Config File Path.vi"/>
+		<Item Name="Get Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Get Main Page Monitor Log Directory.vi"/>
+		<Item Name="Set Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Set Main Page Monitor Log Directory.vi"/>
 	</Item>
 	<Item Name="Monitor Queue Status" Type="Folder">
 		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
@@ -64,5 +76,6 @@
 		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
+	<Item Name="Add Frame Array File.vi" Type="VI" URL="../Frame Array File/Add Frame Array File.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>

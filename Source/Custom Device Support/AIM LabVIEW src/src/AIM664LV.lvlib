@@ -359,4 +359,5 @@
 	<Item Name="Fdx Create UDP Port.vi" Type="VI" URL="../Fdx Create UDP Port.vi"/>
 	<Item Name="Fdx Start.vi" Type="VI" URL="../Fdx Start.vi"/>
 	<Item Name="Fdx Stop.vi" Type="VI" URL="../Fdx Stop.vi"/>
+	<Item Name="Get Monitor Status.vi" Type="VI" URL="../bsp/AFDX_Monitor/Get Monitor Status.vi"/>
 </Library>

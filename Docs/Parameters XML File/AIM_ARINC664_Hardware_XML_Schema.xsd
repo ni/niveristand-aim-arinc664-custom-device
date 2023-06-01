@@ -1,0 +1,3782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version 1.0 from Fabio Mussi (fabio.mussi@ni.com) -->
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:avif="http://www.aviftech.com/Schemas/Databus/" targetNamespace="http://www.aviftech.com/Schemas/Databus/" xmlns="http://www.aviftech.com/Schemas/Databus/" >
+  <xs:attributeGroup name="portGroup">
+    <xs:attribute name="sessionType" use="required">
+      <xs:annotation>
+        <xs:documentation>The session type for the port (Tx-Generic, VL oriented, or Monitor)</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="Tx-Generic" />
+          <xs:enumeration value ="Tx-UdpPortOriented" />
+          <xs:enumeration value ="Rx-VlOriented" />
+          <xs:enumeration value ="Rx-Monitor" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="RxModeControlInGroup">
+    <xs:attribute name="ReceiveMode" default="FDX_RX_CHRONO">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_RX_CHRONO" />
+          <xs:enumeration value ="FDX_RX_VL" />
+        </xs:restriction>
+      </xs:simpleType>      
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:complexType name="boardType">
+    <xs:annotation>
+      <xs:documentation>Represents the physical device with multiple ports.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="boardConfiguration" type="boardConfigurationType" minOccurs="0" />
+			<xs:element name="port" type="portType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="boardConfigurationType" >
+    <xs:all >
+      <xs:element name="boardId" default="0" type="xs:int" >
+        <xs:annotation>
+          <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="portType">
+    <xs:annotation>
+      <xs:documentation>Represents the physical port of a device.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="portConfiguration" type="portConfigurationType" minOccurs="0" />
+      <xs:choice>
+        <xs:element ref="TxGenericSession"/>
+        <xs:element ref="RxMonitorSession"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attributeGroup ref ="portGroup" />
+  </xs:complexType>
+  <xs:complexType name="portConfigurationType" >
+    <xs:all minOccurs="0">
+      <xs:element name="portId" default="0" type="xs:int" >
+        <xs:annotation>
+          <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="TxGenericSessionType">
+    <xs:annotation>
+      <xs:documentation>The session type for Generic Transmit</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name ="txQueueConfiguration" type="txQueueConfigurationType" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="txQueueConfigurationType">
+    <xs:all minOccurs="0">
+      <xs:element name="QueueSizeIn" default="0" type="xs:int" >
+        <xs:annotation>
+          <xs:documentation>The size of the transmit queue. If is zero, internal queue size will be used</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>    
+  </xs:complexType>
+  <xs:complexType name="RxMonitorSessionType">
+    <xs:annotation>
+      <xs:documentation>The session type for Chronological Monitor.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name ="monitorConfiguration" type="monitorConfigurationType" minOccurs="0" />
+      <xs:element name ="rxQueueConfiguration" type="rxQueueConfigurationType" minOccurs="0" />
+    </xs:sequence>
+    <xs:attributeGroup ref="RxModeControlInGroup"/>
+  </xs:complexType>
+  <xs:complexType name="monitorConfigurationType">
+    <xs:all minOccurs="0">
+      <xs:element name="DefaultCronoMode" default="FDX_RX_DEFAULT_ENA_CNT" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>The size of the transmit queue. If is zero, internal queue size will be used</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_RX_DEFAULT_ENA_CNT" />
+            <xs:enumeration value ="FDX_RX_DEFAULT_MON_ENA_ALL" />
+            <xs:enumeration value ="FDX_RX_DEFAULT_MON_ENA_GOOD" />           
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="GlbMonBufferSizeIn" default="0" type="xs:int" minOccurs="0" />     
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="rxQueueConfigurationType">
+    <xs:all>
+      <xs:element name="TriggerPosition" default="0" type="xs:int" />
+      <xs:element name="MaxFileSizeMB" default="1" type="xs:int"  />
+      <xs:element name="CaptureMode" default="FDX_MON_SINGLE" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_MON_SINGLE" />
+            <xs:enumeration value ="FDX_MON_CONTINUOUS" />
+            <xs:enumeration value ="FDX_MON_SELECTIVE" />
+            <xs:enumeration value ="FDX_MON_RECORDING" />
+            <xs:enumeration value ="FDX_MON_REROS" />
+            <xs:enumeration value ="FDX_MON_HMU" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Strobe" default="FDX_MON_STROBE_DIS" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_MON_STROBE_DIS" />
+            <xs:enumeration value ="FDX_MON_STROBE_STOP" />
+            <xs:enumeration value ="FDX_MON_STROBE_START" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <xs:element name="board" type="boardType" />
+  <xs:element name="port" type="portType" />
+  <xs:element name="TxGenericSession" type="TxGenericSessionType" />
+  <xs:element name="RxMonitorSession" type="RxMonitorSessionType" />
+  <xs:element name="ethSystem">
+		<xs:annotation>
+			<xs:documentation>Container for a whole system configuration for all Ethernet/A664 Devices in a host system</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="f16HsnDevice" maxOccurs="32"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element ref="hostLan"/>
+					<xs:choice minOccurs="0">
+						<xs:element ref="a664Device" maxOccurs="32"/>
+						<xs:element ref="edeDevice" maxOccurs="32"/>
+					</xs:choice>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:choice>
+						<xs:element ref="a664Device" maxOccurs="32"/>
+						<xs:element ref="edeDevice" maxOccurs="32"/>
+					</xs:choice>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="hostLan">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LanTftp" minOccurs="0">
+					<xs:complexType>
+						<xs:choice>
+							<xs:sequence>
+								<xs:element ref="LanTftpClient" maxOccurs="unbounded"/>
+								<xs:element ref="LanTftpServer" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+							<xs:element ref="LanTftpServer" maxOccurs="unbounded"/>
+						</xs:choice>
+					</xs:complexType>
+					<xs:unique name="UniqueClientId">
+						<xs:selector xpath="avif:LanTftpClient"/>
+						<xs:field xpath="@id"/>
+					</xs:unique>
+					<xs:unique name="UniqueClientName">
+						<xs:selector xpath="avif:LanTftpClient"/>
+						<xs:field xpath="@name"/>
+					</xs:unique>
+					<xs:unique name="UniqueServerId">
+						<xs:selector xpath="avif:LanTftpServer"/>
+						<xs:field xpath="@id"/>
+					</xs:unique>
+					<xs:unique name="UniqueServerName">
+						<xs:selector xpath="avif:LanTftpServer"/>
+						<xs:field xpath="@name"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="a615aTargets" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="a615aTargetConnection">
+								<xs:annotation>
+									<xs:documentation>The DataLoader side connection to an ARINC 615A target.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="UniqueClientIdReference">
+						<xs:selector xpath="avif:a615aTargetConnection"/>
+						<xs:field xpath="@id"/>
+					</xs:unique>
+					<xs:unique name="UniqueClientNameReference">
+						<xs:selector xpath="avif:a615aTargetConnection"/>
+						<xs:field xpath="@name"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="a615aLoadableTargets" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="a615aLoadableTarget" maxOccurs="32">
+								<xs:annotation>
+									<xs:documentation>The ARINC-615A target side configuration.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="a615aLoaderConnection"/>
+									</xs:sequence>
+									<xs:attribute name="a615aFindPort" default="1001">
+										<xs:simpleType>
+											<xs:restriction base="xs:unsignedShort">
+												<xs:minInclusive value="0"/>
+												<xs:maxInclusive value="65535"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="a615a664LoaderConnectionIdUnique">
+						<xs:selector xpath="avif:a615aLoadableTarget/a615aLoaderConnection"/>
+						<xs:field xpath="@id"/>
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="nameGroup">
+		<xs:annotation>
+			<xs:documentation>Generic Attribute to hold the name of objects</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="name" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:whiteSpace value="preserve"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="f16HsnSubSystem">
+		<xs:annotation>
+			<xs:documentation>A Simulated F-16 HSN Subsystem</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MacAddress"/>
+				<xs:element name="hsnOutputs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="hsnRtpTxPort" maxOccurs="4096">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="source">
+											<xs:complexType>
+												<xs:attributeGroup ref="UdpPortGroup"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="destination">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element ref="MacAddress" minOccurs="0"/>
+												</xs:sequence>
+												<xs:attributeGroup ref="IpAddressGroup"/>
+												<xs:attributeGroup ref="UdpPortGroup"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="hsnMessage" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>The total number of messages over the entire device is limited to 4096.</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence minOccurs="0">
+													<xs:element name="DataBuffer">
+														<xs:simpleType>
+															<xs:restriction base="xs:hexBinary">
+																<xs:minLength value="1"/>
+																<xs:maxLength value="1440"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element ref="DynamicData" minOccurs="0"/>
+												</xs:sequence>
+												<xs:attribute name="uid" use="required">
+													<xs:annotation>
+														<xs:documentation>A unique message identifier. The max number of unique messages over the entire device is 4096.</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:unsignedInt">
+															<xs:minInclusive value="0"/>
+															<xs:maxInclusive value="4095"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attributeGroup ref="nameGroup"/>
+												<xs:attribute name="msgID" use="required">
+													<xs:annotation>
+														<xs:documentation>The message id.</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:hexBinary">
+															<xs:minLength value="1"/>
+															<xs:maxLength value="4"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="msgRate" use="required">
+													<xs:annotation>
+														<xs:documentation>The frequency at which to send the message.</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="50Hz"/>
+															<xs:enumeration value="25Hz"/>
+															<xs:enumeration value="12.5Hz"/>
+															<xs:enumeration value="6.25Hz"/>
+															<xs:enumeration value="3.125Hz"/>
+															<xs:enumeration value="1.5625Hz"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="msgSize" use="required">
+													<xs:annotation>
+														<xs:documentation>The message size in bytes.</xs:documentation>
+													</xs:annotation>
+													<xs:simpleType>
+														<xs:restriction base="xs:integer">
+															<xs:minInclusive value="1"/>
+															<xs:maxInclusive value="1440"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="msgsPerFrame" type="xs:int" default="1">
+													<xs:annotation>
+														<xs:documentation>Number of copies of the message in a minor frame. This is a rate multiplier for the message. Default value is 1</xs:documentation>
+													</xs:annotation>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attributeGroup ref="nameGroup"/>
+									<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+									<xs:attribute name="did" use="required">
+										<xs:annotation>
+											<xs:documentation>Destination Controller ID</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:hexBinary">
+												<xs:minLength value="1"/>
+												<xs:maxLength value="4"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="isCrcEnabled">
+										<xs:annotation>
+											<xs:documentation>Enable/disable VlRtp CRC and UDP checksum calculation</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="subSystem" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>The subsystem identifier</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="cid" use="required">
+				<xs:annotation>
+					<xs:documentation>The Controller ID (CID) for the simulated Subsystem. Unique over entire device.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:hexBinary">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="IpAddressGroup"/>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="f16HsnDevice">
+		<xs:annotation>
+			<xs:documentation>An F-16 HSN Simulator Device</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="f16HsnSubSystem" minOccurs="0" maxOccurs="31"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="NetworkSpeedGroup"/>
+		</xs:complexType>
+		<xs:unique name="TxPortIdUnique">
+			<xs:selector xpath="avif:f16HsnSubSystem/avif:hsnOutputs/avif:hsnRtpTxPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="MessageIdUnique">
+			<xs:selector xpath="avif:f16HsnSubSystem/avif:hsnOutputs/avif:hsnRtpTxPort/avif:hsnMessage"/>
+			<xs:field xpath="@uid"/>
+		</xs:unique>
+		<xs:unique name="SubSystemIdUnique">
+			<xs:selector xpath="avif:f16HsnSubSystem"/>
+			<xs:field xpath="@cid"/>
+			<xs:field xpath="@IpAddress"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="a664Device">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 Hardware Device</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element name="cotsInputs" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="cotsMacPort" maxOccurs="32"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="cotsOutputs" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="TxCotsMacPort" maxOccurs="2"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element ref="a664EndSystem" minOccurs="0" maxOccurs="127"/>
+				</xs:sequence>
+				<xs:element name="ethernetTester">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="testerInputs" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="cotsMacPort" maxOccurs="32"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="testerOutputs" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="TxCotsMacRawPort" maxOccurs="2"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="NetworkSpeedGroup"/>
+			<xs:attributeGroup ref="a664MacGroupAddressConstantGroup">
+				<xs:annotation>
+					<xs:documentation>Specifier of the contant field used in the first 4 bytes of MAC Destination (Group) addresses of ARINC664 frames. The VLid composes the remaing 2 bytes of the address. If this attribute is NOT specified a default value of 03:00:00:00 will be assumed.</xs:documentation>
+				</xs:annotation>
+			</xs:attributeGroup>
+			<xs:attribute name="a664PsnRange" use="optional" default="2">
+				<xs:annotation>
+					<xs:documentation>The Previous Sequence Number Range to be used by the Redundancy Management algorithm (per A664 P7) if RM is enabled on an input VL. If this optional attribute is NOT specified then a default value of 2 is assumed (in accordance with A664 p7).</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="a615aTargetConnectionUnique">
+			<xs:selector xpath="avif:a664EndSystem/avif:a615aTargets/avif:a615aTargetConnection"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="UniqueOutputVLId">
+			<xs:selector xpath="avif:a664EndSystem/avif:a664Outputs/avif:a664EsOutputVL"/>
+			<xs:field xpath="@VlId"/>
+		</xs:unique>
+		<xs:unique name="UniqueInputMessagePortId">
+			<xs:selector xpath="avif:a664EndSystem/avif:a664Inputs/avif:a664EsInputVL/avif:a664InputVL/avif:RxMessagePort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="UniqueOutputMessagePortId">
+			<xs:selector xpath="avif:a664EndSystem/avif:a664Outputs/avif:a664EsOutputVL/avif:a664OutputVL/avif:a664SubVL/avif:TxMessagePort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="UniqueSubVLUID">
+			<xs:selector xpath="avif:a664EndSystem/avif:a664Outputs/avif:a664EsOutputVL/avif:a664OutputVL/avif:a664SubVL"/>
+			<xs:field xpath="@subVlUID"/>
+		</xs:unique>
+		<xs:unique name="CotsRxMessagePortUID">
+			<xs:selector xpath="avif:cotsInputs/avif:cotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="InputVLUID">
+			<xs:selector xpath="avif:a664EndSystem/avif:a664Inputs/avif:a664EsInputVL"/>
+			<xs:field xpath="@inputVLUID"/>
+		</xs:unique>
+		<xs:unique name="CotsTxMessagePortUID">
+			<xs:selector xpath="avif:cotsOutputs/avif:TxCotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="EndSystemUniqueId">
+			<xs:selector xpath="avif:a664EndSystem"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="testerTxCotsMacRawPortID">
+			<xs:selector xpath="avif:ethernetTester/avif:testerOutputs/TxCotsMacRawPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="testerRxCotsMacPortID">
+			<xs:selector xpath="avif:ethernetTester/avif:testerInputs/cotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="periodicSamplingUdpMessageUniqueID">
+			<xs:selector xpath="a664EndSystem/a664Outputs/a664EsOutputVL/a664OutputVL/a664SubVL/TxMessagePort/TxComUdpSamplingPort/samplingUdpMessage"/>
+			<xs:field xpath="@uid"/>
+		</xs:unique>
+		<xs:unique name="periodicQueuingUdpMessageID">
+			<xs:selector xpath="a664EndSystem/a664Outputs/a664EsOutputVL/a664OutputVL/a664SubVL/TxMessagePort/TxComUdpQueuingPort/queuingUdpMessage"/>
+			<xs:field xpath="@uid"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="edeDevice">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 Hardware Device with EDE support enabled</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element name="cotsInputs" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="cotsMacPort" maxOccurs="32"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="cotsOutputs" minOccurs="0">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="TxCotsMacPort" maxOccurs="2"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element ref="edeEndSystem" minOccurs="0" maxOccurs="32"/>
+				</xs:sequence>
+				<xs:element name="ethernetTester">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="testerInputs" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="cotsMacPort" maxOccurs="32"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="testerOutputs" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="TxCotsMacRawPort" maxOccurs="2"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="NetworkSpeedGroup"/>
+			<xs:attributeGroup ref="a664MacGroupAddressConstantGroup">
+				<xs:annotation>
+					<xs:documentation>Specifier of the contant field used in the first 4 bytes of MAC Destination (Group) addresses of ARINC664 frames. The VLid composes the remaing 2 bytes of the address. If this attribute is NOT specified a default value of 03:00:00:00 will be assumed.</xs:documentation>
+				</xs:annotation>
+			</xs:attributeGroup>
+			<xs:attribute name="a664PsnRange" use="optional" default="2">
+				<xs:annotation>
+					<xs:documentation>The Previous Sequence Number Range to be used by the Redundancy Management algorithm (per A664 P7) if RM is enabled on an input VL. If this optional attribute is NOT specified then a default value of 2 is assumed (in accordance with A664 p7).</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="edea615aTargetConnectionUnique">
+			<xs:selector xpath="avif:edeEndSystem/avif:a615aTargets/avif:a615aTargetConnection"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="edeUniqueOutputVLId">
+			<xs:selector xpath="avif:edeEndSystem/avif:Outputs/avif:edeEsOutputVl"/>
+			<xs:field xpath="@VlId"/>
+		</xs:unique>
+		<xs:unique name="edeUniqueInputMessagePortId">
+			<xs:selector xpath="avif:edeEndSystem/Inputs/avif:edeEsInputVL/avif:edeInputVL/avif:RxEdeMessagePort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edeUniqueOutputMessagePortId">
+			<xs:selector xpath="avif:edeEndSystem/avif:Outputs/avif:edeEsOutputVl/edeOutputVL/avif:edeSubVL/avif:TxEdeMessagePort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edeUniqueSubVLUID">
+			<xs:selector xpath="avif:edeEndSystem/avif:Outputs/avif:edeEsOutputVl/avif:edeOutputVL/avif:edeSubVL"/>
+			<xs:field xpath="@subVlUID"/>
+		</xs:unique>
+		<xs:unique name="edeCotsRxMessagePortUID">
+			<xs:selector xpath="avif:cotsInputs/avif:cotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edeInputVLUID">
+			<xs:selector xpath="avif:edeEndSystem/avif:Inputs/avif:edeEsInputVL"/>
+			<xs:field xpath="@inputVLUID"/>
+		</xs:unique>
+		<xs:unique name="edeCotsTxMessagePortUID">
+			<xs:selector xpath="avif:cotsOutputs/avif:TxCotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edeEndSystemUniqueId">
+			<xs:selector xpath="avif:edeEndSystem"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="edetesterTxCotsMacRawPortID">
+			<xs:selector xpath="avif:ethernetTester/avif:testerOutputs/avif:TxCotsMacRawPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edetesterRxCotsMacPortID">
+			<xs:selector xpath="avif:ethernetTester/avif:testerInputs/avif:cotsMacPort"/>
+			<xs:field xpath="@portId"/>
+		</xs:unique>
+		<xs:unique name="edeperiodicSamplingUdpMessageUniqueID">
+			<xs:selector xpath="avif:edeEndSystem/avif:Outputs/avif:edeEsOutputVl/avif:edeOutputVL/avif:edeSubVL/avif:TxEdeMessagePort/avif:TxComUdpSamplingPort/avif:samplingUdpMessage"/>
+			<xs:field xpath="@uid"/>
+		</xs:unique>
+		<xs:unique name="edeperiodicQueuingUdpMessageID">
+			<xs:selector xpath="avif:edeEndSystem/Outputs/avif:edeEsOutputVl/avif:edeOutputVL/avif:edeSubVL/avif:TxEdeMessagePort/avif:TxComUdpQueuingPort/avif:queuingUdpMessage"/>
+			<xs:field xpath="@uid"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="a664EndSystem">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 End System</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MacAddress">
+					<xs:annotation>
+						<xs:documentation>A MAC Source Address</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="a664Outputs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="a664EsOutputVL" maxOccurs="4096"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="a664Inputs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="a664EsInputVL" maxOccurs="512"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="a664Tftp" minOccurs="0"/>
+				<xs:element ref="SnmpManagers" minOccurs="0"/>
+				<xs:element name="a615aTargets" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="a615aTargetConnection">
+								<xs:annotation>
+									<xs:documentation>The DataLoader side connection to an ARINC 615A target.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="a615aLoadableTargets" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the End System is enabled or not. If this attribute is NOT specified the End System is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="id" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique id used for EndSystem identification.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="127"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="UniqueInputVLId">
+			<xs:selector xpath="avif:a664Inputs/avif:a664EsInputVL"/>
+			<xs:field xpath="@VlId"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="edeEndSystem">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 End System</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MacAddress">
+					<xs:annotation>
+						<xs:documentation>A MAC Source Address</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Outputs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="edeEsOutputVl" maxOccurs="4096"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Inputs" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="edeEsInputVL" maxOccurs="512"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="TimeManagers" minOccurs="0"/>
+				<xs:element ref="TimeSubscriber" minOccurs="0"/>
+				<xs:element ref="a664Tftp" minOccurs="0"/>
+				<xs:element name="a615aTargets" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element ref="a615aTargetConnection">
+								<xs:annotation>
+									<xs:documentation>The DataLoader side connection to an ARINC 615A target</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="a615aLoadableTargets" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the End System is enabled or not. If this attribute is NOT specified the End System is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="id" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique id used for EndSystem identification.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="edeUniqueInputVLId">
+			<xs:selector xpath="Inputs/edeEsInputVL"/>
+			<xs:field xpath="@VlId"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="a664OutputVL">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 End System Output (Tx) Virtual Link</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="a664SubVL" maxOccurs="4">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="TxMessagePort" maxOccurs="4096"/>
+						</xs:sequence>
+						<xs:attributeGroup ref="subVlIdGroup"/>
+						<xs:attributeGroup ref="subVlUIDGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="BAGGroup"/>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+		<xs:unique name="subVlIdUnique">
+			<xs:selector xpath="avif:a664SubVL"/>
+			<xs:field xpath="@subVlId"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="a664InputVL">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 End System Input (Rx) Virtual Link</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="a664RedundancyMgmt" minOccurs="0"/>
+				<xs:element ref="RxMessagePort" maxOccurs="4096"/>
+			</xs:sequence>
+			<xs:attribute name="icEnabled" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if VL Integrity Checking is enabled or not. This option is ignored (forced true) if redundancy management is enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="edeInputVL">
+		<xs:annotation>
+			<xs:documentation>An ARINC664 End System Input (Rx) Virtual Link</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="a664RedundancyMgmt" minOccurs="0"/>
+				<xs:element ref="RxEdeMessagePort" maxOccurs="4096"/>
+			</xs:sequence>
+			<xs:attribute name="icEnabled" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if VL Integrity Checking is enabled or not. This option is ignored (forced true) if redundancy management is enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="edeSourceIndex" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>If not present, this VL is not EDE enabled. If present it specifies the indix of the source end system in the EDE TOT table</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MacAddress">
+		<xs:annotation>
+			<xs:documentation>A MAC Address</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f]"/>
+				<xs:pattern value="[0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f]"/>
+				<xs:pattern value="[0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F]"/>
+				<xs:pattern value="[0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="TxComUdpSamplingPort">
+		<xs:annotation>
+			<xs:documentation>An output UDP Comm. Message Port (Sampling Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="samplingUdpMessage" minOccurs="0"/>
+					<xs:element ref="samplingUdpMessageEx" minOccurs="0"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="messageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>UDP message size in bytes (Range 1 - 1471)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1471"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxComEdeUdpSamplingPort">
+		<xs:annotation>
+			<xs:documentation>An output EDE UDP Comm. Message Port (Sampling Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="samplingUdpMessage" minOccurs="0"/>
+					<xs:element ref="samplingUdpMessageEx" minOccurs="0"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="messageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>UDP message size in bytes (Range 1 - 1459)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1459"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="edeSourceIdGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxComUdpQueuingPort">
+		<xs:annotation>
+			<xs:documentation>An output UDP Comm. Message Port (Queuing Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="queuingUdpMessage" minOccurs="0"/>
+					<xs:element ref="queuingUdpMessageEx" minOccurs="0"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>The maximum size of the UDP message in bytes (Range 1 - 8192)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxComEdeUdpQueuingPort">
+		<xs:annotation>
+			<xs:documentation>An output EDE UDP Comm. Message Port (Queuing Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice>
+					<xs:element ref="queuingUdpMessage" minOccurs="0"/>
+					<xs:element ref="queuingUdpMessageEx" minOccurs="0"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>The maximum size of the UDP message in bytes (Range 1 - 8180)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8180"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="edeSourceIdGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxSapUdpPort">
+		<xs:annotation>
+			<xs:documentation>An output UDP Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>An optional destination address used only when useForFind is true.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>Maximum size of messages to be sent via this port. This is the maximum payload size for the message (Range 1 - 8192 bytes)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="useForFind" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates this port is used for DataLoader Find operations. This is a software only setting. Default: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxSapIpPort">
+		<xs:annotation>
+			<xs:documentation>An output IP Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="25">
+				<xs:annotation>
+					<xs:documentation>Maximum message payload size to be sent via this port. (Range 25 - 8200)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="25"/>
+						<xs:maxInclusive value="8200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="IpProtocolGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxSapMacPort">
+		<xs:annotation>
+			<xs:documentation>An output MAC Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="macType" use="optional">
+				<xs:annotation>
+					<xs:documentation>Specifies the value to be used in the MAC Type/Length field for outgoing frames from this port. If this attribute is NOT defined, the ES will calculate the frame length and insert it into the Type/Length field, otherwise this value must be greater than 0x5DC, indicating a type.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:hexBinary">
+						<xs:length value="2"/>
+						<xs:pattern value="05[dD][d-fD-F]"/>
+						<xs:pattern value="05[e-fE-F][0-9a-fA-F]"/>
+						<xs:pattern value="0[6-9a-fA-F][0-9a-fA-F]{2}"/>
+						<xs:pattern value="[1-9a-fA-F][0-9a-fA-F]{3}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComUdpSamplingPort">
+		<xs:annotation>
+			<xs:documentation>An input UDP Comm. Message Port (Sampling Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="messageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>UDP Message Size in bytes (Range 1 - 1471)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1471"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="validateSource" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if the ES shall check the source IP and UDP addresses configured for this port for incoming messages. If true, messages  will only be delivered to this port if the Destination IP and UDP addresses AND the Source IP and UDP addresses of the incoming message match what is configured for this port. If this attribute is NOT specified it is assumed to be false.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComEdeUdpSamplingPort">
+		<xs:annotation>
+			<xs:documentation>An input EDE Enabled UDP Comm. Message Port (Sampling Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="messageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>UDP Message Size in bytes (Range 1 - 1471)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1471"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="validateSource" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if the ES shall check the source IP and UDP addresses configured for this port for incoming messages. If true, messages  will only be delivered to this port if the Destination IP and UDP addresses AND the Source IP and UDP addresses of the incoming message match what is configured for this port. If this attribute is NOT specified it is assumed to be false.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="edeSourceIdGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComUdpQueuingPort">
+		<xs:annotation>
+			<xs:documentation>An input UDP Comm. Message Port (Queuing Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>Maximum UDP message that can be received at this port, in bytes (Range 1 - 8192)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="bufferDepth" use="optional" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="validateSource" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if the ES shall check the source IP and UDP addresses configured for this port for incoming messages. If true, messages  will only be delivered to this port if the Destination IP and UDP addresses AND the Source IP and UDP addresses of the incoming message match what is configured for this port. If this attribute is NOT specified it is assumed to be false.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComEdeUdpQueuingPort">
+		<xs:annotation>
+			<xs:documentation>An input EDE Enabled UDP Comm. Message Port (Queuing Type)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="source">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>Maximum UDP message that can be received at this port, in bytes (Range 1 - 8192)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="bufferDepth" use="optional" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="validateSource" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if the ES shall check the source IP and UDP addresses configured for this port for incoming messages. If true, messages  will only be delivered to this port if the Destination IP and UDP addresses AND the Source IP and UDP addresses of the incoming message match what is configured for this port. If this attribute is NOT specified it is assumed to be false.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="edeSourceIdGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxSapUdpPort">
+		<xs:annotation>
+			<xs:documentation>An input UDP Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+						<xs:attributeGroup ref="UdpPortGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="17">
+				<xs:annotation>
+					<xs:documentation>The maximm size of the UDP message in bytes (Range 1 - 8192)</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="bufferDepth" use="optional" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messaages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxSapIpPort">
+		<xs:annotation>
+			<xs:documentation>An input IP Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="destination">
+					<xs:complexType>
+						<xs:attributeGroup ref="IpAddressGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="maxMessageSize" use="optional" default="25">
+				<xs:annotation>
+					<xs:documentation>The maximum size of the IP message in bytes (Range 25 - 8200</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="25"/>
+						<xs:maxInclusive value="8200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="bufferDepth" use="optional" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messaages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="IpProtocolGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxSapMacPort">
+		<xs:annotation>
+			<xs:documentation>An input MAC Service Access Point type Port</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="maxMessageSize" default="46">
+				<xs:annotation>
+					<xs:documentation>The maximum size of the MAC frame payload in bytes (Range 46 - 1500) </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="46"/>
+						<xs:maxInclusive value="1500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="macType" use="optional">
+				<xs:annotation>
+					<xs:documentation>The MAC Type/Length Field. If this attribute is specified then only incoming frames with a MAC Type/Length field that match what is defined here will be delivered to the port. If this attribute is NOT specified then all frames will be delivered to this port regardless of the value of the MAC Type/Length field</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:hexBinary">
+						<xs:pattern value="[0-9a-f]{4}"/>
+						<xs:pattern value="[0-9A-F]{4}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="bufferDepth" use="optional" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messaages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MacAddressMask">
+		<xs:annotation>
+			<xs:documentation>A MAC Address Bit Mask</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f]"/>
+				<xs:pattern value="[0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f]"/>
+				<xs:pattern value="[0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F]"/>
+				<xs:pattern value="[0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:attributeGroup name="VlIdGroup">
+		<xs:annotation>
+			<xs:documentation>A Virtual Link Identifier</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="VlId" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="BAGGroup">
+		<xs:annotation>
+			<xs:documentation>A VL Bandwidth Allocation Gap (Range 0.5 - 128.5 in 0.5 mS steps)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="BAG" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[1][0-1][0-9][.][0,5]"/>
+					<xs:pattern value="[1][2][0-8][.][0,5]"/>
+					<xs:pattern value="[1-9][0-9][.][0,5]"/>
+					<xs:pattern value="[1-9][.][0,5]"/>
+					<xs:pattern value="[1][0-1][0-9]"/>
+					<xs:pattern value="[1][2][0-8]"/>
+					<xs:pattern value="[1-9][0-9]"/>
+					<xs:pattern value="[1-9]"/>
+					<xs:pattern value="[0][.][5]"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="MaxFrameLengthGroup">
+		<xs:annotation>
+			<xs:documentation>Maximum length of an ARINC664, AFDX, or Ethernet Frame</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="maxFrameLength" default="1518">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="64"/>
+					<xs:maxInclusive value="1518"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a664NetworkGroup">
+		<xs:annotation>
+			<xs:documentation>Specifies the network (NetA, NetB, or Both)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="a664Network" default="Both">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="NetA"/>
+					<xs:enumeration value="NetB"/>
+					<xs:enumeration value="Both"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="IpAddressGroup">
+		<xs:annotation>
+			<xs:documentation>An IP Address (i.e. 192.168.1.2)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="IpAddress" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="UdpPortGroup">
+		<xs:annotation>
+			<xs:documentation>A UDP Port Address (0 - 65535)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="UdpPort" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="IpProtocolGroup">
+		<xs:annotation>
+			<xs:documentation>Specifier of the IP Protocol type</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="IpProtocol" use="optional" default="UDP">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="UDP"/>
+					<xs:enumeration value="ICMP"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a664MacGroupAddressConstantGroup">
+		<xs:annotation>
+			<xs:documentation>Specifier of the contant field to be used in the first 4 bytes of MAC Destination (Group) addresses. The VLid composes the remaing 2 bytes of the address</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="a664MacGroupAddressConstant" use="optional" default="03:00:00:00">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f]"/>
+					<xs:pattern value="[0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f]"/>
+					<xs:pattern value="[0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F]"/>
+					<xs:pattern value="[0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F]"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="NetworkSpeedGroup">
+		<xs:annotation>
+			<xs:documentation>Network Interface Speed (10/100/1000)</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="NetworkSpeed" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="10Mbps"/>
+					<xs:enumeration value="100Mbps"/>
+					<xs:enumeration value="1Gbps"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="subVlIdGroup">
+		<xs:annotation>
+			<xs:documentation>Sub VL Id Group</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="subVlId" use="required">
+			<xs:annotation>
+				<xs:documentation>Identifies the Sub VL to which this message port is associated. (Range: 1 - 4)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="RxMessagePortIDgroup">
+		<xs:annotation>
+			<xs:documentation>Receive Message Port ID Group</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="portId" use="required">
+			<xs:annotation>
+				<xs:documentation>Unique Identifier of the Rx Message Port (Range 0 - 4095)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="4095"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="NetANetBPortIdsGroup">
+		<xs:annotation>
+			<xs:documentation>Port IDs for NetA and NetB.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="NetA" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique ID of Port A (Range 0 - 4095)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="4095"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="NetB" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique ID of Port B (Range 0 - 4095)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="4095"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="TxMessagePortIDgroup">
+		<xs:annotation>
+			<xs:documentation>Transmit Message Port ID Group</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="portId" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique ID for the Tx Message port (Range 0 - 4095)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="4095"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="inputVLUIDGroup">
+		<xs:annotation>
+			<xs:documentation>Input VL Unique ID Group</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="inputVLUID" use="optional">
+			<xs:annotation>
+				<xs:documentation>A Unique ID for the Input VL (Range 0 - 511)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="511"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="subVlUIDGroup">
+		<xs:annotation>
+			<xs:documentation>Group for Sub VL Unique Identifier</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="subVlUID" use="optional">
+			<xs:annotation>
+				<xs:documentation>Unique Identifier of the subVL accross the a664Device. This ID can optionally be used to ensure that the maximum allowed number of output SubVL's is not exceeded for the a664Device (Range 0 - 509). This must be a unique value over the a664Device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="509"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="TxMessagePort">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="TxComUdpSamplingPort"/>
+				<xs:element ref="TxComUdpQueuingPort"/>
+				<xs:element ref="TxSapUdpPort"/>
+				<xs:element ref="TxSapIpPort"/>
+				<xs:element ref="TxSapMacPort"/>
+			</xs:choice>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxMessagePort">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="RxComUdpSamplingPort"/>
+				<xs:element ref="RxComUdpQueuingPort"/>
+				<xs:element ref="RxSapUdpPort"/>
+				<xs:element ref="RxSapIpPort"/>
+				<xs:element ref="RxSapMacPort"/>
+			</xs:choice>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="RxMessagePortIDgroup"/>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxEdeMessagePort">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="RxComEdeUdpSamplingPort"/>
+				<xs:element ref="RxComEdeUdpQueuingPort"/>
+				<xs:element ref="RxComUdpSamplingPort"/>
+				<xs:element ref="RxComUdpQueuingPort"/>
+				<xs:element ref="RxSapUdpPort"/>
+				<xs:element ref="RxSapIpPort"/>
+				<xs:element ref="RxSapMacPort"/>
+			</xs:choice>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="RxMessagePortIDgroup"/>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxCotsMacPort">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MacAddress">
+					<xs:annotation>
+						<xs:documentation>A MAC Source Address </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="TxCotsPortIDGroup"/>
+			<xs:attributeGroup ref="MaxFrameLengthGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxCotsMacRawPort">
+		<xs:complexType>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="TxCotsPortIDGroup"/>
+			<xs:attributeGroup ref="MaxFrameLengthGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="RxCotsMessagePortIDgroup">
+		<xs:annotation>
+			<xs:documentation>Group for COTS Rx Message Port ID's</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="portId" use="required">
+			<xs:annotation>
+				<xs:documentation>Unique Identifier of the Rx Message Port (Range 0 - 30)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="31"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="LanAdapterIDgroup">
+		<xs:attribute name="LanAdapterID" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="31"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="a664EsOutputVL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="a664OutputVL"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the Output VL is enabled for transmit or not. If this attribute is NOT specified the Output VL is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="VlIdGroup"/>
+			<xs:attribute name="sequenceNumberEnabled" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the VL sequence number (according to ARINC664 p7) shall be added to frames of this VL by the ES MAC or not. If this optional attribute is NOT specified, the default value shall be TRUE</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="MaxFrameLengthGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a664EsInputVL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="a664InputVL"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the Input VL is enabled for receive or not. If this attribute is NOT specified the Input VL is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="VlIdGroup">
+				<xs:annotation>
+					<xs:documentation>A Virtual Link Identifier</xs:documentation>
+				</xs:annotation>
+			</xs:attributeGroup>
+			<xs:attributeGroup ref="inputVLUIDGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="edeEsInputVL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="edeInputVL"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the Input VL is enabled for receive or not. If this attribute is NOT specified the Input VL is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="VlIdGroup">
+				<xs:annotation>
+					<xs:documentation>A Virtual Link Identifier</xs:documentation>
+				</xs:annotation>
+			</xs:attributeGroup>
+			<xs:attributeGroup ref="inputVLUIDGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="TxCotsPortIDGroup">
+		<xs:attribute name="portId" use="required">
+			<xs:annotation>
+				<xs:documentation>Unique Identifier of the Tx Message Port (Range 0 - 1)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="1"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="cotsMacPort">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="MacAddress"/>
+				<xs:element ref="MacAddressMask"/>
+			</xs:sequence>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attributeGroup ref="RxCotsMessagePortIDgroup"/>
+			<xs:attribute name="bufferDepth" default="5">
+				<xs:annotation>
+					<xs:documentation>Depth of the ports message buffer. This is how many messaages can be buffered at the port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="TftpConfigOptionsGroup">
+		<xs:attribute name="blockSize" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>The TFTP block size  in bytes, to be used in option negotiation.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="maxFileSize" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>The maximum size file in bytes allowed for file downloads, to be used in option negotiation. Default: 0 (not used)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer"/>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="a615aChecksum" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>The enable state of the TFTP ARINC 615A-3 Checksum option</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="a615aPartNumber" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>The enable state of the TFTP ARINC 615A-3 Part Number option.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="dataIn" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>The enable state of the TFTP DataIn option for TFTP write requests.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="timeoutOption" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>The TFTP timeout interval in seconds, to be used in option negotiation. Default: 0 (not used)</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="defaultTimeoutInterval" use="optional" default="1">
+			<xs:annotation>
+				<xs:documentation>The default TFTP timeout interval in seconds (T0), used if the timeoutOption is not utilized.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="endOfTransferTimeout" use="optional" default="1">
+			<xs:annotation>
+				<xs:documentation>The TFTP end of transfer timeout interval in seconds (T2). This defines the time that a download connection will be held open after transmission of the last TFTP ACK message.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="retryCount" type="xs:integer" use="optional" default="1">
+			<xs:annotation>
+				<xs:documentation>The number of retries on an unacknowledged datagram before a Put or Get operation is closed.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="serverPort" use="optional" default="59">
+			<xs:annotation>
+				<xs:documentation>The port at which the server should be contacted for read and write requests.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:integer">
+					<xs:minInclusive value="0"/>
+					<xs:maxInclusive value="65535"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="dallyEnabled" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>Specifies if the Dally time avoidance mechanism shall be used. If enabled, the TFTP client/server will respond to the last TFTP ACK of a file transfer with an ACK to conclude operation before the endOfTransferTimeout occurs.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="a664Tftp">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="a664TftpClient" maxOccurs="unbounded"/>
+					<xs:element ref="a664TftpServer" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:element ref="a664TftpServer" maxOccurs="unbounded"/>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="uniqueClientConfigId">
+			<xs:selector xpath="avif:a664TftpClient"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="uniqueClientConfigName">
+			<xs:selector xpath="avif:a664TftpClient"/>
+			<xs:field xpath="@name"/>
+		</xs:unique>
+		<xs:unique name="uniqueServerConfigId">
+			<xs:selector xpath="avif:a664TftpServer"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+		<xs:unique name="uniqueServerConfigName">
+			<xs:selector xpath="avif:a664TftpServer"/>
+			<xs:field xpath="@name"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="SnmpManager">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="RxSapUdpReferenceId"/>
+					<xs:element ref="RxSapUdpReferenceName"/>
+				</xs:choice>
+				<xs:choice>
+					<xs:element ref="TxSapUdpReferenceId"/>
+					<xs:element ref="TxSapUdpReferenceName"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="SnmpConfigIdGroup"/>
+			<xs:attribute name="version" use="optional" default="2c">
+				<xs:annotation>
+					<xs:documentation>Version of SNMP protocol to use</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2c"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="community" type="xs:string" use="optional" default="public">
+				<xs:annotation>
+					<xs:documentation>SNMP community string to use for authentication</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeout" use="optional" default="1000">
+				<xs:annotation>
+					<xs:documentation>How long (in milliseconds) to wait until a request is considered to have timed out.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="60000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="retries" use="optional" default="1">
+				<xs:annotation>
+					<xs:documentation>Number of times a request will be re-tried if it times out.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SnmpManagers">
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="SnmpManager" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="EDEOffsetUnknownGroup">
+		<xs:attribute name="offsetUnknown" use="optional" default="7FFFFFFFFFFF">
+			<xs:annotation>
+				<xs:documentation>Value to use to represent Offset_Unk (Offset Unknown).
+                </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:hexBinary">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="6"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="TimeManagerIdGroup">
+		<xs:attribute name="id" type="xs:integer" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique identifier for the time manager.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A unique name serving as an alternative identifier for the time manager.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="TimeManagerTSEntry">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TimeResponseA">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeResponseB">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="InternalTS" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>If the Time Subsriber is simulated on the same edeDevice then this should be indicated with this element.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="rosem" type="xs:unsignedShort" use="required">
+							<xs:annotation>
+								<xs:documentation>ROSEM value to be used in the Time Offset Table for this Internal Time Subscriber.</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>If false, responses from this entry will be unconditionally discarded.                   </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="rosea" type="xs:unsignedShort" use="required">
+				<xs:annotation>
+					<xs:documentation>ROSEA value (in increments of 8us) to use for the subscriber.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="offset" use="optional" default="000000000000">
+				<xs:annotation>
+					<xs:documentation>Optional offset value to add to ROS before the entry is placed into the time offset.
+                    </xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:hexBinary">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TimeManager">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TimeRequest">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable1">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable2">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeStampList">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="TimeManagerTSEntry" maxOccurs="130"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="TimeManagerIdGroup"/>
+			<xs:attribute name="initialTsListTimeout" type="xs:unsignedInt" use="optional" default="5000">
+				<xs:annotation>
+					<xs:documentation>
+                        Time (in ms) for the Time Manager to wait for a pair of TS Lists after starting.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="initialRequestNumber" type="xs:unsignedShort" use="optional" default="0">
+				<xs:annotation>
+					<xs:documentation>Initial value of the request number.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="iterationCount" type="xs:unsignedInt" use="optional" default="0">
+				<xs:annotation>
+					<xs:documentation>Number of times to send time requests and process responses before stopping.  0 means no limit.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="iterationInterval" type="xs:unsignedShort" use="optional" default="1000">
+				<xs:annotation>
+					<xs:documentation>Total duration (in ms) of a single Time Manager iteration.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="ti1" type="xs:unsignedShort" use="optional" default="500">
+				<xs:annotation>
+					<xs:documentation>Duration (in ms) of the first quarter of a Time Manager iteration.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="ti2" type="xs:unsignedShort" use="optional" default="500">
+				<xs:annotation>
+					<xs:documentation>Duration (in ms) of the second quarter of a Time Manager iteration.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="ti3" type="xs:unsignedShort" use="optional" default="500">
+				<xs:annotation>
+					<xs:documentation>Duration (in ms) of the third quarter of a Time Manager iteration.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="offsetTableSplitIndex" type="xs:unsignedByte" use="optional" default="255">
+				<xs:annotation>
+					<xs:documentation>
+                        Index into the aggregate time offset table to split, creating tables 
+                        1 and 2.  Defaults to split the table at an automatically-determined
+                        index resulting in an even split.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="EDEOffsetUnknownGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TimeManagers">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TimeManager" maxOccurs="4"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="TimeManagerPortIDUnique">
+			<xs:selector xpath="avif:TimeManager"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+	</xs:element>
+	<xs:attributeGroup name="TimeSubscriberTMEntryIdGroup">
+		<xs:attribute name="id" type="xs:integer" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique identifier for the time subscriber entry.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A unique name serving as an alternative identifier for the time subscriber entry.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="TimeSubscriberTMEntry">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TimeResponseA">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeResponseB">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="TxUdpReferenceId"/>
+							<xs:element ref="TxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeRequestA">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeRequestB">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable1A">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable1B">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable2A">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeOffsetTable2B">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeStampListA">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TimeStampListB">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="RxUdpReferenceId"/>
+							<xs:element ref="RxUdpReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="TimeSubscriberTMEntryIdGroup"/>
+			<xs:attribute name="index" use="required">
+				<xs:annotation>
+					<xs:documentation>Index in the time request/response table of this subscriber.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedShort">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="TimeManagerType" use="optional" default="External">
+				<xs:annotation>
+					<xs:documentation>Specifies if the Time Manager is an external one or one that is local and simulated on this EDE Board Device. Default is External</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Internal"/>
+						<xs:enumeration value="External"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TimeSubscriber">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="TimeSubscriberTMEntry" maxOccurs="4"/>
+			</xs:sequence>
+			<xs:attribute name="timeStampListTimeout" type="xs:unsignedInt" use="required">
+				<xs:annotation>
+					<xs:documentation>Time (in ms) for the subscriber to wait for a timestamp list before 
+considering it timed out.                </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeOffsetTimeout" type="xs:unsignedInt" use="required">
+				<xs:annotation>
+					<xs:documentation>Time (in ms) for the subscriber to wait for a time offset table before considering it timed out.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeOffsetTableInterval" type="xs:unsignedInt" use="optional" default="1000">
+				<xs:annotation>
+					<xs:documentation>Interval (in ms) the subscriber will check the time offset table ports for a valid table.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="requestNumberMaxDifference" type="xs:unsignedInt" use="optional" default="2">
+				<xs:annotation>
+					<xs:documentation>The maximum difference between the last Time Request's request number, and the 
+                        incoming time offset table's request number.  If the difference between the
+                        two is exceeded the table will not be accepted.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeRequestMaxAge" type="xs:unsignedInt" use="optional" default="2500">
+				<xs:annotation>
+					<xs:documentation>The maximum time (in ms) since the last time request to consider the associated
+                        time offset table valid.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeOffsetTableMaxAge" type="xs:unsignedInt" use="optional" default="2500">
+				<xs:annotation>
+					<xs:documentation>The maximum time (in ms) since the last receipt of a time offset table, for that table to be considered valid for use.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="myOffset1MaxAge" type="xs:unsignedInt" use="optional" default="100">
+				<xs:annotation>
+					<xs:documentation>The valid range (in us) of the offset time of a TOT message containing this
+                    subscriber's ROS value.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="otherOffset1MaxAge" type="xs:unsignedInt" use="optional" default="1500">
+				<xs:annotation>
+					<xs:documentation>The valid range (in us) of the offset time of a TOT message not containing 
+                    this subscriber's ROS value.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="rxClockError" type="xs:unsignedInt" use="optional" default="0">
+				<xs:annotation>
+					<xs:documentation>Clock error (in us) used during time offset calculations.
+                    </xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="EDEOffsetUnknownGroup"/>
+		</xs:complexType>
+		<xs:unique name="TimeSubscriberTMEntryPortIDUnique">
+			<xs:selector xpath="avif:TimeSubscriberTMEntry"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="RxUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="RxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="RxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxSapUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="RxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxComUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RxSapUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxComUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxSapUdpReferenceId">
+		<xs:complexType>
+			<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxComUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxSapUdpReferenceName">
+		<xs:complexType>
+			<xs:attributeGroup ref="PortReferenceNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a664TftpServer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="a664ServerListenPort">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice>
+								<xs:element ref="RxSapUdpReferenceId"/>
+								<xs:element ref="RxSapUdpReferenceName"/>
+							</xs:choice>
+							<xs:choice>
+								<xs:element ref="TxSapUdpReferenceId"/>
+								<xs:element ref="TxSapUdpReferenceName"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:sequence maxOccurs="10">
+					<xs:choice>
+						<xs:element ref="RxSapUdpReferenceId"/>
+						<xs:element ref="RxSapUdpReferenceName"/>
+					</xs:choice>
+					<xs:choice>
+						<xs:element ref="TxSapUdpReferenceId"/>
+						<xs:element ref="TxSapUdpReferenceName"/>
+					</xs:choice>
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attributeGroup ref="TftpConfigIdGroup"/>
+			<xs:attribute name="minUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The minimum UDP source port, or server port1 if fixedSourcePorts is set to true.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The maximum UDP source port, or server port2 if fixedSourcePorts is set to true.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="fixedSourcePorts" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>If true, use the minUdpSourcePort as source port1 and the maxUdpSourcePort as source port2. Default: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="portOption" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if TFTP port option negotiation is enabled for the server.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="TftpConfigOptionsGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a664TftpClient">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="RxSapUdpReferenceId"/>
+					<xs:element ref="RxSapUdpReferenceName"/>
+				</xs:choice>
+				<xs:choice>
+					<xs:element ref="TxSapUdpReferenceId"/>
+					<xs:element ref="TxSapUdpReferenceName"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="TftpConfigIdGroup"/>
+			<xs:attribute name="minUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The minimum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The maximum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="portValue" use="optional">
+				<xs:annotation>
+					<xs:documentation>The TFTP port option value as described in ARINC615A-3, to be used by the client in option negotiation.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="TftpConfigOptionsGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="TftpConfigIdGroup">
+		<xs:attribute name="id" type="xs:integer" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique identifier for the Configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A unique name serving as an alternative identifier for the configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="SnmpConfigIdGroup">
+		<xs:attribute name="id" type="xs:integer" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique identifier for the Configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A unique name serving as an alternative identifier for the configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="A615ATargetConfigIdGroup">
+		<xs:attribute name="id" type="xs:integer" use="required">
+			<xs:annotation>
+				<xs:documentation>A unique identifier for the Configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>A unique name serving as an alternative identifier for the configuration.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="LanTftpServer">
+		<xs:complexType>
+			<xs:attributeGroup ref="TftpConfigIdGroup"/>
+			<xs:attribute name="minUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The minimum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The maximum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="portOption" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if TFTP port option negotiation is enabled for the server.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="TftpConfigOptionsGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a615aLoaderConnection">
+		<xs:annotation>
+			<xs:documentation>A connection to an ARINC 615A Data Loader</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="a665Loads">
+					<xs:annotation>
+						<xs:documentation>A list of the software loadable parts (files) that the target is configured to receive from a data loader.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="a665TargetLsap" maxOccurs="64"/>
+						</xs:sequence>
+						<xs:attribute name="BaseDirectory" use="required">
+							<xs:annotation>
+								<xs:documentation>The base directory for storing target-side files.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="256"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+					<xs:unique name="a665LsapHeaderFileNameUnique">
+						<xs:selector xpath="avif:a665TargetLsap/a665LsapHeaderFileName"/>
+						<xs:field xpath="@Filename"/>
+					</xs:unique>
+					<xs:unique name="a665LsapPnUnique">
+						<xs:selector xpath="avif:a665TargetLsap/a665LsapPn"/>
+						<xs:field xpath="@LsapPn"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="a615aTargetStatusTftpClient">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="tftpClientReferenceId"/>
+							<xs:element ref="tftpClientReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="a615aTargetTftpClient">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="tftpClientReferenceId"/>
+							<xs:element ref="tftpClientReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="a615aTargetTftpServer">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element ref="tftpServerReferenceId"/>
+							<xs:element ref="tftpServerReferenceName"/>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="A615ATargetConfigIdGroup"/>
+			<xs:attributeGroup ref="a615aLoadableTargetDescriptionGroup"/>
+			<xs:attribute name="a615aVersion" default="A615A-2">
+				<xs:annotation>
+					<xs:documentation>The revison of the ARINC 615A specification supported by the target</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="A615A-P1"/>
+						<xs:enumeration value="A615A-1"/>
+						<xs:enumeration value="A615A-2"/>
+						<xs:enumeration value="A615A-3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="a615aTargetStatusPeriod" use="optional" default="1000">
+				<xs:annotation>
+					<xs:documentation>Specifies the time, in miliseconds between the transmission of data load status (to the loader) files for the target</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="a615aTargetRetryCount" use="optional" default="1">
+				<xs:annotation>
+					<xs:documentation>The ARINC 615A DLP retry count. This is the number of times a TFTP file transfer is re-tried if it fails.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="partialLoad" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if an upload or download operation should be continued even if one file fails.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="checksumOption" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if the TFTP checksum option is enabled for this target. Overrides the enabled state of this option in this target's TFTP clients and server.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="partNumberOption" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if the TFTP part number option is enabled for this target. Overrides the enabled state of this option in this target's TFTP clients and server.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="portOption" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Indicates if the TFTP port option is enabled for this target. Overrides the enabled state of this option in this target's TFTP clients and server.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a615aTargetConnection">
+		<xs:annotation>
+			<xs:documentation>A connection to an ARINC 615A loadable target</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element ref="tftpClientReferenceId"/>
+					<xs:element ref="tftpClientReferenceName"/>
+				</xs:choice>
+				<xs:choice>
+					<xs:element ref="tftpServerReferenceId"/>
+					<xs:element ref="tftpServerReferenceName"/>
+				</xs:choice>
+			</xs:sequence>
+			<xs:attributeGroup ref="A615ATargetConfigIdGroup"/>
+			<xs:attributeGroup ref="a615aTargetDescriptionGroup"/>
+			<xs:attribute name="a615aTimeout" default="13">
+				<xs:annotation>
+					<xs:documentation>The ARINC615A DLP Timeout in seconds. This is the maximum time between received status files during a A615A operation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="retryCount" default="1">
+				<xs:annotation>
+					<xs:documentation>The ARINC 615A DLP retry count. This is the number of times a TFTP file transfer is re-tried if it fails.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="a615aVersion" default="A615A-2">
+				<xs:annotation>
+					<xs:documentation>The revison of the ARINC 615A specification supported by the target</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="A615A-P1"/>
+						<xs:enumeration value="A615A-1"/>
+						<xs:enumeration value="A615A-2"/>
+						<xs:enumeration value="A615A-3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="arpIpAddress">
+				<xs:annotation>
+					<xs:documentation>The IP address that must be added to the arp table in order to load the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="arpMacAddress">
+				<xs:annotation>
+					<xs:documentation>A MAC Address to be paired with the arpIpAddress in order to load the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f][:][0-9a-f][0-9a-f]"/>
+						<xs:pattern value="[0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f][-][0-9a-f][0-9a-f]"/>
+						<xs:pattern value="[0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F][:][0-9A-F][0-9A-F]"/>
+						<xs:pattern value="[0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F][-][0-9A-F][0-9A-F]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="findIpAddress">
+				<xs:annotation>
+					<xs:documentation>The IP Address the find operation should be sent to for this target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="hostIpAddress">
+				<xs:annotation>
+					<xs:documentation>The IP address the loader must be set to in order to load the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="hostSubnetMask">
+				<xs:annotation>
+					<xs:documentation>The subnet mask the loader must be set to in order to load the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="hostGateway">
+				<xs:annotation>
+					<xs:documentation>The gateway the loader must be set to in order to load the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="((0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)\.){3}(0|1[0-9]{0,2}|2([0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="loadDelay" default="0">
+				<xs:annotation>
+					<xs:documentation>Changes the default ARINC 615A delay when queueing multiple loads to this value rather than 0.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="speedAndDuplex" default="AutoNegotiate">
+				<xs:annotation>
+					<xs:documentation>Network Interface Speed (10/100) and Duplex (AutoNegotiate/HalfDuplex/FullDuplex) that are required for the specified target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AutoNegotiate"/>
+						<xs:enumeration value="10MbpsHalfDuplex"/>
+						<xs:enumeration value="10MbpsFullDuplex"/>
+						<xs:enumeration value="100MbpsHalfDuplex"/>
+						<xs:enumeration value="100MbpsFullDuplex"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="a665LsapPnGroup">
+		<xs:attribute name="LsapPn" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="256"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a665LsapHeaderFilenameGroup">
+		<xs:attribute name="Filename" use="required">
+			<xs:annotation>
+				<xs:documentation>The HeaderFile name, without a path.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="256"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="a665TargetLsap">
+		<xs:annotation>
+			<xs:documentation>An ARINC 665 Target side Loadable Software (Aircraft) Part</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:sequence>
+						<xs:element ref="a665LsapHeaderFileName"/>
+						<xs:element ref="a665LsapPn" minOccurs="0"/>
+					</xs:sequence>
+					<xs:sequence>
+						<xs:element ref="a665LsapPn"/>
+						<xs:element ref="a665LsapHeaderFileName" minOccurs="0"/>
+					</xs:sequence>
+				</xs:choice>
+				<xs:element name="a665TargetLoadFiles">
+					<xs:annotation>
+						<xs:documentation>A list of the loadable data and support files the target expects from the data loader along with a specification of the local location of the files</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="a665TargetLoadFile" maxOccurs="128"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="PathPrefix" use="optional">
+				<xs:annotation>
+					<xs:documentation>An optional path prefix to prepend to the HeaderFile (and append to the BaseDirectory) before storing the HeaderFile on the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="name">
+				<xs:annotation>
+					<xs:documentation>Optional name for the LSAP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="description">
+				<xs:annotation>
+					<xs:documentation>Optional descriiption of the LSAP</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="shortLoad" type="xs:boolean" default="false">
+				<xs:annotation>
+					<xs:documentation>Specifies if this LSAP supports a short load or not. If supported, when this LSAP is loaded the target will only retrieve changed/updated files from the data loader, not the whole load. Default value: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="PreferPartNumber" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Set to true to utilize the part number for validation. If set to true, a part number must be specified, otherwise a header file name must be specified. Default: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="a665TargetLoadFileUnique">
+			<xs:selector xpath="avif:a665TargetLoadFiles/avif:a665TargetLoadFile/FileName"/>
+			<xs:field xpath="@FileName"/>
+		</xs:unique>
+		<xs:unique name="a665TargetLoadFilePnUnique">
+			<xs:selector xpath="avif:a665TargetLoadFiles/avif:a665TargetLoadFile/FilePn"/>
+			<xs:field xpath="@FilePn"/>
+		</xs:unique>
+	</xs:element>
+	<xs:attributeGroup name="FilePnGroup">
+		<xs:attribute name="FilePn" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="256"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="FileNameGroup">
+		<xs:attribute name="FileName" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="256"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="a665TargetLoadFile">
+		<xs:annotation>
+			<xs:documentation>Represents a Target side Load file. This element specifies the location of the file on the target. The file is identified by either it's filename or its file PN</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element ref="FileName"/>
+					<xs:element ref="FilePn" minOccurs="0"/>
+				</xs:sequence>
+				<xs:sequence>
+					<xs:element ref="FilePn"/>
+					<xs:element ref="FileName" minOccurs="0"/>
+				</xs:sequence>
+			</xs:choice>
+			<xs:attribute name="PathPrefix" use="optional">
+				<xs:annotation>
+					<xs:documentation>An optional path prefix to prepend to the load file (and append to the path prefix of the HeaderFile) before storing the load file on the target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="description" use="optional">
+				<xs:annotation>
+					<xs:documentation>An optional file description.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="256"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="PreferPartNumber" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>Set to true to utilize the part number for validation. If set to true, a part number must be specified, otherwise a header file name must be specified. Default: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LanTftpClient">
+		<xs:complexType>
+			<xs:attributeGroup ref="TftpConfigIdGroup"/>
+			<xs:attribute name="minUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The minimum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxUdpSourcePort" use="required">
+				<xs:annotation>
+					<xs:documentation>The maximum UDP source port.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="portValue" use="optional">
+				<xs:annotation>
+					<xs:documentation>The TFTP port option value as described in ARINC615A-3, to be used by the client in option negotiation.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="65535"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="TftpConfigOptionsGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="a615aTargetDescriptionGroup">
+		<xs:attribute name="targetName" use="required">
+			<xs:annotation>
+				<xs:documentation>The name of the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetHWId" use="required">
+			<xs:annotation>
+				<xs:documentation>The target hardware ID for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="15"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetType" use="required">
+			<xs:annotation>
+				<xs:documentation>The target type for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetPosition" use="optional">
+			<xs:annotation>
+				<xs:documentation>The target position for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetMfrCode" use="required">
+			<xs:annotation>
+				<xs:documentation>The target manufacturer's code for the remote loadable target device </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attributeGroup ref="IpAddressGroup"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="a615aLoadableTargetDescriptionGroup">
+		<xs:attribute name="targetName" use="required">
+			<xs:annotation>
+				<xs:documentation>The name of the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetHWId" use="required">
+			<xs:annotation>
+				<xs:documentation>The target hardware ID for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="15"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetType" use="required">
+			<xs:annotation>
+				<xs:documentation>The target type for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetPosition" use="optional">
+			<xs:annotation>
+				<xs:documentation>The target position for the remote loadable target device</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="targetMfrCode" use="required">
+			<xs:annotation>
+				<xs:documentation>The target manufacturer's code for the remote loadable target device </xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="tftpServerReferenceId">
+		<xs:complexType>
+			<xs:attribute name="tftpServerId" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tftpServerReferenceName">
+		<xs:complexType>
+			<xs:attribute name="tftpServerName" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tftpClientReferenceId">
+		<xs:complexType>
+			<xs:attribute name="tftpClientId" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tftpClientReferenceName">
+		<xs:complexType>
+			<xs:attribute name="tftpClientName" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="PortReferenceNameGroup">
+		<xs:attribute name="portName" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>The name of the referenced SapUdp Message Port.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="edeSourceIdGroup">
+		<xs:attribute name="edeSourceId" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:hexBinary">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:element name="a664RedundancyMgmt">
+		<xs:annotation>
+			<xs:documentation>Specifies that Redundancy Management shall be enabled for this Input VL. Enabling redundancy management forces integrity checking enabled.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="skewMax" use="required">
+				<xs:annotation>
+					<xs:documentation>Skew Max setting for the RM algorithm. Specified in microSeconds (Range 1 - 2147483). This value will be rounded to the nearest multiple of 128ns.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="2147483"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TxEdeMessagePort">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element ref="TxComEdeUdpQueuingPort"/>
+				<xs:element ref="TxComEdeUdpSamplingPort"/>
+				<xs:element ref="TxComUdpQueuingPort"/>
+				<xs:element ref="TxComUdpSamplingPort"/>
+				<xs:element ref="TxSapUdpPort"/>
+				<xs:element ref="TxSapIpPort"/>
+				<xs:element ref="TxSapMacPort"/>
+			</xs:choice>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" use="optional" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the port is enabled or not. If not defined the port is assumed to be enabled.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="TxMessagePortIDgroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="edeOutputVL">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="edeSubVL" maxOccurs="4">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="TxEdeMessagePort" maxOccurs="4096"/>
+						</xs:sequence>
+						<xs:attributeGroup ref="subVlIdGroup"/>
+						<xs:attributeGroup ref="subVlUIDGroup"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="BAGGroup"/>
+			<xs:attributeGroup ref="a664NetworkGroup"/>
+		</xs:complexType>
+		<xs:unique name="edeSubVlIdUnique">
+			<xs:selector xpath="edeSubVL"/>
+			<xs:field xpath="@subVlId"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="edeEsOutputVl">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="edeOutputVL"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="enabled" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Defines if the Output VL is enabled for transmit or not. If this attribute is NOT specified the Output VL is assumed to be enabled</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="VlIdGroup"/>
+			<xs:attribute name="sequenceNumberEnabled" type="xs:boolean" default="true">
+				<xs:annotation>
+					<xs:documentation>Specifies if the VL sequence number (according to ARINC664 p7) shall be added to frames of this VL by the ES MAC or not. If this optional attribute is NOT specified, the default value shall be TRUE</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attributeGroup ref="MaxFrameLengthGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DynamicData">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DynamicByte" maxOccurs="4">
+					<xs:complexType>
+						<xs:attribute name="function" use="required">
+							<xs:annotation>
+								<xs:documentation>Function to be performed on the byte specified.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="increment"/>
+									<xs:enumeration value="decrement"/>
+									<xs:enumeration value="sawtooth"/>
+									<xs:enumeration value="shift-left"/>
+									<xs:enumeration value="shift-right"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="parameter" use="required">
+							<xs:annotation>
+								<xs:documentation>Function-specific parameter value.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:hexBinary">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="2"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="offset" default="0">
+							<xs:annotation>
+								<xs:documentation>Byte offset into the message of the byte to modify.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:unsignedInt">
+									<xs:minInclusive value="0"/>
+									<xs:maxInclusive value="65535"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a615aLoadableTargets">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="a664LoadableTarget" maxOccurs="32">
+					<xs:annotation>
+						<xs:documentation>The ARINC-615A target side configuration.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="a615aLoaderConnection"/>
+							<xs:element name="a615aFindMessagePorts">
+								<xs:annotation>
+									<xs:documentation>Defines the Rx  ports to monitor for incoming FIND requests and the Tx ports to use to send the FIND responses.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence maxOccurs="10">
+										<xs:choice>
+											<xs:element ref="RxSapUdpReferenceId"/>
+											<xs:element ref="RxSapUdpReferenceName"/>
+										</xs:choice>
+										<xs:choice>
+											<xs:element ref="TxSapUdpReferenceId"/>
+											<xs:element ref="TxSapUdpReferenceName"/>
+										</xs:choice>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="a615aLoaderConnectionIdUnique">
+			<xs:selector xpath="a664LoadableTarget/a615aLoaderConnection"/>
+			<xs:field xpath="@id"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="LoadList">
+		<xs:annotation>
+			<xs:documentation>The top-level load container</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LoadInfo" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>A Load definition</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="hwid_pos" use="required">
+							<xs:annotation>
+								<xs:documentation>The identifier for the associated target configuration. This value can be repeated, but must reference the unique HwId and Position of the target configuration in the format THWID or THWId_Pos (underscrore separating id and position).</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:pattern value="[a-zA-Z0-9_-]{1,15}_[a-zA-Z0-9_-]{1,8}"/>
+									<xs:pattern value="[a-zA-Z0-9_-]{1,15}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="priority" use="required">
+							<xs:annotation>
+								<xs:documentation>The load priority. Loads are processed from the lowest priority first, where multiple loads with the same priority are performed simultaneously. Note that priority must be different for any target (hardware id + position) that appears more than once.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="media-file" type="xs:string" use="required">
+							<xs:annotation>
+								<xs:documentation>The absolute path to the referenced media file (*.LUM/*.LUH)</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="retryCount" type="xs:integer" use="optional" default="-1">
+							<xs:annotation>
+								<xs:documentation>The number of times to retry the load before aborting. Default: -1 (continuous)</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="targetDelay" type="xs:int" use="optional" default="0">
+							<xs:annotation>
+								<xs:documentation>The delay (in seconds) after this load before moving to the next priority load of the same target. This value is ignored if useGlobalParity is true. Default: 0</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="PriorityDelay" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>The delay in seconds after all loads at the specified priority have completed before moving to the next priority. The next priority load will begin immediately if not specified. This will be ignored if useGlobalPriority is false.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:int">
+								<xs:attribute name="priority" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:integer">
+											<xs:minInclusive value="1"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="useGlobalPriority" type="xs:boolean" use="optional" default="false">
+				<xs:annotation>
+					<xs:documentation>If true, the PriorityDelay settings will be utilized. Otherwise, the per LoadInfo delay's will be utilized. Default: false</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="UniquePriority">
+			<xs:selector xpath="avif:LoadInfo"/>
+			<xs:field xpath="@hwid_pos"/>
+			<xs:field xpath="@priority"/>
+		</xs:unique>
+		<xs:unique name="UniqueDelayPriority">
+			<xs:selector xpath="avif:PriorityDelay"/>
+			<xs:field xpath="@priority"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="a665LsapHeaderFileName">
+		<xs:annotation>
+			<xs:documentation>Identifies the LSAP by the associated Load Header (LUH) file name </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attributeGroup ref="a665LsapHeaderFilenameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="a665LsapPn">
+		<xs:annotation>
+			<xs:documentation>Identifies the LSAP by the associated Load Part Number</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attributeGroup ref="a665LsapPnGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FilePn">
+		<xs:complexType>
+			<xs:attributeGroup ref="FilePnGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="FileName">
+		<xs:complexType>
+			<xs:attributeGroup ref="FileNameGroup"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="samplingUdpMessageEx">
+		<xs:annotation>
+			<xs:documentation>The total number of messages over the entire device is limited to 4096.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="DataBuffer">
+					<xs:annotation>
+						<xs:documentation>Data buffer for Com Udp Sampling Port message data. </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:hexBinary">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="1471"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="uid" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique message identifier. The max number of unique messages over the entire device is 4096.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="4095"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="msgPeriod" use="required">
+				<xs:annotation>
+					<xs:documentation>The period in mS between message retransmission.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[1][0-9][0-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1][0-9][0-9][0-9]"/>
+						<xs:pattern value="[1-9][0-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1-9][0-9][0-9]"/>
+						<xs:pattern value="[1-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1-9][0-9]"/>
+						<xs:pattern value="[1-9][.][0,5]"/>
+						<xs:pattern value="[1-9]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgOffset">
+				<xs:annotation>
+					<xs:documentation>The offset time  after the start of the period in mS the message should be sent.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[1][0-9][0-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1][0-9][0-9][0-9]"/>
+						<xs:pattern value="[1-9][0-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1-9][0-9][0-9]"/>
+						<xs:pattern value="[1-9][0-9][.][0,5]"/>
+						<xs:pattern value="[1-9][0-9]"/>
+						<xs:pattern value="[0-9][.][5]"/>
+						<xs:pattern value="[0-9]"/>
+						<xs:pattern value=""/>
+						<xs:pattern value="[.][5]"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgSize">
+				<xs:annotation>
+					<xs:documentation>The message size in bytes.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1471"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="samplingUdpMessage">
+		<xs:annotation>
+			<xs:documentation>The total number of messages over the entire device is limited to 4096.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="DataBuffer">
+					<xs:annotation>
+						<xs:documentation>Data buffer for Com Udp Sampling Port message data. </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:hexBinary">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="1471"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="DynamicData" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="uid" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique message identifier. The max number of unique messages over the entire device is 4096.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="4095"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="msgRate" use="required">
+				<xs:annotation>
+					<xs:documentation>The frequency at which to send the message.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="50Hz"/>
+						<xs:enumeration value="25Hz"/>
+						<xs:enumeration value="12.5Hz"/>
+						<xs:enumeration value="6.25Hz"/>
+						<xs:enumeration value="3.125Hz"/>
+						<xs:enumeration value="1.5625Hz"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgSize" use="required">
+				<xs:annotation>
+					<xs:documentation>The message size in bytes.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="1471"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgsPerFrame" type="xs:int" default="1">
+				<xs:annotation>
+					<xs:documentation>Number of copies of the message in a minor frame. This is a rate multiplier for the message. Default value is 1</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="queuingUdpMessage">
+		<xs:annotation>
+			<xs:documentation>The total number of messages over the entire device is limited to 4096.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="DataBuffer">
+					<xs:annotation>
+						<xs:documentation>Data buffer for Com Udp Queuing Port message data. </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:hexBinary">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="8192"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="DynamicData" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="uid" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique message identifier. The max number of unique messages over the entire device is 4096.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="4095"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="msgRate" use="required">
+				<xs:annotation>
+					<xs:documentation>The frequency at which to send the message.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="50Hz"/>
+						<xs:enumeration value="25Hz"/>
+						<xs:enumeration value="12.5Hz"/>
+						<xs:enumeration value="6.25Hz"/>
+						<xs:enumeration value="3.125Hz"/>
+						<xs:enumeration value="1.5625Hz"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgSize" use="required">
+				<xs:annotation>
+					<xs:documentation>The message size in bytes.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8192"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="msgsPerFrame" type="xs:int" default="1">
+				<xs:annotation>
+					<xs:documentation>Number of copies of the message in a minor frame. This is a rate multiplier for the message. Default value is 1</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="queuingUdpMessageEx">
+		<xs:annotation>
+			<xs:documentation>The total number of messages over the entire device is limited to 4096.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="DataBuffer">
+					<xs:annotation>
+						<xs:documentation>Data buffer for Com Udp Queuing Port message data. </xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:hexBinary">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="8192"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="uid" use="required">
+				<xs:annotation>
+					<xs:documentation>A unique message identifier. The max number of unique messages over the entire device is 4096.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="4095"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="msgPeriod" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>The period in mS between message retransmission.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="msgOffset" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The offset time  after the start of the period in mS the message should be sent.</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="msgSize">
+				<xs:annotation>
+					<xs:documentation>The message size in bytes.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+						<xs:maxInclusive value="8180"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
