@@ -17,6 +17,7 @@
 		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
 		<Item Name="Build Tx Cluster.vi" Type="VI" URL="../Configuration File/Build Tx Cluster.vi"/>
+		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
 		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
@@ -66,6 +67,7 @@
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Remove Ports.vi" Type="VI" URL="../Port/Remove Ports.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 	</Item>
