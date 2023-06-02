@@ -199,15 +199,15 @@
 		</Page>
 		<Page>
 			<Name>
-				<eng>Frame Array File Page</eng>
-				<loc>Frame Array File Page</loc>
+				<eng>Tx Generic</eng>
+				<loc>Tx Generic</loc>
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<GUID>066565B1-6FEE-4367-A12F-9A63DF9C36A4</GUID>
+			<GUID>4DFFD447-F0AD-4072-98FE-86FA01F16D58</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\databases.png</Path>
+				<Path>System Explorer\Glyphs\NI-XNET File(Replay).png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>

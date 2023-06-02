@@ -14,127 +14,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="AIM LabVIEW src" Type="Folder">
-			<Item Name="src" Type="Folder">
-				<Item Name="_controls" Type="Folder"/>
-				<Item Name="_polimorphicInstances" Type="Folder">
-					<Item Name="control" Type="Folder"/>
-					<Item Name="session" Type="Folder"/>
-					<Item Name="udpPort" Type="Folder"/>
-				</Item>
-				<Item Name="_sandbox" Type="Folder">
-					<Item Name="controls" Type="Folder">
-						<Item Name="basic_rx_monitor_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_rx_monitor_states.ctl"/>
-						<Item Name="basic_rx_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_rx_states.ctl"/>
-						<Item Name="basic_rx_vl_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_rx_vl_states.ctl"/>
-						<Item Name="basic_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_states.ctl"/>
-						<Item Name="basic_tx_generic_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_tx_generic_states.ctl"/>
-						<Item Name="basic_tx_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_tx_states.ctl"/>
-						<Item Name="basic_tx_udp_states.ctl" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/controls/basic_tx_udp_states.ctl"/>
-					</Item>
-					<Item Name="conversionTest" Type="Folder">
-						<Item Name="hex2bin.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/conversionTest/hex2bin.vi"/>
-					</Item>
-					<Item Name="templates" Type="Folder">
-						<Item Name="API_RX.vit" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/templates/API_RX.vit"/>
-						<Item Name="Basic.vit" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/templates/Basic.vit"/>
-						<Item Name="Basic_RX.vit" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/templates/Basic_RX.vit"/>
-						<Item Name="Basic_TX.vit" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/templates/Basic_TX.vit"/>
-					</Item>
-					<Item Name="VsMockups" Type="Folder">
-						<Item Name="Tx_UDPoriented.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/VsMockups/Tx_UDPoriented.vi"/>
-					</Item>
-					<Item Name="_palette.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/_palette.vi"/>
-					<Item Name="Basic_SetupBoard.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/Basic_SetupBoard.vi"/>
-					<Item Name="errDetails.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/errDetails.vi"/>
-					<Item Name="ParseMonitorRecord.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/ParseMonitorRecord.vi"/>
-					<Item Name="ResetBoard.vi" Type="VI" URL="../AIM LabVIEW src/src/_sandbox/ResetBoard.vi"/>
-				</Item>
-				<Item Name="_templates" Type="Folder">
-					<Item Name="CreateSession(template).vit" Type="VI" URL="../AIM LabVIEW src/src/_templates/CreateSession(template).vit"/>
-				</Item>
-				<Item Name="bsp" Type="Folder">
-					<Item Name="AFDX_Controls" Type="Folder"/>
-					<Item Name="AFDX_EDE" Type="Folder"/>
-					<Item Name="AFDX_LibraryAdmin" Type="Folder"/>
-					<Item Name="AFDX_Monitor" Type="Folder"/>
-					<Item Name="AFDX_Receive" Type="Folder"/>
-					<Item Name="AFDX_System" Type="Folder"/>
-					<Item Name="AFDX_TargetIndependentAdmin" Type="Folder"/>
-					<Item Name="AFDX_TM" Type="Folder"/>
-					<Item Name="AFDX_Transmit" Type="Folder"/>
-				</Item>
-				<Item Name="dev-utilities" Type="Folder">
-					<Item Name="_test_ArrangeVI (VI).vi" Type="VI" URL="../AIM LabVIEW src/src/dev-utilities/_test_ArrangeVI (VI).vi"/>
-					<Item Name="arrange VI.vi" Type="VI" URL="../AIM LabVIEW src/src/dev-utilities/arrange VI.vi"/>
-					<Item Name="mass Cleanup (Folder).vi" Type="VI" URL="../AIM LabVIEW src/src/dev-utilities/mass Cleanup (Folder).vi"/>
-					<Item Name="mass Cleanup (Library).vi" Type="VI" URL="../AIM LabVIEW src/src/dev-utilities/mass Cleanup (Library).vi"/>
-					<Item Name="retrieveAPI details.vi" Type="VI" URL="../AIM LabVIEW src/src/dev-utilities/retrieveAPI details.vi"/>
-				</Item>
-				<Item Name="examples" Type="Folder">
-					<Item Name="AIM664 BITE Transfer.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 BITE Transfer.vi"/>
-					<Item Name="AIM664 Board Control.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Board Control.vi"/>
-					<Item Name="AIM664 Command TX Port Init.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Command TX Port Init.vi"/>
-					<Item Name="AIM664 Loopback.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Loopback.vi"/>
-					<Item Name="AIM664 Read BSP Version.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Read BSP Version.vi"/>
-					<Item Name="AIM664 Receive Continuous Capture.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Receive Continuous Capture.vi"/>
-					<Item Name="AIM664 Receive Data.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Receive Data.vi"/>
-					<Item Name="AIM664 Server Calls Test.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Server Calls Test.vi"/>
-					<Item Name="AIM664 Timing Control.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Timing Control.vi"/>
-					<Item Name="AIM664 Transmit Queue Write.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Transmit Queue Write.vi"/>
-					<Item Name="AIM664 Transmit Sampling Write.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Transmit Sampling Write.vi"/>
-					<Item Name="AIM664 Transmit.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 Transmit.vi"/>
-					<Item Name="AIM664 UDP Block Read.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 UDP Block Read.vi"/>
-					<Item Name="AIM664 UDP Block Write.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 UDP Block Write.vi"/>
-					<Item Name="AIM664 VL Receive.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/AIM664 VL Receive.vi"/>
-					<Item Name="basic - BITE Transfer Test.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - BITE Transfer Test.vi"/>
-					<Item Name="basic - Board Configuration.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Board Configuration.vi"/>
-					<Item Name="basic - IRIG Time Control.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - IRIG Time Control.vi"/>
-					<Item Name="basic - Loopback.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Loopback.vi"/>
-					<Item Name="basic - Read BSP Version.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Read BSP Version.vi"/>
-					<Item Name="basic - Receive Continuous Capture.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Receive Continuous Capture.vi"/>
-					<Item Name="basic - Receive Single Capture.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Receive Single Capture.vi"/>
-					<Item Name="basic - Transmit UDP Queuing.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Transmit UDP Queuing.vi"/>
-					<Item Name="basic - Transmit UDP Sampling.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Transmit UDP Sampling.vi"/>
-					<Item Name="basic - Transmit.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - Transmit.vi"/>
-					<Item Name="basic - VL Receive 2 VL.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - VL Receive 2 VL.vi"/>
-					<Item Name="basic - VL Receive.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - VL Receive.vi"/>
-					<Item Name="basic - VL Transmit.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/basic - VL Transmit.vi"/>
-					<Item Name="Board Control - Configure.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Board Control - Configure.vi"/>
-					<Item Name="Receive - Monitor.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Receive - Monitor.vi"/>
-					<Item Name="Receive - UDP (CommPort).vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Receive - UDP (CommPort).vi"/>
-					<Item Name="Receive - UDP (SAP).vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Receive - UDP (SAP).vi"/>
-					<Item Name="Transmit - Generic.vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Transmit - Generic.vi"/>
-					<Item Name="Transmit - UDP (CommPort).vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Transmit - UDP (CommPort).vi"/>
-					<Item Name="Transmit - UDP (SAP).vi" Type="VI" URL="../AIM LabVIEW src/src/examples/Transmit - UDP (SAP).vi"/>
-				</Item>
-				<Item Name="helpers" Type="Folder">
-					<Item Name="ConfigurationCompare" Type="Folder"/>
-					<Item Name="DataParsing" Type="Folder">
-						<Item Name="_support" Type="Folder"/>
-						<Item Name="Monitor" Type="Folder">
-							<Item Name="TimeTagToTimeStamp.vi" Type="VI" URL="../AIM LabVIEW src/src/helpers/DataParsing/Monitor/TimeTagToTimeStamp.vi"/>
-						</Item>
-						<Item Name="UDP" Type="Folder"/>
-					</Item>
-					<Item Name="EthFrameManagement" Type="Folder">
-						<Item Name="controls" Type="Folder"/>
-						<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../AIM LabVIEW src/src/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
-					</Item>
-					<Item Name="HwManagement" Type="Folder">
-						<Item Name="_subVIs" Type="Folder"/>
-					</Item>
-					<Item Name="LibManagement" Type="Folder"/>
-					<Item Name="ResourceManagement" Type="Folder"/>
-					<Item Name="UserInterface" Type="Folder"/>
-				</Item>
-				<Item Name="_ARINC-664p7.zip" Type="Document" URL="../AIM LabVIEW src/src/_ARINC-664p7.zip"/>
-				<Item Name="AIM664LV.lvlib" Type="Library" URL="../AIM LabVIEW src/src/AIM664LV.lvlib"/>
-				<Item Name="AIM664LV_src.aliases" Type="Document" URL="../AIM LabVIEW src/src/AIM664LV_src.aliases"/>
-				<Item Name="AIM664LV_src.lvlps" Type="Document" URL="../AIM LabVIEW src/src/AIM664LV_src.lvlps"/>
-				<Item Name="AIM664LV_src.lvproj" Type="Document" URL="../AIM LabVIEW src/src/AIM664LV_src.lvproj"/>
-			</Item>
-		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Unit" Type="Folder">
 				<Item Name="Scripting" Type="Folder">
@@ -150,6 +29,7 @@
 		<Item Name="Controls" Type="Folder">
 			<Item Name="Monitor Queue Status Enum.ctl" Type="VI" URL="../Controls/Monitor Queue Status Enum.ctl"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
+			<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 		</Item>
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Port Session Configuration.ctl" Type="VI" URL="../Shared/Port Session Configuration.ctl"/>
@@ -157,14 +37,15 @@
 			<Item Name="session_rx_monitor.ctl" Type="VI" URL="../Shared/session_rx_monitor.ctl"/>
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 		</Item>
+		<Item Name="Custom Device AIM ARINC 664.xml" Type="Document" URL="../../Custom Device/Custom Device AIM ARINC 664.xml"/>
 		<Item Name="AIM ARINC 664 Engine.lvlib" Type="Library" URL="../Engine/AIM ARINC 664 Engine.lvlib"/>
 		<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
 		<Item Name="AIM ARINC 664 System Explorer.lvlib" Type="Library" URL="../System Explorer/Implementation/System Explorer/AIM ARINC 664 System Explorer.lvlib"/>
-		<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 		<Item Name="AIM ARINC 664 GUID Utility.lvlib" Type="Library" URL="../GUID Utility/AIM ARINC 664 GUID Utility.lvlib"/>
 		<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 		<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../VsDebugLibrary/VsDebugLibrary.lvlib"/>
 		<Item Name="Custom Device Serialization.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/VeriStand Custom Device Serialization/Custom Device Serialization.lvlib"/>
+		<Item Name="AIM664LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
@@ -555,11 +436,6 @@
 				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/sub_Random U32.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
 				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
-				<Item Name="LVDeltaXY32Cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDeltaXY32Cluster.ctl"/>
-				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
-				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
-				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="NI_VS Workspace ExecutionAPI.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Workspace/NI_VS Workspace ExecutionAPI.lvlib"/>
@@ -575,6 +451,9 @@
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="UnpackedFlatVectorToMatrix.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/UnpackedFlatVectorToMatrix.vi"/>
 				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
+			</Item>
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -598,61 +477,6 @@
 			<Item Name="NationalInstruments.VeriStand.Internal" Type="Document" URL="NationalInstruments.VeriStand.Internal">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FdxLoginCvi.vi" Type="VI" URL="../../../../Program Files/AIM GmbH/Arinc 664 LabViewRT BSP 19.3.0/VI/AFDX_LibraryAdmin.llb/FdxLoginCvi.vi"/>
-			<Item Name="FdxQueryResourceCvi.vi" Type="VI" URL="../../../../Program Files/AIM GmbH/Arinc 664 LabViewRT BSP 19.3.0/VI/AFDX_LibraryAdmin.llb/FdxQueryResourceCvi.vi"/>
-			<Item Name="Session.lvclass" Type="LVClass" URL="../AIM LabVIEW src/src/_templates/session/Session.lvclass"/>
-			<Item Name="hwEntry_actions.ctl" Type="VI" URL="../AIM LabVIEW src/src/_templates/controls/hwEntry_actions.ctl"/>
-			<Item Name="HwManager.vi" Type="VI" URL="../AIM LabVIEW src/src/_templates/hwmanager/HwManager.vi"/>
-			<Item Name="Initialize.vi" Type="VI" URL="../AIM LabVIEW src/src/_templates/session/Initialize.vi"/>
-			<Item Name="Arrange VIWin - Arrange BD.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange BD.vi"/>
-			<Item Name="Arrange VIWin - Window Type.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Window Type.ctl"/>
-			<Item Name="Arrange VIWin - Get BD Canvas Margin.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get BD Canvas Margin.vi"/>
-			<Item Name="LV Config Read.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read.vi"/>
-			<Item Name="LV Config Read Boolean.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Boolean.vi"/>
-			<Item Name="LV Config Read Pathlist.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Pathlist.vi"/>
-			<Item Name="LV Config Read Color.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Color.vi"/>
-			<Item Name="LV Config Read Numeric (I32).vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read Numeric (I32).vi"/>
-			<Item Name="Arrange VIWin - Get Window INI tokens.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get Window INI tokens.vi"/>
-			<Item Name="Arrange VIWin - Min Window Dimensions.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Min Window Dimensions.ctl"/>
-			<Item Name="Arrange VIWin - Window Gaps.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Window Gaps.ctl"/>
-			<Item Name="Arrange VIWin - Get Display Workspace Bounds.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get Display Workspace Bounds.vi"/>
-			<Item Name="Arrange VIWin - Get Min Window Dimensions.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get Min Window Dimensions.vi"/>
-			<Item Name="Arrange VIWin - Get Window Gaps.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get Window Gaps.vi"/>
-			<Item Name="Arrange VIWin - Resize BD.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Resize BD.vi"/>
-			<Item Name="Arrange VIWin - Establish Window Bounds.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Establish Window Bounds.vi"/>
-			<Item Name="Arrange VIWin - Rectangle Dimensions.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Rectangle Dimensions.ctl"/>
-			<Item Name="Arrange VIWin - Get Window Margins.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get Window Margins.vi"/>
-			<Item Name="Arrange VIWin - Window Margins.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Window Margins.ctl"/>
-			<Item Name="Arrange VIWin - Compute Window Bounds.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Compute Window Bounds.vi"/>
-			<Item Name="Arrange VIWin - Move All BD Objects.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Move All BD Objects.vi"/>
-			<Item Name="Arrange VIWin - Ensure Leftmost BD Object Is Visible.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Ensure Leftmost BD Object Is Visible.vi"/>
-			<Item Name="Arrange VIWin - Arrange FP.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange FP.vi"/>
-			<Item Name="Arrange VIWin - Get FP Objects Arrangement Info.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get FP Objects Arrangement Info.vi"/>
-			<Item Name="Arrange VIWin - FP Objects Arrangement Info.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - FP Objects Arrangement Info.ctl"/>
-			<Item Name="Arrange VIWin - Arrange FP Controls.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange FP Controls.vi"/>
-			<Item Name="Arrange VIWin - Filter FP Conn Pane Controls.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Filter FP Conn Pane Controls.vi"/>
-			<Item Name="Arrange VIWin - Order FP Conn Pane Controls.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Order FP Conn Pane Controls.vi"/>
-			<Item Name="Arrange VIWin - FP Control Info.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - FP Control Info.ctl"/>
-			<Item Name="Arrange VIWin - Arrange FP Controls Columns.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange FP Controls Columns.vi"/>
-			<Item Name="Arrange VIWin - Compute Top Row Vertical Delta.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Compute Top Row Vertical Delta.vi"/>
-			<Item Name="Arrange VIWin - Space FP Controls.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Space FP Controls.vi"/>
-			<Item Name="Arrange VIWin - Compute Bound on Grid.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Compute Bound on Grid.vi"/>
-			<Item Name="Arrange VIWin - Arrange FP Controls Rows.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange FP Controls Rows.vi"/>
-			<Item Name="Arrange VIWin - Get FP Controls Rows.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get FP Controls Rows.vi"/>
-			<Item Name="Arrange VIWin - Get FP Controls Max Bottom.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Get FP Controls Max Bottom.vi"/>
-			<Item Name="Arrange VIWin - Align 1 Row of FP Controls.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Align 1 Row of FP Controls.vi"/>
-			<Item Name="Arrange VIWin - Arrange Other FP Objects.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Arrange Other FP Objects.vi"/>
-			<Item Name="Arrange VIWin - Resize FP.vi" Type="VI" URL="/&lt;resource&gt;/dialog/QuickDrop/plugins/_Arrange VIWin SubVIs/Arrange VIWin - Resize FP.vi"/>
-			<Item Name="BoardControlControl.ctl" Type="VI" URL="../AIM LabVIEW src/examples/bsp/typedefs/BoardControlControl.ctl"/>
-			<Item Name="BoardControlPortConfig.ctl" Type="VI" URL="../AIM LabVIEW src/examples/bsp/typedefs/BoardControlPortConfig.ctl"/>
-			<Item Name="BoardControlGoodLink.ctl" Type="VI" URL="../AIM LabVIEW src/examples/bsp/typedefs/BoardControlGoodLink.ctl"/>
-			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
-			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
-			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
-			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
-			<Item Name="FdxGetServerResourcesCvi.vi" Type="VI" URL="../../../../Program Files/AIM GmbH/Arinc 664 LabViewRT BSP 19.3.0/VI/AFDX_LibraryAdmin.llb/FdxGetServerResourcesCvi.vi"/>
-			<Item Name="BoardControlIn.ctl" Type="VI" URL="../AIM LabVIEW src/examples/bsp/typedefs/BoardControlIn.ctl"/>
-			<Item Name="LibManager.vi" Type="VI" URL="../AIM LabVIEW src/src/_templates/libmanager/LibManager.vi"/>
 			<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="../../../../niveristand-custom-device-testing-tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 			<Item Name="NationalInstruments.VeriStand.XMLReader" Type="Document" URL="NationalInstruments.VeriStand.XMLReader">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -756,9 +580,11 @@
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../Built/Support/Windows</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Destination[2].destName" Type="Str">XML</Property>
+				<Property Name="Destination[2].path" Type="Path">../Built/Support</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{30E9E214-6D3B-4B13-875D-E5D49CC909E1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{ECB66E20-6BD7-4E3A-A8AC-BABF58696A4E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AIM ARINC 664 System Explorer.lvlib</Property>
@@ -768,7 +594,10 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Custom Device AIM ARINC 664.xml</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Communication Bus Engine</Property>
 				<Property Name="TgtF_internalName" Type="Str">Communication Bus Engine</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2020 </Property>
@@ -829,7 +658,11 @@
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="AIM ARINC 664 Engine.lvlib" Type="Library" URL="../Engine/AIM ARINC 664 Engine.lvlib"/>
+		<Item Name="AIM664LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -883,8 +716,6 @@
 			</Item>
 			<Item Name="AIM ARINC 664 GUID Utility.lvlib" Type="Library" URL="../GUID Utility/AIM ARINC 664 GUID Utility.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
-			<Item Name="AIM664LV.lvlib" Type="Library" URL="../AIM LabVIEW src/src/AIM664LV.lvlib"/>
-			<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../AIM LabVIEW src/src/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="Monitor Queue Status Enum.ctl" Type="VI" URL="../Controls/Monitor Queue Status Enum.ctl"/>
@@ -921,7 +752,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">158</Property>
+				<Property Name="Bld_version.build" Type="Int">161</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
