@@ -20,6 +20,8 @@
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
 		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
+		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
+		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
