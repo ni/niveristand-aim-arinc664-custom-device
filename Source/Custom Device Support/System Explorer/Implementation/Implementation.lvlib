@@ -15,7 +15,6 @@
 		<Item Name="Configuration File.vi" Type="VI" URL="../System Explorer/Pages/Configuration File.vi"/>
 		<Item Name="Database.vi" Type="VI" URL="../System Explorer/Pages/Database.vi"/>
 		<Item Name="Databases.vi" Type="VI" URL="../System Explorer/Pages/Databases.vi"/>
-		<Item Name="Frame Array File.vi" Type="VI" URL="../System Explorer/Pages/Frame Array File.vi"/>
 		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
 		<Item Name="Incoming.vi" Type="VI" URL="../System Explorer/Pages/Incoming.vi"/>
 		<Item Name="Main Page.vi" Type="VI" URL="../System Explorer/Pages/Main Page.vi"/>
@@ -26,6 +25,7 @@
 		<Item Name="Protocol.vi" Type="VI" URL="../System Explorer/Pages/Protocol.vi"/>
 		<Item Name="Queue Status Generic Channel.vi" Type="VI" URL="../System Explorer/Pages/Queue Status Generic Channel.vi"/>
 		<Item Name="Timing.vi" Type="VI" URL="../System Explorer/Pages/Timing.vi"/>
+		<Item Name="Tx Generic.vi" Type="VI" URL="../System Explorer/Pages/Tx Generic.vi"/>
 		<Item Name="Tx Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Section.vi"/>
 		<Item Name="Vendor.vi" Type="VI" URL="../System Explorer/Pages/Vendor.vi"/>
 	</Item>
@@ -33,6 +33,7 @@
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
 		<Item Name="Add Port RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Port RTM.vi"/>
 		<Item Name="Add Timing Channels RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Timing Channels RTM.vi"/>
+		<Item Name="Configure Raw Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Raw Frames RTM.vi"/>
 		<Item Name="EnableDisable RTM.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable RTM.vi"/>
 		<Item Name="Export Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Export Configuration RTM.vi"/>
 		<Item Name="Import Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Import Configuration RTM.vi"/>

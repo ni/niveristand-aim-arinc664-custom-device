@@ -98,6 +98,8 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Error.Message.Format.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/Error Handling Process/SubVIs/Error.Message.Format.vi"/>
+			<Item Name="Error.Tags.Check.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/Error Handling Process/SubVIs/Error.Tags.Check.vi"/>
 			<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Execution Unit Factory/Execution Unit Factory.lvclass"/>
 			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Execution Unit/Execution Unit.lvclass"/>
 			<Item Name="Monitor Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Monitor Execution Unit/Monitor Execution Unit.lvclass"/>
@@ -115,6 +117,7 @@
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
 			<Item Name="Process.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/Process/Process.lvclass"/>
+			<Item Name="RTStateVariables.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/RTStateVariables.ctl"/>
 			<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Shared Resources Factory/Shared Resources Factory.lvclass"/>
 			<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Shared Resources/Shared Resources.lvclass"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
@@ -403,9 +406,51 @@ AddOutputFilter chunkFilter
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="AIM ARINC 664 Engine.lvlibp" Type="LVLibp" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp">
+				<Item Name="AIM ARINC 664 GUID Utility.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/GUID Utility/AIM ARINC 664 GUID Utility.lvlib"/>
+				<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Scripting/AIM ARINC 664 Scripting.lvlib"/>
+				<Item Name="AIM664LV.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/instr.lib/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
+				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
+				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
+				<Item Name="Custom Device.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/Custom Device.lvlib"/>
+				<Item Name="Data Access Engine.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
+				<Item Name="DialogType.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
+				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="Error Code Database.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
+				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/instr.lib/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
+				<Item Name="Find Tag.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="Format Message String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="Frame.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Frame.ctl"/>
+				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
+				<Item Name="General Error Handler.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Implementation.lvlib"/>
+				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Interfaces.lvlib"/>
+				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
+				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
+				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="TagReturnType.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/TagReturnType.ctl"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/whitespace.ctl"/>
+			</Item>
+			<Item Name="Data Access Engine.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine/Data Access Engine.lvclass"/>
+			<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Execution Unit/Execution Unit.lvclass"/>
+			<Item Name="Monitor Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Monitor Execution Unit/Monitor Execution Unit.lvclass"/>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
+			<Item Name="Process.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NIVS Inline Async API/_VS Inline Async API/Process/Process.lvclass"/>
+			<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Shared Resources/Shared Resources.lvclass"/>
+			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Tx Generic Execution Unit.lvclass" Type="LVClass" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Tx Execution Unit/Tx Generic Execution Unit.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Debug" Type="Source Distribution">
