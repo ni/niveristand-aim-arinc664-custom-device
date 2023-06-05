@@ -4,19 +4,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Support VIs" Type="Folder">
-		<Item Name="Check Loop Error.vi" Type="VI" URL="../support/Check Loop Error.vi"/>
-		<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../support/Error Handler - Event Handling Loop.vi"/>
-		<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../support/Error Handler - Message Handling Loop.vi"/>
-		<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
-		<Item Name="Parse Raw Frame.vi" Type="VI" URL="../support/Parse Raw Frame.vi"/>
-		<Item Name="Update Listbox.vi" Type="VI" URL="../support/Update Listbox.vi"/>
-		<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
-	</Item>
-	<Item Name="Type Definitions" Type="Folder">
-		<Item Name="frame_file_entry.ctl" Type="VI" URL="../controls/frame_file_entry.ctl"/>
-		<Item Name="frame_record_type.ctl" Type="VI" URL="../controls/frame_record_type.ctl"/>
-		<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
-	</Item>
-	<Item Name="UI.vi" Type="VI" URL="../UI.vi"/>
+	<Item Name="Frame Import UI.vi" Type="VI" URL="../Frame Import UI.vi"/>
+	<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
+	<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
 </Library>
