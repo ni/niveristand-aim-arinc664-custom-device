@@ -52,8 +52,27 @@
 			</Item>
 			<Item Name="Queued Message Handler Documentation.html" Type="Document" URL="../documentation/Queued Message Handler Documentation.html"/>
 		</Item>
-		<Item Name="FrameEditor.lvlib" Type="Library" URL="../FrameEditor.lvlib"/>
+		<Item Name="Support VIs" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
+			<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
+			<Item Name="Check Loop Error.vi" Type="VI" URL="../support/Check Loop Error.vi"/>
+			<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../support/Error Handler - Event Handling Loop.vi"/>
+			<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../support/Error Handler - Message Handling Loop.vi"/>
+			<Item Name="Update Listbox.vi" Type="VI" URL="../support/Update Listbox.vi"/>
+			<Item Name="Parse Raw Frame.vi" Type="VI" URL="../support/Parse Raw Frame.vi"/>
+		</Item>
+		<Item Name="Type Definitions" Type="Folder">
+			<Item Name="frame_file_entry.ctl" Type="VI" URL="../controls/frame_file_entry.ctl"/>
+			<Item Name="frame_record_type.ctl" Type="VI" URL="../controls/frame_record_type.ctl"/>
+			<Item Name="UI Data.ctl" Type="VI" URL="../controls/UI Data.ctl"/>
+		</Item>
+		<Item Name="Frame Import UI.vi" Type="VI" URL="../Frame Import UI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="AIM664LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
+				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Add State(s) to Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__jki_lib_state_machine.vi"/>
@@ -411,6 +430,7 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -451,10 +471,9 @@
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="AIM664LV.lvlib" Type="Library" URL="../../../../../../Azdo/emea-aim-664-instrument-driver-1204/src/AIM664LV.lvlib"/>
-			<Item Name="AIM664LV.lvlib" Type="Library" URL="../../AIM LabVIEW src/src/AIM664LV.lvlib"/>
-			<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../../../../../../Azdo/emea-aim-664-instrument-driver-1204/src/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
-			<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../../AIM LabVIEW src/src/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
+			<Item Name="FdxCreateTxQueueDataFrame.vi" Type="VI" URL="../../../../../../Azdo/emea-aim-664-instrument-driver-1204/src/bsp/Transmit/FdxCreateTxQueueDataFrame.vi"/>
+			<Item Name="queue_data_full.ctl" Type="VI" URL="../../../../../../Azdo/emea-aim-664-instrument-driver-1204/src/_controls/queue_data_full.ctl"/>
+			<Item Name="queue_header_generic.ctl" Type="VI" URL="../../../../../../Azdo/emea-aim-664-instrument-driver-1204/src/_controls/queue_header_generic.ctl"/>
 			<Item Name="Run Tests in Active Project.vi" Type="VI" URL="../../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/project/Caraya/Run Tests in Active Project.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -483,7 +502,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{E7BFF366-DAB8-43B4-AA23-0662F14B8EC9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/FrameEditor.lvlib/UI.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Frame Import UI.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
