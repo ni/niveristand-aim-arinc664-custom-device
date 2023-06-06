@@ -46,6 +46,8 @@
 		<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 		<Item Name="VsDebugLibrary.lvlib" Type="Library" URL="../VsDebugLibrary/VsDebugLibrary.lvlib"/>
 		<Item Name="Custom Device Serialization.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/VeriStand Custom Device Serialization/Custom Device Serialization.lvlib"/>
+		<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
+		<Item Name="FrameEditor.lvlib" Type="Library" URL="../Frame Configuration/FrameEditor.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
@@ -485,7 +487,6 @@
 			<Item Name="NationalInstruments.VeriStand.ClientAPI" Type="Document" URL="NationalInstruments.VeriStand.ClientAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FrameEditor.lvlib" Type="Library" URL="../Frame Configuration/FrameEditor.lvlib"/>
 			<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../Frame Configuration/support/Error Handler - Message Handling Loop.vi"/>
 			<Item Name="Check Loop Error.vi" Type="VI" URL="../Frame Configuration/support/Check Loop Error.vi"/>
 			<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../Frame Configuration/support/Error Handler - Event Handling Loop.vi"/>
@@ -494,7 +495,6 @@
 			<Item Name="Update Listbox.vi" Type="VI" URL="../Frame Configuration/support/Update Listbox.vi"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="Parse Raw Frame.vi" Type="VI" URL="../Frame Configuration/support/Parse Raw Frame.vi"/>
-			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -669,9 +669,9 @@
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="AIM ARINC 664 Engine.lvlib" Type="Library" URL="../Engine/AIM ARINC 664 Engine.lvlib"/>
-		<Item Name="AIM664LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
+				<Item Name="AIM664LV.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
