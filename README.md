@@ -1,6 +1,6 @@
-# AIM AFDX Custom Device
+# AIM ARINC 664 Custom Device
 
-The **AIM AFDX Custom Device** allows use of AIM AFDX PXIe Modules in VeriStand. The custom device targets one entire **board** of a Ballard ARINC 429 PXIe module. To target multiple modules or multiple boards, use multiple instances of this custom device.
+The **AIM ARINC 664 Custom Device** allows use of AIM ARINC 664 PXIe Modules in VeriStand. The custom device targets one entire **board** of a AIM ARINC 664 PXIe module. To target multiple modules or multiple boards, use multiple instances of this custom device.
 
 The custom device supports the following functionality:
 - Import configuration files via scripting and System Explorer
@@ -18,7 +18,7 @@ The custom device supports the following functionality:
 ## Requirements
 
 - PXI Linux RT Controller
-- Supported AIM AFDX PXI Module
+- Supported AIM ARINC 664 PXI Module
 
 ## LabVIEW Source Code Version
 
@@ -29,17 +29,17 @@ LabVIEW 2020
 ### Running the custom device
 
 - [VeriStand 2020 or later](https://www.ni.com/ro-ro/support/downloads/software-products/download.veristand.html#382072)
-- [AIM AFDX BSP Driver]()
+- [AIM ARINC 664 BSP Driver]()
 
 ### Real-Time target software components
 
-- AIM AFDX BSP Driver
+- AIM ARINC 664 BSP Driver
   - Must enable the `ni-third-party` feed in MAX to install
 
 ### Developing or building from source
 
 - [LabVIEW 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
-- [AIM AFDX BSP Driver and LabVIEW API]()
+- [AIM ARINC 664 BSP Driver and LabVIEW API]()
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-development-tools/releases)
 - [VeriStand Custom Device Message Library](https://github.com/ni/niveristand-custom-device-message-library)
@@ -55,4 +55,4 @@ Branch rebasing and other history modifications will be listed here, with severa
 
 ## License
 
-This AIM AFDX custom device is licensed under an MIT-style license (see LICENSE). Other incorporated projects may be licensed under different licenses. All licenses allow for non-commercial and commercial use.
+This AIM ARINC 664 Custom Device is licensed under an MIT-style license (see LICENSE). Other incorporated projects may be licensed under different licenses. All licenses allow for non-commercial and commercial use.
