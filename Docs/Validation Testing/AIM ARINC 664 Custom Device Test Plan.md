@@ -1,15 +1,18 @@
-# AIM ARINC 664 Validation Testing
+# AIM ARINC 664 Custom Device Test Plan
 
 ## Reason for Testing
 The ARINC 664 protocol has a multitude a parameters that can be stressed during expected normal user usage. We must create tests that push the protocol (and thus the custom device) to it's limits in order to understand how performant the custom device is, if any unexpected behavior was introduced in the custom device code, etc.
 
 ## Tests
 - Maximum number of frames
-- Minimum number of frames
+- Minimum number of frames - DONE
 - Maximum frame payload size - DONE
-- Minimum frame payload size
-- Maximum number of Virtual Links - DONE
-- Minimum number of Virtual Links
+- Minimum frame payload size - DONE
+- 4096 Virtual Links - DONE
+- 2048 Virtual Links - DONE
+- 1024 Virtual Links - DONE
+- 512 Virtual Links - DONE
+- 1 Virtual Link - DONE
 - Maximum VeriStand PCL loop rate
 - Minimum VeriStand PCL loop rate
 
