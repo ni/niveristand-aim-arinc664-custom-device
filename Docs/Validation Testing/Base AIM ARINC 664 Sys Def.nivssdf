@@ -3,14 +3,14 @@
 	<MD5Checksum />
 	<Version Major="2020" Minor="0" Fix="0" Build="0" />
 	<Content>Definition</Content>
-	<Root Name="AIM ARINC 664" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
+	<Root Name="Base AIM ARINC 664 Sys Def" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
 		<Description />
 		<Properties>
 			<Property Name="Name">
-				<String>AIM ARINC 664</String>
+				<String>Base AIM ARINC 664 Sys Def</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.72</String>
+				<String>1.0.0.74</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -58,7 +58,7 @@
 						<Boolean>false</Boolean>
 					</Property>
 					<Property Name="Engine Rate">
-						<Double>2000</Double>
+						<Double>100</Double>
 					</Property>
 					<Property Name="TL timeout">
 						<Double>120</Double>
@@ -145,7 +145,7 @@
 								<Description />
 								<Properties>
 									<Property Name="FPGA Config File">
-										<DependentFile Type="Absolute" Path="C:\repos\niveristand-aim-arinc664-custom-device\Docs\Validation Testing\pxie-7820r_128do.fpgaconfig">
+										<DependentFile Type="Relative" Path="pxie-7820r_128do.fpgaconfig">
 											<Version />
 											<RTDestination />
 											<SupportedTarget />
@@ -180,7 +180,7 @@
 										<String>6/14/2023 - 3:31 PM</String>
 									</Property>
 									<Property Name="LVBITX File">
-										<DependentFile Type="Absolute" Path="C:\repos\niveristand-aim-arinc664-custom-device\Docs\Validation Testing\pxie-7820r_128do.lvbitx">
+										<DependentFile Type="Relative" Path="pxie-7820r_128do.lvbitx">
 											<Version />
 											<ForceDownload>false</ForceDownload>
 											<RTDestination>c:\ni-rt\NIVeriStand\FPGA\pxie-7820r_128do.lvbitx</RTDestination>
@@ -5663,7 +5663,25 @@
 									<Errors />
 									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="0e4d89fd-52dc-4f0b-9a16-68a808e885b7">
 										<Description />
-										<Properties />
+										<Properties>
+											<Property Name="user.CD.Tx.Generic.RawFrameList">
+												<Variant>
+													<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+													<Data>AAADpyAAgAAAAAAQABNABwANSW50ZXJGcmFtZUdhcAAZQAcAE1BhY2tldEdyb3VwV2FpdFRpbWUAF0AFABFQYXlsb2FkQnVmZmVyTW9kZQAbQAUAFVBheWxvYWRHZW5lcmF0aW9uTW9kZQATQAUADVByZWFtYmxlQ291bnQAC0AHAARTa2V3AAAPQAUACU5ldFNlbGVjdAAVQAUADkZyYW1lU3RhcnRNb2RlAAAZQAcAElBoeXNFcnJvckluamVjdGlvbgAAGUAGABJTZXF1ZW5jZU51bWJlckluaXQAABtABgAUU2VxdWVuY2VOdW1iZXJPZmZzZXQAAIEA8QAAAAAAAAADJEFJTSBBUklOQyA2NjQgU3lzdGVtIEV4cGxvcmVyLmx2bGlicA5BSU02NjRMVi5sdmxpYhhxdWV1ZV9oZWFkZXJfZ2VuZXJpYy5jdGwALEBQAAsAAAABAAIAAwAEAAUABgAHAAgACQAKCkhlYWRlckluZm8AAA1ABQAHTnVtZXJpYwASQEAAAf////8ADAREYXRhAACiAPEAAAAAAAAABSRBSU0gQVJJTkMgNjY0IFN5c3RlbSBFeHBsb3Jlci5sdmxpYnAaQUlNIEFSSU5DIDY2NCBFbmdpbmUubHZsaWIUSW1wbGVtZW50YXRpb24ubHZsaWIhVHggR2VuZXJpYyBFeGVjdXRpb24gVW5pdC5sdmNsYXNzDFJhd0ZyYW1lLmN0bAAWQFAAAgALAA0HQ2x1c3RlcgAcQEAAAf////8ADg5SYXcgRnJhbWUgTGlzdAAAAQAPAAAABAAAAAAAAAD6AAAHAAAAAAQBAAAAAP////8AAAA1AwAAAAABAgAAASEgCABFAAAiAABAAAERbegKASEB4OAAAQABAAEADgAACgsMCgsMAAAAAAAAAAAAAAAA+gAABwAAAAAEAQAAAAD/////AAAANQMAAAAAAgIAAAEhIAgARQAAIgAAQAABEW3nCgEhAeDgAAIAAQABAA4AAAoLDAoLDAAAAAAAAAAAAAAAAPoAAAcAAAAABAEAAAAA/////wAAADUDAAAAAAMCAAABISAIAEUAACIAAEAAARFt5goBIQHg4AADAAEAAQAOAAAKCwwKCwwAAAAAAAAAAAAAAAD6AAAHAAAAAAQBAAAAAP////8AAAA1AwAAAAAEAgAAASEgCABFAAAiAABAAAERbeUKASEB4OAABAABAAEADgAACgsMCgsMAAAAAAAAAAAA</Data>
+												</Variant>
+											</Property>
+											<Property Name="user.CD.ConfigurationFile.Needed">
+												<Boolean>false</Boolean>
+											</Property>
+											<Property Name="user.CD.Tx.Generic.Path">
+												<DependentFile Type="Absolute" Path="C:\repos\niveristand-aim-arinc664-custom-device\Source\Custom Device Support\Frame Configuration\samples\MaxVSPCLRate.bin">
+													<Version />
+													<RTDestination />
+													<SupportedTarget />
+													<MD5>c1d3fcb03273d9608740e5249ad686ba</MD5>
+												</DependentFile>
+											</Property>
+										</Properties>
 										<Errors />
 									</Section>
 								</Section>
