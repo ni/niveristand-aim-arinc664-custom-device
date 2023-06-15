@@ -4,8 +4,9 @@
 The ARINC 664 protocol has a multitude a parameters that can be stressed during expected normal user usage. We must create tests that push the protocol (and thus the custom device) to it's limits in order to understand how performant the custom device is, if any unexpected behavior was introduced in the custom device code, etc.
 
 ## Regression Tests
-- Maximum number of frames??
-- Minimum number of frames
+- X frames
+- 1 frame
+- 0 frames
 - Maximum frame payload size
 - Minimum frame payload size
 - 4096 Virtual Links
