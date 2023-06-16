@@ -4,16 +4,17 @@
 The ARINC 664 protocol has a multitude a parameters that can be stressed during expected normal user usage. We must create tests that push the protocol (and thus the custom device) to it's limits in order to understand how performant the custom device is, if any unexpected behavior was introduced in the custom device code, etc.
 
 ## Regression Tests
-- X frames
-- 1 frame
 - 0 frames
+- 1 frame
+- 500 frames
+- 100 frames
 - Maximum frame payload size
 - Minimum frame payload size
-- 4096 Virtual Links
-- 2048 Virtual Links
-- 1024 Virtual Links
-- 512 Virtual Links
 - 1 Virtual Link
+- 32 Virtual Links
+- 64 Virtual Links
+- 128 Virtual Links
+- 256 Virtual Links
 
 ## Performance Tests
 - Maximum VeriStand PCL rate
@@ -55,7 +56,22 @@ The Monitor Execution Unit will generate a log file on the RT target. This log f
 - If the Tx Queue Status FramesSent indicator is 0 then an issue occured during configuration and the Tx Execution Unit is not sending frames
 - If the Monitor Queue Status FrameGoodCount indicator is 0 then an issue occured during configuration and the Monitor Execution Unit is not reading frames
 
-## Results
+## Regression Results
+| Regression Test Name                     | Pass/Fail |
+| ---------------------------------------- | -------- |
+| 0 frames                                 | Pass     |
+| 1 frame                                  | Pass     |
+| 500 frames                               | Pass     |
+| 1000 frames                              | Pass     |
+| Maximum frame payload size               | Pass     |
+| Minimum frame payload size               | Pass     |
+| 1 Virtual Link                           | Pass     |
+| 32 Virtual Links                         | Pass     |
+| 64 Virtual Links                         | Pass     |
+| 128 Virtual Links                        | Pass     |
+| 256 Virtual Links                        | Fail     |
+
+## Performance Results
 **NOTE:** These results were obtained from the AIM ARINC 664 Custom Device while the logging functionality was disabled.
 
 | Maximum VeriStand PCL Rate Achieved (kHz)| Test Run |
