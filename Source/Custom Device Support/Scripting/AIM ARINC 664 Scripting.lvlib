@@ -58,6 +58,17 @@
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
 	</Item>
+	<Item Name="Logging" Type="Folder">
+		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
+		<Item Name="Get Logging Directory.vi" Type="VI" URL="../Logging/Get Logging Directory.vi"/>
+		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
+		<Item Name="Get Logging File Name.vi" Type="VI" URL="../Logging/Get Logging File Name.vi"/>
+		<Item Name="Get Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Get Logging Filestam in File Name.vi"/>
+		<Item Name="Set Logging Directory.vi" Type="VI" URL="../Logging/Set Logging Directory.vi"/>
+		<Item Name="Set Logging Enabled.vi" Type="VI" URL="../Logging/Set Logging Enabled.vi"/>
+		<Item Name="Set Logging File Name.vi" Type="VI" URL="../Logging/Set Logging File Name.vi"/>
+		<Item Name="Set Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Set Logging Filestam in File Name.vi"/>
+	</Item>
 	<Item Name="Main Page" Type="Folder">
 		<Item Name="Get Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Get Main Page Monitor Log Directory.vi"/>
 		<Item Name="Set Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Set Main Page Monitor Log Directory.vi"/>
