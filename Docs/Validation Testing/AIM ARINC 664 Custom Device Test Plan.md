@@ -14,7 +14,7 @@ The ARINC 664 protocol has a multitude a parameters that can be stressed during 
 - 32 Virtual Links
 - 64 Virtual Links
 - 128 Virtual Links
-- 256 Virtual Links
+- Extended Duration (24 hour test)
 
 ## Performance Tests
 - Maximum VeriStand PCL rate
@@ -69,7 +69,6 @@ The Monitor Execution Unit will generate a log file on the RT target. This log f
 | 32 Virtual Links                         | Pass     |
 | 64 Virtual Links                         | Pass     |
 | 128 Virtual Links                        | Pass     |
-| 256 Virtual Links                        | Fail     |
 
 ## Performance Results
 **NOTE:** These results were obtained from the AIM ARINC 664 Custom Device while the logging functionality was disabled.
