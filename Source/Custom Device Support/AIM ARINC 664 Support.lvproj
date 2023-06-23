@@ -465,6 +465,8 @@
 			<Item Name="Update Listbox.vi" Type="VI" URL="../Frame Configuration/support/Update Listbox.vi"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="Parse Raw Frame.vi" Type="VI" URL="../Frame Configuration/support/Parse Raw Frame.vi"/>
+			<Item Name="Set Decimation.vi" Type="VI" URL="../Scripting/Custom Device/Set Decimation.vi"/>
+			<Item Name="Get Decimation.vi" Type="VI" URL="../Scripting/Custom Device/Get Decimation.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -708,7 +710,6 @@
 			</Item>
 			<Item Name="AIM ARINC 664 GUID Utility.lvlib" Type="Library" URL="../GUID Utility/AIM ARINC 664 GUID Utility.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
-			<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
