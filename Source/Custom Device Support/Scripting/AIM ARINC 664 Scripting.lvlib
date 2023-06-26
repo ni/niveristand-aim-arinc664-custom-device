@@ -50,6 +50,9 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Frame Array File" Type="Folder">
+		<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
+	</Item>
 	<Item Name="Generic Tx" Type="Folder">
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Frame Array File/Add Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Get Tx Generic File Path.vi"/>
@@ -99,5 +102,4 @@
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
 </Library>
