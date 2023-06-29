@@ -5,7 +5,7 @@
   </boardConfiguration>
   <port sessionType="Tx-Generic">
     <portConfiguration>
-      <portId>1</portId>
+      <portId>0</portId>
     </portConfiguration>
     <TxGenericSession>
       <txQueueConfiguration>
@@ -15,12 +15,12 @@
   </port>
   <port sessionType="Rx-Monitor">
     <portConfiguration>
-      <portId>0</portId>
+      <portId>1</portId>
     </portConfiguration>
     <RxMonitorSession>
       <monitorConfiguration>
         <DefaultCronoMode>FDX_RX_DEFAULT_MON_ENA_ALL</DefaultCronoMode>
-        <GlbMonBufferSizeIn>256</GlbMonBufferSizeIn>
+        <GlbMonBufferSizeIn>0</GlbMonBufferSizeIn>
       </monitorConfiguration>
       <rxQueueConfiguration>
         <TriggerPosition>0</TriggerPosition>
