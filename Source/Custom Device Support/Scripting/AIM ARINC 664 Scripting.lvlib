@@ -32,6 +32,7 @@
 		<Item Name="Export Custom Device.vi" Type="VI" URL="../Custom Device/Export Custom Device.vi"/>
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
+		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
