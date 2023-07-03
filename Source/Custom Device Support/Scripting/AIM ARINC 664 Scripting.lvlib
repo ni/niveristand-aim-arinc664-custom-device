@@ -103,4 +103,6 @@
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
+	<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 </Library>
