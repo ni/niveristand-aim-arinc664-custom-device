@@ -2,8 +2,8 @@
 <CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
 	<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
 	<AddMenu>
-		<eng>AIM ARINC 664</eng>
-		<loc>AIM ARINC 664</loc>
+		<eng>NI::AIM ARINC 664</eng>
+		<loc>NI::AIM ARINC 664</loc>
 	</AddMenu>
 	<Version>1.0.0</Version>
 	<Type>Inline HW Interface</Type>
@@ -54,8 +54,8 @@
 			</Name>
 			<GUID>E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646</GUID>
 			<Glyph>
-				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\daq.png</Path>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\ArincGrey.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
@@ -95,8 +95,8 @@
 			</Name>
 			<GUID>A66CC76D-6CC8-4007-ADC5-D1CC0A2F1CEE</GUID>
 			<Glyph>
-				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\daq_disabled.png</Path>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\ArincGrey_disabled.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
@@ -596,6 +596,58 @@
 					</CustomPopulation>
 				</MenuItem>
 			</RunTimeMenu>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Logging</eng>
+				<loc>Logging</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\timing.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>FC841DFB-0C48-4F2C-A4DD-E549408A50F6</GUID>
+					<Type>Custom</Type>
+					<Name>
+						<eng />
+						<loc />
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+					</Item2Launch>
+					<CustomPopulation>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
+				</MenuItem>
+			</RunTimeMenu>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Logging Enable</eng>
+				<loc>Logging Enable</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>F7E12D6B-92C4-4571-A0A0-26B66B4144B7</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\Triggers.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
 		</Page>
 	</Pages>
 	<CustomXML>

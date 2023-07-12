@@ -32,6 +32,7 @@
 		<Item Name="Export Custom Device.vi" Type="VI" URL="../Custom Device/Export Custom Device.vi"/>
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
+		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
@@ -50,6 +51,9 @@
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
+	<Item Name="Frame Array File" Type="Folder">
+		<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
+	</Item>
 	<Item Name="Generic Tx" Type="Folder">
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Frame Array File/Add Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Get Tx Generic File Path.vi"/>
@@ -57,6 +61,19 @@
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
+	</Item>
+	<Item Name="Logging" Type="Folder">
+		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
+		<Item Name="Get Decimation.vi" Type="VI" URL="../Custom Device/Get Decimation.vi"/>
+		<Item Name="Get Logging Directory.vi" Type="VI" URL="../Logging/Get Logging Directory.vi"/>
+		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
+		<Item Name="Get Logging File Name.vi" Type="VI" URL="../Logging/Get Logging File Name.vi"/>
+		<Item Name="Get Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Get Logging Filestam in File Name.vi"/>
+		<Item Name="Set Decimation.vi" Type="VI" URL="../Custom Device/Set Decimation.vi"/>
+		<Item Name="Set Logging Directory.vi" Type="VI" URL="../Logging/Set Logging Directory.vi"/>
+		<Item Name="Set Logging Enabled.vi" Type="VI" URL="../Logging/Set Logging Enabled.vi"/>
+		<Item Name="Set Logging File Name.vi" Type="VI" URL="../Logging/Set Logging File Name.vi"/>
+		<Item Name="Set Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Set Logging Filestam in File Name.vi"/>
 	</Item>
 	<Item Name="Main Page" Type="Folder">
 		<Item Name="Get Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Get Main Page Monitor Log Directory.vi"/>
@@ -86,5 +103,6 @@
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
+	<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
+	<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 </Library>

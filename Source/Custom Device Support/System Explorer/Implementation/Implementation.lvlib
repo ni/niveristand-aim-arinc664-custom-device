@@ -11,10 +11,12 @@
 		<Item Name="Initialize.vi" Type="VI" URL="../System Explorer/Action VIs/Initialize.vi"/>
 	</Item>
 	<Item Name="Pages" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Channel.vi" Type="VI" URL="../System Explorer/Pages/Channel.vi"/>
 		<Item Name="Configuration File.vi" Type="VI" URL="../System Explorer/Pages/Configuration File.vi"/>
 		<Item Name="Database.vi" Type="VI" URL="../System Explorer/Pages/Database.vi"/>
 		<Item Name="Databases.vi" Type="VI" URL="../System Explorer/Pages/Databases.vi"/>
+		<Item Name="Logging.vi" Type="VI" URL="../System Explorer/Pages/Logging.vi"/>
 		<Item Name="Frame.vi" Type="VI" URL="../System Explorer/Pages/Frame.vi"/>
 		<Item Name="Incoming.vi" Type="VI" URL="../System Explorer/Pages/Incoming.vi"/>
 		<Item Name="Main Page.vi" Type="VI" URL="../System Explorer/Pages/Main Page.vi"/>
