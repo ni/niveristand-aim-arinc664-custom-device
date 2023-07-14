@@ -64,6 +64,26 @@
           <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
         </xs:annotation>
       </xs:element>
+      <xs:element name="portSpeed" default="FDX_100MBIT" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_100MBIT" />
+            <xs:enumeration value ="FDX_10MBIT" />
+            <xs:enumeration value ="FDX_AUTO_100MBIT" />
+            <xs:enumeration value ="FDX_AUTO_10MBIT" />
+            <xs:enumeration value ="FDX_AUTO_ERROR" />
+            <xs:enumeration value ="FDX_1000MBIT" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="portConfig" default="FDX_SINGLE" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_SINGLE" />
+            <xs:enumeration value ="FDX_REDUNDANT" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
     </xs:all>
   </xs:complexType>
   <xs:complexType name="TxGenericSessionType">

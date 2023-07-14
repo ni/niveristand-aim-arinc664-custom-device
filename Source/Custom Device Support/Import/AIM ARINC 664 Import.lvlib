@@ -26,4 +26,5 @@
 		<Item Name="Read Tag Element.vi" Type="VI" URL="../Read Tag Element.vi"/>
 	</Item>
 	<Item Name="Parse Parameters File.vi" Type="VI" URL="../Parse Parameters File.vi"/>
+	<Item Name="Parse Port Setup.vi" Type="VI" URL="../Parse Port Setup.vi"/>
 </Library>

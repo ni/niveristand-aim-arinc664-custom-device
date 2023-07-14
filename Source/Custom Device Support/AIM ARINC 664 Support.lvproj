@@ -20,6 +20,9 @@
 				<Item Name="Scripting" Type="Folder">
 					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Unit/Scripting/Scripting.lvclass"/>
 				</Item>
+				<Item Name="XML parsing" Type="Folder">
+					<Item Name="Port Setup.lvclass" Type="LVClass" URL="../Tests/Unit/XML Parsing/Port Setup/Port Setup.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="Manual" Type="Folder">
 				<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
@@ -50,6 +53,7 @@
 			<Item Name="session_rx_monitor.ctl" Type="VI" URL="../Shared/session_rx_monitor.ctl"/>
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
+			<Item Name="port_setup.ctl" Type="VI" URL="../Shared/port_setup.ctl"/>
 		</Item>
 		<Item Name="Custom Device AIM ARINC 664.xml" Type="Document" URL="../../Custom Device/Custom Device AIM ARINC 664.xml"/>
 		<Item Name="AIM ARINC 664 Engine.lvlib" Type="Library" URL="../Engine/AIM ARINC 664 Engine.lvlib"/>
@@ -848,6 +852,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Port Session Configuration.ctl" Type="VI" URL="../Shared/Port Session Configuration.ctl"/>
+			<Item Name="port_setup.ctl" Type="VI" URL="../Shared/port_setup.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
 			<Item Name="session_rx_monitor.ctl" Type="VI" URL="../Shared/session_rx_monitor.ctl"/>
 			<Item Name="session_tx_generic.ctl" Type="VI" URL="../Shared/session_tx_generic.ctl"/>
