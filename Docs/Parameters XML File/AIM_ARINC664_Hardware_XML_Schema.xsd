@@ -16,6 +16,21 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:attributeGroup>
+  <xs:attributeGroup name="txStartMode">
+    <xs:attribute name="txStartModeType" default="FDX_START">
+      <xs:annotation>
+        <xs:documentation>Control Parameter for the Transmitter Mode (Stop, Start immediately, upon trigger or at a IRIG time)</xs:documentation>
+      </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value ="FDX_STOP" />
+            <xs:enumeration value ="FDX_START" />
+            <xs:enumeration value ="FDX_START_TRG" />
+            <xs:enumeration value ="FDX_START_TIME" />
+          </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
   <xs:attributeGroup name="RxModeControlInGroup">
     <xs:attribute name="ReceiveMode" default="FDX_RX_CHRONO">
       <xs:simpleType>
@@ -42,28 +57,6 @@
           <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
         </xs:annotation>
       </xs:element>
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="portType">
-    <xs:annotation>
-      <xs:documentation>Represents the physical port of a device.</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="portConfiguration" type="portConfigurationType" minOccurs="0" />
-      <xs:choice>
-        <xs:element ref="TxGenericSession"/>
-        <xs:element ref="RxMonitorSession"/>
-      </xs:choice>
-    </xs:sequence>
-    <xs:attributeGroup ref ="portGroup" />
-  </xs:complexType>
-  <xs:complexType name="portConfigurationType" >
-    <xs:all minOccurs="0">
-      <xs:element name="portId" default="0" type="xs:int" >
-        <xs:annotation>
-          <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
       <xs:element name="portSpeed" default="FDX_100MBIT" >
         <xs:simpleType>
           <xs:restriction base="xs:string">
@@ -86,13 +79,41 @@
       </xs:element>
     </xs:all>
   </xs:complexType>
-  <xs:complexType name="TxGenericSessionType">
+  <xs:complexType name="portType">
+    <xs:annotation>
+      <xs:documentation>Represents the physical port of a device.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="portConfiguration" type="portConfigurationType" minOccurs="0" />
+      <xs:choice>
+        <xs:element ref="TxGenericSession"/>
+        <xs:element ref="RxMonitorSession"/>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attributeGroup ref ="portGroup" />
+  </xs:complexType>
+  <xs:complexType name="portConfigurationType" >
+    <xs:all minOccurs="0">
+      <xs:element name="portId" default="0" type="xs:int" >
+        <xs:annotation>
+          <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+   <xs:complexType name="TxGenericSessionType">
     <xs:annotation>
       <xs:documentation>The session type for Generic Transmit</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name ="txQueueConfiguration" type="txQueueConfigurationType" minOccurs="0" />
+      <xs:element name="count" default="0" type="xs:int" >
+        <xs:annotation>
+          <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
+     <xs:attributeGroup ref="txStartMode" />
   </xs:complexType>
   <xs:complexType name="txQueueConfigurationType">
     <xs:all minOccurs="0">

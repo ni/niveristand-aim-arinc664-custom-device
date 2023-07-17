@@ -2,7 +2,7 @@
 <board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.aviftech.com/Schemas/Databus/">
   <boardConfiguration>
     <boardId>12</boardId>
-    <portSpeed>FDX_1000MBIT</portSpeed>
+    <portSpeed>FDX_10MBIT</portSpeed>
     <portConfig>FDX_SINGLE</portConfig>
   </boardConfiguration>
   <port sessionType="Tx-Generic">
