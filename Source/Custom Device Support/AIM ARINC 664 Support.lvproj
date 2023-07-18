@@ -754,6 +754,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
 				<Item Name="Manual" Type="Folder">
+					<Property Name="NI.SortType" Type="Int">3</Property>
+					<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
 					<Item Name="test_cleanup.vi" Type="VI" URL="../Tests/System/Manual/test_cleanup.vi"/>
 					<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
 					<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
@@ -762,7 +764,8 @@ AddOutputFilter chunkFilter
 					<Item Name="test_OpenClose (Multi Sessions) 2.vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions) 2.vi"/>
 					<Item Name="test_OpenClose (Multi Sessions).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions).vi"/>
 					<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
-					<Item Name="test_Tx Exec Unit.vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit.vi"/>
+					<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
+					<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
 				</Item>
 			</Item>
 		</Item>
