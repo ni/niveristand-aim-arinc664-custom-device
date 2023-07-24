@@ -3,17 +3,17 @@
   <boardConfiguration>
     <boardId>12</boardId>
     <portSpeed>FDX_1000MBIT</portSpeed>
-    <portConfig>FDX_SINGLE</portConfig>
+    <portConfig>FDX_REDUNDANT</portConfig>
   </boardConfiguration>
   <port sessionType="Tx-Generic">
     <portConfiguration>
       <portId>21</portId>
     </portConfiguration>
-    <TxGenericSession>
+    <TxGenericSession txStartModeType="FDX_START_TRG">
       <txQueueConfiguration>
         <QueueSizeIn>1234</QueueSizeIn>
       </txQueueConfiguration>
-      <count>0</count>
+      <count>12</count>
     </TxGenericSession>
   </port>
   <port sessionType="Rx-Monitor">
