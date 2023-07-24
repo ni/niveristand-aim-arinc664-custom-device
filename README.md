@@ -1,6 +1,6 @@
 # AIM ARINC 664 Custom Device
 
-The **AIM ARINC 664 Custom Device** allows use of AIM ARINC 664 PXIe Modules in VeriStand. The custom device targets one entire **board** of a AIM ARINC 664 PXIe module. To target multiple modules or multiple boards, use multiple instances of this custom device.
+The **AIM ARINC 664 Custom Device** allows use of AIM ARINC 664 PXIe Modules in VeriStand. The custom device targets one entire **board** of a AIM ARINC 664 PXIe module. To target multiple boards, use multiple instances of this custom device.
 
 The custom device supports the following functionality:
 - Import configuration files via scripting and System Explorer
@@ -22,14 +22,14 @@ The custom device supports the following functionality:
 
 ## LabVIEW Source Code Version
 
-LabVIEW 2020
+LabVIEW 2020 SP1
 
 ## Dependencies
 
 ### Running the custom device
 
-- [VeriStand 2020 or later](https://www.ni.com/ro-ro/support/downloads/software-products/download.veristand.html#382072)
-- [AIM ARINC 664 BSP Driver]()
+- [VeriStand 2020 R4 or later](https://www.ni.com/ro-ro/support/downloads/software-products/download.veristand.html#382072)
+- AIM ARINC 664 BSP Driver
 
 ### Real-Time target software components
 
@@ -38,7 +38,7 @@ LabVIEW 2020
 
 ### Developing or building from source
 
-- [LabVIEW 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
+- [LabVIEW 2020 SP1 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
 - [AIM ARINC 664 BSP Driver and LabVIEW API]()
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-development-tools/releases)

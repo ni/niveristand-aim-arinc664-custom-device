@@ -7,7 +7,7 @@
   </boardConfiguration>
   <port sessionType="Tx-Generic">
     <portConfiguration>
-      <portId>21</portId>
+      <portId>1</portId>
     </portConfiguration>
     <TxGenericSession>
       <txQueueConfiguration>
@@ -18,7 +18,7 @@
   </port>
   <port sessionType="Rx-Monitor">
     <portConfiguration>
-      <portId>21</portId>
+      <portId>0</portId>
     </portConfiguration>
     <RxMonitorSession>
       <monitorConfiguration>
