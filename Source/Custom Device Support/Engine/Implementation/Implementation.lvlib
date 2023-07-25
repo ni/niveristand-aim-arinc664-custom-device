@@ -15,4 +15,5 @@
 	<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../Shared Resources Factory/Shared Resources Factory.lvclass"/>
 	<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../Shared Resources/Shared Resources.lvclass"/>
 	<Item Name="Tx Generic Execution Unit.lvclass" Type="LVClass" URL="../Tx Execution Unit/Tx Generic Execution Unit.lvclass"/>
+	<Item Name="Rx UDP Execution Unit.lvclass" Type="LVClass" URL="../Rx UDP Execution Unit/Rx UDP Execution Unit.lvclass"/>
 </Library>
