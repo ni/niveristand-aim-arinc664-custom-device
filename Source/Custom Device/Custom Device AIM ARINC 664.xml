@@ -131,8 +131,8 @@
 		</Page>
 		<Page>
 			<Name>
-				<eng>Tx Queue Status Section</eng>
-				<loc>Tx Queue Status Section</loc>
+				<eng>Tx Queue Status</eng>
+				<loc>Tx Queue Status</loc>
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
@@ -165,15 +165,66 @@
 		</Page>
 		<Page>
 			<Name>
-				<eng>Monitor Queue Status Section</eng>
-				<loc>Monitor Queue Status Section</loc>
+				<eng>Monitor Statistics</eng>
+				<loc>Monitor Statistics</loc>
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
 			<GUID>B887D8B9-C6CF-4F1C-8F75-15EFFDD5CFFC</GUID>
 			<Glyph>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\Monitor.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Utilization</eng>
+				<loc>Utilization</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>D9396964-5902-4E2A-82C8-2A696FD85A36</GUID>
+			<Glyph>
 				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\databases.png</Path>
+				<Path>System Explorer\Glyphs\NI-XNET DropFrames.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Errors</eng>
+				<loc>Errors</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>1B82B94F-FAA8-416B-810A-FCB6E86E6CD6</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Error.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Size-Distribution</eng>
+				<loc>Size-Distribution</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>9C3365A4-3BC6-46D2-9E4A-E79F510F5B35</GUID>
+			<Glyph>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\Size.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
@@ -270,6 +321,9 @@
 				<eng>Ports</eng>
 				<loc>Ports</loc>
 			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>A1D05803-877A-4AF1-8556-3AC960D2123E</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
@@ -303,11 +357,14 @@
 				<eng>Port %d</eng>
 				<loc>Port %d</loc>
 			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<Copy>Copy</Copy>
 			<GUID>582DDD9C-BC3D-4862-8B5A-626848E183CB</GUID>
 			<Glyph>
-				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\NI-XNET Port.png</Path>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\Ports.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>

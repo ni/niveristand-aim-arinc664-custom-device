@@ -5,5 +5,8 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Item Name="Get Monitor Channel Array.vi" Type="VI" URL="../Get Monitor Channel Array.vi"/>
 	<Item Name="Get Rx Channel Array.vi" Type="VI" URL="../Get Rx Channel Array.vi"/>
+	<Item Name="Get Rx Monitor Error.vi" Type="VI" URL="../Get Rx Monitor Error.vi"/>
+	<Item Name="Get Rx Monitor Size Distribution.vi" Type="VI" URL="../Get Rx Monitor Size Distribution.vi"/>
+	<Item Name="Get Rx Monitor Utilization.vi" Type="VI" URL="../Get Rx Monitor Utilization.vi"/>
 	<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Get Tx Channel Array.vi"/>
 </Library>

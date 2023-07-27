@@ -22,6 +22,7 @@
 		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
 		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
 		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
+		<Item Name="Set Pages and Properties.vi" Type="VI" URL="../Configuration File/Set Pages and Properties.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
@@ -33,11 +34,19 @@
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
 		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
+		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
+		<Item Name="Get Ports Page.vi" Type="VI" URL="../Custom Device/Get Ports Page.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
+		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
+		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
+		<Item Name="Set Monitoring Session.vi" Type="VI" URL="../Custom Device/Set Monitoring Session.vi"/>
+		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Configuration File/Set Rx Monitor Properties.vi"/>
+		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Configuration File/Set Tx Generic Properties.vi"/>
+		<Item Name="Set Tx Generic Session.vi" Type="VI" URL="../Custom Device/Set Tx Generic Session.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
@@ -80,7 +89,12 @@
 		<Item Name="Set Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Set Main Page Monitor Log Directory.vi"/>
 	</Item>
 	<Item Name="Monitor Queue Status" Type="Folder">
+		<Item Name="Add Monitor Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Channel.vi"/>
 		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
+		<Item Name="Add Monitor Status Error.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Error.vi"/>
+		<Item Name="Add Monitor Status Size Distribution.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Size Distribution.vi"/>
+		<Item Name="Add Monitor Status Utilization.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Utilization.vi"/>
+		<Item Name="Add Monitor Status.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status.vi"/>
 		<Item Name="Get Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Monitor Queue Status/Get Monitor Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Port" Type="Folder">
@@ -103,6 +117,4 @@
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
-	<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 </Library>
