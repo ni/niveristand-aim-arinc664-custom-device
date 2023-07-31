@@ -105,11 +105,15 @@
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
+		<Item Name="Find Port by Id.vi" Type="VI" URL="../Port/Find Port by Id.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Incoming Section.vi" Type="VI" URL="../Port/Get Port Incoming Section.vi"/>
+		<Item Name="Get Port Outgoing Section.vi" Type="VI" URL="../Port/Get Port Outgoing Section.vi"/>
 		<Item Name="Remove Ports.vi" Type="VI" URL="../Port/Remove Ports.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
+		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Timing" Type="Folder">
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
@@ -122,6 +126,8 @@
 	<Item Name="Add Tx UDP Session.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Session.vi"/>
 	<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Set Port ID.vi" Type="VI" URL="../Port/Set Port ID.vi"/>
+	<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	<Item Name="Set Tx UDP Properties.vi" Type="VI" URL="../Tx UDP/Set Tx UDP Properties.vi"/>
 	<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 </Library>
