@@ -139,7 +139,7 @@
 			<GUID>C7869D6F-30D0-4274-87C5-5BE67BEEE020</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
-				<Path>System Explorer\Glyphs\databases.png</Path>
+				<Path>System Explorer\Glyphs\NI-XNET Status.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
@@ -153,6 +153,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<GUID>4F18D536-EE77-43DD-87DF-7965B9424EF3</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
@@ -170,6 +171,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<GUID>B887D8B9-C6CF-4F1C-8F75-15EFFDD5CFFC</GUID>
 			<Glyph>
 				<Type>To Common Doc Dir</Type>
@@ -187,6 +189,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<GUID>D9396964-5902-4E2A-82C8-2A696FD85A36</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
@@ -204,6 +207,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<GUID>1B82B94F-FAA8-416B-810A-FCB6E86E6CD6</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
@@ -221,10 +225,29 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
 			<GUID>9C3365A4-3BC6-46D2-9E4A-E79F510F5B35</GUID>
 			<Glyph>
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\AIM ARINC 664\Windows\Glyphs\Size.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+		<Page>
+			<Name>
+				<eng>Status</eng>
+				<loc>Status</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<GUID>C7B8E643-DB53-4236-A1BD-67967F46ACD2</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Status.png</Path>
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>

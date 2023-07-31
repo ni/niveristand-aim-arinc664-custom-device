@@ -11,6 +11,7 @@
 </Property>
 	<Item Name="Channel" Type="Folder">
 		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
+		<Item Name="Set ENUM Properties.vi" Type="VI" URL="../Channel/Set ENUM Properties.vi"/>
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
 		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
@@ -91,6 +92,8 @@
 	<Item Name="Monitor Queue Status" Type="Folder">
 		<Item Name="Add Monitor Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Channel.vi"/>
 		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
+		<Item Name="Add Monitor Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Section.vi"/>
+		<Item Name="Add Monitor Status Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Channel.vi"/>
 		<Item Name="Add Monitor Status Error.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Error.vi"/>
 		<Item Name="Add Monitor Status Size Distribution.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Size Distribution.vi"/>
 		<Item Name="Add Monitor Status Utilization.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Utilization.vi"/>
@@ -116,5 +119,9 @@
 		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
+	<Item Name="Add Tx UDP Session.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Session.vi"/>
+	<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Set Tx UDP Properties.vi" Type="VI" URL="../Tx UDP/Set Tx UDP Properties.vi"/>
+	<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 </Library>
