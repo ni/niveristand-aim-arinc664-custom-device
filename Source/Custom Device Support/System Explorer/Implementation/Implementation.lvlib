@@ -28,6 +28,7 @@
 		<Item Name="Queue Status Generic Channel.vi" Type="VI" URL="../System Explorer/Pages/Queue Status Generic Channel.vi"/>
 		<Item Name="Timing.vi" Type="VI" URL="../System Explorer/Pages/Timing.vi"/>
 		<Item Name="Tx Generic.vi" Type="VI" URL="../System Explorer/Pages/Tx Generic.vi"/>
+		<Item Name="Secondary Page.vi" Type="VI" URL="../System Explorer/Pages/Secondary Page.vi"/>
 		<Item Name="Tx Queue Status Section.vi" Type="VI" URL="../System Explorer/Pages/Tx Queue Status Section.vi"/>
 		<Item Name="Vendor.vi" Type="VI" URL="../System Explorer/Pages/Vendor.vi"/>
 	</Item>

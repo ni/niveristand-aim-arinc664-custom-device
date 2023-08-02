@@ -90,7 +90,7 @@
 		<Item Name="Set Main Page Monitor Log Directory.vi" Type="VI" URL="../Main Page/Set Main Page Monitor Log Directory.vi"/>
 	</Item>
 	<Item Name="Monitor Queue Status" Type="Folder">
-		<Item Name="Add Monitor Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Channel.vi"/>
+		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
 		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
 		<Item Name="Add Monitor Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Section.vi"/>
 		<Item Name="Add Monitor Status Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Channel.vi"/>
@@ -111,6 +111,12 @@
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 	</Item>
+	<Item Name="Rx UDP" Type="Folder">
+		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
+		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
+		<Item Name="Add VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add VLs and UDPs.vi"/>
+		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
+	</Item>
 	<Item Name="Timing" Type="Folder">
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
@@ -119,9 +125,12 @@
 		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 	</Item>
-	<Item Name="Add Tx UDP Session.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Session.vi"/>
-	<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
+	<Item Name="Tx UDP" Type="Folder">
+		<Item Name="Add Tx UDP Session.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Session.vi"/>
+		<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Status Section.vi"/>
+		<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
+		<Item Name="Set Cluster as Properties.vi" Type="VI" URL="../Custom Device/Set Cluster as Properties.vi"/>
+		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
+	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Set Tx UDP Properties.vi" Type="VI" URL="../Tx UDP/Set Tx UDP Properties.vi"/>
-	<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 </Library>
