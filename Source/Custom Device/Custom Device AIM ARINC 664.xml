@@ -525,7 +525,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>5B8531B6-763C-44A7-B58A-6C82ED2F2D56</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
@@ -561,7 +561,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>84DDE259-6DAA-47F4-95FE-5FAF375E7F83</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
