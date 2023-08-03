@@ -12,7 +12,9 @@
 	<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../Execution Unit Factory/Execution Unit Factory.lvclass"/>
 	<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../Execution Unit/Execution Unit.lvclass"/>
 	<Item Name="Monitor Execution Unit.lvclass" Type="LVClass" URL="../Monitor Execution Unit/Monitor Execution Unit.lvclass"/>
+	<Item Name="Rx UDP Execution Unit.lvclass" Type="LVClass" URL="../Rx UDP Execution Unit/Rx UDP Execution Unit.lvclass"/>
 	<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../Shared Resources Factory/Shared Resources Factory.lvclass"/>
 	<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../Shared Resources/Shared Resources.lvclass"/>
 	<Item Name="Tx Generic Execution Unit.lvclass" Type="LVClass" URL="../Tx Execution Unit/Tx Generic Execution Unit.lvclass"/>
+	<Item Name="Tx UDP Execution Unit.lvclass" Type="LVClass" URL="../Tx UDP Execution Unit/Tx UDP Execution Unit.lvclass"/>
 </Library>
