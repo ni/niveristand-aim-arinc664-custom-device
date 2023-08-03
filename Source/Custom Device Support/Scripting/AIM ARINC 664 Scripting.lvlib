@@ -35,7 +35,9 @@
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
 		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
+		<Item Name="Get Channels from Section.vi" Type="VI" URL="../Custom Device/Get Channels from Section.vi"/>
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
+		<Item Name="Get Page Properties as Cluster.vi" Type="VI" URL="../Custom Device/Get Page Properties as Cluster.vi"/>
 		<Item Name="Get Ports Page.vi" Type="VI" URL="../Custom Device/Get Ports Page.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
@@ -66,8 +68,11 @@
 	</Item>
 	<Item Name="Generic Tx" Type="Folder">
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Frame Array File/Add Tx Generic Section.vi"/>
+		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Generic Status Section.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Get Tx Generic Raw Frame List.vi"/>
+		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Generic Section and Channels.vi"/>
+		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
@@ -115,20 +120,18 @@
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
 		<Item Name="Add VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add VLs and UDPs.vi"/>
+		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
 		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	</Item>
 	<Item Name="Timing" Type="Folder">
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
-	<Item Name="Tx Queue Status" Type="Folder">
-		<Item Name="Add Tx Queue Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Queue Status Section.vi"/>
-		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
-	</Item>
 	<Item Name="Tx UDP" Type="Folder">
 		<Item Name="Add Tx UDP Session.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Session.vi"/>
 		<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Status Section.vi"/>
 		<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
+		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 		<Item Name="Set Cluster as Properties.vi" Type="VI" URL="../Custom Device/Set Cluster as Properties.vi"/>
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
