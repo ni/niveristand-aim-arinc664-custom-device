@@ -20,16 +20,14 @@ or you can open it in Word, edit it, and save it as a .htm or .html file.
 			<p class="Body">JavaScript is disabled. <a href="veristandmerge.chm::/JavaScript_Disabled.html">Details</a></p>
 			<hr width="100%" noshade>
 		</noscript>
-		<h1>Monitor Size Distribution</h1>
+		<h1>Tx Generic Status</h1>
+		<p>Define different VeriStand Channels that are used to see the "health" of the Tx Generic mode.</p>
 		<p>This section has the following VeriStand Channels representing the following statistiscs:
 			<ul>
-				<li><strong>MAC1Short</strong>&#8212;Number of frames with length from 1..63 Bytes</li>
-				<li><strong>MAC64To127Count</strong>&#8212;Number of frames with length from 64..127 Bytes</li>
-				<li><strong>MAC128To255Count;</strong>&#8212;Number of frames with length from 128..255 Bytes.</li>
-				<li><strong>MAC256To511Count;</strong>&#8212;Number of frames with length from 256..511 Bytes.</li>
-				<li><strong>MAC512To1023Count;</strong>&#8212;Number of frames with length from 512..1023 Bytes.</li>
-				<li><strong>MAC1024To1518Count;</strong>&#8212;Number of frames with length from 1024..1518 Bytes.</li
-				<li><strong>MACLong;</strong>&#8212;Number of frames with length > 1518 Bytes.</li>
+				<li><strong>QueueStatus</strong>&#8212;An enumerated value, which describes the state of the generic transmit queue.</li>
+				<li><strong>BytesReloadable</strong>&#8212;Remaining space in queue which can be written to the transmit queue.</li>
+				<li><strong>FramesSent</strong>&#8212;Number of frames sent through this queue. For a cyclic queue, the frames of each cycle will be counted.</li>
+				<li><strong>FramesInCycQueue</strong>&#8212;If the queue is configured in cyclic mode, this value shows the number of frames written to the queue.</li>
 		</p>
 		<p>This section has the following configuration settings:
 			<ul>
