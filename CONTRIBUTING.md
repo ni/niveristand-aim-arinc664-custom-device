@@ -1,6 +1,6 @@
-# Contributing to niveristand-aim-afdx-custom-device
+# Contributing to niveristand-aim-arinc664-custom-device
 
-Contributions to niveristand-aim-afdx-custom-device are welcome from all!
+Contributions to niveristand-aim-arinc664-custom-device are welcome from all!
 
 niveristand-aim-afdx-custom-device is managed via [git](https://git-scm.com), with the canonical upstream
 repository hosted on [GitHub](https://github.com/ni/<reponame>/).
