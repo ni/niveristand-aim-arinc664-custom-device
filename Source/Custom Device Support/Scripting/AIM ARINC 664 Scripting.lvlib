@@ -38,7 +38,7 @@
 		<Item Name="Get Channels from Section.vi" Type="VI" URL="../Custom Device/Get Channels from Section.vi"/>
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
 		<Item Name="Get Page Properties as Cluster.vi" Type="VI" URL="../Custom Device/Get Page Properties as Cluster.vi"/>
-		<Item Name="Get Ports Page.vi" Type="VI" URL="../Custom Device/Get Ports Page.vi"/>
+		<Item Name="Get Ports Section.vi" Type="VI" URL="../Custom Device/Get Ports Section.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
@@ -119,7 +119,6 @@
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
 		<Item Name="Set Port ID.vi" Type="VI" URL="../Port/Set Port ID.vi"/>
-		<Item Name="Set Port Map.vi" Type="VI" URL="../Port/Set Port Map.vi"/>
 		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
@@ -142,4 +141,5 @@
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Set Port Map.vi" Type="VI" URL="../Port/Set Port Map.vi"/>
 </Library>
