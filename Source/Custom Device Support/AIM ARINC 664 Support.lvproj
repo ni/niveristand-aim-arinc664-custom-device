@@ -61,6 +61,7 @@
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
+			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
 		<Item Name="Custom Device AIM ARINC 664.xml" Type="Document" URL="../../Custom Device/Custom Device AIM ARINC 664.xml"/>
 		<Item Name="AIM ARINC 664 Engine.lvlib" Type="Library" URL="../Engine/AIM ARINC 664 Engine.lvlib"/>
@@ -876,6 +877,7 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
+			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
