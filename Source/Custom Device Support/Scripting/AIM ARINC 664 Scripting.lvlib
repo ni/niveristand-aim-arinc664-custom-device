@@ -110,11 +110,17 @@
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
+		<Item Name="Find Port by Id.vi" Type="VI" URL="../Port/Find Port by Id.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Incoming Section.vi" Type="VI" URL="../Port/Get Port Incoming Section.vi"/>
+		<Item Name="Get Port Outgoing Section.vi" Type="VI" URL="../Port/Get Port Outgoing Section.vi"/>
 		<Item Name="Remove Ports.vi" Type="VI" URL="../Port/Remove Ports.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
+		<Item Name="Set Port ID.vi" Type="VI" URL="../Port/Set Port ID.vi"/>
+		<Item Name="Set Port Map.vi" Type="VI" URL="../Port/Set Port Map.vi"/>
+		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
