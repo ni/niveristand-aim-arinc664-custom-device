@@ -32,10 +32,15 @@
 		<Item Name="Parse Session (Rx-UDP).vi" Type="VI" URL="../Parse Session (Rx-UDP).vi"/>
 		<Item Name="Parse Session (Tx-Generic).vi" Type="VI" URL="../Parse Session (Tx-Generic).vi"/>
 		<Item Name="Parse Session (Tx-UDP).vi" Type="VI" URL="../Parse Session (Tx-UDP).vi"/>
+		<Item Name="value to ring (CaptureMode).vi" Type="VI" URL="../value to ring (CaptureMode).vi"/>
 		<Item Name="value to ring (DefaultCronoMode).vi" Type="VI" URL="../value to ring (DefaultCronoMode).vi"/>
 		<Item Name="value to ring (FilterMode).vi" Type="VI" URL="../value to ring (FilterMode).vi"/>
 		<Item Name="value to ring (NetSelect).vi" Type="VI" URL="../value to ring (NetSelect).vi"/>
+		<Item Name="value to ring (portConfig).vi" Type="VI" URL="../value to ring (portConfig).vi"/>
+		<Item Name="value to ring (portSpeed).vi" Type="VI" URL="../value to ring (portSpeed).vi"/>
 		<Item Name="value to ring (PortType).vi" Type="VI" URL="../value to ring (PortType).vi"/>
+		<Item Name="value to ring (StartMode).vi" Type="VI" URL="../value to ring (StartMode).vi"/>
+		<Item Name="value to ring (Strobe).vi" Type="VI" URL="../value to ring (Strobe).vi"/>
 		<Item Name="value to ring (VerificationMode).vi" Type="VI" URL="../value to ring (VerificationMode).vi"/>
 	</Item>
 	<Item Name="Read" Type="Folder">
@@ -56,9 +61,4 @@
 		<Item Name="Read Tag Element.vi" Type="VI" URL="../Read Tag Element.vi"/>
 	</Item>
 	<Item Name="Parse Parameters File.vi" Type="VI" URL="../Parse Parameters File.vi"/>
-	<Item Name="value to ring (CaptureMode).vi" Type="VI" URL="../value to ring (CaptureMode).vi"/>
-	<Item Name="value to ring (portConfig).vi" Type="VI" URL="../value to ring (portConfig).vi"/>
-	<Item Name="value to ring (portSpeed).vi" Type="VI" URL="../value to ring (portSpeed).vi"/>
-	<Item Name="value to ring (StartMode).vi" Type="VI" URL="../value to ring (StartMode).vi"/>
-	<Item Name="value to ring (Strobe).vi" Type="VI" URL="../value to ring (Strobe).vi"/>
 </Library>
