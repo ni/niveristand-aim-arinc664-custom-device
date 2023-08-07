@@ -287,6 +287,9 @@
     <xs:annotation>
       <xs:documentation>TX Sampling Connection-oriented port.</xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="TxCommPortGroup" />
   </xs:complexType>
@@ -294,6 +297,9 @@
     <xs:annotation>
       <xs:documentation>TX SAP port.</xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
     <xs:attributeGroup ref ="TxSapPortGroup" />
   </xs:complexType>
   <xs:complexType name="RxUdpSessionType">
@@ -310,6 +316,9 @@
     <xs:annotation>
       <xs:documentation>RX Connection-oriented port.</xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="RxCommPortGroup" />
   </xs:complexType>
@@ -317,13 +326,66 @@
     <xs:annotation>
       <xs:documentation>RX SAP port.</xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
     <xs:attributeGroup ref ="RxSapPortGroup" />
-  </xs:complexType>  
+  </xs:complexType>
+  <xs:complexType name="ParameterType">
+    <xs:annotation>
+      <xs:documentation>Parameter to convert raw frames into EU</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="direction"  maxOccurs="1" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="incoming" />
+            <xs:enumeration value="outgoing" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="encoding" default="BNR" maxOccurs="1" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="BNR"/>
+            <xs:enumeration value="BCD"/>
+            <xs:enumeration value="Discrete"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:boolean" name="signed" maxOccurs="1" minOccurs="0" default="false"/>
+      <xs:element name="startBit"  maxOccurs="1" minOccurs="1"  default="8">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="31"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="numberOfBits" maxOccurs="1" minOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="32"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:double" name="scale"  default="1.0" maxOccurs="1" minOccurs="1"/>
+      <xs:element type="xs:double" name="offset" default="0.0" maxOccurs="1" minOccurs="1" />
+      <xs:element type="xs:string" name="name">
+        <xs:annotation>
+          <xs:documentation>For Discrete encoding, there is one "name" element per Bit</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="xs:string" name="unit" maxOccurs="1" minOccurs="0"/>
+      <xs:element type="xs:double" name="defaultValue"  default="0.0"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:element name="Board" type="boardType" />
   <xs:element name="Port" type="portType" />
  <!-- <xs:element name="Session" type="SessionModeType" />
    xs:element name="TxGenericSession" type="TxGenericSessionType" />
   <xs:element name="RxMonitorSession" type="RxMonitorSessionType" />
   <xs:element name="TxUdpSession" type="TxUdpSessionType" />
-  <xs:element name="CommSamplingPort" type="CommSamplingPortType" / --> 
+  <xs:element name="CommSamplingPort" type="CommSamplingPortType" / -->
 </xs:schema>

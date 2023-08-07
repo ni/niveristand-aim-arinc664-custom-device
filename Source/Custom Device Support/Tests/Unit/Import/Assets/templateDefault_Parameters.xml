@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxGenericSession />
+    <RxMonitorSession />
+  </Port>
+  <Port PortId="1">
+    <TxUdpSession>
+      <TxCommPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 0</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 1</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 2</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+      </TxCommPort>
+      <TxSapPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 0</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 1</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 2</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+      </TxSapPort>
+    </TxUdpSession>
+    <RxUdpSession>
+      <RxCommPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 0</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 1</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+      </RxCommPort>
+      <RxSapPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 0</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>1</startBit>
+          <numberOfBits>3</numberOfBits>
+          <scale>1.54</scale>
+          <offset>4</offset>
+          <name>Param 1</name>
+          <unit>fr</unit>
+          <defaultValue>1</defaultValue>
+        </Parameter>
+      </RxSapPort>
+    </RxUdpSession>
+  </Port>
+</Board>
