@@ -10,6 +10,7 @@
 	<Item Name="_typedefs" Type="Folder">
 		<Item Name="board_setup.ctl" Type="VI" URL="../../Shared/board_setup.ctl"/>
 		<Item Name="frame_parameter.ctl" Type="VI" URL="../../Shared/frame_parameter.ctl"/>
+		<Item Name="frame_parameter_definition.ctl" Type="VI" URL="../../Shared/frame_parameter_definition.ctl"/>
 		<Item Name="Port Session Configuration.ctl" Type="VI" URL="../../Shared/Port Session Configuration.ctl"/>
 		<Item Name="port_configuration.ctl" Type="VI" URL="../../Shared/port_configuration.ctl"/>
 		<Item Name="port_rx_udp_comm.ctl" Type="VI" URL="../../Shared/port_rx_udp_comm.ctl"/>
