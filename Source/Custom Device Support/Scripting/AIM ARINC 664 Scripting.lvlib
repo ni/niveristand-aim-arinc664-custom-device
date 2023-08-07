@@ -127,8 +127,8 @@
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
+		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
-		<Item Name="Add VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add VLs and UDPs.vi"/>
 		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
 		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	</Item>
@@ -143,6 +143,7 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
+	<Item Name="Add Tx UDP VLs and UDPs.vi" Type="VI" URL="../Tx UDP/Add Tx UDP VLs and UDPs.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	<Item Name="Get Port Properties.vi" Type="VI" URL="../Port/Get Port Properties.vi"/>
 </Library>
