@@ -74,7 +74,7 @@
 		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Generic Status Section.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Get Tx Generic Raw Frame List.vi"/>
-		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Generic Section and Channels.vi"/>
+		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Queue Status/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
   <Port PortId="0" PortMap="1">
-    <TxGenericSession TxStartModeType="FDX_START_TIME" />
+    <TxGenericSession TxStartModeType="FDX_START" />
   </Port>
   <Port PortId="1" PortMap="2">
     <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" MaxFileSizeMB="0" />
