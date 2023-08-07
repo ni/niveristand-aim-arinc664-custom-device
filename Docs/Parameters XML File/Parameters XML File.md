@@ -107,7 +107,8 @@ The following table describes the XML elements, or tags, you can use in a Parame
 
 |Element|Required?|Element Type|Min/Max Occurrences|Description|Attributes|
 |--- |--- |--- |--- |--- |--- |
-|`<Board>`|Yes|complex|1/unbounded|Opening tag for a channel definition.|- BoardId (default 0)|
+|`<Board>`|Yes|complex|1/unbounded|Opening tag for a channel definition.|- BoardId (default 0)
+- |
 |→`<Port>`|Yes|xs:int|1|Specifies the Hardware Channel used. Range is: [0:31].|
 
 Notes:
