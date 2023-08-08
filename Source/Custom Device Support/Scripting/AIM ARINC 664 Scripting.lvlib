@@ -17,35 +17,38 @@
 		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
 		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
-		<Item Name="Build Tx Cluster.vi" Type="VI" URL="../Configuration File/Build Tx Cluster.vi"/>
+		<Item Name="Build Tx-Generic Cluster.vi" Type="VI" URL="../Configuration File/Build Tx-Generic Cluster.vi"/>
+		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
 		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
+		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
 		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
 		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
 		<Item Name="Set Pages and Properties.vi" Type="VI" URL="../Configuration File/Set Pages and Properties.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
 		<Item Name="Check if Custom Device Enabled.vi" Type="VI" URL="../Custom Device/Check if Custom Device Enabled.vi"/>
 		<Item Name="Disable Custom Device.vi" Type="VI" URL="../Custom Device/Disable Custom Device.vi"/>
-		<Item Name="Enable Custom Device.vi" Type="VI" URL="../Custom Device/Enable Custom Device.vi"/>
 		<Item Name="Export Custom Device.vi" Type="VI" URL="../Custom Device/Export Custom Device.vi"/>
+		<Item Name="Enable Custom Device.vi" Type="VI" URL="../Custom Device/Enable Custom Device.vi"/>
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
 		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
 		<Item Name="Get Channels from Section.vi" Type="VI" URL="../Custom Device/Get Channels from Section.vi"/>
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
-		<Item Name="Get Page Properties as Cluster.vi" Type="VI" URL="../Custom Device/Get Page Properties as Cluster.vi"/>
-		<Item Name="Get Ports Page.vi" Type="VI" URL="../Custom Device/Get Ports Page.vi"/>
+		<Item Name="Get Properties from Cluster.vi" Type="VI" URL="../Custom Device/Get Properties from Cluster.vi"/>
+		<Item Name="Set Properties from Cluster.vi" Type="VI" URL="../Custom Device/Set Properties from Cluster.vi"/>
+		<Item Name="Get Ports Section.vi" Type="VI" URL="../Custom Device/Get Ports Section.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
-		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
 		<Item Name="Set Monitoring Session.vi" Type="VI" URL="../Custom Device/Set Monitoring Session.vi"/>
 		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Configuration File/Set Rx Monitor Properties.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Configuration File/Set Tx Generic Properties.vi"/>
@@ -71,7 +74,7 @@
 		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Queue Status/Add Tx Generic Status Section.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Get Tx Generic Raw Frame List.vi"/>
-		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Generic Section and Channels.vi"/>
+		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Queue Status/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Queue Status Section and Channels.vi" Type="VI" URL="../Tx Queue Status/Get Tx Queue Status Section and Channels.vi"/>
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>
@@ -110,16 +113,22 @@
 		<Item Name="Add Port Outgoing Section.vi" Type="VI" URL="../Port/Add Port Outgoing Section.vi"/>
 		<Item Name="Add Port.vi" Type="VI" URL="../Port/Add Port.vi"/>
 		<Item Name="Add Ports Section.vi" Type="VI" URL="../Port/Add Ports Section.vi"/>
+		<Item Name="Find Port by Id.vi" Type="VI" URL="../Port/Find Port by Id.vi"/>
 		<Item Name="Get Port Baud Rate.vi" Type="VI" URL="../Port/Get Port Baud Rate.vi"/>
 		<Item Name="Get Port Database.vi" Type="VI" URL="../Port/Get Port Database.vi"/>
+		<Item Name="Get Port Incoming Section.vi" Type="VI" URL="../Port/Get Port Incoming Section.vi"/>
+		<Item Name="Get Port Outgoing Section.vi" Type="VI" URL="../Port/Get Port Outgoing Section.vi"/>
 		<Item Name="Remove Ports.vi" Type="VI" URL="../Port/Remove Ports.vi"/>
 		<Item Name="Set Port Baud Rate.vi" Type="VI" URL="../Port/Set Port Baud Rate.vi"/>
 		<Item Name="Set Port Database.vi" Type="VI" URL="../Port/Set Port Database.vi"/>
+		<Item Name="Set Port ID.vi" Type="VI" URL="../Port/Set Port ID.vi"/>
+		<Item Name="Set Port Map.vi" Type="VI" URL="../Port/Set Port Map.vi"/>
+		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
+		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
-		<Item Name="Add VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add VLs and UDPs.vi"/>
 		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
 		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	</Item>
@@ -132,8 +141,9 @@
 		<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Status Section.vi"/>
 		<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
-		<Item Name="Set Cluster as Properties.vi" Type="VI" URL="../Custom Device/Set Cluster as Properties.vi"/>
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
+	<Item Name="Add Tx UDP VLs and UDPs.vi" Type="VI" URL="../Tx UDP/Add Tx UDP VLs and UDPs.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Get Port Properties.vi" Type="VI" URL="../Port/Get Port Properties.vi"/>
 </Library>

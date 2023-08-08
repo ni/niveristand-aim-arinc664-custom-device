@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxGenericSession />
+    <RxMonitorSession />
+  </Port>
+  <Port PortId="1">
+    <TxUdpSession>
+      <TxCommPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 1</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 2</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxCommPort>
+      <TxSapPort>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 1</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 2</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxSapPort>
+    </TxUdpSession>
+    <RxUdpSession>
+      <RxCommPort>
+        <Parameter>
+          <direction>incoming</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>incoming</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 1</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </RxCommPort>
+      <RxSapPort>
+        <Parameter>
+          <direction>incoming</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>incoming</direction>
+          <encoding>BNR</encoding>
+          <startBit>0</startBit>
+          <numberOfBits>0</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 1</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </RxSapPort>
+    </RxUdpSession>
+  </Port>
+</Board>
