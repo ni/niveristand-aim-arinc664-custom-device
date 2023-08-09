@@ -82,6 +82,14 @@
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Frame Array File/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
 	</Item>
+	<Item Name="GUID Utility" Type="Folder">
+		<Item Name="Get Monitor Channel Array.vi" Type="VI" URL="../GUID Utility/Get Monitor Channel Array.vi"/>
+		<Item Name="Get Rx Channel Array.vi" Type="VI" URL="../GUID Utility/Get Rx Channel Array.vi"/>
+		<Item Name="Get Rx Monitor Error.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Error.vi"/>
+		<Item Name="Get Rx Monitor Size Distribution.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Size Distribution.vi"/>
+		<Item Name="Get Rx Monitor Utilization.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Utilization.vi"/>
+		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../GUID Utility/Get Tx Channel Array.vi"/>
+	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
 		<Item Name="Get Decimation.vi" Type="VI" URL="../Custom Device/Get Decimation.vi"/>
