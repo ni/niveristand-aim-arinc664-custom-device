@@ -64,19 +64,19 @@ stages:
       buildOutputLocation: 'Source\Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\aim_arinc_664'
 
-      # packages:
-      #   - controlFileName: 'control_custom_device'
-      #     payloadMaps:
-      #       - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\AIM'
-      #         payloadLocation: 'Source\Built\AIM'
-      #       - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\LabVIEW Run-Time\$(lvVersion)\errors\English'
-      #         payloadLocation: 'Source\Built\Errors'
+      packages:
+        - controlFileName: 'control_custom_device'
+          payloadMaps:
+            - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\AIM'
+              payloadLocation: 'Source\Built\AIM'
+            # - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\LabVIEW Run-Time\$(lvVersion)\errors\English'
+            #   payloadLocation: 'Source\Built\Errors'
 
-      #   - controlFileName: 'control_scripting'
-      #     payloadMaps:
-      #       - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\AIM ARINC 664'
-      #         payloadLocation: 'Source\Built\Scripting'
-      #       - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\AIM ARINC 664'
-      #         payloadLocation: 'Source\Built\Scripting Examples'
-      #       - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\resource\errors\English'
-      #         payloadLocation: 'Source\Built\Errors'
+        - controlFileName: 'control_scripting'
+          payloadMaps:
+            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\AIM ARINC 664'
+              payloadLocation: 'Source\Built\Scripting'
+            # - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\AIM ARINC 664'
+            #   payloadLocation: 'Source\Built\Scripting Examples'
+            # - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\resource\errors\English'
+            #   payloadLocation: 'Source\Built\Errors'

@@ -1,0 +1,16 @@
+Package: ni-aim-arinc-664-veristand-{veristand_version}-labview-support
+Version: {nipkg_version}
+Architecture: windows_x64
+Maintainer: National Instruments <support@ni.com>
+XB-Plugin: file
+Description: Provides LabVIEW support for the AIM ARINC 664 custom device for NI VeriStand {veristand_version}.
+XB-Eula: eula-ni-standard
+Priority: standard
+Homepage: http://www.ni.com
+XB-LanguageSupport: en
+XB-UserVisible: yes
+Section: Add-Ons
+XB-DisplayVersion: {quarterly_display_version}
+XB-DisplayName: AIM ARINC 664 LabVIEW Support for VeriStand {veristand_version}
+Depends: ni-labview-{labview_version}{pkg_x86_bitness_suffix} (>= {labview_short_version}.0.0), ni-veristand-{labview_version} (>= {labview_short_version}.0.0), ni-veristand-{veristand_version}-custom-device-labview-support-common (>= 23.0.0)
+Recommends: ni-aim-arinc-664-veristand-{veristand_version}-support (>= {display_version})
