@@ -18,6 +18,7 @@
 		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Build Monitor Cluster.vi" Type="VI" URL="../Configuration File/Build Monitor Cluster.vi"/>
 		<Item Name="Build Tx-Generic Cluster.vi" Type="VI" URL="../Configuration File/Build Tx-Generic Cluster.vi"/>
+		<Item Name="Build Tx-UDP Cluster.vi" Type="VI" URL="../Configuration File/Build Tx-UDP Cluster.vi"/>
 		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>

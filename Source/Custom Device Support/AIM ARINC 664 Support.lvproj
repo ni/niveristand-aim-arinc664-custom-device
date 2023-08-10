@@ -919,6 +919,7 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
+			<Item Name="Construct Tx.vi" Type="VI" URL="../Engine/Implementation/Tx Execution Unit/Construct Tx.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
