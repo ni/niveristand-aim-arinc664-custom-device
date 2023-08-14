@@ -156,5 +156,6 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
+	<Item Name="Build Rx-UDP Cluster.vi" Type="VI" URL="../Configuration File/Build Rx-UDP Cluster.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
