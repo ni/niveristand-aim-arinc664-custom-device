@@ -567,8 +567,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
-			<Item Name="Parameter Definition.ctl" Type="VI" URL="../../../../niveristand-aim-milStd1553-custom-device/Source/Custom Device Support/Shared/Parameter Definition.ctl"/>
 			<Item Name="Rx UDP Parameter Conversion.vi" Type="VI" URL="../Engine/Implementation/Rx UDP Execution Unit/Rx UDP Parameter Conversion.vi"/>
+			<Item Name="Encode Channels.vi" Type="VI" URL="../Engine/Implementation/Tx UDP Execution Unit/Encode Channels.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -923,6 +923,7 @@ AddOutputFilter chunkFilter
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Encode Channels.vi" Type="VI" URL="../Engine/Implementation/Tx UDP Execution Unit/Encode Channels.vi"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
@@ -939,7 +940,6 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Parameter Definition.ctl" Type="VI" URL="../../../../niveristand-aim-milStd1553-custom-device/Source/Custom Device Support/Shared/Parameter Definition.ctl"/>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 			<Item Name="Rx UDP Parameter Conversion.vi" Type="VI" URL="../Engine/Implementation/Rx UDP Execution Unit/Rx UDP Parameter Conversion.vi"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
