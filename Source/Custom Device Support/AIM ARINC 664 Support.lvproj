@@ -567,8 +567,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
-			<Item Name="Rx UDP Parameter Conversion.vi" Type="VI" URL="../Engine/Implementation/Rx UDP Execution Unit/Rx UDP Parameter Conversion.vi"/>
-			<Item Name="Encode Channels.vi" Type="VI" URL="../Engine/Implementation/Tx UDP Execution Unit/Encode Channels.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">

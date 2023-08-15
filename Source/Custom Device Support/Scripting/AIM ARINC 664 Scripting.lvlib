@@ -141,6 +141,8 @@
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
 		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
+		<Item Name="Build Rx-UDP Cluster.vi" Type="VI" URL="../Configuration File/Build Rx-UDP Cluster.vi"/>
+		<Item Name="Get Rx UDP All Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP All Channels.vi"/>
 		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
 		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	</Item>
@@ -153,9 +155,9 @@
 		<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Status Section.vi"/>
 		<Item Name="Add Tx UDP VLs and UDPs.vi" Type="VI" URL="../Tx UDP/Add Tx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
+		<Item Name="Get Tx UDP All Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP All Channels.vi"/>
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
-	<Item Name="Build Rx-UDP Cluster.vi" Type="VI" URL="../Configuration File/Build Rx-UDP Cluster.vi"/>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
