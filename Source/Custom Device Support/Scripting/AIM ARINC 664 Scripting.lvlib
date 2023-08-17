@@ -160,4 +160,5 @@
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
 </Library>
