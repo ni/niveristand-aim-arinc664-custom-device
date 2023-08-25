@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_10MBIT">
+  <Port PortId="0" PortMap="0">
+    <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" MaxFileSizeMB="0" />
+  </Port>
+  <Port PortId="1" PortMap="0">
+    <TxUdpSession VlId="60" Bag="1" NetSelect="FDX_TX_FRAME_BOTH" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1000" FrameBufferSize="0">
+      <TxCommPort PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BCD</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>256</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit />
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxCommPort>
+    </TxUdpSession>
+  </Port>
+</Board>

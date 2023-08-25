@@ -261,7 +261,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>BD85F639-FFC8-443D-8B3E-A57AB37A5B2A</GUID>
 			<Glyph>
 				<Type>To Common Doc Dir</Type>
@@ -279,7 +279,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>85BBE12C-C4A9-4523-B3FC-3068DB103764</GUID>
 			<Glyph>
 				<Type>To Common Doc Dir</Type>
@@ -297,7 +297,7 @@
 			</Name>
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
-			<ExcludeFromAlphabeticalOrder>true</ExcludeFromAlphabeticalOrder>
+			<ExcludeFromAlphabeticalOrder>false</ExcludeFromAlphabeticalOrder>
 			<GUID>AD8B37F3-F79C-4716-A9ED-786B96288466</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
