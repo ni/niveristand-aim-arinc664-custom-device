@@ -12,6 +12,7 @@
 	<Item Name="Logging" Type="Folder">
 		<Item Name="Frame Logging.lvlib" Type="Library" URL="../Logging/Frame Logging/Frame Logging.lvlib"/>
 		<Item Name="Frame.ctl" Type="VI" URL="../Frame.ctl"/>
+		<Item Name="PCAP Frame Logger.lvclass" Type="LVClass" URL="../Logging/PCAP Frame Logger/PCAP Frame Logger.lvclass"/>
 	</Item>
 	<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../Execution Unit Factory/Execution Unit Factory.lvclass"/>
 	<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../Execution Unit/Execution Unit.lvclass"/>
