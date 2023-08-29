@@ -62,11 +62,11 @@
 		<Item Name="Create Monitor Log (pcap).vi" Type="VI" URL="../Create Monitor Log (pcap).vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;"!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!".!#!!.='.B=&amp;^E&gt;7VQ:8*@&gt;!!21!A!#H"D98"@&gt;#"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!!/1#%*6'FN:8.U97VQ!#"!-0````]84G&amp;N:3!I16**4E-W.D2-&lt;W=O='.B=#E!0%!Q`````T..&lt;WZJ&gt;'^S)%RP:S"%;8*F9X2P=HEA97ZE)%*B=W5A2EFM:3!I,WBP&lt;75P&lt;(:V=W6S,SE!6!$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!#!!*!!I$!!"Y!!!.#!!!!!!!!!E!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!I!!!!)!!!##!!!!1I!!!!!!1!,!!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-			<Property Name="NI.ClassItem.Flags" Type="Int">1073741824</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1115685392</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074274832</Property>
 		</Item>
 		<Item Name="Create Monitor Log.vi" Type="VI" URL="../Create Monitor Log.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$T!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"*!=!!##H*F:GZV&lt;3"P&gt;81!!":!5!!$!!!!!1!##'6S=G^S)'FO!!!O1$$`````*5VP&lt;GFU&lt;X)A4'^H)%2J=G6D&gt;'^S?3!I,WBP&lt;75P&lt;(:V=W6S,SE!6!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!%!!=$!!"Y!!!.#!!!!!!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!1I!!!!!!1!)!!!!!!</Property>

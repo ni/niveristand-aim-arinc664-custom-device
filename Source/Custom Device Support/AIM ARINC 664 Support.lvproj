@@ -875,15 +875,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="_samples" Type="Folder">
-			<Item Name="basic - Loopback.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/basic - Loopback.vi"/>
-			<Item Name="Receive - Monitor.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - Monitor.vi"/>
-			<Item Name="Receive - UDP (CommPort).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - UDP (CommPort).vi"/>
-			<Item Name="Receive - UDP (SAP).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - UDP (SAP).vi"/>
-			<Item Name="Transmit - Generic.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - Generic.vi"/>
-			<Item Name="Transmit - UDP (CommPort).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - UDP (CommPort).vi"/>
-			<Item Name="Transmit - UDP (SAP).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - UDP (SAP).vi"/>
-		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
 				<Item Name="Manual" Type="Folder">
