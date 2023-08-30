@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
+  <Port PortId="0" PortMap="0">
+    <TxUdpSession VlId="60" Bag="8" NetSelect="FDX_TX_FRAME_BOTH" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1000" FrameBufferSize="0">
+      <TxCommPort PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
+      </TxCommPort>
+    </TxUdpSession>
+  </Port>
+  <Port PortId="1" PortMap="0">
+    <RxUdpSession VlId="60" VLRange="2" Bag="8" Jitter="0" VerificationMode="FDX_RX_VL_CHECK_DISA" MinFrameLength="0" MaxFrameLength="1000" MaxSkew="0" VLBufSize="32768" FilterMode="FDX_RX_VL_FLT_DIS" FilterPosition="0" FilterMask="0" FilterData="0">
+      <RxCommPort PortType="FDX_UDP_SAMPLING" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
+      </RxCommPort>
+    </RxUdpSession>
+  </Port>
+</Board>
