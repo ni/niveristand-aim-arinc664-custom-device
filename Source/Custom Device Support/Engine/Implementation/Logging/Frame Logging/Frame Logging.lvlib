@@ -6,15 +6,16 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
-	<Item Name="Logger Interface.lvclass" Type="LVClass" URL="../Logger Interface/Logger Interface.lvclass"/>
+	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Check Size Message.lvclass" Type="LVClass" URL="../Check Size Message/Check Size Message.lvclass"/>
 	<Item Name="Log Message.lvclass" Type="LVClass" URL="../Log Message/Log Message.lvclass"/>
 	<Item Name="Log Producer.lvclass" Type="LVClass" URL="../Log Producer/Log Producer.lvclass"/>
+	<Item Name="Logger Data Reference.ctl" Type="VI" URL="../Logger Data Reference.ctl"/>
+	<Item Name="Logger Interface.lvclass" Type="LVClass" URL="../Logger Interface/Logger Interface.lvclass"/>
+	<Item Name="Manage Disk.vi" Type="VI" URL="../Manage Disk.vi"/>
 	<Item Name="Launch Message Handler.vi" Type="VI" URL="../Launch Message Handler.vi"/>
 	<Item Name="Message Handler.vi" Type="VI" URL="../Message Handler.vi"/>
-	<Item Name="Logger Data Reference.ctl" Type="VI" URL="../Logger Data Reference.ctl"/>
 	<Item Name="Release Logger.vi" Type="VI" URL="../Release Logger.vi"/>
 	<Item Name="Request Logger.vi" Type="VI" URL="../Request Logger.vi"/>
 	<Item Name="Send Log Data.vi" Type="VI" URL="../Send Log Data.vi"/>
-	<Item Name="Check Log Size.vi" Type="VI" URL="../Check Log Size.vi"/>
 </Library>
