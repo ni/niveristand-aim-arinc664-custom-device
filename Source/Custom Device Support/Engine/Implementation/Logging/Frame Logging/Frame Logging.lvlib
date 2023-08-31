@@ -7,8 +7,6 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Manage File Response.lvclass" Type="LVClass" URL="../Manage File Response/Manage File Response.lvclass"/>
-	<Item Name="Manage File Request.lvclass" Type="LVClass" URL="../Manage File Request/Manage File Request.lvclass"/>
 	<Item Name="Log Message.lvclass" Type="LVClass" URL="../Log Message/Log Message.lvclass"/>
 	<Item Name="Log Producer.lvclass" Type="LVClass" URL="../Log Producer/Log Producer.lvclass"/>
 	<Item Name="Logger Data Reference.ctl" Type="VI" URL="../Logger Data Reference.ctl"/>
