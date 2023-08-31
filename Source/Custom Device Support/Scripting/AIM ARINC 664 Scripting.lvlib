@@ -93,6 +93,7 @@
 	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
+		<Item Name="Get All Logging Properties.vi" Type="VI" URL="../Logging/Get All Logging Properties.vi"/>
 		<Item Name="Get Decimation.vi" Type="VI" URL="../Custom Device/Get Decimation.vi"/>
 		<Item Name="Get Logging Directory.vi" Type="VI" URL="../Logging/Get Logging Directory.vi"/>
 		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
@@ -161,5 +162,5 @@
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get All Logging Properties.vi" Type="VI" URL="../Logging/Get All Logging Properties.vi"/>
+	<Item Name="Set Log Thresholds.vi" Type="VI" URL="../Logging/Set Log Thresholds.vi"/>
 </Library>
