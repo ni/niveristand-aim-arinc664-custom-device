@@ -7,7 +7,8 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
-	<Item Name="Check Size Message.lvclass" Type="LVClass" URL="../Check Size Message/Check Size Message.lvclass"/>
+	<Item Name="Manage File Response.lvclass" Type="LVClass" URL="../Manage File Response/Manage File Response.lvclass"/>
+	<Item Name="Manage File Request.lvclass" Type="LVClass" URL="../Manage File Request/Manage File Request.lvclass"/>
 	<Item Name="Log Message.lvclass" Type="LVClass" URL="../Log Message/Log Message.lvclass"/>
 	<Item Name="Log Producer.lvclass" Type="LVClass" URL="../Log Producer/Log Producer.lvclass"/>
 	<Item Name="Logger Data Reference.ctl" Type="VI" URL="../Logger Data Reference.ctl"/>
@@ -18,4 +19,6 @@
 	<Item Name="Release Logger.vi" Type="VI" URL="../Release Logger.vi"/>
 	<Item Name="Request Logger.vi" Type="VI" URL="../Request Logger.vi"/>
 	<Item Name="Send Log Data.vi" Type="VI" URL="../Send Log Data.vi"/>
+	<Item Name="Open Log File.vi" Type="VI" URL="../Open Log File.vi"/>
+	<Item Name="Check File Log Thresholds.vi" Type="VI" URL="../Check File Log Thresholds.vi"/>
 </Library>

@@ -98,6 +98,7 @@
 		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
 		<Item Name="Get Logging File Name.vi" Type="VI" URL="../Logging/Get Logging File Name.vi"/>
 		<Item Name="Get Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Get Logging Filestam in File Name.vi"/>
+		<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
 		<Item Name="Set Decimation.vi" Type="VI" URL="../Custom Device/Set Decimation.vi"/>
 		<Item Name="Set Logging Directory.vi" Type="VI" URL="../Logging/Set Logging Directory.vi"/>
 		<Item Name="Set Logging Enabled.vi" Type="VI" URL="../Logging/Set Logging Enabled.vi"/>
@@ -160,5 +161,5 @@
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
+	<Item Name="Get All Logging Properties.vi" Type="VI" URL="../Logging/Get All Logging Properties.vi"/>
 </Library>
