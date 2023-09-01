@@ -146,11 +146,11 @@
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../../../../../Custom Device Support/Shared/VsItemMap.vi"/>
+			<Item Name="VsItemMap.vi" Type="VI" URL="../../../../../../../Desktop/GIT/niveristand-aim-arinc664-custom-device/Source/Custom Device Support/Shared/VsItemMap.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
