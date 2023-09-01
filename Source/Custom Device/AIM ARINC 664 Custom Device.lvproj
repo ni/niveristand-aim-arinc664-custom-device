@@ -182,7 +182,7 @@
 				<Property Name="Destination[3].destName" Type="Str">Glyphs</Property>
 				<Property Name="Destination[3].path" Type="Path">../Built/AIM ARINC 664/Windows/Glyphs</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D37FD3DA-7184-4B1A-B613-E507189D39A6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A5F29CD3-9521-4EF3-819E-4B35798C7254}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.applySaveSettings" Type="Bool">true</Property>
