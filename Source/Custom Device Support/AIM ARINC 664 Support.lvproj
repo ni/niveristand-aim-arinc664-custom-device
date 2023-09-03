@@ -57,7 +57,7 @@
 	<Property Name="utf.run.statusfile.path" Type="Path">test status log.txt</Property>
 	<Property Name="utf.run.timestamp.flag" Type="Bool">false</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">VS_DEBUG,True;UNITEST,False;PCAP,True;</Property>
+		<Property Name="CCSymbols" Type="Str">VS_DEBUG,True;UNITEST,False;</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -752,7 +752,7 @@
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
 		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEGUB,True;INIT_FLAT,False;SHARED_INIT,False;PCAP,True;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEGUB,True;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -995,7 +995,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">262</Property>
+				<Property Name="Bld_version.build" Type="Int">263</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
