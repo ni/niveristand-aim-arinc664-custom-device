@@ -973,9 +973,6 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
