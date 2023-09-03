@@ -20,10 +20,10 @@
 		<Item Name="Log_Producer.ctl" Type="VI" URL="../Log_Producer.ctl"/>
 	</Item>
 	<Item Name="Messages" Type="Folder">
-		<Item Name="Check File Log Thresholds.vi" Type="VI" URL="../Check File Log Thresholds.vi"/>
 		<Item Name="Manage Disk.vi" Type="VI" URL="../Manage Disk.vi"/>
 		<Item Name="Open Log File.vi" Type="VI" URL="../Open Log File.vi"/>
 		<Item Name="Shutdown Logger.vi" Type="VI" URL="../Shutdown Logger.vi"/>
+		<Item Name="Send Log Configuration.vi" Type="VI" URL="../Send Log Configuration.vi"/>
 		<Item Name="Send Log Data.vi" Type="VI" URL="../Send Log Data.vi"/>
 		<Item Name="Close Log File.vi" Type="VI" URL="../Close Log File.vi"/>
 	</Item>
@@ -33,5 +33,5 @@
 	<Item Name="Request Logger.vi" Type="VI" URL="../Request Logger.vi"/>
 	<Item Name="Initialize Logger.vi" Type="VI" URL="../Initialize Logger.vi"/>
 	<Item Name="Finalize Logger.vi" Type="VI" URL="../Finalize Logger.vi"/>
-	<Item Name="Send Log Configuration.vi" Type="VI" URL="../Send Log Configuration.vi"/>
+	<Item Name="Check File Log Thresholds.vi" Type="VI" URL="../Check File Log Thresholds.vi"/>
 </Library>
