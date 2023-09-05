@@ -46,6 +46,7 @@
 		<Item Name="Check for MD5 Change.vi" Type="VI" URL="../../../Shared/Check for MD5 Change.vi"/>
 		<Item Name="Check if Custom Device is Enabled.vi" Type="VI" URL="../Check if Custom Device is Enabled.vi"/>
 		<Item Name="Configuration File Handler.vi" Type="VI" URL="../System Explorer/Configuration File Handler.vi"/>
+		<Item Name="Get Segment File Condition Caption.vi" Type="VI" URL="../../../Shared/Get Segment File Condition Caption.vi"/>
 		<Item Name="Load Help File.vi" Type="VI" URL="../System Explorer/Load Help File.vi"/>
 		<Item Name="Read Database.vi" Type="VI" URL="../System Explorer/Read Database.vi"/>
 		<Item Name="Write Database.vi" Type="VI" URL="../System Explorer/Write Database.vi"/>

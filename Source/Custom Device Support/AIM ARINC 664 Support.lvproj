@@ -57,7 +57,7 @@
 	<Property Name="utf.run.statusfile.path" Type="Path">test status log.txt</Property>
 	<Property Name="utf.run.timestamp.flag" Type="Bool">false</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">VS_DEBUG,True;UNITEST,False;PCAP,False;</Property>
+		<Property Name="CCSymbols" Type="Str">VS_DEBUG,True;UNITEST,False;</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -89,6 +89,7 @@
 				</Item>
 			</Item>
 			<Item Name="Manual" Type="Folder">
+				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
 				<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 				<Item Name="test_XMLlvParser.vi" Type="VI" URL="../Tests/System/Manual/test_XMLlvParser.vi"/>
 			</Item>
@@ -112,7 +113,6 @@
 			<Item Name="Monitor Queue Status Enum.ctl" Type="VI" URL="../Controls/Monitor Queue Status Enum.ctl"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
-			<Item Name="Frame.ctl" Type="VI" URL="../Engine/Implementation/Frame.ctl"/>
 		</Item>
 		<Item Name="Shared" Type="Folder">
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
@@ -158,6 +158,9 @@
 				<Item Name="Append Path to Root if Relative - Root Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Root Path Array__ogtk.vi"/>
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
 				<Item Name="Current VIs Reference__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Reference__ogtk.vi"/>
+				<Item Name="File Exists__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists__ogtk.vi"/>
+				<Item Name="File Exists - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Scalar__ogtk.vi"/>
+				<Item Name="File Exists - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Array__ogtk.vi"/>
 				<Item Name="Create Dir if Non-Existant__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Create Dir if Non-Existant__ogtk.vi"/>
 				<Item Name="Build Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path__ogtk.vi"/>
 				<Item Name="Build Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional__ogtk.vi"/>
@@ -185,8 +188,6 @@
 				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
-				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
-				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="VITesterUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/VITesterUtilities.lvlib"/>
@@ -530,7 +531,25 @@
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
+				<Item Name="NI_VS Workspace ExecutionAPI.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Workspace/NI_VS Workspace ExecutionAPI.lvlib"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
+				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
+				<Item Name="cfis_Replace Percent Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Replace Percent Code.vi"/>
+				<Item Name="cfis_Split File Path Into Three Parts.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Split File Path Into Three Parts.vi"/>
+				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
+				<Item Name="cfis_Reverse Scan From String For Integer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Reverse Scan From String For Integer.vi"/>
+				<Item Name="MergeError.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/MergeError.vi"/>
+				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
+				<Item Name="UnpackedFlatVectorToMatrix.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/UnpackedFlatVectorToMatrix.vi"/>
+				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
+				<Item Name="Generate Temporary File Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Generate Temporary File Path.vi"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/VeriStand Custom Device Testing Tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
@@ -567,6 +586,22 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
+			<Item Name="NationalInstruments.VeriStand.ClientAPI" Type="Document" URL="NationalInstruments.VeriStand.ClientAPI">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="FileSegmentType.ctl" Type="VI" URL="../Shared/FileSegmentType.ctl"/>
+			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
+			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
+			<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
+			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
+			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
+			<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Shared/hardware_channels_rx.ctl"/>
+			<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
+			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -588,7 +623,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Built/Support/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{EA6078E1-66BC-404A-A998-63564ABCDF3B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{44C0C4AE-EAF1-4328-887A-988958EB191A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AIM ARINC 664 Engine.lvlib</Property>
@@ -675,7 +710,6 @@
 				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../Built/Scripting</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_postActionVIID" Type="Ref"></Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1D3FDF35-3D7E-4DFE-8975-7292B1555A92}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
@@ -688,7 +722,7 @@
 				<Property Name="Destination[2].libraryName" Type="Str">AIM ARINC 664 Shared.lvlib</Property>
 				<Property Name="Destination[2].path" Type="Path">../Built/Scripting/Shared</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{99ED2F73-B8CB-4E38-93BA-AAE950717434}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{3881E796-E909-4352-B7A6-E22487C0A881}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AIM ARINC 664 Scripting.lvlib</Property>
@@ -721,7 +755,7 @@
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
 		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEGUB,True;INIT_FLAT,False;SHARED_INIT,False;PCAP,True;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEGUB,True;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -796,15 +830,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="_samples" Type="Folder">
-			<Item Name="basic - Loopback.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/basic - Loopback.vi"/>
-			<Item Name="Receive - Monitor.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - Monitor.vi"/>
-			<Item Name="Receive - UDP (CommPort).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - UDP (CommPort).vi"/>
-			<Item Name="Receive - UDP (SAP).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Receive - UDP (SAP).vi"/>
-			<Item Name="Transmit - Generic.vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - Generic.vi"/>
-			<Item Name="Transmit - UDP (CommPort).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - UDP (CommPort).vi"/>
-			<Item Name="Transmit - UDP (SAP).vi" Type="VI" URL="../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/AIM ARINC-664/Transmit - UDP (SAP).vi"/>
-		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
 				<Item Name="Manual" Type="Folder">
@@ -891,6 +916,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
+				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -923,14 +949,21 @@ AddOutputFilter chunkFilter
 			<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
-			<Item Name="Construct Tx.vi" Type="VI" URL="../Engine/Implementation/Tx Execution Unit/Construct Tx.vi"/>
+			<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
+			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
+			<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Shared/hardware_channels_rx.ctl"/>
+			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
+			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
+			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -941,6 +974,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
@@ -965,7 +1001,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">248</Property>
+				<Property Name="Bld_version.build" Type="Int">263</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>

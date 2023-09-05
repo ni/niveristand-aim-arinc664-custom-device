@@ -22,7 +22,6 @@
 		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
-		<Item Name="Port Session to EU Clusters.vi" Type="VI" URL="../Configuration File/Port Session to EU Clusters.vi"/>
 		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
 		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
 		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
@@ -93,12 +92,15 @@
 	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
+		<Item Name="Get All Logging Properties.vi" Type="VI" URL="../Logging/Get All Logging Properties.vi"/>
 		<Item Name="Get Decimation.vi" Type="VI" URL="../Custom Device/Get Decimation.vi"/>
 		<Item Name="Get Logging Directory.vi" Type="VI" URL="../Logging/Get Logging Directory.vi"/>
 		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
 		<Item Name="Get Logging File Name.vi" Type="VI" URL="../Logging/Get Logging File Name.vi"/>
 		<Item Name="Get Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Get Logging Filestam in File Name.vi"/>
+		<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
 		<Item Name="Set Decimation.vi" Type="VI" URL="../Custom Device/Set Decimation.vi"/>
+		<Item Name="Set Log Thresholds.vi" Type="VI" URL="../Logging/Set Log Thresholds.vi"/>
 		<Item Name="Set Logging Directory.vi" Type="VI" URL="../Logging/Set Logging Directory.vi"/>
 		<Item Name="Set Logging Enabled.vi" Type="VI" URL="../Logging/Set Logging Enabled.vi"/>
 		<Item Name="Set Logging File Name.vi" Type="VI" URL="../Logging/Set Logging File Name.vi"/>
@@ -160,5 +162,4 @@
 		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
 </Library>
