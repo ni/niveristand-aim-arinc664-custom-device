@@ -15,6 +15,7 @@
 	<Item Name="Utilities" Type="Folder">
 		<Item Name="Set Channels.vi" Type="VI" URL="../Utilities/Set Channels.vi"/>
 	</Item>
+	<Item Name="Logging" Type="Folder"/>
 	<Item Name="Execution Unit Factory.lvclass" Type="LVClass" URL="../Execution Unit Factory/Execution Unit Factory.lvclass"/>
 	<Item Name="Execution Unit.lvclass" Type="LVClass" URL="../Execution Unit/Execution Unit.lvclass"/>
 	<Item Name="Shared Resources Factory.lvclass" Type="LVClass" URL="../Shared Resources Factory/Shared Resources Factory.lvclass"/>
