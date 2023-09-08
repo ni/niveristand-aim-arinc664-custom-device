@@ -39,7 +39,7 @@
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
 		<Item Name="Get Properties from Cluster.vi" Type="VI" URL="../Custom Device/Get Properties from Cluster.vi"/>
 		<Item Name="Set Properties from Cluster.vi" Type="VI" URL="../Custom Device/Set Properties from Cluster.vi"/>
-		<Item Name="Get Ports Section.vi" Type="VI" URL="../Custom Device/Get Ports Section.vi"/>
+		<Item Name="Get Ports Section.vi" Type="VI" URL="../Port/Get Ports Section.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
@@ -47,8 +47,8 @@
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
-		<Item Name="Set Monitoring Session.vi" Type="VI" URL="../Custom Device/Set Monitoring Session.vi"/>
-		<Item Name="Set Tx Generic Session.vi" Type="VI" URL="../Custom Device/Set Tx Generic Session.vi"/>
+		<Item Name="Add Rx Monitor Section and Status and Logging.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status and Logging.vi"/>
+		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
@@ -116,10 +116,10 @@
 	</Item>
 	<Item Name="Rx Monitor" Type="Folder">
 		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
+		<Item Name="Add Rx Monitor Section and Status Channels.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status Channels.vi"/>
 		<Item Name="Add Rx Monitor Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section.vi"/>
 		<Item Name="Add Rx Monitor Status Channel.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Channel.vi"/>
 		<Item Name="Add Rx Monitor Status Error.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Error.vi"/>
-		<Item Name="Add Rx Monitor Status Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Section.vi"/>
 		<Item Name="Add Rx Monitor Status Size Distribution.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Size Distribution.vi"/>
 		<Item Name="Add Rx Monitor Status Utilization.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Utilization.vi"/>
 		<Item Name="Add Rx Monitor Status.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status.vi"/>
@@ -132,12 +132,12 @@
 		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Rx Monitor/Set Rx Monitor Properties.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
+		<Item Name="Add Rx UDP Section and Status Channels.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Section and Status Channels.vi"/>
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
 		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
 		<Item Name="Get Rx UDP All Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP All Channels.vi"/>
 		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
-		<Item Name="Set Rx UDP.vi" Type="VI" URL="../Custom Device/Set Rx UDP.vi"/>
 	</Item>
 	<Item Name="Timing" Type="Folder">
 		<Item Name="Add Timing Section.vi" Type="VI" URL="../Timing/Add Timing Section.vi"/>
@@ -145,7 +145,7 @@
 	</Item>
 	<Item Name="Tx Generic" Type="Folder">
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section.vi"/>
-		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section.vi"/>
+		<Item Name="Add Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section and Channels.vi"/>
@@ -154,13 +154,13 @@
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
 	<Item Name="Tx UDP" Type="Folder">
+		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section.vi"/>
+		<Item Name="Add Tx UDP Section and Status Channels.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Section and Status Channels.vi"/>
 		<Item Name="Add Tx UDP Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Section.vi"/>
 		<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Status Section.vi"/>
 		<Item Name="Add Tx UDP VLs and UDPs.vi" Type="VI" URL="../Tx UDP/Add Tx UDP VLs and UDPs.vi"/>
-		<Item Name="Add Tx UDP.vi" Type="VI" URL="../Tx UDP/Add Tx UDP.vi"/>
 		<Item Name="Get Tx UDP All Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP All Channels.vi"/>
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
-		<Item Name="Set Tx UDP.vi" Type="VI" URL="../Custom Device/Set Tx UDP.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 </Library>
