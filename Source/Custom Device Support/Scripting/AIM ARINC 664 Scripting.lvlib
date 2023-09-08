@@ -48,8 +48,6 @@
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 		<Item Name="Set Monitoring Session.vi" Type="VI" URL="../Custom Device/Set Monitoring Session.vi"/>
-		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Configuration File/Set Rx Monitor Properties.vi"/>
-		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Configuration File/Set Tx Generic Properties.vi"/>
 		<Item Name="Set Tx Generic Session.vi" Type="VI" URL="../Custom Device/Set Tx Generic Session.vi"/>
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 	</Item>
@@ -118,19 +116,20 @@
 	</Item>
 	<Item Name="Rx Monitor" Type="Folder">
 		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
-		<Item Name="Add Monitor Queue Status Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Queue Status Section.vi"/>
-		<Item Name="Add Monitor Section.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Section.vi"/>
-		<Item Name="Add Monitor Status Channel.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Channel.vi"/>
-		<Item Name="Add Monitor Status Error.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Error.vi"/>
-		<Item Name="Add Monitor Status Size Distribution.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Size Distribution.vi"/>
-		<Item Name="Add Monitor Status Utilization.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status Utilization.vi"/>
-		<Item Name="Add Monitor Status.vi" Type="VI" URL="../Monitor Queue Status/Add Monitor Status.vi"/>
-		<Item Name="Get Monitor Channel Array.vi" Type="VI" URL="../GUID Utility/Get Monitor Channel Array.vi"/>
-		<Item Name="Get Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Monitor Queue Status/Get Monitor Queue Status Section and Channels.vi"/>
-		<Item Name="Get Rx Channel Array.vi" Type="VI" URL="../GUID Utility/Get Rx Channel Array.vi"/>
-		<Item Name="Get Rx Monitor Error.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Error.vi"/>
-		<Item Name="Get Rx Monitor Size Distribution.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Size Distribution.vi"/>
-		<Item Name="Get Rx Monitor Utilization.vi" Type="VI" URL="../GUID Utility/Get Rx Monitor Utilization.vi"/>
+		<Item Name="Add Rx Monitor Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section.vi"/>
+		<Item Name="Add Rx Monitor Status Channel.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Channel.vi"/>
+		<Item Name="Add Rx Monitor Status Error.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Error.vi"/>
+		<Item Name="Add Rx Monitor Status Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Section.vi"/>
+		<Item Name="Add Rx Monitor Status Size Distribution.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Size Distribution.vi"/>
+		<Item Name="Add Rx Monitor Status Utilization.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Utilization.vi"/>
+		<Item Name="Add Rx Monitor Status.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status.vi"/>
+		<Item Name="Get Rx Monitor All Channels Array.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor All Channels Array.vi"/>
+		<Item Name="Get Rx Monitor Channel Array.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Channel Array.vi"/>
+		<Item Name="Get Rx Monitor Error.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Error.vi"/>
+		<Item Name="Get Rx Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Queue Status Section and Channels.vi"/>
+		<Item Name="Get Rx Monitor Size Distribution.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Size Distribution.vi"/>
+		<Item Name="Get Rx Monitor Utilization.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Utilization.vi"/>
+		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Rx Monitor/Set Rx Monitor Properties.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
@@ -152,6 +151,7 @@
 		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section and Channels.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Set Tx Generic File Path.vi"/>
+		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
 	<Item Name="Tx UDP" Type="Folder">
 		<Item Name="Add Tx UDP Section.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Section.vi"/>
