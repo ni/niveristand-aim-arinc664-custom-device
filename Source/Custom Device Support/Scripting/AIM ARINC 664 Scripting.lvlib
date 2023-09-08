@@ -28,6 +28,7 @@
 	<Item Name="Custom Device" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
+		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
 		<Item Name="Check if Custom Device Enabled.vi" Type="VI" URL="../Custom Device/Check if Custom Device Enabled.vi"/>
 		<Item Name="Disable Custom Device.vi" Type="VI" URL="../Custom Device/Disable Custom Device.vi"/>
 		<Item Name="Export Custom Device.vi" Type="VI" URL="../Custom Device/Export Custom Device.vi"/>
@@ -43,13 +44,15 @@
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
-		<Item Name="Import Parameters File.vi" Type="VI" URL="../Custom Device/Import Parameters File.vi"/>
+		<Item Name="Import Configuration File.vi" Type="VI" URL="../Custom Device/Import Configuration File.vi"/>
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 		<Item Name="Add Rx Monitor Section and Status and Logging.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status and Logging.vi"/>
 		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
+		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
+		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
@@ -115,7 +118,6 @@
 		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx Monitor" Type="Folder">
-		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
 		<Item Name="Add Rx Monitor Section and Status Channels.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status Channels.vi"/>
 		<Item Name="Add Rx Monitor Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section.vi"/>
 		<Item Name="Add Rx Monitor Status Channel.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Channel.vi"/>
