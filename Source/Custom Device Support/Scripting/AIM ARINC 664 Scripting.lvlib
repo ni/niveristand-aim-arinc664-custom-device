@@ -48,8 +48,6 @@
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
-		<Item Name="Add Rx Monitor Section and Status and Logging.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status and Logging.vi"/>
-		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
 		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
@@ -80,18 +78,19 @@
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="Add Logging Section.vi" Type="VI" URL="../Logging/Add Logging Section.vi"/>
 		<Item Name="Get All Logging Properties.vi" Type="VI" URL="../Logging/Get All Logging Properties.vi"/>
 		<Item Name="Get Logging Directory.vi" Type="VI" URL="../Logging/Get Logging Directory.vi"/>
 		<Item Name="Get Logging Enabled.vi" Type="VI" URL="../Logging/Get Logging Enabled.vi"/>
 		<Item Name="Get Logging File Name.vi" Type="VI" URL="../Logging/Get Logging File Name.vi"/>
-		<Item Name="Get Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Get Logging Filestam in File Name.vi"/>
+		<Item Name="Get Logging Timestamp in File Name.vi" Type="VI" URL="../Logging/Get Logging Timestamp in File Name.vi"/>
 		<Item Name="Get Logging Session and Channel Refs.vi" Type="VI" URL="../Logging/Get Logging Session and Channel Refs.vi"/>
 		<Item Name="Set Log Thresholds.vi" Type="VI" URL="../Logging/Set Log Thresholds.vi"/>
 		<Item Name="Set Logging Directory.vi" Type="VI" URL="../Logging/Set Logging Directory.vi"/>
 		<Item Name="Set Logging Enabled.vi" Type="VI" URL="../Logging/Set Logging Enabled.vi"/>
 		<Item Name="Set Logging File Name.vi" Type="VI" URL="../Logging/Set Logging File Name.vi"/>
-		<Item Name="Set Logging Filestam in File Name.vi" Type="VI" URL="../Logging/Set Logging Filestam in File Name.vi"/>
+		<Item Name="Set Logging Timestamp in File Name.vi" Type="VI" URL="../Logging/Set Logging Timestamp in File Name.vi"/>
 	</Item>
 	<Item Name="Main Page" Type="Folder">
 		<Item Name="Get Decimation.vi" Type="VI" URL="../Main Page/Get Decimation.vi"/>
@@ -118,6 +117,7 @@
 		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx Monitor" Type="Folder">
+		<Item Name="Add Rx Monitor Section and Status and Logging.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status and Logging.vi"/>
 		<Item Name="Add Rx Monitor Section and Status Channels.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status Channels.vi"/>
 		<Item Name="Add Rx Monitor Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section.vi"/>
 		<Item Name="Add Rx Monitor Status Channel.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status Channel.vi"/>
@@ -146,12 +146,13 @@
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
 	<Item Name="Tx Generic" Type="Folder">
+		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section.vi"/>
 		<Item Name="Add Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Get Tx Generic File Path.vi"/>
-		<Item Name="Get Tx Generic Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section and Channels.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
+		<Item Name="Get Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
