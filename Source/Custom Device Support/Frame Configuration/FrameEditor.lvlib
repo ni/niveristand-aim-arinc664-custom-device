@@ -5,6 +5,8 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Convert Non-visible Char to Visible Char.vi" Type="VI" URL="../support/Convert Non-visible Char to Visible Char.vi"/>
+	<Item Name="Format MAC into String.vi" Type="VI" URL="../support/Format MAC into String.vi"/>
+	<Item Name="Frame Editor.vi" Type="VI" URL="../Frame Editor.vi"/>
 	<Item Name="Frame Import UI.vi" Type="VI" URL="../Frame Import UI.vi"/>
 	<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
 	<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
