@@ -71,10 +71,10 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Unit" Type="Folder">
 				<Item Name="Scripting" Type="Folder">
-					<Item Name="Scripting.lvclass" Type="LVClass" URL="../Tests/Unit/Scripting/Scripting.lvclass"/>
+					<Item Name="AIM ARINC 664 Scripting.lvclass" Type="LVClass" URL="../Tests/Unit/Scripting/AIM ARINC 664 Scripting.lvclass"/>
 				</Item>
 				<Item Name="XML parsing" Type="Folder">
-					<Item Name="Port Setup.lvclass" Type="LVClass" URL="../Tests/Unit/XML Parsing/Port Setup/Port Setup.lvclass"/>
+					<Item Name="AIM ARINC 664 Port Setup.lvclass" Type="LVClass" URL="../Tests/Unit/XML Parsing/Port Setup/AIM ARINC 664 Port Setup.lvclass"/>
 				</Item>
 				<Item Name="Import" Type="Folder">
 					<Item Name="Assets" Type="Folder">
@@ -83,7 +83,7 @@
 						<Item Name="templateNonDefault.xml" Type="Document" URL="../Tests/Unit/Import/Assets/templateNonDefault.xml"/>
 						<Item Name="testAIM_multisession.xml" Type="Document" URL="../Tests/Unit/Import/Assets/testAIM_multisession.xml"/>
 					</Item>
-					<Item Name="Import.lvclass" Type="LVClass" URL="../Tests/Unit/Import/Import.lvclass"/>
+					<Item Name="AIM ARINC 664 Import.lvclass" Type="LVClass" URL="../Tests/Unit/Import/AIM ARINC 664 Import.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Manual" Type="Folder">
@@ -97,7 +97,7 @@
 					<Item Name="Assets" Type="Folder">
 						<Item Name="TxGenRxMon-loopback.nivssdf" Type="Document" URL="../Tests/System/AIM_Deployment/Assets/TxGenRxMon-loopback.nivssdf"/>
 					</Item>
-					<Item Name="AIM_Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM_Deployment.lvclass"/>
+					<Item Name="AIM ARINC 664 Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM ARINC 664 Deployment.lvclass"/>
 				</Item>
 			</Item>
 		</Item>
