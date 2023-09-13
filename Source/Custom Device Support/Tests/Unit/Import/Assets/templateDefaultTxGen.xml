@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame ID="0" PreambleCount="0" NetSelect="FDX_TX_FRAME_DLY_A" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+      <TxGenericFrame ID="1" PreambleCount="0" NetSelect="FDX_TX_FRAME_DLY_A" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+    </TxGenericSession>
+  </Port>
+  <Port PortId="1">
+    <TxGenericSession>
+      <TxGenericFrame ID="0" PreambleCount="0" NetSelect="FDX_TX_FRAME_DLY_A" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+      <TxGenericFrame ID="1" PreambleCount="0" NetSelect="FDX_TX_FRAME_DLY_A" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+    </TxGenericSession>
+  </Port>
+</Board>
