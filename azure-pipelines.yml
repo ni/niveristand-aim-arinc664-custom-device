@@ -30,6 +30,11 @@ stages:
           target: 'My Computer'
           buildSpec: 'Scripting API'
 
+        - projectLocation: 'Source\Scripting Examples\Scripting Examples.lvproj'
+          buildOperation: 'ExecuteBuildSpec'
+          target: 'My Computer'
+          buildSpec: 'Examples'
+
         - projectLocation: 'Source\Custom Device Support\AIM ARINC 664 Support.lvproj'
           buildOperation: 'ExecuteBuildSpec'
           target: 'My Computer'
@@ -69,14 +74,14 @@ stages:
           payloadMaps:
             - installLocation: 'documents\National Instruments\NI VeriStand $(lvVersion)\Custom Devices\AIM ARINC 664'
               payloadLocation: 'AIM ARINC 664'
-            # - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\LabVIEW Run-Time\$(lvVersion)\errors\English'
-            #   payloadLocation: 'Errors'
+            - installLocation: 'ni-paths-NISHAREDDIR$(nipkgx64suffix)\LabVIEW Run-Time\$(lvVersion)\errors\English'
+              payloadLocation: 'Errors'
 
         - controlFileName: 'control_scripting'
           payloadMaps:
             - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\vi.lib\addons\VeriStand Custom Device Scripting APIs\AIM ARINC 664'
               payloadLocation: 'Scripting'
-            # - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\AIM ARINC 664'
-            #   payloadLocation: 'Scripting Examples'
-            # - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\resource\errors\English'
-            #   payloadLocation: 'Errors'
+            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\examples\NI VeriStand Custom Devices\AIM ARINC 664'
+              payloadLocation: 'Scripting Examples'
+            - installLocation: 'ni-paths-LV$(lvVersion)DIR$(nipkgx64suffix)\resource\errors\English'
+              payloadLocation: 'Errors'
