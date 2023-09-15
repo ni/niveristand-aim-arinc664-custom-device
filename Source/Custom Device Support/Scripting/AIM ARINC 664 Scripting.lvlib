@@ -151,9 +151,11 @@
 		<Item Name="Add Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Get Tx Generic File Path.vi"/>
+		<Item Name="Get Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Header List.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Set Tx Generic File Path.vi"/>
+		<Item Name="Set Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Frame Header List.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
 	<Item Name="Tx UDP" Type="Folder">

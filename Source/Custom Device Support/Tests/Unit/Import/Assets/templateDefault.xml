@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
-    <TxGenericSession />
+    <TxGenericSession>
+      <TxGenericFrame ID="0" />
+      <TxGenericFrame ID="1" />
+    </TxGenericSession>
     <RxMonitorSession />
   </Port>
   <Port PortId="1">

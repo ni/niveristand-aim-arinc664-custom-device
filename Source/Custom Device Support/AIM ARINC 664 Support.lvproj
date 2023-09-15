@@ -57,7 +57,7 @@
 	<Property Name="utf.run.statusfile.path" Type="Path">test status log.txt</Property>
 	<Property Name="utf.run.timestamp.flag" Type="Bool">false</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">UNITEST,False;</Property>
+		<Property Name="CCSymbols" Type="Str">UNITEST,False;VS_DEBUG,False;</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -82,6 +82,18 @@
 						<Item Name="templateDefault.xml" Type="Document" URL="../Tests/Unit/Import/Assets/templateDefault.xml"/>
 						<Item Name="templateNonDefault.xml" Type="Document" URL="../Tests/Unit/Import/Assets/templateNonDefault.xml"/>
 						<Item Name="testAIM_multisession.xml" Type="Document" URL="../Tests/Unit/Import/Assets/testAIM_multisession.xml"/>
+						<Item Name="templateDefault_Parameters.xml" Type="Document" URL="../Tests/Unit/Import/Assets/templateDefault_Parameters.xml"/>
+						<Item Name="templateDefaultTxGen.xml" Type="Document" URL="../Tests/Unit/Import/Assets/templateDefaultTxGen.xml"/>
+						<Item Name="UDP_RX_TX_Loopback_Mon_TxUDP.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_RX_TX_Loopback_Mon_TxUDP.xml"/>
+						<Item Name="UDP_RX_TX_Loopback_Mon_TxUDP_10Mbs.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_RX_TX_Loopback_Mon_TxUDP_10Mbs.xml"/>
+						<Item Name="UDP_RX_TX_Loopback_Mon_TxUDP_100Mbs.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_RX_TX_Loopback_Mon_TxUDP_100Mbs.xml"/>
+						<Item Name="UDP_RX_TX_Loopback_TxRxMon.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_RX_TX_Loopback_TxRxMon.xml"/>
+						<Item Name="UDP_TX_RX_Loopback.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback.xml"/>
+						<Item Name="UDP_TX_RX_Loopback_manyParameters.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback_manyParameters.xml"/>
+						<Item Name="UDP_TX_RX_Loopback_manyParameters__2.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback_manyParameters__2.xml"/>
+						<Item Name="UDP_TX_RX_Loopback_manyParameters__3.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback_manyParameters__3.xml"/>
+						<Item Name="UDP_TX_RX_Loopback_manyParameters__4.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback_manyParameters__4.xml"/>
+						<Item Name="UDP_TX_RX_Loopback_zeroParameters.xml" Type="Document" URL="../Tests/Unit/Import/Assets/UDP_TX_RX_Loopback_zeroParameters.xml"/>
 					</Item>
 					<Item Name="AIM ARINC 664 Import.lvclass" Type="LVClass" URL="../Tests/Unit/Import/AIM ARINC 664 Import.lvclass"/>
 				</Item>
@@ -91,6 +103,7 @@
 				<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 				<Item Name="test_XMLlvParser.vi" Type="VI" URL="../Tests/System/Manual/test_XMLlvParser.vi"/>
 				<Item Name="test_script_api_Tree.vi" Type="VI" URL="../Tests/System/Manual/test_script_api_Tree.vi"/>
+				<Item Name="Get-Set Properties from Cluster.vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -98,6 +111,12 @@
 						<Item Name="TxGenRxMon-loopback.nivssdf" Type="Document" URL="../Tests/System/AIM_Deployment/Assets/TxGenRxMon-loopback.nivssdf"/>
 					</Item>
 					<Item Name="AIM ARINC 664 Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM ARINC 664 Deployment.lvclass"/>
+				</Item>
+				<Item Name="Loopback" Type="Folder">
+					<Item Name="Assets" Type="Folder">
+						<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
+					</Item>
+					<Item Name="AIM ARINC 664 Loopback.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback/AIM ARINC 664 Loopback.lvclass"/>
 				</Item>
 			</Item>
 		</Item>
@@ -118,6 +137,7 @@
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
+			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 		</Item>
 		<Item Name="Palette" Type="Folder" URL="../Palette">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -160,7 +180,6 @@
 				<Item Name="Append Path to Root if Relative - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Array__ogtk.vi"/>
 				<Item Name="Append Path to Root if Relative - Root Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Root Path Array__ogtk.vi"/>
 				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
-				<Item Name="Current VIs Reference__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Reference__ogtk.vi"/>
 				<Item Name="Create Dir if Non-Existant__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Create Dir if Non-Existant__ogtk.vi"/>
 				<Item Name="Build Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path__ogtk.vi"/>
 				<Item Name="Build Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional__ogtk.vi"/>
@@ -172,6 +191,7 @@
 				<Item Name="File Exists__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists__ogtk.vi"/>
 				<Item Name="File Exists - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Scalar__ogtk.vi"/>
 				<Item Name="File Exists - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Array__ogtk.vi"/>
+				<Item Name="Current VIs Reference__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Reference__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
@@ -533,7 +553,6 @@
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="Data Access Engine.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_Data Access Engine/Data Access Engine.lvlib"/>
-				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="VeriStandTestUtilities.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/VeriStand Custom Device Testing Tools/VeriStandTestUtilities/VeriStandTestUtilities.lvlib"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
@@ -553,6 +572,7 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
+				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
@@ -784,7 +804,7 @@
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
+		<Property Name="alias.value" Type="Str">10.0.70.25</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEGUB,False;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -877,6 +897,7 @@ AddOutputFilter chunkFilter
 					<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
 					<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
 					<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
+					<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
 				</Item>
 			</Item>
 		</Item>
@@ -984,6 +1005,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
 			<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
 			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
+			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -1031,7 +1053,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">267</Property>
+				<Property Name="Bld_version.build" Type="Int">280</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>

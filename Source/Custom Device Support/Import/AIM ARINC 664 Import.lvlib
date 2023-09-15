@@ -8,10 +8,13 @@
 
 </Property>
 	<Item Name="_typedefs" Type="Folder">
+		<Item Name="Board Top Level Configuration.ctl" Type="VI" URL="../../Shared/Board Top Level Configuration.ctl"/>
 		<Item Name="board_setup.ctl" Type="VI" URL="../../Shared/board_setup.ctl"/>
 		<Item Name="frame_parameter.ctl" Type="VI" URL="../../Shared/frame_parameter.ctl"/>
 		<Item Name="frame_parameter_definition.ctl" Type="VI" URL="../../Shared/frame_parameter_definition.ctl"/>
-		<Item Name="Port Session Configuration.ctl" Type="VI" URL="../../Shared/Port Session Configuration.ctl"/>
+		<Item Name="frame_tx_generic.ctl" Type="VI" URL="../../Shared/frame_tx_generic.ctl"/>
+		<Item Name="frame_tx_generic_seqNumberInit.ctl" Type="VI" URL="../../Shared/frame_tx_generic_seqNumberInit.ctl"/>
+		<Item Name="frame_tx_generic_seqNumberOffset.ctl" Type="VI" URL="../../Shared/frame_tx_generic_seqNumberOffset.ctl"/>
 		<Item Name="port_configuration.ctl" Type="VI" URL="../../Shared/port_configuration.ctl"/>
 		<Item Name="port_rx_udp_comm.ctl" Type="VI" URL="../../Shared/port_rx_udp_comm.ctl"/>
 		<Item Name="port_rx_udp_sap.ctl" Type="VI" URL="../../Shared/port_rx_udp_sap.ctl"/>
@@ -21,6 +24,7 @@
 		<Item Name="rx_udp_setup.ctl" Type="VI" URL="../../Shared/rx_udp_setup.ctl"/>
 		<Item Name="session_rx_monitor.ctl" Type="VI" URL="../../Shared/session_rx_monitor.ctl"/>
 		<Item Name="session_tx_generic.ctl" Type="VI" URL="../../Shared/session_tx_generic.ctl"/>
+		<Item Name="tx_generic_setup.ctl" Type="VI" URL="../../Shared/tx_generic_setup.ctl"/>
 		<Item Name="tx_udp_setup.ctl" Type="VI" URL="../../Shared/tx_udp_setup.ctl"/>
 	</Item>
 	<Item Name="Parse subVIs" Type="Folder">
@@ -34,13 +38,20 @@
 		<Item Name="Parse Session (Rx-UDP).vi" Type="VI" URL="../Parse Session (Rx-UDP).vi"/>
 		<Item Name="Parse Session (Tx-Generic).vi" Type="VI" URL="../Parse Session (Tx-Generic).vi"/>
 		<Item Name="Parse Session (Tx-UDP).vi" Type="VI" URL="../Parse Session (Tx-UDP).vi"/>
+		<Item Name="Parse Tx Generic Frame.vi" Type="VI" URL="../Parse Tx Generic Frame.vi"/>
 		<Item Name="value to ring (CaptureMode).vi" Type="VI" URL="../value to ring (CaptureMode).vi"/>
 		<Item Name="value to ring (DefaultCronoMode).vi" Type="VI" URL="../value to ring (DefaultCronoMode).vi"/>
 		<Item Name="value to ring (FilterMode).vi" Type="VI" URL="../value to ring (FilterMode).vi"/>
+		<Item Name="value to ring (FrameStartMode).vi" Type="VI" URL="../value to ring (FrameStartMode).vi"/>
 		<Item Name="value to ring (NetSelect).vi" Type="VI" URL="../value to ring (NetSelect).vi"/>
+		<Item Name="value to ring (PayloadBufferMode).vi" Type="VI" URL="../value to ring (PayloadBufferMode).vi"/>
+		<Item Name="value to ring (PayloadGenerationMode).vi" Type="VI" URL="../value to ring (PayloadGenerationMode).vi"/>
+		<Item Name="value to ring (PhysErrorInjection).vi" Type="VI" URL="../value to ring (PhysErrorInjection).vi"/>
 		<Item Name="value to ring (portConfig).vi" Type="VI" URL="../value to ring (portConfig).vi"/>
 		<Item Name="value to ring (portSpeed).vi" Type="VI" URL="../value to ring (portSpeed).vi"/>
 		<Item Name="value to ring (PortType).vi" Type="VI" URL="../value to ring (PortType).vi"/>
+		<Item Name="value to ring (SequenceNumberInit).vi" Type="VI" URL="../value to ring (SequenceNumberInit).vi"/>
+		<Item Name="value to ring (SequenceNumberOffset).vi" Type="VI" URL="../value to ring (SequenceNumberOffset).vi"/>
 		<Item Name="value to ring (StartMode).vi" Type="VI" URL="../value to ring (StartMode).vi"/>
 		<Item Name="value to ring (Strobe).vi" Type="VI" URL="../value to ring (Strobe).vi"/>
 		<Item Name="value to ring (VerificationMode).vi" Type="VI" URL="../value to ring (VerificationMode).vi"/>
@@ -61,8 +72,8 @@
 		<Item Name="Read Array of Ports (Rx-UDP).vi" Type="VI" URL="../Read Array of Ports (Rx-UDP).vi"/>
 		<Item Name="Read Array of Ports (Tx-UDP).vi" Type="VI" URL="../Read Array of Ports (Tx-UDP).vi"/>
 		<Item Name="Read Array Of Tag Elements.vi" Type="VI" URL="../Read Array Of Tag Elements.vi"/>
+		<Item Name="Read Array of Tx Frames.vi" Type="VI" URL="../Read Array of Tx Frames.vi"/>
 		<Item Name="Read Tag Element.vi" Type="VI" URL="../Read Tag Element.vi"/>
 	</Item>
 	<Item Name="Parse Parameters File.vi" Type="VI" URL="../Parse Parameters File.vi"/>
-	<Item Name="port_logging_properties.ctl" Type="VI" URL="../../Shared/port_logging_properties.ctl"/>
 </Library>

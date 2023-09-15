@@ -73,6 +73,82 @@
     <xs:attribute name="QueueSizeIn" default="0" type="xs:int" />
     <xs:attribute name="Count" default="0" type="xs:int" />
   </xs:attributeGroup>
+  <xs:attributeGroup name="txGenericFrameGroup">
+    <xs:attribute name="InterFrameGap" default="0" type="xs:int" />
+    <xs:attribute name="PacketGroupWaitTime" default="0" type="xs:int" />
+    <xs:attribute name="PayloadBufferMode" default="FDX_TX_FRAME_PBM_STD">
+      <xs:annotation>
+        <xs:documentation>Payload buffer mode</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_TX_FRAME_PBM_STD" />
+          <xs:enumeration value ="FDX_TX_FRAME_PBM_MAC" />
+          <xs:enumeration value ="FDX_TX_FRAME_PBM_UDP" />
+          <xs:enumeration value ="FDX_TX_FRAME_PBM_FULL" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="PayloadGenerationMode" default="FDX_TX_FRAME_PGM_USER">
+      <xs:annotation>
+        <xs:documentation>Payload generation mode</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_TX_FRAME_PGM_USER" />
+          <xs:enumeration value ="FDX_TX_FRAME_PGM_IP_PART" />
+          <xs:enumeration value ="FDX_TX_FRAME_PGM_IP_PART_TT" />
+          <xs:enumeration value ="FDX_TX_FRAME_PGM_IP_FULL" />
+          <xs:enumeration value ="FDX_TX_FRAME_PGM_IP_FULL_TT" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="PreambleCount" default="7" type="xs:int" />
+    <xs:attribute name="Skew" default="0" type="xs:int" />
+    <xs:attribute name="NetSelect" default="FDX_TX_FRAME_BOTH">
+      <xs:annotation>
+        <xs:documentation>Physical Interface of the MAC on which redundant frames will be sent</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_TX_FRAME_DLY_A" />
+          <xs:enumeration value ="FDX_TX_FRAME_DLY_B" />
+          <xs:enumeration value ="FDX_TX_FRAME_BOTH" />
+          <xs:enumeration value ="FDX_TX_FRAME_ONLY_A" />
+          <xs:enumeration value ="FDX_TX_FRAME_ONLY_B" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="FrameStartMode" default="FDX_TX_FRAME_START_PGWT">
+      <xs:annotation>
+        <xs:documentation>Start mode for the transmission of the current frame</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_TX_FRAME_START_IFG" />
+          <xs:enumeration value ="FDX_TX_FRAME_START_PGWT" />
+          <xs:enumeration value ="FDX_TX_FRAME_START_TRG" />
+          <xs:enumeration value ="FDX_TX_FRAME_START_TRG_D" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="PhysErrorInjection" default="FDX_TX_FRAME_ERR_OFF">
+      <xs:annotation>
+        <xs:documentation>Used to send frames with physical errors</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="FDX_TX_FRAME_ERR_OFF" />
+          <xs:enumeration value ="FDX_TX_FRAME_ERR_CRC" />
+          <xs:enumeration value ="FDX_TX_FRAME_ERR_ALI" />
+          <xs:enumeration value ="FDX_TX_FRAME_ERR_PRE" />
+          <xs:enumeration value ="FDX_TX_FRAME_ERR_PHY" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="SequenceNumberInit" default="65535" type="xs:int" />
+    <xs:attribute name="SequenceNumberOffset" default="65535" type="xs:int" />
+  </xs:attributeGroup>
   <xs:attributeGroup name="RxMonitorSessionGroup">
     <xs:attribute name="DefaultCronoMode" default="FDX_RX_DEFAULT_MON_ENA_ALL">
       <xs:annotation>
@@ -263,8 +339,18 @@
     <xs:annotation>
       <xs:documentation>The session type for Generic Transmit</xs:documentation>
     </xs:annotation>
+    <xs:sequence>
+      <xs:element name="TxGenericFrame" type="TxGenericFrameType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
     <xs:attributeGroup ref="txGenericSessionGroup" />
 		<xs:attributeGroup ref="txStartMode" />
+  </xs:complexType>
+  <xs:complexType name="TxGenericFrameType">
+    <xs:annotation>
+      <xs:documentation>Type for Header info used to for Tx Generif Frames.</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="ID" use="required" type="xs:string" />
+    <xs:attributeGroup ref="txGenericFrameGroup" />
   </xs:complexType>
   <xs:complexType name="RxMonitorSessionType">
     <xs:annotation>
@@ -290,6 +376,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
+    <xs:attribute name="ID" use="required" type="xs:string" />
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="TxCommPortGroup" />
   </xs:complexType>
@@ -300,6 +387,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
+    <xs:attribute name="ID" use="required" type="xs:string" />    
     <xs:attributeGroup ref ="TxSapPortGroup" />
   </xs:complexType>
   <xs:complexType name="RxUdpSessionType">
@@ -319,6 +407,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
+    <xs:attribute name="ID" use="required" type="xs:string" />
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="RxCommPortGroup" />
   </xs:complexType>
@@ -329,6 +418,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
+    <xs:attribute name="ID" use="required" type="xs:string" />
     <xs:attributeGroup ref ="RxSapPortGroup" />
   </xs:complexType>
   <xs:complexType name="ParameterType">

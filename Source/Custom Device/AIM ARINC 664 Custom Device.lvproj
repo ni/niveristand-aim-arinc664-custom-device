@@ -83,6 +83,7 @@
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
@@ -102,10 +103,12 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Rx UDP/Add Rx UDP Status Section.vi"/>
+			<Item Name="Add Tx UDP Status Section.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Tx UDP/Add Tx UDP Status Section.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Get Rx Channel Array.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/GUID Utility/Get Rx Channel Array.vi"/>
+			<Item Name="Get Rx Monitor Channel Array.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Rx Monitor/Get Rx Monitor Channel Array.vi"/>
+			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -122,6 +125,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="NIVeriStand_DataServices.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
@@ -424,6 +430,7 @@ AddOutputFilter chunkFilter
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Import/AIM ARINC 664 Import.lvlib"/>
 				<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Scripting/AIM ARINC 664 Scripting.lvlib"/>
+				<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/AIM Error Code to CD Error Code.vi"/>
 				<Item Name="AIM664LV.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/instr.lib/AIM GmbH/_AIM 664/AIM664LV.lvlib"/>
 				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -432,11 +439,12 @@ AddOutputFilter chunkFilter
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
 				<Item Name="Build Linux Log Path.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Build Linux Log Path.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/BuildHelpPath.vi"/>
+				<Item Name="channel_settings_rx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/channel_settings_rx.ctl"/>
+				<Item Name="channel_settings_tx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/channel_settings_tx.ctl"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
-				<Item Name="Create NI GUID.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/string/Create NI GUID.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="Custom Device.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/Custom Device.lvlib"/>
@@ -453,6 +461,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Find Tag.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
+				<Item Name="Frame.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Frame.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
@@ -467,15 +476,18 @@ AddOutputFilter chunkFilter
 				<Item Name="GetHelpDir.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/hardware_channels_rx.ctl"/>
+				<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/hardware_channels_tx.ctl"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Implementation.lvlib"/>
 				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Interfaces.lvlib"/>
 				<Item Name="libpcaplv.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/libpcaplv/libpcaplv.lvlib"/>
+				<Item Name="Log_Configuration.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
 				<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/loggingThreshold_types.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LV Config Read String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/resource/dialog/lvconfig.llb/LV Config Read String.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
-				<Item Name="Messaging.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/VeriStand Custom Device Messaging/Messaging.lvlib"/>
+				<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/monitor_queue_settings.ctl"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -503,6 +515,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="tx_generic_setup.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/tx_generic_setup.ctl"/>
 				<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
 				<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
 				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
@@ -515,6 +528,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="NIVeriStand_DataServices.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
