@@ -1,0 +1,1262 @@
+<?xml version="1.0"?>
+<nidocument>
+<nicomment>
+<nifamily displayname="AIM ARINC-664" familyname="AIM ARINC-664">
+</nifamily>
+</nicomment>
+<nierror code="-404180">
+AIM ARINC-664: Error reported by the AIM driver. See Source Control at the error source for the specific error code reported by the driver.
+</nierror>
+<nierror code="-2147226201">
+AIM ARINC 664: Driver Library is not installed. In a RT target Go to Measurement and Automation Explorer (MAX), select the RT target and Software. Then select and install AIM ARINC-664 Board Software Package.
+</nierror><nierror code="-2147226202">
+AIM ARINC 664 Custom Device: [Driver Error: -1] Generic Error
+</nierror>
+<nierror code="-2147226203">
+AIM ARINC 664 Custom Device: [Driver Error: -2] Generic IO Error
+</nierror>
+<nierror code="-2147226204">
+AIM ARINC 664 Custom Device: [Driver Error: -3] Internal Error: Invalid IO destination
+</nierror>
+<nierror code="-2147226205">
+AIM ARINC 664 Custom Device: [Driver Error: -4] Internal Error: IO Error
+</nierror>
+<nierror code="-2147226206">
+AIM ARINC 664 Custom Device: [Driver Error: -5] Internal Error: Incorrect number of bytes
+</nierror>
+<nierror code="-2147226207">
+AIM ARINC 664 Custom Device: [Driver Error: -6] Internal Error: Invalid device driver handle
+</nierror>
+<nierror code="-2147226208">
+AIM ARINC 664 Custom Device: [Driver Error: -8] Internal Error: Could not get device info.
+</nierror>
+<nierror code="-2147226209">
+AIM ARINC 664 Custom Device: [Driver Error: -9] Internal Error: Invalid device acknowledge size
+</nierror>
+<nierror code="-2147226210">
+AIM ARINC 664 Custom Device: [Driver Error: -10] Internal Error: Invalid command
+</nierror>
+<nierror code="-2147226211">
+AIM ARINC 664 Custom Device: [Driver Error: -11] Internal Error: Failed to sync IO
+</nierror>
+<nierror code="-2147226212">
+AIM ARINC 664 Custom Device: [Driver Error: -12] Internal Error: Timed out reading memory
+</nierror>
+<nierror code="-2147226213">
+AIM ARINC 664 Custom Device: [Driver Error: -13] Internal Error: Read memory size mismatch
+</nierror>
+<nierror code="-2147226214">
+AIM ARINC 664 Custom Device: [Driver Error: -14] Internal Error: Write memory size mismatch
+</nierror>
+<nierror code="-2147226215">
+AIM ARINC 664 Custom Device: [Driver Error: -15] Internal Error: Invalid number of bytes read
+</nierror>
+<nierror code="-2147226216">
+AIM ARINC 664 Custom Device: [Driver Error: -16] Internal Error: Unable to allocate memory
+</nierror>
+<nierror code="-2147226217">
+AIM ARINC 664 Custom Device: [Driver Error: -20] Internal Error: OS Error
+</nierror>
+<nierror code="-2147226218">
+AIM ARINC 664 Custom Device: [Driver Error: -900] Attempting to write too many bytes
+</nierror>
+<nierror code="-2147226219">
+AIM ARINC 664 Custom Device: [Driver Error: -1000] Internal Error: Null pointer
+</nierror>
+<nierror code="-2147226220">
+AIM ARINC 664 Custom Device: [Driver Error: -1001] Internal Error: Invalid handle
+</nierror>
+<nierror code="-2147226221">
+AIM ARINC 664 Custom Device: [Driver Error: -1212] Transmitter must be stopped
+</nierror>
+<nierror code="-2147226222">
+AIM ARINC 664 Custom Device: [Driver Error: -1213] Wrong header type used for the current TX mode
+</nierror>
+<nierror code="-2147226223">
+AIM ARINC 664 Custom Device: [Driver Error: -2001] Internal Error: Invalid client handle
+</nierror>
+<nierror code="-2147226224">
+AIM ARINC 664 Custom Device: [Driver Error: -2002] Invalid resource ID
+</nierror>
+<nierror code="-2147226225">
+AIM ARINC 664 Custom Device: [Driver Error: -2003] Invalid resource handle
+</nierror>
+<nierror code="-2147226226">
+AIM ARINC 664 Custom Device: [Driver Error: -2100] TX queue already exists
+</nierror>
+<nierror code="-2147226227">
+AIM ARINC 664 Custom Device: [Driver Error: -2101] TX queue is undefined
+</nierror>
+<nierror code="-2147226228">
+AIM ARINC 664 Custom Device: [Driver Error: -2102] TX queue access timed out
+</nierror>
+<nierror code="-2147226229">
+AIM ARINC 664 Custom Device: [Driver Error: -2103] TX queue data overflow occurred
+</nierror>
+<nierror code="-2147226230">
+AIM ARINC 664 Custom Device: [Driver Error: -2104] Attempting to write too many bytes to the TX queue
+</nierror>
+<nierror code="-2147226231">
+AIM ARINC 664 Custom Device: [Driver Error: -2110] Function has not been implemented
+</nierror>
+<nierror code="-2147226232">
+AIM ARINC 664 Custom Device: [Driver Error: -2120] Function has not been implemented (Remote)
+</nierror>
+<nierror code="-2147226233">
+AIM ARINC 664 Custom Device: [Driver Error: -3001] Null value given for function parameter 1
+</nierror>
+<nierror code="-2147226234">
+AIM ARINC 664 Custom Device: [Driver Error: -3002] Null value given for function parameter 2
+</nierror>
+<nierror code="-2147226235">
+AIM ARINC 664 Custom Device: [Driver Error: -3003] Null value given for function parameter 3
+</nierror>
+<nierror code="-2147226236">
+AIM ARINC 664 Custom Device: [Driver Error: -3004] Null value given for function parameter 4
+</nierror>
+<nierror code="-2147226237">
+AIM ARINC 664 Custom Device: [Driver Error: -3005] Null value given for function parameter 5
+</nierror>
+<nierror code="-2147226238">
+AIM ARINC 664 Custom Device: [Driver Error: -3006] Null value given for function parameter 6
+</nierror>
+<nierror code="-2147226239">
+AIM ARINC 664 Custom Device: [Driver Error: -3007] Null value given for function parameter 7
+</nierror>
+<nierror code="-2147226240">
+AIM ARINC 664 Custom Device: [Driver Error: -3008] Null value given for function parameter 8
+</nierror>
+<nierror code="-2147226241">
+AIM ARINC 664 Custom Device: [Driver Error: -3009] Null value given for function parameter 9
+</nierror>
+<nierror code="-2147226242">
+AIM ARINC 664 Custom Device: [Driver Error: -3010] Out-of-range value given for function parameter 1
+</nierror>
+<nierror code="-2147226243">
+AIM ARINC 664 Custom Device: [Driver Error: -3011] Out-of-range value given for function parameter 2
+</nierror>
+<nierror code="-2147226244">
+AIM ARINC 664 Custom Device: [Driver Error: -3012] Input parameter is invalid
+</nierror>
+<nierror code="-2147226245">
+AIM ARINC 664 Custom Device: [Driver Error: -3013] No such client exists
+</nierror>
+<nierror code="-2147226246">
+AIM ARINC 664 Custom Device: [Driver Error: -3380] Invalid VL
+</nierror>
+<nierror code="-2147226247">
+AIM ARINC 664 Custom Device: [Driver Error: -3381] Invalid Sub-VL
+</nierror>
+<nierror code="-2147226248">
+AIM ARINC 664 Custom Device: [Driver Error: -3382] Invalid BAG
+</nierror>
+<nierror code="-2147226249">
+AIM ARINC 664 Custom Device: [Driver Error: -4000] Recording disk too slow
+</nierror>
+<nierror code="-2147226250">
+AIM ARINC 664 Custom Device: [Driver Error: -4001] Recording file is corrupt
+</nierror>
+<nierror code="-2147226251">
+AIM ARINC 664 Custom Device: [Driver Error: -4002] Internal error while creating recording index
+</nierror>
+<nierror code="-2147226252">
+AIM ARINC 664 Custom Device: [Driver Error: -4003] Recording in progress
+</nierror>
+<nierror code="-2147226253">
+AIM ARINC 664 Custom Device: [Driver Error: -4004] File or directory does not exist
+</nierror>
+<nierror code="-2147226254">
+AIM ARINC 664 Custom Device: [Driver Error: -4005] Access rights for this file or directory not given
+</nierror>
+<nierror code="-2147226255">
+AIM ARINC 664 Custom Device: [Driver Error: -4006] Invalid file size
+</nierror>
+<nierror code="-2147226256">
+AIM ARINC 664 Custom Device: [Driver Error: -4007] Internal Error: Timeout
+</nierror>
+<nierror code="-2147226257">
+AIM ARINC 664 Custom Device: [Driver Error: -4008] No boards found
+</nierror>
+<nierror code="-2147226258">
+AIM ARINC 664 Custom Device: [Driver Error: -4009] File in use
+</nierror>
+<nierror code="-2147226259">
+AIM ARINC 664 Custom Device: [Driver Error: -4010] File already exists
+</nierror>
+<nierror code="-2147226260">
+AIM ARINC 664 Custom Device: [Driver Error: -4011] Invalid path
+</nierror>
+<nierror code="-2147226261">
+AIM ARINC 664 Custom Device: [Driver Error: -4012] Version ID error
+</nierror>
+<nierror code="-2147226262">
+AIM ARINC 664 Custom Device: [Driver Error: -4100] Maximum number of UDP ports exceeded
+</nierror>
+<nierror code="-2147226263">
+AIM ARINC 664 Custom Device: [Driver Error: -4200] Invalid Packet Group Wait Time
+</nierror>
+<nierror code="-2147226264">
+AIM ARINC 664 Custom Device: [Driver Error: -4201] Invalid Inter Frame Gap
+</nierror>
+<nierror code="-2147226265">
+AIM ARINC 664 Custom Device: [Driver Error: -4202] Invalid Frame Size
+</nierror>
+<nierror code="-2147226266">
+AIM ARINC 664 Custom Device: [Driver Error: -4203] Invalid Sequence Number Init
+</nierror>
+<nierror code="-2147226267">
+AIM ARINC 664 Custom Device: [Driver Error: -4204] Invalid Sequence Number Offset
+</nierror>
+<nierror code="-2147226268">
+AIM ARINC 664 Custom Device: [Driver Error: -4205] Invalid value for Net Select
+</nierror>
+<nierror code="-2147226269">
+AIM ARINC 664 Custom Device: [Driver Error: -4206] Invalid value for Skew
+</nierror>
+<nierror code="-2147226270">
+AIM ARINC 664 Custom Device: [Driver Error: -100000] Device Driver Error
+</nierror>
+<nierror code="-2147226271">
+AIM ARINC 664 Custom Device: [Driver Error: -100001] Device Driver Error
+</nierror>
+<nierror code="-2147226272">
+AIM ARINC 664 Custom Device: [Driver Error: -100002] Device Driver Error
+</nierror>
+<nierror code="-2147226273">
+AIM ARINC 664 Custom Device: [Driver Error: -100003] Device Driver Error
+</nierror>
+<nierror code="-2147226274">
+AIM ARINC 664 Custom Device: [Driver Error: -100004] Device Driver Error
+</nierror>
+<nierror code="-2147226275">
+AIM ARINC 664 Custom Device: [Driver Error: -100005] Device Driver Error
+</nierror>
+<nierror code="-2147226276">
+AIM ARINC 664 Custom Device: [Driver Error: -100006] Device Driver Error
+</nierror>
+<nierror code="-2147226277">
+AIM ARINC 664 Custom Device: [Driver Error: -100007] Device Driver Error
+</nierror>
+<nierror code="-2147226278">
+AIM ARINC 664 Custom Device: [Driver Error: -100008] Device Driver Error
+</nierror>
+<nierror code="-2147226279">
+AIM ARINC 664 Custom Device: [Driver Error: -100009] Device Driver Error
+</nierror>
+<nierror code="-2147226280">
+AIM ARINC 664 Custom Device: [Driver Error: -100010] Device Driver Error
+</nierror>
+<nierror code="-2147226281">
+AIM ARINC 664 Custom Device: [Driver Error: -100011] Device Driver Error
+</nierror>
+<nierror code="-2147226282">
+AIM ARINC 664 Custom Device: [Driver Error: -100012] Device Driver Error
+</nierror>
+<nierror code="-2147226283">
+AIM ARINC 664 Custom Device: [Driver Error: -100013] Device Driver Error
+</nierror>
+<nierror code="-2147226284">
+AIM ARINC 664 Custom Device: [Driver Error: -100014] Device Driver Error
+</nierror>
+<nierror code="-2147226285">
+AIM ARINC 664 Custom Device: [Driver Error: -100015] Device Driver Error
+</nierror>
+<nierror code="-2147226286">
+AIM ARINC 664 Custom Device: [Driver Error: -100016] Device Driver Error
+</nierror>
+<nierror code="-2147226287">
+AIM ARINC 664 Custom Device: [Driver Error: -100017] Device Driver Error
+</nierror>
+<nierror code="-2147226288">
+AIM ARINC 664 Custom Device: [Driver Error: -100018] Device Driver Error
+</nierror>
+<nierror code="-2147226289">
+AIM ARINC 664 Custom Device: [Driver Error: -100019] Device Driver Error
+</nierror>
+<nierror code="-2147226290">
+AIM ARINC 664 Custom Device: [Driver Error: -100020] Device Driver Error
+</nierror>
+<nierror code="-2147226291">
+AIM ARINC 664 Custom Device: [Driver Error: -100021] Device Driver Error
+</nierror>
+<nierror code="-2147226292">
+AIM ARINC 664 Custom Device: [Driver Error: -100022] Device Driver Error
+</nierror>
+<nierror code="-2147226293">
+AIM ARINC 664 Custom Device: [Driver Error: -100023] Device Driver Error
+</nierror>
+<nierror code="-2147226294">
+AIM ARINC 664 Custom Device: [Driver Error: -100024] Device Driver Error
+</nierror>
+<nierror code="-2147226295">
+AIM ARINC 664 Custom Device: [Driver Error: -100025] Device Driver Error
+</nierror>
+<nierror code="-2147226296">
+AIM ARINC 664 Custom Device: [Driver Error: -100026] Device Driver Error
+</nierror>
+<nierror code="-2147226297">
+AIM ARINC 664 Custom Device: [Driver Error: -100027] Device Driver Error
+</nierror>
+<nierror code="-2147226298">
+AIM ARINC 664 Custom Device: [Driver Error: -100028] Device Driver Error
+</nierror>
+<nierror code="-2147226299">
+AIM ARINC 664 Custom Device: [Driver Error: -100029] Device Driver Error
+</nierror>
+<nierror code="-2147226300">
+AIM ARINC 664 Custom Device: [Driver Error: -100030] Device Driver Error
+</nierror>
+<nierror code="-2147226301">
+AIM ARINC 664 Custom Device: [Driver Error: -100031] Device Driver Error
+</nierror>
+<nierror code="-2147226302">
+AIM ARINC 664 Custom Device: [Driver Error: -100032] Device Driver Error
+</nierror>
+<nierror code="-2147226303">
+AIM ARINC 664 Custom Device: [Driver Error: -100033] Device Driver Error
+</nierror>
+<nierror code="-2147226304">
+AIM ARINC 664 Custom Device: [Driver Error: -100034] Device Driver Error
+</nierror>
+<nierror code="-2147226305">
+AIM ARINC 664 Custom Device: [Driver Error: -100035] Device Driver Error
+</nierror>
+<nierror code="-2147226306">
+AIM ARINC 664 Custom Device: [Driver Error: -100036] Device Driver Error
+</nierror>
+<nierror code="-2147226307">
+AIM ARINC 664 Custom Device: [Driver Error: -100037] Device Driver Error
+</nierror>
+<nierror code="-2147226308">
+AIM ARINC 664 Custom Device: [Driver Error: -100038] Device Driver Error
+</nierror>
+<nierror code="-2147226309">
+AIM ARINC 664 Custom Device: [Driver Error: -100039] Device Driver Error
+</nierror>
+<nierror code="-2147226310">
+AIM ARINC 664 Custom Device: [Driver Error: -100040] Device Driver Error
+</nierror>
+<nierror code="-2147226311">
+AIM ARINC 664 Custom Device: [Driver Error: -100041] Device Driver Error
+</nierror>
+<nierror code="-2147226312">
+AIM ARINC 664 Custom Device: [Driver Error: -100042] Device Driver Error
+</nierror>
+<nierror code="-2147226313">
+AIM ARINC 664 Custom Device: [Driver Error: -100043] Device Driver Error
+</nierror>
+<nierror code="-2147226314">
+AIM ARINC 664 Custom Device: [Driver Error: -100044] Device Driver Error
+</nierror>
+<nierror code="-2147226315">
+AIM ARINC 664 Custom Device: [Driver Error: -100045] Device Driver Error
+</nierror>
+<nierror code="-2147226316">
+AIM ARINC 664 Custom Device: [Driver Error: -100046] Device Driver Error
+</nierror>
+<nierror code="-2147226317">
+AIM ARINC 664 Custom Device: [Driver Error: -100047] Device Driver Error
+</nierror>
+<nierror code="-2147226318">
+AIM ARINC 664 Custom Device: [Driver Error: -100048] Device Driver Error
+</nierror>
+<nierror code="-2147226319">
+AIM ARINC 664 Custom Device: [Driver Error: -100049] Device Driver Error
+</nierror>
+<nierror code="-2147226320">
+AIM ARINC 664 Custom Device: [Driver Error: -100050] Device Driver Error
+</nierror>
+<nierror code="-2147226321">
+AIM ARINC 664 Custom Device: [Driver Error: -100051] Device Driver Error
+</nierror>
+<nierror code="-2147226322">
+AIM ARINC 664 Custom Device: [Driver Error: -100052] Device Driver Error
+</nierror>
+<nierror code="-2147226323">
+AIM ARINC 664 Custom Device: [Driver Error: -100053] Device Driver Error
+</nierror>
+<nierror code="-2147226324">
+AIM ARINC 664 Custom Device: [Driver Error: -100054] Device Driver Error
+</nierror>
+<nierror code="-2147226325">
+AIM ARINC 664 Custom Device: [Driver Error: -100055] Device Driver Error
+</nierror>
+<nierror code="-2147226326">
+AIM ARINC 664 Custom Device: [Driver Error: -100056] Device Driver Error
+</nierror>
+<nierror code="-2147226327">
+AIM ARINC 664 Custom Device: [Driver Error: -100057] Device Driver Error
+</nierror>
+<nierror code="-2147226328">
+AIM ARINC 664 Custom Device: [Driver Error: -100058] Device Driver Error
+</nierror>
+<nierror code="-2147226329">
+AIM ARINC 664 Custom Device: [Driver Error: -100059] Device Driver Error
+</nierror>
+<nierror code="-2147226330">
+AIM ARINC 664 Custom Device: [Driver Error: -100060] Device Driver Error
+</nierror>
+<nierror code="-2147226331">
+AIM ARINC 664 Custom Device: [Driver Error: -100061] Device Driver Error
+</nierror>
+<nierror code="-2147226332">
+AIM ARINC 664 Custom Device: [Driver Error: -100062] Device Driver Error
+</nierror>
+<nierror code="-2147226333">
+AIM ARINC 664 Custom Device: [Driver Error: -100063] Device Driver Error
+</nierror>
+<nierror code="-2147226334">
+AIM ARINC 664 Custom Device: [Driver Error: -100064] Device Driver Error
+</nierror>
+<nierror code="-2147226335">
+AIM ARINC 664 Custom Device: [Driver Error: -100065] Device Driver Error
+</nierror>
+<nierror code="-2147226336">
+AIM ARINC 664 Custom Device: [Driver Error: -100066] Device Driver Error
+</nierror>
+<nierror code="-2147226337">
+AIM ARINC 664 Custom Device: [Driver Error: -100067] Device Driver Error
+</nierror>
+<nierror code="-2147226338">
+AIM ARINC 664 Custom Device: [Driver Error: -100068] Device Driver Error
+</nierror>
+<nierror code="-2147226339">
+AIM ARINC 664 Custom Device: [Driver Error: -100069] Device Driver Error
+</nierror>
+<nierror code="-2147226340">
+AIM ARINC 664 Custom Device: [Driver Error: -100070] Device Driver Error
+</nierror>
+<nierror code="-2147226341">
+AIM ARINC 664 Custom Device: [Driver Error: -100071] Device Driver Error
+</nierror>
+<nierror code="-2147226342">
+AIM ARINC 664 Custom Device: [Driver Error: -100072] Device Driver Error
+</nierror>
+<nierror code="-2147226343">
+AIM ARINC 664 Custom Device: [Driver Error: -100073] Device Driver Error
+</nierror>
+<nierror code="-2147226344">
+AIM ARINC 664 Custom Device: [Driver Error: -100074] Device Driver Error
+</nierror>
+<nierror code="-2147226345">
+AIM ARINC 664 Custom Device: [Driver Error: -100075] Device Driver Error
+</nierror>
+<nierror code="-2147226346">
+AIM ARINC 664 Custom Device: [Driver Error: -100076] Device Driver Error
+</nierror>
+<nierror code="-2147226347">
+AIM ARINC 664 Custom Device: [Driver Error: -100077] Device Driver Error
+</nierror>
+<nierror code="-2147226348">
+AIM ARINC 664 Custom Device: [Driver Error: -100078] Device Driver Error
+</nierror>
+<nierror code="-2147226349">
+AIM ARINC 664 Custom Device: [Driver Error: -100079] Device Driver Error
+</nierror>
+<nierror code="-2147226350">
+AIM ARINC 664 Custom Device: [Driver Error: -100080] Device Driver Error
+</nierror>
+<nierror code="-2147226351">
+AIM ARINC 664 Custom Device: [Driver Error: -100081] Device Driver Error
+</nierror>
+<nierror code="-2147226352">
+AIM ARINC 664 Custom Device: [Driver Error: -100082] Device Driver Error
+</nierror>
+<nierror code="-2147226353">
+AIM ARINC 664 Custom Device: [Driver Error: -100083] Device Driver Error
+</nierror>
+<nierror code="-2147226354">
+AIM ARINC 664 Custom Device: [Driver Error: -100084] Device Driver Error
+</nierror>
+<nierror code="-2147226355">
+AIM ARINC 664 Custom Device: [Driver Error: -100085] Device Driver Error
+</nierror>
+<nierror code="-2147226356">
+AIM ARINC 664 Custom Device: [Driver Error: -100086] Device Driver Error
+</nierror>
+<nierror code="-2147226357">
+AIM ARINC 664 Custom Device: [Driver Error: -100087] Device Driver Error
+</nierror>
+<nierror code="-2147226358">
+AIM ARINC 664 Custom Device: [Driver Error: -100088] Device Driver Error
+</nierror>
+<nierror code="-2147226359">
+AIM ARINC 664 Custom Device: [Driver Error: -100089] Device Driver Error
+</nierror>
+<nierror code="-2147226360">
+AIM ARINC 664 Custom Device: [Driver Error: -100090] Device Driver Error
+</nierror>
+<nierror code="-2147226361">
+AIM ARINC 664 Custom Device: [Driver Error: -100091] Device Driver Error
+</nierror>
+<nierror code="-2147226362">
+AIM ARINC 664 Custom Device: [Driver Error: -100092] Device Driver Error
+</nierror>
+<nierror code="-2147226363">
+AIM ARINC 664 Custom Device: [Driver Error: -100093] Device Driver Error
+</nierror>
+<nierror code="-2147226364">
+AIM ARINC 664 Custom Device: [Driver Error: -100094] Device Driver Error
+</nierror>
+<nierror code="-2147226365">
+AIM ARINC 664 Custom Device: [Driver Error: -100095] Device Driver Error
+</nierror>
+<nierror code="-2147226366">
+AIM ARINC 664 Custom Device: [Driver Error: -100096] Device Driver Error
+</nierror>
+<nierror code="-2147226367">
+AIM ARINC 664 Custom Device: [Driver Error: -100097] Device Driver Error
+</nierror>
+<nierror code="-2147226368">
+AIM ARINC 664 Custom Device: [Driver Error: -100098] Device Driver Error
+</nierror>
+<nierror code="-2147226369">
+AIM ARINC 664 Custom Device: [Driver Error: -100099] Device Driver Error
+</nierror>
+<nierror code="-2147226370">
+AIM ARINC 664 Custom Device: [Driver Error: -100100] Device Driver Error
+</nierror>
+<nierror code="-2147226371">
+AIM ARINC 664 Custom Device: [Driver Error: -100101] Device Driver Error
+</nierror>
+<nierror code="-2147226372">
+AIM ARINC 664 Custom Device: [Driver Error: -100102] Device Driver Error
+</nierror>
+<nierror code="-2147226373">
+AIM ARINC 664 Custom Device: [Driver Error: -100103] Device Driver Error
+</nierror>
+<nierror code="-2147226374">
+AIM ARINC 664 Custom Device: [Driver Error: -100104] Device Driver Error
+</nierror>
+<nierror code="-2147226375">
+AIM ARINC 664 Custom Device: [Driver Error: -100105] Device Driver Error
+</nierror>
+<nierror code="-2147226376">
+AIM ARINC 664 Custom Device: [Driver Error: -100106] Device Driver Error
+</nierror>
+<nierror code="-2147226377">
+AIM ARINC 664 Custom Device: [Driver Error: -100107] Device Driver Error
+</nierror>
+<nierror code="-2147226378">
+AIM ARINC 664 Custom Device: [Driver Error: -100108] Device Driver Error
+</nierror>
+<nierror code="-2147226379">
+AIM ARINC 664 Custom Device: [Driver Error: -100109] Device Driver Error
+</nierror>
+<nierror code="-2147226380">
+AIM ARINC 664 Custom Device: [Driver Error: -100110] Device Driver Error
+</nierror>
+<nierror code="-2147226381">
+AIM ARINC 664 Custom Device: [Driver Error: -100111] Device Driver Error
+</nierror>
+<nierror code="-2147226382">
+AIM ARINC 664 Custom Device: [Driver Error: -100112] Device Driver Error
+</nierror>
+<nierror code="-2147226383">
+AIM ARINC 664 Custom Device: [Driver Error: -100113] Device Driver Error
+</nierror>
+<nierror code="-2147226384">
+AIM ARINC 664 Custom Device: [Driver Error: -100114] Device Driver Error
+</nierror>
+<nierror code="-2147226385">
+AIM ARINC 664 Custom Device: [Driver Error: -100115] Device Driver Error
+</nierror>
+<nierror code="-2147226386">
+AIM ARINC 664 Custom Device: [Driver Error: -100116] Device Driver Error
+</nierror>
+<nierror code="-2147226387">
+AIM ARINC 664 Custom Device: [Driver Error: -100117] Device Driver Error
+</nierror>
+<nierror code="-2147226388">
+AIM ARINC 664 Custom Device: [Driver Error: -100118] Device Driver Error
+</nierror>
+<nierror code="-2147226389">
+AIM ARINC 664 Custom Device: [Driver Error: -100119] Device Driver Error
+</nierror>
+<nierror code="-2147226390">
+AIM ARINC 664 Custom Device: [Driver Error: -100120] Device Driver Error
+</nierror>
+<nierror code="-2147226391">
+AIM ARINC 664 Custom Device: [Driver Error: -100121] Device Driver Error
+</nierror>
+<nierror code="-2147226392">
+AIM ARINC 664 Custom Device: [Driver Error: -100122] Device Driver Error
+</nierror>
+<nierror code="-2147226393">
+AIM ARINC 664 Custom Device: [Driver Error: -200000] Internal Error: Unknown host driver error
+</nierror>
+<nierror code="-2147226394">
+AIM ARINC 664 Custom Device: [Driver Error: -200001] Internal Error: Host timed out waiting for FDX Board response
+</nierror>
+<nierror code="-2147226395">
+AIM ARINC 664 Custom Device: [Driver Error: -300001] Invalid command
+</nierror>
+<nierror code="-2147226396">
+AIM ARINC 664 Custom Device: [Driver Error: -300002] Invalid network peer
+</nierror>
+<nierror code="-2147226397">
+AIM ARINC 664 Custom Device: [Driver Error: -300003] Out of memory
+</nierror>
+<nierror code="-2147226398">
+AIM ARINC 664 Custom Device: [Driver Error: -300004] ANS communication error
+</nierror>
+<nierror code="-2147226399">
+AIM ARINC 664 Custom Device: [Driver Error: -300005] No servers available
+</nierror>
+<nierror code="-2147226400">
+AIM ARINC 664 Custom Device: [Driver Error: -300006] Invalid server
+</nierror>
+<nierror code="-2147226401">
+AIM ARINC 664 Custom Device: [Driver Error: -300007] Invalid server version
+</nierror>
+<nierror code="-2147226402">
+AIM ARINC 664 Custom Device: [Driver Error: -300008] Network not supported
+</nierror>
+<nierror code="-2147226403">
+AIM ARINC 664 Custom Device: [Driver Error: -300009] Internal Network Error
+</nierror>
+<nierror code="-2147226404">
+AIM ARINC 664 Custom Device: [Driver Error: -383614] Could not obtain board firmware version
+</nierror>
+<nierror code="-2147226405">
+AIM ARINC 664 Custom Device: [Driver Error: -400051] Could not obtain board firmware version
+</nierror>
+<nierror code="-2147226406">
+AIM ARINC 664 Custom Device: [Driver Error: -400099] This function is currently not supported by this FDX product.
+</nierror>
+<nierror code="-2147226407">
+AIM ARINC 664 Custom Device: [Driver Error: -400100] Internal Error: Firmware command still in progress
+</nierror>
+<nierror code="-2147226408">
+AIM ARINC 664 Custom Device: [Driver Error: -400101] Internal Error: Firmware unresponsive.
+</nierror>
+<nierror code="-2147226409">
+AIM ARINC 664 Custom Device: [Driver Error: -400102] Internal Error: VL counters wrong index
+</nierror>
+<nierror code="-2147226410">
+AIM ARINC 664 Custom Device: [Driver Error: -400104] Internal Error: Possible board memory issue.
+</nierror>
+<nierror code="-2147226411">
+AIM ARINC 664 Custom Device: [Driver Error: -400105] Internal Error: Possible board memory issue.
+</nierror>
+<nierror code="-2147226412">
+AIM ARINC 664 Custom Device: [Driver Error: -400106] Internal Error: Unresponsive on-board process.
+</nierror>
+<nierror code="-2147226413">
+AIM ARINC 664 Custom Device: [Driver Error: -400107] Invalid MDI mode selected
+</nierror>
+<nierror code="-2147226414">
+AIM ARINC 664 Custom Device: [Driver Error: -400108] Operation cannot proceed while the port is running.
+</nierror>
+<nierror code="-2147226415">
+AIM ARINC 664 Custom Device: [Driver Error: -400111] Internal Error: FDX Board hardware is unresponsive.
+</nierror>
+<nierror code="-2147226416">
+AIM ARINC 664 Custom Device: [Driver Error: -400150] TX Generic Queue full
+</nierror>
+<nierror code="-2147226417">
+AIM ARINC 664 Custom Device: [Driver Error: -400201] An incorrect port number was provided to the function.
+</nierror>
+<nierror code="-2147226418">
+AIM ARINC 664 Custom Device: [Driver Error: -400202] An incorrect Trigger Control block Index was provided to the function.
+</nierror>
+<nierror code="-2147226419">
+AIM ARINC 664 Custom Device: [Driver Error: -400203] Function called with unsupported option./nPlease refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226420">
+AIM ARINC 664 Custom Device: [Driver Error: -400204] Addressed Trigger Control block in not initialized
+</nierror>
+<nierror code="-2147226421">
+AIM ARINC 664 Custom Device: [Driver Error: -400301] TX port is not in the correct mode for this operation. See function FdxCmdTxModeControl() and the Reference Manual for details.
+</nierror>
+<nierror code="-2147226422">
+AIM ARINC 664 Custom Device: [Driver Error: -400302] TX port is not in the correct mode for this operation. See function FdxCmdTxModeControl() and the Reference Manual for details.
+</nierror>
+<nierror code="-2147226423">
+AIM ARINC 664 Custom Device: [Driver Error: -400303] Unsupported mode selected for e_StartMode. See function FdxCmdTxControl()
+</nierror>
+<nierror code="-2147226424">
+AIM ARINC 664 Custom Device: [Driver Error: -400304] Tx Frame size problem: Wrong payload buffer mode or wrong payload generation mode.
+</nierror>
+<nierror code="-2147226425">
+AIM ARINC 664 Custom Device: [Driver Error: -400305] No TX Queue setup for this port
+</nierror>
+<nierror code="-2147226426">
+AIM ARINC 664 Custom Device: [Driver Error: -400306] TX port is not in the correct mode for this operation.
+Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226427">
+AIM ARINC 664 Custom Device: [Driver Error: -400307] Operation cannot be performed while the TX port is running. First use FdxCmdTxControl() to stop the port.
+</nierror>
+<nierror code="-2147226428">
+AIM ARINC 664 Custom Device: [Driver Error: -400308] TX port was already stopped.
+</nierror>
+<nierror code="-2147226429">
+AIM ARINC 664 Custom Device: [Driver Error: -400309] EDE Resource not found.
+</nierror>
+<nierror code="-2147226430">
+AIM ARINC 664 Custom Device: [Driver Error: -400311] TX Update Frame not found.
+</nierror>
+<nierror code="-2147226431">
+AIM ARINC 664 Custom Device: [Driver Error: -400312] Offset too large
+</nierror>
+<nierror code="-2147226432">
+AIM ARINC 664 Custom Device: [Driver Error: -400313] Buffer Queue Buffer Pointer is NULL
+</nierror>
+<nierror code="-2147226433">
+AIM ARINC 664 Custom Device: [Driver Error: -400314] Buffer Queue Mode is not active
+</nierror>
+<nierror code="-2147226434">
+AIM ARINC 664 Custom Device: [Driver Error: -400315] Wrong Frame Type
+</nierror>
+<nierror code="-2147226435">
+AIM ARINC 664 Custom Device: [Driver Error: -400317] Buffer Queue Header Pointer is NULL
+</nierror>
+<nierror code="-2147226436">
+AIM ARINC 664 Custom Device: [Driver Error: -400318] Buffer Queue Mode is not active
+</nierror>
+<nierror code="-2147226437">
+AIM ARINC 664 Custom Device: [Driver Error: -400319] This type of frame can not have a buffer queue
+</nierror>
+<nierror code="-2147226438">
+AIM ARINC 664 Custom Device: [Driver Error: -400320] Unknown Generic Queue command
+</nierror>
+<nierror code="-2147226439">
+AIM ARINC 664 Custom Device: [Driver Error: -400321] Generic Queue is full
+</nierror>
+<nierror code="-2147226440">
+AIM ARINC 664 Custom Device: [Driver Error: -400322] Generic Queue frame number limit
+</nierror>
+<nierror code="-2147226441">
+AIM ARINC 664 Custom Device: [Driver Error: -400331] Warning: Tx generic queue modification, Frame already enabled / disabled. 
+ see function FdxCmdTxQueueControl()
+</nierror>
+<nierror code="-2147226442">
+AIM ARINC 664 Custom Device: [Driver Error: -400332] Warning: Tx generic queue modification, Wrong Sub Queue Pointer Index. 
+ see function FdxCmdTxQueueControl()
+</nierror>
+<nierror code="-2147226443">
+AIM ARINC 664 Custom Device: [Driver Error: -400333] Error: Tx generic queue modification, Wrong Instruction Type for Sub Queue. 
+ see function FdxCmdTxQueueControl()
+</nierror>
+<nierror code="-2147226444">
+AIM ARINC 664 Custom Device: [Driver Error: -400340] Cannot write any new messages to the UDP queuing port. The port queue is full.
+</nierror>
+<nierror code="-2147226445">
+AIM ARINC 664 Custom Device: [Driver Error: -400351] Internal Error: Tx Sampling Timer can not be created.
+</nierror>
+<nierror code="-2147226446">
+AIM ARINC 664 Custom Device: [Driver Error: -400353] Internal Error: Tx Sampling function can not be created.
+</nierror>
+<nierror code="-2147226447">
+AIM ARINC 664 Custom Device: [Driver Error: -400360] Invalid TX port handle
+</nierror>
+<nierror code="-2147226448">
+AIM ARINC 664 Custom Device: [Driver Error: -400361] Specified virtual link is not enabled. See function FdxCmdTxCreateVL()
+</nierror>
+<nierror code="-2147226449">
+AIM ARINC 664 Custom Device: [Driver Error: -400362] Specified Sub-VL does not exist. See function FdxCmdTxCreateVL()
+</nierror>
+<nierror code="-2147226450">
+AIM ARINC 664 Custom Device: [Driver Error: -400363] Specified Sub-VL does not exist. See function FdxCmdTxCreateVL()
+</nierror>
+<nierror code="-2147226451">
+AIM ARINC 664 Custom Device: [Driver Error: -400364] TX port has not been correctly setup. See functions FdxCmdTxPortInit() and FdxCmdTxModeControl()
+</nierror>
+<nierror code="-2147226452">
+AIM ARINC 664 Custom Device: [Driver Error: -400365] No new frames can currently be sent through the specified virtual link as the virtual link's queue is full.
+</nierror>
+<nierror code="-2147226453">
+AIM ARINC 664 Custom Device: [Driver Error: -400366] BAG of VL is overloaded with sampling port messages.
+</nierror>
+<nierror code="-2147226454">
+AIM ARINC 664 Custom Device: [Driver Error: -400370] The given RX port handle is not valid
+</nierror>
+<nierror code="-2147226455">
+AIM ARINC 664 Custom Device: [Driver Error: -400371] There is insufficient free memory on the FDX board to setup the transmit operation.
+</nierror>
+<nierror code="-2147226456">
+AIM ARINC 664 Custom Device: [Driver Error: -400372] There is insufficient free memory on the FDX board to send a new frame.
+</nierror>
+<nierror code="-2147226457">
+AIM ARINC 664 Custom Device: [Driver Error: -400373] There is insufficient free memory on the FDX board to create a new TX UDP port.
+</nierror>
+<nierror code="-2147226458">
+AIM ARINC 664 Custom Device: [Driver Error: -400377] Attempting to create a transmit queue but one already exists for this port.
+Call FdxCmdTxPortInit() to reset the port
+</nierror>
+<nierror code="-2147226459">
+AIM ARINC 664 Custom Device: [Driver Error: -400380] The virtual link identifier specified for the virtual link is invalid.
+Please refer to the Reference Manual for valid values for virtual link identifiers.
+</nierror>
+<nierror code="-2147226460">
+AIM ARINC 664 Custom Device: [Driver Error: -400381] Attempted to create an invalid number of Sub-VLs on the virtual link. 
+Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226461">
+AIM ARINC 664 Custom Device: [Driver Error: -400382] The BAG specified for the virtual link is not valid.
+Please refer to the Reference Manual for a description of valid BAG values.
+</nierror>
+<nierror code="-2147226462">
+AIM ARINC 664 Custom Device: [Driver Error: -400383] Frame length specified is invalid. Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226463">
+AIM ARINC 664 Custom Device: [Driver Error: -400384] Net Select value specified is invalid. Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226464">
+AIM ARINC 664 Custom Device: [Driver Error: -400385] Frame Skew value specified is invalid. Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226465">
+AIM ARINC 664 Custom Device: [Driver Error: -400400] Error: Queue for provided Queue Id not existent.
+</nierror>
+<nierror code="-2147226466">
+AIM ARINC 664 Custom Device: [Driver Error: -400401] Warning: Try to seek in not filled queue.
+</nierror>
+<nierror code="-2147226467">
+AIM ARINC 664 Custom Device: [Driver Error: -400402] Current port queue is not valid for the desired operation./nSee function FdxCmdTxQueueCreate().
+</nierror>
+<nierror code="-2147226468">
+AIM ARINC 664 Custom Device: [Driver Error: -400403] A queue must first be initialized on this port to perform this operation./nSee function FdxCmdTxQueueCreate().
+</nierror>
+<nierror code="-2147226469">
+AIM ARINC 664 Custom Device: [Driver Error: -400404] Internal Error: Nothing to copy.
+</nierror>
+<nierror code="-2147226470">
+AIM ARINC 664 Custom Device: [Driver Error: -400405] Internal Error: Too much to copy.
+</nierror>
+<nierror code="-2147226471">
+AIM ARINC 664 Custom Device: [Driver Error: -400406] Internal Error Data pointer of received frame not in global RAM
+</nierror>
+<nierror code="-2147226472">
+AIM ARINC 664 Custom Device: [Driver Error: -400407] There is insufficient free memory on the FDX board to setup the receiving operation.
+</nierror>
+<nierror code="-2147226473">
+AIM ARINC 664 Custom Device: [Driver Error: -400409] There is insufficient free memory on the FDX board to create a new RX UDP port.
+</nierror>
+<nierror code="-2147226474">
+AIM ARINC 664 Custom Device: [Driver Error: -400456] Incorrect value was specified for ul_WriteBytes.
+Actual number of frames to be written exceeds the given write buffer size.
+</nierror>
+<nierror code="-2147226475">
+AIM ARINC 664 Custom Device: [Driver Error: -400457] No new frames can be written as there is no more buffer space.
+Either the transmit port needs to be started or frames are being written too quickly.
+</nierror>
+<nierror code="-2147226476">
+AIM ARINC 664 Custom Device: [Driver Error: -400458] Queue already exists
+</nierror>
+<nierror code="-2147226477">
+AIM ARINC 664 Custom Device: [Driver Error: -400500] Not possible to initialize internal read queue
+</nierror>
+<nierror code="-2147226478">
+AIM ARINC 664 Custom Device: [Driver Error: -400501] VL has no extended descriptor assigned.
+</nierror>
+<nierror code="-2147226479">
+AIM ARINC 664 Custom Device: [Driver Error: -400502] Provided Receive Mode is unknown.
+</nierror>
+<nierror code="-2147226480">
+AIM ARINC 664 Custom Device: [Driver Error: -400503] Queue control command unknown.
+</nierror>
+<nierror code="-2147226481">
+AIM ARINC 664 Custom Device: [Driver Error: -400504] Receiver overloaded
+</nierror>
+<nierror code="-2147226482">
+AIM ARINC 664 Custom Device: [Driver Error: -400505] Can not resize Monitor memory because Port is already started.
+</nierror>
+<nierror code="-2147226483">
+AIM ARINC 664 Custom Device: [Driver Error: -400550] Provided index to Rx hardware filter is not valid,
+</nierror>
+<nierror code="-2147226484">
+AIM ARINC 664 Custom Device: [Driver Error: -400551] Provided index to Rx hardware filter is not valid,
+</nierror>
+<nierror code="-2147226485">
+AIM ARINC 664 Custom Device: [Driver Error: -400552] Hardware Trigger is not possible with that Trigger Control Block
+</nierror>
+<nierror code="-2147226486">
+AIM ARINC 664 Custom Device: [Driver Error: -400553] This operation cannot be performed while the RX port is running.
+First use function FdxCmdRxControl() to stop the port.
+</nierror>
+<nierror code="-2147226487">
+AIM ARINC 664 Custom Device: [Driver Error: -400554] This operation requires the RX port to be in Chronological Mode.
+See function FdxCmdRxModeControl().
+</nierror>
+<nierror code="-2147226488">
+AIM ARINC 664 Custom Device: [Driver Error: -400555] This operation requires the RX port to be in virtual link mode.
+Use API function FdxCmdRxModeControl() to set the RX port to FDX_RX_VL mode.
+</nierror>
+<nierror code="-2147226489">
+AIM ARINC 664 Custom Device: [Driver Error: -400600] Internal Error: Checked frame is not IP
+</nierror>
+<nierror code="-2147226490">
+AIM ARINC 664 Custom Device: [Driver Error: -400601] Internal Error: Checked frame is not UDP
+</nierror>
+<nierror code="-2147226491">
+AIM ARINC 664 Custom Device: [Driver Error: -400604] Internal Error: Checked frame is not ICMP
+</nierror>
+<nierror code="-2147226492">
+AIM ARINC 664 Custom Device: [Driver Error: -400605] Internal Error: Checked frame is not TCP
+</nierror>
+<nierror code="-2147226493">
+AIM ARINC 664 Custom Device: [Driver Error: -400606] Internal Error: Checked frame is one of expected types (UDP, ICMMP or TCP)
+</nierror>
+<nierror code="-2147226494">
+AIM ARINC 664 Custom Device: [Driver Error: -400608] UDP port cannot accept a new message as its message queue is full.
+</nierror>
+<nierror code="-2147226495">
+AIM ARINC 664 Custom Device: [Driver Error: -400610] Internal Error: Synchronisation problem by reading from Queue.
+</nierror>
+<nierror code="-2147226496">
+AIM ARINC 664 Custom Device: [Driver Error: -400620] RX UDP port buffer overflow
+</nierror>
+<nierror code="-2147226497">
+AIM ARINC 664 Custom Device: [Driver Error: -400650] No VL assigned to handle with UDP Ports.
+</nierror>
+<nierror code="-2147226498">
+AIM ARINC 664 Custom Device: [Driver Error: -400651] Attempted to create a UDP port for a virtual link that has not been enabled.
+</nierror>
+<nierror code="-2147226499">
+AIM ARINC 664 Custom Device: [Driver Error: -400653] Attempted to create a UDP port of an unsupported type.
+Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226500">
+AIM ARINC 664 Custom Device: [Driver Error: -400654] Message data exceeds maximum allowed size for this UDP port.
+</nierror>
+<nierror code="-2147226501">
+AIM ARINC 664 Custom Device: [Driver Error: -400655] Attempted to create a UDP port for a Sub-VL that has not been enabled.
+</nierror>
+<nierror code="-2147226502">
+AIM ARINC 664 Custom Device: [Driver Error: -400656] Configured sampling message does not fit to VL configuration.
+</nierror>
+<nierror code="-2147226503">
+AIM ARINC 664 Custom Device: [Driver Error: -400658] Invalid UDP port source or destination address given.
+</nierror>
+<nierror code="-2147226504">
+AIM ARINC 664 Custom Device: [Driver Error: -400659] Message size exceeds maximum allowed size./nPlease refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226505">
+AIM ARINC 664 Custom Device: [Driver Error: -400660] Invalid message buffer size given when attempting to create a UDP port./n Please refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226506">
+AIM ARINC 664 Custom Device: [Driver Error: -400670] Invalid UDP port destination given.
+</nierror>
+<nierror code="-2147226507">
+AIM ARINC 664 Custom Device: [Driver Error: -400671] Invalid Sampling Rate for UDP sampling port./nPlease refer to the Reference Manual for details.
+</nierror>
+<nierror code="-2147226508">
+AIM ARINC 664 Custom Device: [Driver Error: -400700] Size of provided command is not valid
+</nierror>
+<nierror code="-2147226509">
+AIM ARINC 664 Custom Device: [Driver Error: -400701] Pointer for Acknowledge Data invalid
+</nierror>
+<nierror code="-2147226510">
+AIM ARINC 664 Custom Device: [Driver Error: -400710] Calculated Acknowledge size for command is too big for Acknowledge Array
+</nierror>
+<nierror code="-2147226511">
+AIM ARINC 664 Custom Device: [Driver Error: -400711] Provided buffer for the acknowledge is too small to hold all the data
+</nierror>
+<nierror code="-2147226512">
+AIM ARINC 664 Custom Device: [Driver Error: -400780] Port configuration is not valid
+</nierror>
+<nierror code="-2147226513">
+AIM ARINC 664 Custom Device: [Driver Error: -400781] Port configuration is not supported with this board
+</nierror>
+<nierror code="-2147226514">
+AIM ARINC 664 Custom Device: [Driver Error: -400782] Port speed configuration is not supported with this board
+</nierror>
+<nierror code="-2147226515">
+AIM ARINC 664 Custom Device: [Driver Error: -400784] Selected verification mode is not supported with this board
+</nierror>
+<nierror code="-2147226516">
+AIM ARINC 664 Custom Device: [Driver Error: -400790] Setting for IRIG time is invalid.
+</nierror>
+<nierror code="-2147226517">
+AIM ARINC 664 Custom Device: [Driver Error: -400820] Provided pointer is NULL or invalid.
+</nierror>
+<nierror code="-2147226518">
+AIM ARINC 664 Custom Device: [Driver Error: -401001] A virtual link with the specified ID already exists on this port.
+</nierror>
+<nierror code="-2147226519">
+AIM ARINC 664 Custom Device: [Driver Error: -401002] Buffer write size is too big or internal buffer not available.
+</nierror>
+<nierror code="-2147226520">
+AIM ARINC 664 Custom Device: [Driver Error: -401003] Internal buffer to read is not available.
+</nierror>
+<nierror code="-2147226521">
+AIM ARINC 664 Custom Device: [Driver Error: -401101] Internal Error: Buffer for reassembled message too small.
+</nierror>
+<nierror code="-2147226522">
+AIM ARINC 664 Custom Device: [Driver Error: -401102] Internal Error: Reassembling fragment out of order.
+</nierror>
+<nierror code="-2147226523">
+AIM ARINC 664 Custom Device: [Driver Error: -401103] Internal Error: Size of IP fragment out of range.
+</nierror>
+<nierror code="-2147226524">
+AIM ARINC 664 Custom Device: [Driver Error: -401104] Internal Error: IP flag error.
+</nierror>
+<nierror code="-2147226525">
+AIM ARINC 664 Custom Device: [Driver Error: -401201] Internal Error: UDP Port invalid for simulation.
+</nierror>
+<nierror code="-2147226526">
+AIM ARINC 664 Custom Device: [Driver Error: -401202] Internal Error: VL for simulation not enabled.
+</nierror>
+<nierror code="-2147226527">
+AIM ARINC 664 Custom Device: [Driver Error: -401203] Internal Error: No VLs are enabled for simulation.
+</nierror>
+<nierror code="-2147226528">
+AIM ARINC 664 Custom Device: [Driver Error: -401208] Internal Error: Greatest common divisor can not be calculated.
+</nierror>
+<nierror code="-2147226529">
+AIM ARINC 664 Custom Device: [Driver Error: -401211] Internal Error: Limit of different sampling times exceeded.
+</nierror>
+<nierror code="-2147226530">
+AIM ARINC 664 Custom Device: [Driver Error: -401212] Simulation still running. Must be stopped before setup.
+</nierror>
+<nierror code="-2147226531">
+AIM ARINC 664 Custom Device: [Driver Error: -401306] Problem with build slot table for sampling
+</nierror>
+<nierror code="-2147226532">
+AIM ARINC 664 Custom Device: [Driver Error: -401307] Number of BAG Slots for sampling exceeded.
+</nierror>
+<nierror code="-2147226533">
+AIM ARINC 664 Custom Device: [Driver Error: -401308] Minimal BAG Slot time is zero!
+</nierror>
+<nierror code="-2147226534">
+AIM ARINC 664 Custom Device: [Driver Error: -401309] Minimal BAG Slot time can not be supported!
+</nierror>
+<nierror code="-2147226535">
+AIM ARINC 664 Custom Device: [Driver Error: -401311] No memory to create task input queue.
+</nierror>
+<nierror code="-2147226536">
+AIM ARINC 664 Custom Device: [Driver Error: -401312] Task for sampling can not be created.
+</nierror>
+<nierror code="-2147226537">
+AIM ARINC 664 Custom Device: [Driver Error: -401313] Firmware simulation input queue overflow.
+</nierror>
+<nierror code="-2147226538">
+AIM ARINC 664 Custom Device: [Driver Error: -401317] Number of fragmented EDE Tx Ports exceeded.
+</nierror>
+<nierror code="-2147226539">
+AIM ARINC 664 Custom Device: [Driver Error: -401318] Message of EDE Port too small.
+</nierror>
+<nierror code="-2147226540">
+AIM ARINC 664 Custom Device: [Driver Error: -401321] EDE Subscriber wrong control mode
+</nierror>
+<nierror code="-2147226541">
+AIM ARINC 664 Custom Device: [Driver Error: -401322] Tx UDP Queuing no input queue for task can be created
+</nierror>
+<nierror code="-2147226542">
+AIM ARINC 664 Custom Device: [Driver Error: -401323] Tx UDP Queuing no task can be created
+</nierror>
+<nierror code="-2147226543">
+AIM ARINC 664 Custom Device: [Driver Error: -401400] Internal Error: Wrong Timer identification.
+</nierror>
+<nierror code="-2147226544">
+AIM ARINC 664 Custom Device: [Driver Error: -401502] Internal Error: Reply buffer underrun.
+</nierror>
+<nierror code="-2147226545">
+AIM ARINC 664 Custom Device: [Driver Error: -401601] Invalid queue handle
+</nierror>
+<nierror code="-2147226546">
+AIM ARINC 664 Custom Device: [Driver Error: -401603] Queue semaphore lock problem
+</nierror>
+<nierror code="-2147226547">
+AIM ARINC 664 Custom Device: [Driver Error: -401604] Queue semaphore check timeout
+</nierror>
+<nierror code="-2147226548">
+AIM ARINC 664 Custom Device: [Driver Error: -401605] Queue Destination Size is 0. No room to copy data.
+</nierror>
+<nierror code="-2147226549">
+AIM ARINC 664 Custom Device: [Driver Error: -401611] Queue pointer check: Pointer higher than queue memory.
+</nierror>
+<nierror code="-2147226550">
+AIM ARINC 664 Custom Device: [Driver Error: -401612] Queue pointer check: Pointer lower than queue memory.
+</nierror>
+<nierror code="-2147226551">
+AIM ARINC 664 Custom Device: [Driver Error: -401613] Queue pointer check: Next Pointer wrong.
+</nierror>
+<nierror code="-2147226552">
+AIM ARINC 664 Custom Device: [Driver Error: -401614] Queue pointer check: Previous Pointer wrong.
+</nierror>
+<nierror code="-2147226553">
+AIM ARINC 664 Custom Device: [Driver Error: -401701] Reros: Invalid parameter handle
+</nierror>
+<nierror code="-2147226554">
+AIM ARINC 664 Custom Device: [Driver Error: -401702] Reros: Wrong control mode
+</nierror>
+<nierror code="-2147226555">
+AIM ARINC 664 Custom Device: [Driver Error: -401703] Reros: Parameter size error
+</nierror>
+<nierror code="-2147226556">
+AIM ARINC 664 Custom Device: [Driver Error: -401801] Internal Error: No host request for DMA transfer available
+</nierror>
+<nierror code="-2147226557">
+AIM ARINC 664 Custom Device: [Driver Error: -401802] Internal Error: A DMA transfer is still pending while trying next.
+</nierror>
+<nierror code="-2147226558">
+AIM ARINC 664 Custom Device: [Driver Error: -401803] Internal Error: DMA destination list is empty
+</nierror>
+<nierror code="-2147226559">
+AIM ARINC 664 Custom Device: [Driver Error: -401901] Problem with last buffer transfer on Rx Recording stop.
+</nierror>
+<nierror code="-2147226560">
+AIM ARINC 664 Custom Device: [Driver Error: -401910] Internal Error: Problem by preparing SGL for DMA.
+</nierror>
+<nierror code="-2147226561">
+AIM ARINC 664 Custom Device: [Driver Error: -402000] EDE Subscriber: UDP port for TM response message A is not created.
+</nierror>
+<nierror code="-2147226562">
+AIM ARINC 664 Custom Device: [Driver Error: -402001] EDE Subscriber: UDP port for TM response message B is not created.
+</nierror>
+<nierror code="-2147226563">
+AIM ARINC 664 Custom Device: [Driver Error: -402002] EDE Subscriber: UDP port for TM request message A is not created.
+</nierror>
+<nierror code="-2147226564">
+AIM ARINC 664 Custom Device: [Driver Error: -402003] EDE Subscriber: UDP port for TM request message B is not created.
+</nierror>
+<nierror code="-2147226565">
+AIM ARINC 664 Custom Device: [Driver Error: -402004] EDE Subscriber: UDP port for TM time offset table message 1A is not created.
+</nierror>
+<nierror code="-2147226566">
+AIM ARINC 664 Custom Device: [Driver Error: -402005] EDE Subscriber: UDP port for TM time offset table message 2A is not created.
+</nierror>
+<nierror code="-2147226567">
+AIM ARINC 664 Custom Device: [Driver Error: -402006] EDE Subscriber: UDP port for TM time offset table message 2B is not created.
+</nierror>
+<nierror code="-2147226568">
+AIM ARINC 664 Custom Device: [Driver Error: -402007] EDE Subscriber: UDP port for TM time stamp list message B is not created.
+</nierror>
+<nierror code="-2147226569">
+AIM ARINC 664 Custom Device: [Driver Error: -402008] EDE Subscriber: UDP port for TM time stamp list message A is not created.
+</nierror>
+<nierror code="-2147226570">
+AIM ARINC 664 Custom Device: [Driver Error: -402009] EDE Subscriber: UDP port for TM time offset table message 1B is not created.
+</nierror>
+<nierror code="-2147226571">
+AIM ARINC 664 Custom Device: [Driver Error: -402020] EDE Subscriber is already running
+</nierror>
+<nierror code="-2147226572">
+AIM ARINC 664 Custom Device: [Driver Error: -402021] EDE Subscriber: Wrong control mode
+</nierror>
+<nierror code="-2147226573">
+AIM ARINC 664 Custom Device: [Driver Error: -402022] EDE Subscriber: Update of EDE counter went wrong
+</nierror>
+<nierror code="-2147226574">
+AIM ARINC 664 Custom Device: [Driver Error: -402023] EDE Subscriber: Subscriber handle is invalid
+</nierror>
+<nierror code="-2147226575">
+AIM ARINC 664 Custom Device: [Driver Error: -402024] EDE Subscriber: Time Manager ID is invalid
+</nierror>
+<nierror code="-2147226576">
+AIM ARINC 664 Custom Device: [Driver Error: -402025] EDE Subscriber: Time Manager type is invalid
+</nierror>
+<nierror code="-2147226577">
+AIM ARINC 664 Custom Device: [Driver Error: -402026] EDE Subscriber: Subscriber index already in use
+</nierror>
+<nierror code="-2147226578">
+AIM ARINC 664 Custom Device: [Driver Error: -402027] EDE Subscriber: Time can not be created.
+</nierror>
+<nierror code="-2147226579">
+AIM ARINC 664 Custom Device: [Driver Error: -402028] EDE Subscriber: Queue can not be created.
+</nierror>
+<nierror code="-2147226580">
+AIM ARINC 664 Custom Device: [Driver Error: -402029] EDE Subscriber: Task can not be created.
+</nierror>
+<nierror code="-2147226581">
+AIM ARINC 664 Custom Device: [Driver Error: -402030] EDE Subscriber: Wrong VL enable mode
+</nierror>
+<nierror code="-2147226582">
+AIM ARINC 664 Custom Device: [Driver Error: -402031] EDE Subscriber: Wrong VL payload mode
+</nierror>
+<nierror code="-2147226583">
+AIM ARINC 664 Custom Device: [Driver Error: -402032] EDE Subscriber: Invalid enable mode
+</nierror>
+<nierror code="-2147226584">
+AIM ARINC 664 Custom Device: [Driver Error: -402033] EDE : Port to write is not EDE enabled.
+</nierror>
+<nierror code="-2147226585">
+AIM ARINC 664 Custom Device: [Driver Error: -402034] EDE Subscriber: Interrupt service can not be created.
+</nierror>
+<nierror code="-2147226586">
+AIM ARINC 664 Custom Device: [Driver Error: -402035] EDE Time Manager: TM is not stopped.
+</nierror>
+<nierror code="-2147226587">
+AIM ARINC 664 Custom Device: [Driver Error: -402036] EDE Time Manager: Wrong start / control mode.
+</nierror>
+<nierror code="-2147226588">
+AIM ARINC 664 Custom Device: [Driver Error: -402037] EDE Time Manager: TM is already running.
+</nierror>
+<nierror code="-2147226589">
+AIM ARINC 664 Custom Device: [Driver Error: -402038] EDE Time Manager: Addressed subscriber is not defined.
+</nierror>
+<nierror code="-2147226590">
+AIM ARINC 664 Custom Device: [Driver Error: -402039] EDE Time Manager: One of the port handles given for TM creation is invalid.
+</nierror>
+<nierror code="-2147226591">
+AIM ARINC 664 Custom Device: [Driver Error: -402040] EDE Time Manager: Provided split index for Time offset table 1 and 2 is invalid.
+</nierror>
+<nierror code="-2147226592">
+AIM ARINC 664 Custom Device: [Driver Error: -402041] EDE Time Manager: Provided subscriber index is invalid.
+</nierror>
+<nierror code="-2147226593">
+AIM ARINC 664 Custom Device: [Driver Error: -402051] Transmit Data Buffer Queue: Handle is invalid,
+</nierror>
+<nierror code="-2147226594">
+AIM ARINC 664 Custom Device: [Driver Error: -402052] Transmit Data Buffer Queue: Queue index out of range
+</nierror>
+<nierror code="-2147226595">
+AIM ARINC 664 Custom Device: [Driver Error: -402053] Transmit Data Buffer Queue: Buffer size error
+</nierror>
+<nierror code="-2147226596">
+AIM ARINC 664 Custom Device: [Driver Error: -402054] Transmit Data Buffer Queue: No more room in transfer link list
+</nierror>
+<nierror code="-2147226597">
+AIM ARINC 664 Custom Device: [Driver Error: -402055] Transmit Data Buffer Queue: Wrong transfer type
+</nierror>
+<nierror code="-2147226598">
+AIM ARINC 664 Custom Device: [Driver Error: -402061] Transmit Sub Queue: Wrong handle
+</nierror>
+<nierror code="-2147226599">
+AIM ARINC 664 Custom Device: [Driver Error: -402062] Transmit Sub Queue: Sub Queue is not initialized
+</nierror>
+<nierror code="-2147226600">
+AIM ARINC 664 Custom Device: [Driver Error: -402063] Transmit Sub Queue: Sub Queue is not existent.
+</nierror>
+<nierror code="-2147226601">
+AIM ARINC 664 Custom Device: [Driver Error: -402064] Transmit Sub Queue: Acyclic frame is empty.
+</nierror>
+<nierror code="-2147226602">
+AIM ARINC 664 Custom Device: [Driver Error: -402100] Continuous Capture Handle is invalid.
+</nierror>
+<nierror code="-2147226603">
+AIM ARINC 664 Custom Device: [Driver Error: -402101] No more host provided buffers for continuous capture.
+</nierror>
+<nierror code="-2147226604">
+AIM ARINC 664 Custom Device: [Driver Error: -402102] Host provided buffers can not be used for continuous capture.
+</nierror>
+<nierror code="-2147226605">
+AIM ARINC 664 Custom Device: [Driver Error: -402103] Buffer for continuous capture is not in queue.
+</nierror>
+<nierror code="-2147226606">
+AIM ARINC 664 Custom Device: [Driver Error: -402104] Problem with reusable buffer.
+</nierror>
+<nierror code="-2147226607">
+AIM ARINC 664 Custom Device: [Driver Error: -402105] Continuous capture: There is no task to resume.
+</nierror>
+<nierror code="-2147226608">
+AIM ARINC 664 Custom Device: [Driver Error: -402106] Continuous capture internal problem: There is no more buffer for data. Firmware Queue overrun!
+</nierror>
+<nierror code="-2147226609">
+AIM ARINC 664 Custom Device: [Driver Error: -402107] Continuous capture: DMA problem, timeout!
+</nierror>
+<nierror code="-2147226610">
+AIM ARINC 664 Custom Device: [Driver Error: -402108] Continuous capture: Timeout while capture task shall stop!
+</nierror>
+<nierror code="-2147226611">
+AIM ARINC 664 Custom Device: [Driver Error: -410000] Error: Try to set redundancy on different BIUs
+</nierror>
+<nierror code="-2147226612">
+AIM ARINC 664 Custom Device: [Driver Error: -410001] Warning: Ports already in Redundant Mode.
+</nierror>
+<nierror code="-2147226613">
+AIM ARINC 664 Custom Device: [Driver Error: -410002] Warning: Ports already in Single Mode.
+</nierror>
+</nidocument>
