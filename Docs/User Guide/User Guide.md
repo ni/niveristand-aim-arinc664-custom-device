@@ -9,10 +9,10 @@ The custom device targets one or multiple **Ports** of an AIM ARINC 664 PXIe mod
 ## Configure the Custom Device
 
 This guide shows two options for configuring the custom device:
-- Importing a Parameters file via the System Explorer
+- Importing a Parameters file in System Explorer
 - Scripting the custom device configuration
 
-### Importing a Parameters file via the System Explorer
+### Importing a Parameters file in System Explorer
 The Parameters file is generated from an XML schema for configuring the custom device. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
 
 This example uses a simple example Parameters file found at `Assets/RxTx2Ports_Loopback.xml` and a simple Raw Frame Array file found at `Source\Custom Device Support\Frame Configuration\samples\1Frame_10mS.bin`.
@@ -22,7 +22,9 @@ The file configures two Ports:
     - The Raw Frame Array file configures the frames to be sent by Port1
 - Port2 as Monitor
 
-Port1 sends frames to Port2. Port2 records the frames into a pcap file that a packet analyzer software (such as WireShark) can read. Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
+Port1 sends frames to Port2. Port2 records the frames into a pcap file that a packet analyzer software (such as WireShark) can read.
+
+Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
 
 ```xml
 <?xml version="1.0"?>
@@ -56,14 +58,14 @@ For each session in the Parameters configuration file, the Custom Device creates
 The AIM ARINC 664 custom device includes a LabVIEW scripting API to configure the custom device programmatically. This allows users to parse an existing AIM ARINC 664 database into a working custom device configuration without the need to create a Parameters file. It also allows importing a Parameters file programmatically instead of through System Explorer.
 
 To use the scripting API, the optional scripting package must be installed:
-`ni-aim-AIM ARINC 664-veristand-20xx-labview-support`
+`ni-aim-arinc-664-veristand-20xx-labview-support`
 
 The scripting API includes two example files inside a LabVIEW example project found at the following directory: `C:\Program Files (x86)\National Instruments\LabVIEW 20xx\examples\NI VeriStand Custom Devices\AIM ARINC 664`. It contains two example VIs:
 
 - `Import Parameters Configuration to New AIM ARINC 664 Custom Device.vi` - Demonstrates using the AIM ARINC 664 scripting API to configure the custom device by importing a parameters configuration file.
 - `Build New AIM ARINC 664 Custom Device.vi` - Demonstrates using the AIM ARINC 664 scripting API to configure the custom device by building from configuration clusters.
 
-![Scripting Examples Project](Screenshots/Scripting_examples_project.PNG)
+![Scripting Examples Project](Screenshots/Scripting_examples_project.png)
 
 ## Deploy the System Definition
 
@@ -71,22 +73,12 @@ After configuring the System Definition with the custom device, deploy the Syste
 
 1. Open a VeriStand Screen
 2. Highlight the **System Definition** tree in the left rail
-3. Expand the tree to `Targets\Controller\Hardware\Custom Devices\AIM ARINC 664\CH00`
-4. Drag the **Bus Controller\BC to RT1 (SA2)** item onto the screen
-5. Drag the **Remote Terminal 01\Subaddress 02** item onto the screen
-6. Change the values written to the words in the outgoing message (**Bus Controller\BC to RT1 (SA2)\Word 0x**) and see the values received by the Remote Terminal
+3. Expand the tree to `Targets\Controller\Hardware\Custom Devices\AIM ARINC 664`
+4. Drag **Port1** onto the screen
+5. Drag **Port2** onto the screen
 
-![VeriStand Screen](Screenshots/VeriStand_screen_deployed.PNG)
-
-To send the acyclic messages:
-
-1. Drag the **Bus Controller\BC to RT15 (SA3)** item onto the screen
-2. Drag the **Remote Terminal 15\Subaddress 03** item onto the screen
-3. Change the values written to the parameters in the outgoing message (**Bus Controller\BC to RT15 (SA3)\Parameter 0x**)
-4. Toggle the **Bus Controller\Acyclic Frames\Trigger (acyclicFrame1)** value to non-zero and see the values received by the Remote Terminal
+![VeriStand Screen](Screenshots/VeriStand_screen_deployed.png)
 
 ## Modifying the Custom Device Configuration
 
-Once the custom device is configured, you can change the configuration using the **Configuration Files** page in System Explorer. If the Parameters file changes on disk, use the **Refresh** button. If you need to select a new file, press the button to load a new path into the dialog.
-
-Each time the configuration is changed, the **AIM ARINC 664 Refresh** dialog will be displayed to compare the current and new configurations. Press **Apply** to accept the changes, or **Cancel** to exit without reconfiguring.
+Once the custom device is configured, you can change the configuration using the **Configuration File** page in System Explorer. If the Parameters file changes on disk, use the **Refresh** button. If you need to select a new file, press the button to load a new path into the dialog. The same is true if you choose to change the Raw Frame Array file.
