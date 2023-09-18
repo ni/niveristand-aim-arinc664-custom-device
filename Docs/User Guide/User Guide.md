@@ -9,85 +9,47 @@ The custom device targets one or multiple **Ports** of an AIM ARINC 664 PXIe mod
 ## Configure the Custom Device
 
 This guide shows two options for configuring the custom device:
-- Importing a Parameters file in System Explorer
+- Importing a Parameters file via the System Explorer
 - Scripting the custom device configuration
 
-### Importing a Parameters file in System Explorer
+### Importing a Parameters file via the System Explorer
 The Parameters file is generated from an XML schema for configuring the custom device. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
 
-This example uses a simple example Parameters file found at `Assets/RxTx2Ports_Loopback.xml`.
+This example uses a simple example Parameters file found at `Assets/RxTx2Ports_Loopback.xml` and a simple Raw Frame Array file found at `Source\Custom Device Support\Frame Configuration\samples\1Frame_10mS.bin`.
 
-The file is configured with three simulated terminals:
-- ???
+The file configures two Ports:
+- Port1 as Tx Generic
+    - The Raw Frame Array file configures the frames to be sent by Port1
+- Port2 as Monitor
 
-These terminals send and receive messages of each type supported by the Custom Device:
-- ???
-
-Each pair of messages (BC to RT, RT to BC, and RT to RT) is configured with similar settings. Message `BC to RT1 (SA2)` does not define parameters under the message, which will result in VeriStand channels for as many U16 datatype words as are found in the `<numberOfWords>` tag. Message `BC to RT15 (SA3)` defines two unscaled 32-bit parameters with BNR encoding, one signed and the other unsigned. Below is the configuration of the two BC to RT messages:
+Port1 sends frames to Port2. Port2 records the frames into a pcap file that a packet analyzer software (such as WireShark) can read. Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
 
 ```xml
-<message>
-	<name>BC to RT1 (SA2)</name>
-	<address>
-		<terminalAddress>1</terminalAddress>
-		<subAddress>2</subAddress>
-		<direction>Rx</direction>
-	</address>
-	<messageType>BC to RT</messageType>
-	<numberOfWords>4</numberOfWords>
-	<createTimestampChannel>true</createTimestampChannel>
-</message>
-<message>
-	<name>BC to RT15 (SA3)</name>
-	<address>
-		<terminalAddress>15</terminalAddress>
-		<subAddress>3</subAddress>
-		<direction>Rx</direction>
-	</address>
-	<messageType>BC to RT</messageType>
-	<numberOfWords>4</numberOfWords>
-	<createTimestampChannel>true</createTimestampChannel>
-	<parameters>
-		<parameter>
-			<encoding>BNR</encoding>
-			<signed>true</signed>
-			<startBit>0</startBit>
-			<numberOfBits>32</numberOfBits>
-			<scale>1</scale>
-			<offset>0.0</offset>
-			<name>Parameter 0</name>
-			<defaultValue>0</defaultValue>
-		</parameter>
-		<parameter>
-			<encoding>BNR</encoding>
-			<signed>false</signed>
-			<startBit>32</startBit>
-			<numberOfBits>32</numberOfBits>
-			<scale>1</scale>
-			<offset>0.0</offset>
-			<name>Parameter 1</name>
-			<defaultValue>0</defaultValue>
-		</parameter>
-	</parameters>
-</message>
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
+  <Port PortId="0" PortMap="1">
+    <TxGenericSession TxStartModeType="FDX_START" />
+  </Port>
+  <Port PortId="1" PortMap="2">
+    <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" MaxFileSizeMB="0" />
+  </Port>
+</Board>
 ```
 
-For each message in the Parameters configuration file, the Custom Device creates corresponding VeriStand channels under the simulated terminals contained in the file. For these two example messages, the Bus Controller has the Tx channels, so the words and parameters under the Bus Controller are outputs. Corresponding input channels are created under Remote Terminal 1 and Remote Terminal 15. The resulting System Definition tree and screen contents can be seen in later sections of this guide.
+For each session in the Parameters configuration file, the Custom Device creates corresponding VeriStand channels under the simulated Ports contained in the file. For this example, Port1 has the Tx Generic session channels, so the Tx Generic Status channels outputs are available to you via a Screen. Port2 has the Monitor session channels, so the Monitor Status channels are available to you. The resulting System Definition tree and screen contents can be seen in later sections of this guide.
 
 ### Configure the Custom Device in System Explorer
 
 1. Create a new VeriStand Project and configure your PXI Linux RT target.
 2. Navigate to the `Targets\Controller\Hardware\Custom Devices` entry in the tree.
 3. Right-click the **Custom Devices** entry and add a new instance of the **NI\AIM ARINC 664** custom device.
-4. Use the Main Page to set the **PXI Slot Number** and **BIU Number** accordingly.
-![System Explorer Main Page](Screenshots/System_Explorer_main_configured.PNG)
-5. Navigate to the **Configuration Files** page.
-6. Use the browse button to select the example parameters file at `niveristand-aim-milStd1553-custom-device\Docs\User Guide\Assets\Parameters.xml`
-![System Explorer Configuration Files](Screenshots/System_Explorer_configuration_files_configured.PNG)
-
-Note: After configuring the custom device, all of the configuration under `Channel` is read-only except for the `Description` field on each page.
-
-![System Explorer Parameter](Screenshots/System_Explorer_parameter_configured.PNG)
+4. Use the Main Page to set the **Initialization Method**, **Board ID**, **Ports Speed**, **Decimation**, and **Async Rx Execution** accordingly.
+![System Explorer Main Page](Screenshots/System_Explorer_main_configured.png)
+5. Navigate to the **Configuration File** page.
+6. Use the browse button to select the example parameters file at `Assets/RxTx2Ports_Loopback.xml`
+![System Explorer Configuration Files](Screenshots/System_Explorer_configuration_file_configured.png)
+7. Navigate to the **Tx Generic** section under Port1.
+8. Use the browse button to select the example Raw Frame Array file at `Source\Custom Device Support\Frame Configuration\samples\1Frame_10mS.bin`.![System Explorer Raw Frame Array File](Screenshots/System_Explorer_frame_configured.png)
 
 ### Scripting the Custom Device Configuration
 
