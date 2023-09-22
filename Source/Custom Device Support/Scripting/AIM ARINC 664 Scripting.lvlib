@@ -169,4 +169,5 @@
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
 	<Item Name="Parse Payload File.vi" Type="VI" URL="../Frame Array File/Parse Payload File.vi"/>
+	<Item Name="Set Tx Generic and Tx UDP Frames from Map.vi" Type="VI" URL="../Frame Array File/Set Tx Generic and Tx UDP Frames from Map.vi"/>
 </Library>
