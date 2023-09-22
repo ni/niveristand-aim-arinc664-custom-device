@@ -168,4 +168,5 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Parse Payload File.vi" Type="VI" URL="../Frame Array File/Parse Payload File.vi"/>
 </Library>
