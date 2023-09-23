@@ -67,14 +67,18 @@
 	<Item Name="Frame" Type="Folder">
 		<Item Name="Add Frame.vi" Type="VI" URL="../Frame/Add Frame.vi"/>
 		<Item Name="Get Frame Channel Refs.vi" Type="VI" URL="../Frame/Get Frame Channel Refs.vi"/>
+		<Item Name="Get Frame Data.vi" Type="VI" URL="../Frame/Get Frame Data.vi"/>
 		<Item Name="Get Frame Id.vi" Type="VI" URL="../Frame/Get Frame Id.vi"/>
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
+		<Item Name="Set Frame Data.vi" Type="VI" URL="../Frame/Set Frame Data.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
 	<Item Name="Frame Array File" Type="Folder">
 		<Item Name="Get Tx Generic Raw Frame List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Raw Frame List.vi"/>
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
+		<Item Name="Parse Payload File.vi" Type="VI" URL="../Frame Array File/Parse Payload File.vi"/>
 		<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
+		<Item Name="Set Tx Generic and Tx UDP Frames from Map.vi" Type="VI" URL="../Frame Array File/Set Tx Generic and Tx UDP Frames from Map.vi"/>
 		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">
@@ -152,6 +156,7 @@
 		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
 		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Header List.vi"/>
+		<Item Name="Get Tx Generic Payload List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Payload List.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Set Tx Generic File Path.vi"/>
@@ -168,6 +173,4 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Parse Payload File.vi" Type="VI" URL="../Frame Array File/Parse Payload File.vi"/>
-	<Item Name="Set Tx Generic and Tx UDP Frames from Map.vi" Type="VI" URL="../Frame Array File/Set Tx Generic and Tx UDP Frames from Map.vi"/>
 </Library>
