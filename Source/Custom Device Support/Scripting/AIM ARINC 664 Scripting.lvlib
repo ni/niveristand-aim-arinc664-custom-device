@@ -19,11 +19,13 @@
 		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
 		<Item Name="Get Configuration File Path.vi" Type="VI" URL="../Configuration File/Get Configuration File Path.vi"/>
+		<Item Name="Get Payload File Path.vi" Type="VI" URL="../Configuration File/Get Payload File Path.vi"/>
 		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
 		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
 		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
 		<Item Name="Set Pages and Properties.vi" Type="VI" URL="../Configuration File/Set Pages and Properties.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
+		<Item Name="Set Payload File Path.vi" Type="VI" URL="../Configuration File/Set Payload File Path.vi"/>
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
@@ -155,12 +157,10 @@
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section.vi"/>
 		<Item Name="Add Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
-		<Item Name="Get Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Get Tx Generic File Path.vi"/>
 		<Item Name="Get Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Header List.vi"/>
 		<Item Name="Get Tx Generic Payload List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Payload List.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Status Section and Channels.vi"/>
-		<Item Name="Set Tx Generic File Path.vi" Type="VI" URL="../Tx Generic/Set Tx Generic File Path.vi"/>
 		<Item Name="Set Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Frame Header List.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
