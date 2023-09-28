@@ -61,11 +61,11 @@
 		<Item Name="Get Database List of Names and Paths.vi" Type="VI" URL="../Database/Get Database List of Names and Paths.vi"/>
 	</Item>
 	<Item Name="Engine Configuration" Type="Folder">
-		<Item Name="Build Monitor Engine Configuration.vi" Type="VI" URL="../Configuration File/Build Monitor Engine Configuration.vi"/>
-		<Item Name="Build Rx UDP Engine Configuration.vi" Type="VI" URL="../Configuration File/Build Rx UDP Engine Configuration.vi"/>
-		<Item Name="Build Tx Generic Engine Configuration.vi" Type="VI" URL="../Configuration File/Build Tx Generic Engine Configuration.vi"/>
-		<Item Name="Build Tx UDP Engine Configuration.vi" Type="VI" URL="../Configuration File/Build Tx UDP Engine Configuration.vi"/>
-		<Item Name="Get Execution Units.vi" Type="VI" URL="../Custom Device/Get Execution Units.vi"/>
+		<Item Name="Build Monitor Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Monitor Engine Configuration.vi"/>
+		<Item Name="Build Rx UDP Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Rx UDP Engine Configuration.vi"/>
+		<Item Name="Build Tx Generic Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Tx Generic Engine Configuration.vi"/>
+		<Item Name="Build Tx UDP Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Tx UDP Engine Configuration.vi"/>
+		<Item Name="Get Execution Units.vi" Type="VI" URL="../Engine Configuration/Get Execution Units.vi"/>
 	</Item>
 	<Item Name="Frame" Type="Folder">
 		<Item Name="Add Frame.vi" Type="VI" URL="../Frame/Add Frame.vi"/>

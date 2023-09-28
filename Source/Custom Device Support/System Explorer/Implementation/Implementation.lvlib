@@ -36,6 +36,7 @@
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
 		<Item Name="Add Port RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Port RTM.vi"/>
 		<Item Name="Add Timing Channels RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Timing Channels RTM.vi"/>
+		<Item Name="Configure Payload Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Payload Frames RTM.vi"/>
 		<Item Name="Configure Raw Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Raw Frames RTM.vi"/>
 		<Item Name="EnableDisable RTM.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable RTM.vi"/>
 		<Item Name="Export Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Export Configuration RTM.vi"/>
@@ -57,7 +58,6 @@
 		<Item Name="Database.ctl" Type="VI" URL="../System Explorer/Types/Database.ctl"/>
 		<Item Name="Path Control.ctl" Type="VI" URL="../System Explorer/Types/Path Control.ctl"/>
 	</Item>
-	<Item Name="Configure Payload Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Payload Frames RTM.vi"/>
 	<Item Name="Frame Array File Handler.vi" Type="VI" URL="../System Explorer/Frame Array File Handler.vi"/>
 	<Item Name="System Explorer Dispatcher.lvclass" Type="LVClass" URL="../System Explorer Dispatcher/System Explorer Dispatcher.lvclass"/>
 </Library>
