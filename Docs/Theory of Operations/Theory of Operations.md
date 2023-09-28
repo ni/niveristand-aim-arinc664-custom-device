@@ -29,11 +29,11 @@ This custom device consists of several Execution Units and Factories, and this s
 - **Finalize**: Stops monitoring, closes Monitor Queue, closes Port session, closes reference to the AIM ARINC 664 library, and closes the logging reference.
 
 ### Rx UDP Execution Unit
-- **Initialize**:
-- **Start**:
-- **Read from Hardware**:
-- **Write to Hardware**:
-- **Finalize**:
+- **Initialize**: Creates a Rx VL-Oriented session, creates RX VL reference, and creates Rx UDP Communication port references to be used by later driver calls.
+- **Start**: Starts the receive function.
+- **Read from Hardware**: Reads data from the UDP connection port.
+- **Write to Hardware**: N/A
+- **Finalize**: Stops receiving, closes the UDP Communication port reference, closes Port session, and closes reference to the AIM ARINC 664 library.
 
 ### Tx Generic Execution Unit
 - **Initialize**:
