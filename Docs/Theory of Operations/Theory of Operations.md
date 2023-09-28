@@ -36,11 +36,11 @@ This custom device consists of several Execution Units and Factories, and this s
 - **Finalize**: Stops receiving, closes the UDP Communication port reference, closes Port session, and closes reference to the AIM ARINC 664 library.
 
 ### Tx Generic Execution Unit
-- **Initialize**:
-- **Start**:
-- **Read from Hardware**:
-- **Write to Hardware**:
-- **Finalize**:
+- **Initialize**: Sets frames to be sent by board in the **Write to Hardware** step.
+- **Start**: Sets the Tx Control operation to start transmitting frames.
+- **Read from Hardware**: Gets Tx Queue Status and Tx Status channel values.
+- **Write to Hardware**: N/A
+- **Finalize**: Stops transmitting, closes Port session, and closes reference to the AIM ARINC 664 library.
 
 ### Tx UDP Execution Unit
 - **Initialize**:
