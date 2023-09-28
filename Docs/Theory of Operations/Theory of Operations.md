@@ -10,7 +10,7 @@ The most important concept in the Communications Bus Template's design pattern i
 
 ## Execution Units
 
-This custom device consists of several Execution Units and Factories, and this section details the execution mode and responsibilities of each.
+This custom device consists of several Execution Units and Factories, and this section details the execution mode and responsibilities of each. All Execution Units consist of VIs that define steps in which an Execution Unit is brought up and brought down. See below for more details on what logic is executing in each of these steps per Execution Unit.
 
 ![EngineLibrary](Screenshots/EngineLibrary.png)
 
@@ -20,6 +20,34 @@ This custom device consists of several Execution Units and Factories, and this s
 | Rx UDP Execution Unit     | Async Group 1 | Read all incoming 664 frames defined in the Raw Frame Array file                                  |
 | Tx Generic Execution Unit | Async Group 1 | Write all outgoing generic 664 frames defined in the Raw Frame Array file                         |
 | Tx UDP Execution Unit     | Async Group 1 | Write all outgoing 664 messages to a UDP port                                                     |
+
+### Monitor Execution Unit
+- **Initialize**: Creates a Rx Chrono Monitor session, configures the Capture Control setting, and creates the Monitor Queue to be used by later driver calls.
+- **Start**: Starts the monitoring.
+- **Read from Hardware**: Reads from the Monitor Queue and logs data to a pcap file for post-deployment processing/reviewing.
+- **Write to Hardware**: Opens pcap file if logging channel is enabled.
+- **Finalize**: Stops monitoring, closes Monitor Queue, closes Port session, closes reference to the AIM ARINC 664 library, and closes the logging reference.
+
+### Rx UDP Execution Unit
+- **Initialize**:
+- **Start**:
+- **Read from Hardware**:
+- **Write to Hardware**:
+- **Finalize**:
+
+### Tx Generic Execution Unit
+- **Initialize**:
+- **Start**:
+- **Read from Hardware**:
+- **Write to Hardware**:
+- **Finalize**:
+
+### Tx UDP Execution Unit
+- **Initialize**:
+- **Start**:
+- **Read from Hardware**:
+- **Write to Hardware**:
+- **Finalize**:
 
 ### Execution Unit Factory
 
