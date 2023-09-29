@@ -36,6 +36,7 @@
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
 		<Item Name="Add Port RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Port RTM.vi"/>
 		<Item Name="Add Timing Channels RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Timing Channels RTM.vi"/>
+		<Item Name="Configure Raw Frames RTM (test).vi" Type="VI" URL="../System Explorer/RTM/Configure Raw Frames RTM (test).vi"/>
 		<Item Name="Configure Raw Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Raw Frames RTM.vi"/>
 		<Item Name="EnableDisable RTM.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable RTM.vi"/>
 		<Item Name="Export Configuration RTM.vi" Type="VI" URL="../System Explorer/RTM/Export Configuration RTM.vi"/>

@@ -342,6 +342,24 @@
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
+         <RunTimeMenu>
+				<MenuItem>
+					<GUID>FC841DFB-0C48-4F2C-A4DD-E549408A50F6</GUID>
+					<Type>Custom</Type>
+					<Name>
+						<eng />
+						<loc />
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+					</Item2Launch>
+					<CustomPopulation>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
+				</MenuItem>
+			</RunTimeMenu>
 		</Page>
 		<Page>
 			<Name>
