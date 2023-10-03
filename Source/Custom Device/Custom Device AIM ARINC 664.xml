@@ -342,6 +342,76 @@
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
+		    <RunTimeMenu>
+				<MenuItem>
+					<GUID>FC841DFB-0C48-4F2C-A4DD-E549408A50F6</GUID>
+					<Type>Custom</Type>
+					<Name>
+						<eng />
+						<loc />
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Wrapper.vi</Path>
+					</Item2Launch>
+					<CustomPopulation>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\RunTimeMenu Custom Population.vi</Path>
+					</CustomPopulation>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>Edit Configuration File</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\Database.png</Path>
+					</Glyph>
+					<Type>Notification</Type>
+					<ReferencedGUID></ReferencedGUID>
+					<ButtonText>
+						<eng>Edit XML File</eng>
+						<loc>Edit XML File</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Edit XML File</eng>
+						<loc>Edit XML File</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Open the XML file into an Editor.</eng>
+						<loc>Open the XML file into an Editor.</loc>
+					</TipStrip>
+					<Documentation>
+						<eng></eng>
+						<loc></loc>
+					</Documentation>
+				</Button>
+				<Button>
+					<ID>Frame Editor</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET RawDataFrame.png</Path>
+					</Glyph>
+					<Type>Notification</Type>
+					<ReferencedGUID></ReferencedGUID>
+					<ButtonText>
+						<eng>Edit Payload File</eng>
+						<loc>Edit Payload File</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Edit Payload File</eng>
+						<loc>Edit Payload File</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Edit the payload file.</eng>
+						<loc>Edit the payload file.</loc>
+					</TipStrip>
+					<Documentation>
+						<eng></eng>
+						<loc></loc>
+					</Documentation>
+				</Button>
+			</ButtonList>
 		</Page>
 		<Page>
 			<Name>

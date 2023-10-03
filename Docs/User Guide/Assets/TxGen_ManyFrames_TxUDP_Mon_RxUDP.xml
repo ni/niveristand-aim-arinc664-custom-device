@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame ID="Payload1" InterFrameGap="10" PreambleCount="0" NetSelect="FDX_TX_FRAME_BOTH" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+      <TxGenericFrame ID="Payload2" InterFrameGap="5" PreambleCount="0" NetSelect="FDX_TX_FRAME_BOTH" FrameStartMode="FDX_TX_FRAME_START_IFG" SequenceNumberOffset="0" />
+    </TxGenericSession>
+	</Port>
+    <Port PortId="1">
+    <TxUdpSession VlId="3">
+      <TxCommPort ID="Payload3" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" SampleRateMs="128" UdpNumBufMessages="0" UdpMaxMessageSize="1000" />
+      <TxCommPort ID="Payload3" PartitionID="1" SubVlId="2" UdpSrcPort="2" UdpDstPort="2" SampleRateMs="128" UdpNumBufMessages="0" UdpMaxMessageSize="1000" />
+    </TxUdpSession>
+    <RxMonitorSession CaptureMode="FDX_MON_CONTINUOUS" />
+  </Port>
+</Board>
