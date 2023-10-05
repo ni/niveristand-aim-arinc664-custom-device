@@ -15,7 +15,7 @@ This guide shows two options for configuring the custom device:
 ### Importing a Parameters file in System Explorer
 The Parameters file is generated from an XML schema for configuring the custom device. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
 
-This example uses a simple example Parameters file found at `Assets/RxTx2Ports_Loopback.xml` and a simple Raw Frame Array file found at `Source\Custom Device Support\Frame Configuration\samples\1Frame_10mS.bin`.
+This example uses a simple example Parameters file found at `Assets/Loopback_TxGen_RxMonitor.xml` and a simple Raw Frame Array file found at `Assets/standard_frames_udp.bin`.
 
 The file configures two Ports:
 - Port1 as Tx Generic
@@ -48,10 +48,10 @@ For each session in the Parameters configuration file, the Custom Device creates
 4. Use the Main Page to set the **Initialization Method**, **Board ID**, **Ports Speed**, **Decimation**, and **Async Rx Execution** accordingly.
 ![System Explorer Main Page](Screenshots/System_Explorer_main_configured.png)
 5. Navigate to the **Configuration File** page.
-6. Use the browse button to select the example parameters file at `Assets/RxTx2Ports_Loopback.xml`
+6. Use the browse button to select the example parameters file at `Assets/Loopback_TxGen_RxMonitor.xml`
 ![System Explorer Configuration Files](Screenshots/System_Explorer_configuration_file_configured.png)
 7. Navigate to the **Tx Generic** section under Port1.
-8. Use the browse button to select the example Raw Frame Array file at `Source\Custom Device Support\Frame Configuration\samples\1Frame_10mS.bin`.![System Explorer Raw Frame Array File](Screenshots/System_Explorer_frame_configured.png)
+8. Use the browse button to select the example Raw Frame Array file at `Assets/standard_frames_udp.bin`.![System Explorer Raw Frame Array File](Screenshots/System_Explorer_frame_configured.png)
 
 ### Scripting the Custom Device Configuration
 
