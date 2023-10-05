@@ -636,6 +636,11 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
+			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -831,7 +836,7 @@
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
 		<Property Name="alias.value" Type="Str">10.0.70.25</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEGUB,False;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEGUB,False;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -1041,6 +1046,7 @@ AddOutputFilter chunkFilter
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
@@ -1063,6 +1069,9 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
@@ -1072,6 +1081,7 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
+			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
@@ -1088,7 +1098,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">287</Property>
+				<Property Name="Bld_version.build" Type="Int">289</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
