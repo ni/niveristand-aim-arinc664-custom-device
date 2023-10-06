@@ -153,6 +153,9 @@
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
 	<Item Name="Tx Generic" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Get Tx Command Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Command Channel Array.vi"/>
+		<Item Name="Get Tx Generic Command Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Command Section and Channels.vi"/>
 		<Item Name="Add Tx Generic Command Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Command Section and Channels.vi"/>
 		<Item Name="Add Tx Generic Command Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Command Section.vi"/>
 		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
@@ -176,6 +179,4 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Tx Command Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Command Channel Array.vi"/>
-	<Item Name="Get Tx Generic Command Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Command Section and Channels.vi"/>
 </Library>
