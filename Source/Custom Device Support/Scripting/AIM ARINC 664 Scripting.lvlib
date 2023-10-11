@@ -14,7 +14,6 @@
 		<Item Name="Set ENUM Properties.vi" Type="VI" URL="../Channel/Set ENUM Properties.vi"/>
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
-		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
 		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
@@ -29,6 +28,7 @@
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Custom Device/Add Configuration File Page.vi"/>
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
 		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
 		<Item Name="Check if Custom Device Enabled.vi" Type="VI" URL="../Custom Device/Check if Custom Device Enabled.vi"/>
@@ -54,6 +54,7 @@
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
 		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
+		<Item Name="Get Configuration File Section.vi" Type="VI" URL="../Port/Get Configuration File Section.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
