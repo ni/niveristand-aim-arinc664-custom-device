@@ -14,7 +14,6 @@
 		<Item Name="Set ENUM Properties.vi" Type="VI" URL="../Channel/Set ENUM Properties.vi"/>
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
-		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Configuration File/Add Configuration File Page.vi"/>
 		<Item Name="Add Ports and Sections.vi" Type="VI" URL="../Configuration File/Add Ports and Sections.vi"/>
 		<Item Name="Get Board Properties.vi" Type="VI" URL="../Configuration File/Get Board Properties.vi"/>
 		<Item Name="Get Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Get Configuration File Needed Property.vi"/>
@@ -29,6 +28,7 @@
 	</Item>
 	<Item Name="Custom Device" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Add Configuration File Page.vi" Type="VI" URL="../Custom Device/Add Configuration File Page.vi"/>
 		<Item Name="Add Custom Device.vi" Type="VI" URL="../Custom Device/Add Custom Device.vi"/>
 		<Item Name="Add Channels from Channel Arrays.vi" Type="VI" URL="../Custom Device/Add Channels from Channel Arrays.vi"/>
 		<Item Name="Check if Custom Device Enabled.vi" Type="VI" URL="../Custom Device/Check if Custom Device Enabled.vi"/>
@@ -54,6 +54,7 @@
 		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
 		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
+		<Item Name="Get Configuration File Section.vi" Type="VI" URL="../Port/Get Configuration File Section.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
@@ -153,15 +154,20 @@
 		<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../Timing/Get Timing Section Reference.vi"/>
 	</Item>
 	<Item Name="Tx Generic" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
+		<Item Name="Get Tx Command Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Command Channel Array.vi"/>
+		<Item Name="Get Tx Generic Command Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Command Section and Channels.vi"/>
+		<Item Name="Add Tx Generic Command Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Command Section and Channels.vi"/>
+		<Item Name="Add Tx Generic Command Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Command Section.vi"/>
 		<Item Name="Add Tx Generic Section and Status Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section and Status Channels.vi"/>
 		<Item Name="Add Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Section.vi"/>
 		<Item Name="Add Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section and Channels.vi"/>
 		<Item Name="Add Tx Generic Status Section.vi" Type="VI" URL="../Tx Generic/Add Tx Generic Status Section.vi"/>
-		<Item Name="Get Tx Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Channel Array.vi"/>
 		<Item Name="Get Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Header List.vi"/>
 		<Item Name="Get Tx Generic Payload List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Payload List.vi"/>
 		<Item Name="Get Tx Generic Section.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Section.vi"/>
 		<Item Name="Get Tx Generic Status Section and Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Status Section and Channels.vi"/>
+		<Item Name="Get Tx Status Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Status Channel Array.vi"/>
 		<Item Name="Set Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Frame Header List.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
 	</Item>
