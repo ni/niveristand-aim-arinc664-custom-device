@@ -133,6 +133,11 @@
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
 		</Item>
 		<Item Name="Shared" Type="Folder">
+			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
+			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
+			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
+			<Item Name="Parse Raw Payload Frame.vi" Type="VI" URL="../Frame Configuration/support/Parse Raw Payload Frame.vi"/>
+			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
@@ -564,6 +569,12 @@
 				<Item Name="MergeError.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/MergeError.vi"/>
 				<Item Name="UnpackedFlatVectorToMatrix.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/UnpackedFlatVectorToMatrix.vi"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
+				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
+				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
+				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
+				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
+				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
+				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="Generate Temporary File Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Generate Temporary File Path.vi"/>
@@ -626,6 +637,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -976,6 +988,9 @@ AddOutputFilter chunkFilter
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
+				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
+				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
@@ -996,6 +1011,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/Numeric/Random Number (Range).vi"/>
 				<Item Name="Release Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore Reference.vi"/>
 				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
+				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Semaphore RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore RefNum"/>
@@ -1003,6 +1019,8 @@ AddOutputFilter chunkFilter
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
+				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
+				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
 				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/Numeric/sub_Random U32.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
@@ -1025,6 +1043,7 @@ AddOutputFilter chunkFilter
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
@@ -1047,6 +1066,8 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
+			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
@@ -1054,6 +1075,8 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
+			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
+			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -1069,7 +1092,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">281</Property>
+				<Property Name="Bld_version.build" Type="Int">291</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
