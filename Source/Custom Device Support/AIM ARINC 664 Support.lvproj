@@ -100,10 +100,12 @@
 			</Item>
 			<Item Name="Manual" Type="Folder">
 				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
-				<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
 				<Item Name="test_XMLlvParser.vi" Type="VI" URL="../Tests/System/Manual/test_XMLlvParser.vi"/>
 				<Item Name="test_script_api_Tree.vi" Type="VI" URL="../Tests/System/Manual/test_script_api_Tree.vi"/>
 				<Item Name="Get-Set Properties from Cluster.vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster.vi"/>
+				<Item Name="Convert Raw Frame File.vi" Type="VI" URL="../Tests/System/Manual/Convert Raw Frame File.vi"/>
+				<Item Name="test_LoadFrameEditorFile_v1.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v1.vi"/>
+				<Item Name="test_LoadFrameEditorFile_v2.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v2.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -625,7 +627,6 @@
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 			<Item Name="FileSegmentType.ctl" Type="VI" URL="../Shared/FileSegmentType.ctl"/>
 			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
-			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
 			<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
 			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
 			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
@@ -638,6 +639,10 @@
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
+			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -832,7 +837,7 @@
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">10.0.70.25</Property>
+		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEGUB,False;INIT_FLAT,False;SHARED_INIT,False;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -915,7 +920,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Manual" Type="Folder">
 					<Property Name="NI.SortType" Type="Int">3</Property>
 					<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
-					<Item Name="test_cleanup.vi" Type="VI" URL="../Tests/System/Manual/test_cleanup.vi"/>
+					<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
 					<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
 					<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
 					<Item Name="test_Loopback(Tx Generic - Rx Mon).vi" Type="VI" URL="../Tests/System/Manual/test_Loopback(Tx Generic - Rx Mon).vi"/>
@@ -1066,6 +1071,9 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
 			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
@@ -1073,7 +1081,8 @@ AddOutputFilter chunkFilter
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="test_LoadFrameEditorFile.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile.vi"/>
+			<Item Name="test_LoadFrameEditorFile_v1.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v1.vi"/>
+			<Item Name="test_LoadFrameEditorFile_v2.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v2.vi"/>
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
