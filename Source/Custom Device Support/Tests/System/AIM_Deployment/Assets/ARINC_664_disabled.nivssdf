@@ -3,14 +3,14 @@
 	<MD5Checksum />
 	<Version Major="2020" Minor="0" Fix="0" Build="0" />
 	<Content>Definition</Content>
-	<Root Name="664 2020" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
+	<Root Name="ARINC_664_disabled" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
 		<Description />
 		<Properties>
 			<Property Name="Name">
-				<String>664 2020</String>
+				<String>ARINC_664_disabled</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.9</String>
+				<String>1.0.0.10</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -195,7 +195,7 @@
 					<Description />
 					<Properties />
 					<Errors />
-					<Section Name="AIM ARINC 664" TypeGUID="A66CC76D-6CC8-4007-ADC5-D1CC0A2F1CEE" Identifier="ad8fd31d-e488-4d80-8773-3a4c5c6352a3">
+					<Section Name="AIM ARINC 664" TypeGUID="A66CC76D-6CC8-4007-ADC5-D1CC0A2F1CEE" Identifier="5ff8dc2f-cfd2-4dfc-9e33-027e2b4c0edf">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -231,33 +231,24 @@
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine.lvlibp</RTDestination>
 									<SupportedTarget>Linux_x64</SupportedTarget>
-									<MD5>30b1a1fa621368c58a7eb3ba5eba685d</MD5>
+									<MD5>6cece4341f910efd9cf9ec0749813db1</MD5>
 								</DependentFile>
 							</Property>
 						</Properties>
 						<Errors />
-						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="3a1214f8-8c4e-419b-9fc5-9a86490cda1d">
+						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="ad3abccf-dc9f-47e8-a8b5-0756ee405e15">
 							<Description />
 							<Properties />
 							<Errors />
 						</Section>
-						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="55359fc4-b9e2-4ad1-963a-1fb0ba0b1b6c">
+						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="e9767137-46f8-41c6-b0f9-3f327a375b5e">
 							<Description />
-							<Properties />
+							<Properties>
+								<Property Name="user.CD.ConfigurationFile.Needed">
+									<Boolean>false</Boolean>
+								</Property>
+							</Properties>
 							<Errors />
-						</Section>
-						<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="46f7df48-76bc-45fe-948a-c3b89e5fe54e">
-							<Description />
-							<Properties />
-							<Errors />
-							<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fbb2201f-0278-485f-bed4-083e365066b1" RowDim="1" ColDim="1" Units="" BitFields="3">
-								<Description />
-								<Properties />
-								<Errors />
-								<DefaultValue>
-									<Elem>0</Elem>
-								</DefaultValue>
-							</Channel>
 						</Section>
 					</Section>
 				</Section>

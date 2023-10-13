@@ -36,7 +36,9 @@
 		<Item Name="Enable Custom Device.vi" Type="VI" URL="../Custom Device/Enable Custom Device.vi"/>
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
+		<Item Name="Get Custom Device.vi" Type="VI" URL="../Get Custom Device.vi"/>
 		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
+		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
 		<Item Name="Get Channels from Section.vi" Type="VI" URL="../Custom Device/Get Channels from Section.vi"/>
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
 		<Item Name="Get Properties from Cluster.vi" Type="VI" URL="../Custom Device/Get Properties from Cluster.vi"/>
@@ -47,13 +49,13 @@
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
+		<Item Name="Import Configuration and Payload Files.vi" Type="VI" URL="../Custom Device/Import Configuration and Payload Files.vi"/>
 		<Item Name="Import Configuration File.vi" Type="VI" URL="../Custom Device/Import Configuration File.vi"/>
+		<Item Name="Import Payload File.vi" Type="VI" URL="../Custom Device/Import Payload File.vi"/>
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
-		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
-		<Item Name="Get Custom Device.vi" Type="VI" URL="../Get Custom Device.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
@@ -180,6 +182,4 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Import Configuration and Payload Files.vi" Type="VI" URL="../Custom Device/Import Configuration and Payload Files.vi"/>
-	<Item Name="Import Payload File.vi" Type="VI" URL="../Custom Device/Import Payload File.vi"/>
 </Library>
