@@ -72,7 +72,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107296768</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1117782528</Property>
 	</Item>
 	<Item Name="Tx Queue Status to DBLs.vi" Type="VI" URL="../Tx Queue Status to DBLs.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#^!!!!#1!%!!!!"1!+!!!?1%!!!@````]!!2&amp;5?&amp;&amp;V:86F5X2B&gt;(6T2%*-=Q!21!-!#V&amp;V:86F5X2B&gt;(6T!"6!"Q!01HFU:8.3:7RP972B9GRF!"&amp;!"Q!+2H*B&lt;76T5W6O&gt;!!!&amp;U!(!""'=G&amp;N:8.*&lt;E.Z9V&amp;V:86F!!!=1&amp;!!"!!$!!1!"1!'$62Y586F&gt;764&gt;'&amp;U&gt;8-!*!$Q!!1!!!!#!!!!"Q)!!#A!!!!!!!!*!!!!!!!!!!A!!!!!!1!)!!!!!!</Property>
