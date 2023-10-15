@@ -10,7 +10,11 @@
 				<String>ARINC_664_no_configuration</String>
 			</Property>
 			<Property Name="Version">
+<<<<<<< HEAD
 				<String>1.0.0.12</String>
+=======
+				<String>1.0.0.11</String>
+>>>>>>> abarp/tests_scripting
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -195,7 +199,7 @@
 					<Description />
 					<Properties />
 					<Errors />
-					<Section Name="AIM ARINC 664" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="ad8fd31d-e488-4d80-8773-3a4c5c6352a3">
+					<Section Name="AIM ARINC 664" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="b00d894b-5273-4c0d-9458-36a34c35e4a9">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -231,9 +235,10 @@
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine.lvlibp</RTDestination>
 									<SupportedTarget>Linux_x64</SupportedTarget>
-									<MD5>30b1a1fa621368c58a7eb3ba5eba685d</MD5>
+									<MD5>6cece4341f910efd9cf9ec0749813db1</MD5>
 								</DependentFile>
 							</Property>
+<<<<<<< HEAD
 							<Property Name="user.CD.boardId">
 								<U32>0</U32>
 							</Property>
@@ -243,12 +248,15 @@
 							<Property Name="user.CD.portConfig">
 								<U32>0</U32>
 							</Property>
+=======
+>>>>>>> abarp/tests_scripting
 						</Properties>
 						<Errors />
-						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="3a1214f8-8c4e-419b-9fc5-9a86490cda1d">
+						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="d6ac693e-24e8-4f52-99d3-fb95ca85a603">
 							<Description />
 							<Properties />
 							<Errors />
+<<<<<<< HEAD
 							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="12dfea08-067d-4705-8b0e-1127c6d272d4">
 								<Description />
 								<Properties>
@@ -521,17 +529,13 @@
 							<Errors />
 						</Section>
 						<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="46f7df48-76bc-45fe-948a-c3b89e5fe54e">
+=======
+						</Section>
+						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="bcb5e6f7-1f0d-440f-a36f-a682a4287987">
+>>>>>>> abarp/tests_scripting
 							<Description />
 							<Properties />
 							<Errors />
-							<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fbb2201f-0278-485f-bed4-083e365066b1" RowDim="1" ColDim="1" Units="" BitFields="3">
-								<Description />
-								<Properties />
-								<Errors />
-								<DefaultValue>
-									<Elem>0</Elem>
-								</DefaultValue>
-							</Channel>
 						</Section>
 					</Section>
 				</Section>
