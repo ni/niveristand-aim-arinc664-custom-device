@@ -109,9 +109,7 @@
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
-					<Item Name="Assets" Type="Folder">
-						<Item Name="TxGenRxMon-loopback.nivssdf" Type="Document" URL="../Tests/System/AIM_Deployment/Assets/TxGenRxMon-loopback.nivssdf"/>
-					</Item>
+					<Item Name="Assets" Type="Folder"/>
 					<Item Name="AIM ARINC 664 Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM ARINC 664 Deployment.lvclass"/>
 				</Item>
 				<Item Name="Loopback" Type="Folder">
@@ -1076,7 +1074,7 @@
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">294</Property>
+				<Property Name="Bld_version.build" Type="Int">295</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
