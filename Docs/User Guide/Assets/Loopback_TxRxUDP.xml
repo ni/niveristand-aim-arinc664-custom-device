@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxUdpSession>
+      <TxCommPort ID="Tx1" UdpSrcPort="40000" UdpDstPort="50000">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>g</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxCommPort>
+    </TxUdpSession>
+  </Port>
+  <Port PortId="1">
+    <RxUdpSession Bag="128">
+      <RxCommPort ID="Rx1" UdpSrcPort="40000" UdpDstPort="50000">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>0</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>g</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </RxCommPort>
+    </RxUdpSession>
+  </Port>
+</Board>
