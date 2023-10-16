@@ -106,6 +106,7 @@
 				<Item Name="Convert Raw Frame File.vi" Type="VI" URL="../Tests/System/Manual/Convert Raw Frame File.vi"/>
 				<Item Name="test_LoadFrameEditorFile_v1.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v1.vi"/>
 				<Item Name="test_LoadFrameEditorFile_v2.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v2.vi"/>
+				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -587,6 +588,7 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
