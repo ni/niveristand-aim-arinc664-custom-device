@@ -246,7 +246,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="b133d1ee-07c4-4720-8ab6-5e096f730f61">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="6a669116-eb17-49f2-89ff-f6742f1053d2">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -257,15 +257,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="8b452103-99cd-4cf7-8ea2-cedf9fdc63a7">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="ab1eeb6f-ec91-4f1f-b436-a82213b5be65">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="c276defe-831b-4297-8391-6f6462365fea">
+									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="c6556fdf-bbf4-4505-9f5b-e05abe2f856c">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="d5d670fc-997d-43a6-b71e-d167b004c0cb">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="e26256c9-eb03-46dd-a996-303abe3338d8">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -303,7 +303,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="2e87e0fb-bdea-4f46-b3e2-a0f651232294">
+											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="7b5bf400-fca3-453a-8349-67f0f2762864">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.UDPFrame.ID">
@@ -347,7 +347,7 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="211987f8-502b-47ec-b0a6-bc9b8394a24a" RowDim="1" ColDim="1" Units="V" BitFields="3">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7cf28b21-ece6-4824-98d1-74185f469528" RowDim="1" ColDim="1" Units="V" BitFields="3">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
@@ -379,7 +379,7 @@
 									</Section>
 								</Section>
 							</Section>
-							<Section Name="Port2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="d1a1582f-5857-4f5d-869e-eab336cd6978">
+							<Section Name="Port2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="e31bfa77-e5be-4d85-b9c7-c34c52ad5d97">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -390,15 +390,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="9bb5ebf2-fe83-49c9-a42b-5f48d4760910">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="beb40494-7889-482c-83b3-68e8a29551ca">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="0a80c49e-b60a-4268-95d8-b10421854c33">
+									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="4db75e5c-516f-4cf8-b038-4c87ae263f0e">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="d0a2602d-c9f5-4a62-8815-fc78ce9653e2">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="aebecaf0-f28c-4362-9bdb-03834bfded1c">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -445,7 +445,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="d9cdfdc6-16a8-4a0a-9c22-e32a24784c23">
+											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="76eb8e3d-3af6-41d6-8bdd-99880fe6a08c">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.PortType">
@@ -483,7 +483,7 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="1d7e7c16-4b87-4cc5-a09c-cb5ce875d79d" RowDim="1" ColDim="1" Units="V" BitFields="1">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fc2a0e1c-aedd-46b2-84cd-bfbdb6f967a9" RowDim="1" ColDim="1" Units="V" BitFields="1">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
