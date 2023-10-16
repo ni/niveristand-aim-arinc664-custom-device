@@ -2,7 +2,7 @@
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
   <Port PortId="0" PortMap="0">
     <TxUdpSession VlId="60" Bag="128" NetSelect="FDX_TX_FRAME_BOTH" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1000" FrameBufferSize="0">
-      <TxCommPort PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
+      <TxCommPort ID="Payload1" PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
         <Parameter>
           <direction>outgoing</direction>
           <encoding>BCD</encoding>

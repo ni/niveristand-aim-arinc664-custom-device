@@ -22,7 +22,6 @@
 		<Item Name="Set Board Properties.vi" Type="VI" URL="../Configuration File/Set Board Properties.vi"/>
 		<Item Name="Set Configuration File Needed Property.vi" Type="VI" URL="../Configuration File/Set Configuration File Needed Property.vi"/>
 		<Item Name="Set Configuration File Path.vi" Type="VI" URL="../Configuration File/Set Configuration File Path.vi"/>
-		<Item Name="Set Pages and Properties.vi" Type="VI" URL="../Configuration File/Set Pages and Properties.vi"/>
 		<Item Name="Set Parameter Properties.vi" Type="VI" URL="../Configuration File/Set Parameter Properties.vi"/>
 		<Item Name="Set Payload File Path.vi" Type="VI" URL="../Configuration File/Set Payload File Path.vi"/>
 	</Item>
@@ -37,24 +36,26 @@
 		<Item Name="Enable Custom Device.vi" Type="VI" URL="../Custom Device/Enable Custom Device.vi"/>
 		<Item Name="Find All Custom Devices.vi" Type="VI" URL="../Custom Device/Find All Custom Devices.vi"/>
 		<Item Name="Find Custom Device.vi" Type="VI" URL="../Custom Device/Find Custom Device.vi"/>
+		<Item Name="Get Custom Device.vi" Type="VI" URL="../Get Custom Device.vi"/>
 		<Item Name="Get Board ID.vi" Type="VI" URL="../Custom Device/Get Board ID.vi"/>
+		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
 		<Item Name="Get Channels from Section.vi" Type="VI" URL="../Custom Device/Get Channels from Section.vi"/>
 		<Item Name="Get Initialization Board Method.vi" Type="VI" URL="../Custom Device/Get Initialization Board Method.vi"/>
 		<Item Name="Get Properties from Cluster.vi" Type="VI" URL="../Custom Device/Get Properties from Cluster.vi"/>
+		<Item Name="Get Properties into Table.vi" Type="VI" URL="../Custom Device/Get Properties into Table.vi"/>
+		<Item Name="Get Configuration File Section.vi" Type="VI" URL="../Port/Get Configuration File Section.vi"/>
 		<Item Name="Set Properties from Cluster.vi" Type="VI" URL="../Custom Device/Set Properties from Cluster.vi"/>
 		<Item Name="Get Ports Section.vi" Type="VI" URL="../Port/Get Ports Section.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
 		<Item Name="Import Custom Device (New).vi" Type="VI" URL="../Custom Device/Import Custom Device (New).vi"/>
 		<Item Name="Import Custom Device.vi" Type="VI" URL="../Custom Device/Import Custom Device.vi"/>
+		<Item Name="Import Configuration and Payload Files.vi" Type="VI" URL="../Custom Device/Import Configuration and Payload Files.vi"/>
 		<Item Name="Import Configuration File.vi" Type="VI" URL="../Custom Device/Import Configuration File.vi"/>
-		<Item Name="Get Properties into Table.vi" Type="VI" URL="../Custom Device/Get Properties into Table.vi"/>
+		<Item Name="Import Payload File.vi" Type="VI" URL="../Custom Device/Import Payload File.vi"/>
 		<Item Name="Initialize Custom Device.vi" Type="VI" URL="../Custom Device/Initialize Custom Device.vi"/>
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
-		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Custom Device/Append Execution Units List.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
-		<Item Name="Get Description.vi" Type="VI" URL="../Custom Device/Get Description.vi"/>
-		<Item Name="Get Configuration File Section.vi" Type="VI" URL="../Port/Get Configuration File Section.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
@@ -62,6 +63,7 @@
 		<Item Name="Get Database List of Names and Paths.vi" Type="VI" URL="../Database/Get Database List of Names and Paths.vi"/>
 	</Item>
 	<Item Name="Engine Configuration" Type="Folder">
+		<Item Name="Append Execution Units List.vi" Type="VI" URL="../Engine Configuration/Append Execution Units List.vi"/>
 		<Item Name="Build Monitor Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Monitor Engine Configuration.vi"/>
 		<Item Name="Build Rx UDP Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Rx UDP Engine Configuration.vi"/>
 		<Item Name="Build Tx Generic Engine Configuration.vi" Type="VI" URL="../Engine Configuration/Build Tx Generic Engine Configuration.vi"/>
