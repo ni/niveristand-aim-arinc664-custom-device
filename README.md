@@ -12,8 +12,8 @@ The custom device supports the following functionality:
 ## Using the Custom Device
 
 - Download the latest release package from the [Releases page]().
-- See the [User Guide]() for a walkthrough of using the Custom Device.
-- See the [Parameters XML File Schema documentation]() for configuring the custom device.
+- See the [User Guide](Docs/User%20Guide/User%20Guide.md) for a walkthrough of using the Custom Device.
+- See the [Parameters XML File Schema documentation](Docs/Parameters%20XML%20File/Parameters%20XML%20File.md) for configuring the custom device.
 
 ## Requirements
 
@@ -46,6 +46,7 @@ LabVIEW 2020 SP1
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-message-library/releases)
 - [VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-testing-tools/releases)
+- [Microsoft HTML Workshop](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/htmlhelp/microsoft-html-help-downloads )
 
 ## Git History & Rebasing Policy
 
