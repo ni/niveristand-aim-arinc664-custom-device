@@ -34,7 +34,7 @@
 						<String>Linux_x64</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>10.0.70.33</String>
+						<String>10.0.70.25</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
