@@ -22,24 +22,25 @@ The custom device supports the following functionality:
 
 ## LabVIEW Source Code Version
 
-LabVIEW 2020 SP1
+LabVIEW 2020
 
 ## Dependencies
-
-### Running the custom device
-
-- [VeriStand 2020 R4 or later](https://www.ni.com/ro-ro/support/downloads/software-products/download.veristand.html#382072)
-- AIM ARINC 664 BSP Driver
 
 ### Real-Time target software components
 
 - AIM ARINC 664 BSP Driver
   - Must enable the `ni-third-party` feed in MAX to install
 
+![Edit feeds](Docs/User%20Guide/Screenshots/max_manage_feeds.PNG)
+
+![Enable 3rd party](Docs/User%20Guide/Screenshots/max_enable_3rdParty.PNG)
+
+
 ### Developing or building from source
 
-- [LabVIEW 2020 SP1 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
-- [AIM ARINC 664 BSP Driver and LabVIEW API]()
+- [LabVIEW 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
+- [AIM ARINC 664 BSP Driver and LabVIEW API](https://www.ni.com/en/support/downloads/software-products/download.aim-arinc-664-driver.html#494504) 2023Q4 or later
+  - Once the AIM BSP is installed, run the `aim_gmbh_lib_arinc_664-<a.b.c.d>.vip` VI Package which containes the LabVIEW VIs. Version 1.0.0.18 or later of the .vip is required.
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-development-tools/releases)
 - [VeriStand Custom Device Message Library](https://github.com/ni/niveristand-custom-device-message-library)
