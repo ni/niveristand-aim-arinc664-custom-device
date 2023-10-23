@@ -1,26 +1,41 @@
 # Using the AIM ARINC 664 Custom Device
 
-This guide demonstrates how to configure and deploy the AIM ARINC 664 custom device.
+This guide demonstrates how to configure and deploy the AIM ARINC 664 custom device. This custom devices uses the AIM BSP (Board Support Package) and Labview API to communicate with the hardware. Refer to the [README.md](../../README.md) to install these component and the associated AIM documentation.
 
 ## Configure the AIM ARINC 664 Hardware
 
-The custom device targets one or multiple **Ports** of an AIM ARINC 664 PXIe module. To target multiple modules, you must use multiple instances of the custom device.
+The custom device targets one or multiple **Ports** of an [AIM ARINC-664](https://www.ni.com/it-it/shop/model/aim-arinc-664.html) PXIe module. To target multiple modules, you must use multiple instances of the custom device.
 
 ## Configure the Custom Device
 
 This guide shows two options for configuring the custom device:
-- Importing a Parameters file in System Explorer
-- Scripting the custom device configuration
+- Configure the Custom Device in System Explorer
+- Deploy the System Definition
+- Modify the Custom Device Configuration
+- Script the Custom Device from LabVIEW
 
-### Importing a Parameters file in System Explorer
-The Parameters file is generated from an XML schema for configuring the custom device. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
 
-This example uses a simple example Parameters file found at `Assets/Loopback_TxGen_RxMonitor.xml` and a simple Raw Frame Array file found at `Assets/standard_frames_udp.bin`.
+### Configure the Custom Device in System Explorer
+
+1. Create a new VeriStand Project and configure your PXI Linux RT target.
+2. Navigate to the `Targets\Controller\Hardware\Custom Devices` entry in the tree.
+3. Right-click the **Custom Devices** entry and add a new instance of the **NI\AIM ARINC 664** custom device.
+4. Use the Main Page to set the **Initialization Method**, **Board ID**, **Ports Speed**, **Decimation**, and **Async Rx Execution** accordingly.
+![System Explorer Main Page](Screenshots/System_Explorer_main_configured.png)
+5. Navigate to the **Configuration File** page.
+6. Use the browse buttons to select the example parameters file at `Assets/Loopback_TxGen_RxMonitor.xml` and Raw Frame Array file at `Assets/standard_frames_udp.bin` respectively.
+![System Explorer Configuration Files](Screenshots/System_Explorer_configuration_file_configured.png)
+
+The Parameters file is an XML file which configures capabilities and properties for each port of the board. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
+
+This example uses a simple example Parameters file found at `Assets/Loopback_TxGen_RxMonitor.xml` and a simple payload file found at `Assets/standard_frames_udp.bin`. This file contains the payload data for the frames that have to be tranmitted.
 
 The file configures two Ports:
 - Port1 as Tx Generic
-    - The Raw Frame Array file configures the frames to be sent by Port1
 - Port2 as Monitor
+  - You can configure logging properties to save incoming frames to a [.pcap](https://en.wikipedia.org/wiki/Pcap) file on the target system and analyze it offline
+
+To understand more about the **modes** (e.g. Tx Generic or Monitor) that can be configure on each port, refer to the *Arinc664_Programmers_Guide.pdf* which is installed by the AIM BSP and available at this location: `<Program Files>\AIM GmbH\Arinc 664 Windows BSP <version, e.g. 19.6.0>\Doc`
 
 ![Expanded System Definition tree](Screenshots/System_Explorer_tree_expanded.png)
 
@@ -44,18 +59,57 @@ Below is the Parameters file. Some Session parameters have been left out for the
 
 For each session in the Parameters configuration file, the Custom Device creates corresponding VeriStand channels under the simulated Ports contained in the file. For this example, Port1 has the Tx Generic session channels, so the Tx Generic Status channels outputs are available to you via a Screen. Port2 has the Monitor session channels, so the Monitor Status channels are available to you. The resulting System Definition tree and screen contents can be seen in later sections of this guide.
 
-### Configure the Custom Device in System Explorer
+### Deploy the System Definition
 
-1. Create a new VeriStand Project and configure your PXI Linux RT target.
-2. Navigate to the `Targets\Controller\Hardware\Custom Devices` entry in the tree.
-3. Right-click the **Custom Devices** entry and add a new instance of the **NI\AIM ARINC 664** custom device.
-4. Use the Main Page to set the **Initialization Method**, **Board ID**, **Ports Speed**, **Decimation**, and **Async Rx Execution** accordingly.
-![System Explorer Main Page](Screenshots/System_Explorer_main_configured.png)
-5. Navigate to the **Configuration File** page.
-6. Use the browse buttons to select the example parameters file at `Assets/Loopback_TxGen_RxMonitor.xml` and Raw Frame Array file at `Assets/standard_frames_udp.bin` respectively.
-![System Explorer Configuration Files](Screenshots/System_Explorer_configuration_file_configured.png)
+After configuring the System Definition with the custom device, deploy the System Definition using VeriStand. Once the deployment state reaches **Connected**, use a VeriStand screen to display the custom device inputs and outputs. This example uses VeriStand 2020 R6, so your screen controls may behave differently depending on version.
 
-### Scripting the Custom Device Configuration
+1. Open a VeriStand Screen
+2. Highlight the **System Definition** tree in the left rail
+3. Expand the tree to `Targets\Controller\Hardware\Custom Devices\AIM ARINC 664`
+4. Drag **Port1** onto the screen
+5. Drag **Port2** onto the screen
+
+![VeriStand Screen](Screenshots/VeriStand_screen_deployed.png)
+
+## Modify the Custom Device Configuration
+
+Once the custom device is configured, you can change the configuration using the `Configuration File` section in System Explorer. If the Parameters file changes on disk, use the **Refresh** button. If you need to select a new file, press the button to load a new path into the dialog. The same is true if you choose to change the Raw Frame Array file.
+
+### Editing XML Parameter File (.xml)
+
+The XML parameter file contains the configuration of each port, including
+
+The parameter file does not include payload data for the frames that are transmitted. They are provided by the payload (.bin) file and linked to the parameter file configuation through **ID**. Each port mode has IDs identified in a specific item:
+- Tx Generic mode: ID is specified int 
+- Tx UDP mode: ID is specified 
+
+To edit an XML file, click on the **Edit XML File** button in the `Configuration File` section and edit the selected XML file: 
+
+![Edit XML parameter file](Screenshots/ConfigEdit_XML.PNG)
+
+Then edit the file according to the <XML parameter file>
+
+### Editing Payload File (.bin)
+
+The Payload file contains the data that will be transmitted on the frames specified in the XML Parameter file. 
+
+To edit a payload file, click on the **Edit Payload File** button in the `Configuration File` section and use the UI to edit the contents of each frame as specified by its ID:
+
+![Edit XML parameter file](Screenshots/ConfigEdit_BIN.PNG)
+
+The Frame editor UI enables the following operations
+
+- Load an existing .bin file
+- Save a .bin file
+- Modify the payload of a frame in the list : you can change the contents of the payload (e.g. VLID, UDP source/destination ports, data bytes) and click **Add/Update Frame** to apply changes
+- Add a new frame payload to the list 
+- Remove a frame payload
+  
+Once you have completed the changes to a payload file and you want to use it with your current system definition, click on **Select Current File**. To close the window withoug applying changes to the system definition, click **Cancel**
+
+![Edit Payload file](Screenshots/EditBinFile.PNG)
+
+## Script the Custom Device from LabVIEW
 
 The AIM ARINC 664 custom device includes a LabVIEW scripting API to configure the custom device programmatically. This allows users to parse an existing AIM ARINC 664 database into a working custom device configuration without the need to create a Parameters file. It also allows importing a Parameters file programmatically instead of through System Explorer.
 
@@ -69,18 +123,4 @@ The scripting API includes two example files inside a LabVIEW example project fo
 
 ![Scripting Examples Project](Screenshots/Scripting_examples_project.png)
 
-## Deploy the System Definition
 
-After configuring the System Definition with the custom device, deploy the System Definition using VeriStand. Once the deployment state reaches **Connected**, use a VeriStand screen to display the custom device inputs and outputs. This example uses VeriStand 2020 R6, so your screen controls may behave differently depending on version.
-
-1. Open a VeriStand Screen
-2. Highlight the **System Definition** tree in the left rail
-3. Expand the tree to `Targets\Controller\Hardware\Custom Devices\AIM ARINC 664`
-4. Drag **Port1** onto the screen
-5. Drag **Port2** onto the screen
-
-![VeriStand Screen](Screenshots/VeriStand_screen_deployed.png)
-
-## Modifying the Custom Device Configuration
-
-Once the custom device is configured, you can change the configuration using the **Configuration File** page in System Explorer. If the Parameters file changes on disk, use the **Refresh** button. If you need to select a new file, press the button to load a new path into the dialog. The same is true if you choose to change the Raw Frame Array file.
