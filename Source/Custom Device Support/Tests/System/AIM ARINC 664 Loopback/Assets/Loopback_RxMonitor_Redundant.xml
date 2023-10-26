@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BoardId="1" PortSpeed="FDX_1000MBIT" PortConfig="FDX_REDUNDANT">
+  <Port PortId="0">
+    <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" MaxFileSizeMB="0" />
+  </Port>
+</Board>

@@ -146,7 +146,7 @@
 				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 		</Page>
-      <Page>
+        <Page>
 			<Name>
 				<eng>Tx Commands</eng>
 				<loc>Tx Commands</loc>
@@ -154,6 +154,23 @@
 			<DisallowRenaming>true</DisallowRenaming>
 			<DeleteProtection>true</DeleteProtection>
 			<GUID>2188B24A-3494-4477-93CF-25CD7C0BEFDF</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET DataReplay.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+        <Page>
+			<Name>
+				<eng>Rx Commands</eng>
+				<loc>Rx Commands</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>5D6E662D-4EFB-415B-AC3E-AA1F155779C7</GUID>
 			<Glyph>
 				<Type>To Application Data Dir</Type>
 				<Path>System Explorer\Glyphs\NI-XNET DataReplay.png</Path>
