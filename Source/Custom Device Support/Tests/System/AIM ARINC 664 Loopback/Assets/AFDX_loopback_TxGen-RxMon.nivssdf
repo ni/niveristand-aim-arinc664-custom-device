@@ -238,7 +238,7 @@
 								<U32>5</U32>
 							</Property>
 							<Property Name="user.CD.portConfig">
-								<U32>0</U32>
+								<U32>1</U32>
 							</Property>
 						</Properties>
 						<Errors />
@@ -246,22 +246,22 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="50d81a62-ab1d-411a-bee6-5acfd651da3f">
+							<Section Name="Port1-2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="1a6941c4-0c84-4b19-8a9d-9f60619ce399">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
-										<U32>0</U32>
+										<U32>1</U32>
 									</Property>
 									<Property Name="user.CD.redundant">
-										<Boolean>false</Boolean>
+										<Boolean>true</Boolean>
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="e0f413c7-f590-4e40-b2ab-3223ed543c0e">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="c887671c-8427-4e6d-b247-6b1d569990f2">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="1b33ea62-3fa7-4dc4-bba4-a1f29b0eb38b">
+									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="b08d5a5a-7948-4d99-bb0e-db18ce750573">
 										<Description />
 										<Properties>
 											<Property Name="user.CD.QueueSizeIn">
@@ -275,11 +275,11 @@
 											</Property>
 										</Properties>
 										<Errors />
-										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="633c5760-a331-4378-a1c1-d159cd85b335">
+										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="757aa34d-8e3e-4fce-96cf-cc4a55ef776f">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="2f103a59-8446-4f18-be53-57d2aaadad98" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b5544d68-7599-4fc0-abf9-3069adca80ce" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -287,7 +287,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="a8187524-4610-45db-8d7e-7b5c36a66a97" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ee93b1dd-8359-460f-b019-259793eb2bbc" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -295,7 +295,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="caa5b24f-aeea-4334-8e48-98655357e302" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9dbddd1f-d4aa-49fd-a798-633c6000f967" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -303,7 +303,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e93f2b58-ad2d-457f-9db6-94e4ec252f7e" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4e9238d1-3a23-4a35-a911-284bb037d7e3" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -311,7 +311,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="18c6f542-ecd1-4dd6-9557-b320cc024618" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e609902c-e4dc-4532-aac6-e354357c7215" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -319,7 +319,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="22e84eed-05c8-4e4b-b1f2-07bb1db02830" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="eb592408-b1f2-49b3-9d22-5e621ff41b00" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -327,7 +327,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9465a9b2-c216-49d4-9e23-b31cbad65ef1" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b16a0d01-d8ae-4803-ab28-4dc03034c77d" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -335,7 +335,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="a1ea3c5c-5328-4d35-a9ec-530bd16ca4f1" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="6d1ad6fa-237c-4c54-a881-aedb9e4437e4" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -344,11 +344,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="46e37bf6-a461-4a5c-95dd-2d7e40837bce">
+										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="dafb1861-23c0-4fdf-8cea-5ba576aa44cc">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8335470e-f28c-4ccc-aeb7-2e9bf42e2afd" RowDim="1" ColDim="1" Units="" BitFields="3">
+											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7c1ee618-bd23-4579-b7a9-1922bbb9baeb" RowDim="1" ColDim="1" Units="" BitFields="3">
 												<Description />
 												<Properties />
 												<Errors />
@@ -357,7 +357,7 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Frame0" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="c63ded62-a0af-4a86-b26d-d0523d3d1d55">
+										<Section Name="Frame0" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="390679ed-774b-4a41-9816-63d268ba5d69">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.UDPFrame.ID">
@@ -469,23 +469,11 @@
 										</Section>
 									</Section>
 								</Section>
-							</Section>
-							<Section Name="Port2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="bd7ec6b3-e14b-4f72-be4d-2e4cfae1b609">
-								<Description />
-								<Properties>
-									<Property Name="user.CD.port Id">
-										<U32>1</U32>
-									</Property>
-									<Property Name="user.CD.redundant">
-										<Boolean>false</Boolean>
-									</Property>
-								</Properties>
-								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="ec8cf180-dcb2-4322-a5fd-e2941ca269f7">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="f0c8f322-5a3c-4c59-86b1-e48b720f4ff2">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Monitor" TypeGUID="B887D8B9-C6CF-4F1C-8F75-15EFFDD5CFFC" Identifier="f9b1a579-5b6e-4f37-9ea6-604277f386d5">
+									<Section Name="Monitor" TypeGUID="B887D8B9-C6CF-4F1C-8F75-15EFFDD5CFFC" Identifier="43a4bef7-67e9-4805-8b1e-0dc5eaf4f3f4">
 										<Description />
 										<Properties>
 											<Property Name="user.CD.DefaultCronoMode">
@@ -508,11 +496,11 @@
 											</Property>
 										</Properties>
 										<Errors />
-										<Section Name="Status" TypeGUID="C7B8E643-DB53-4236-A1BD-67967F46ACD2" Identifier="205841c2-fafd-49bf-af3a-7fb7a7b89c40">
+										<Section Name="Status" TypeGUID="C7B8E643-DB53-4236-A1BD-67967F46ACD2" Identifier="6cdf616e-e0db-4a08-bd0b-2cc8068b1922">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c6027040-5c53-4a2b-bd45-c95d7a8b445f" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="afb33102-b4b0-4e65-8db4-850835e54182" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -520,7 +508,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="1bd4ffd3-484a-4de0-9e15-f1a41f1f1f6a" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c9c6b312-0d47-4250-a579-193b29fe88ae" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -528,7 +516,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="BytesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4a631834-77d7-4106-8b9d-a9ed8491d8f2" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="BytesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="50acf4ba-ed86-46ad-9310-6e5cb0e8b38c" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -536,7 +524,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="RxStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9e66e1ea-6659-4721-b182-2108133b23b6" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="RxStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="16a7dcc0-59ee-4198-b38b-a627bbbbc346" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -545,11 +533,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Monitor Utilization" TypeGUID="D9396964-5902-4E2A-82C8-2A696FD85A36" Identifier="71c29652-7af6-45cf-a490-271b594cc328">
+										<Section Name="Monitor Utilization" TypeGUID="D9396964-5902-4E2A-82C8-2A696FD85A36" Identifier="209784b6-d993-4b1b-ac71-eb89d3af6f2f">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="TotalByteCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8a71f2e3-5a35-4bdd-8ff2-f0a401f7d308" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="TotalByteCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="79ebfa61-781a-4f01-a988-2ae32763dc4b" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -557,7 +545,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FrameGoodCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="2643c47f-da4a-4648-bcb3-b55af984a1f7" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FrameGoodCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="661a171d-a116-4b4b-a2a3-9f4b9a02136e" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -565,7 +553,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FrameErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7cc11d07-687b-4ded-8236-f479c931c133" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FrameErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8d326fcc-3c8e-413b-a27d-d96c4cc0b8c9" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -573,7 +561,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="BytesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e75d1eef-1b19-4a5c-90e7-c8f7b9dfa184" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="BytesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f240434a-23c4-4fab-b9ff-21c4626d8ced" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -581,7 +569,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f8045399-fcf3-4495-bc8c-97e963822efd" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9d5e8ee3-060d-4b87-9a66-5836bdd019bf" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -590,11 +578,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Monitor Error" TypeGUID="1B82B94F-FAA8-416B-810A-FCB6E86E6CD6" Identifier="6b291df9-53aa-4e51-b7f2-72c98e22f443">
+										<Section Name="Monitor Error" TypeGUID="1B82B94F-FAA8-416B-810A-FCB6E86E6CD6" Identifier="70559620-7107-4663-8ece-9e7add9f19c4">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="PhysErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="10d12aea-6eb1-4095-9bf0-df7648d9d84a" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="PhysErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d1561289-b498-4768-bdd9-d76770890739" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -602,7 +590,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="PreamErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="6b44213c-f97e-474a-a819-1d7f2aba8f10" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="PreamErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fd5f5e85-4c34-4643-a98f-583843a01877" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -610,7 +598,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="UnaligErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="27168f41-1edb-4a1c-a01c-86dea9a2a72a" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="UnaligErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="68d4115c-4e30-4630-91b1-9fec1f19f7dd" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -618,7 +606,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="CRCErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="cc512dd6-a780-49b1-a539-f4eeba677d72" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="CRCErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="17424f37-f28c-4bed-a50e-01da71f00e1a" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -626,7 +614,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="IFGErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d8f54c36-d5fc-4905-8623-47a91b490345" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="IFGErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="5cf65f18-f915-47f3-a62f-e316ba9fb6f6" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -634,7 +622,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="IPErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7e926ae2-3fe3-4b87-87f6-a0e30bd8a0ec" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="IPErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fc9b8237-cb4d-4ccc-a866-80ca6f304869" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -642,7 +630,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MACErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="699a2552-4e6a-4cf4-8aa3-68b7fd59a68a" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MACErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="bd847ba9-450b-4200-8bd9-c22c53263c11" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -650,7 +638,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="NoSfdErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f6c19767-4606-4a8e-88ab-cb442e29460c" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="NoSfdErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ba7d4267-536f-446b-b560-972b951ade74" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -658,7 +646,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="VLLenErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="173a5926-b0fb-4de6-948d-73450d41fa57" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="VLLenErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="6b3de2ff-ca8f-4fc1-b4f3-756f28ea850b" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -666,7 +654,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="SNIntegrityErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="915789ac-b828-481f-a3c0-845356da094c" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="SNIntegrityErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="baaf822d-636a-413b-a9ae-09fe7162ca52" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -674,7 +662,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="TrafShapingViolationCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="27a03374-92a4-4b25-bf9f-a62c1ac43815" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="TrafShapingViolationCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="0d268398-b53d-44c9-99c6-0f122bb5b1b4" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -683,11 +671,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Monitor Size Distribution" TypeGUID="9C3365A4-3BC6-46D2-9E4A-E79F510F5B35" Identifier="3990c38b-fcbe-40a6-baad-67b364199dad">
+										<Section Name="Monitor Size Distribution" TypeGUID="9C3365A4-3BC6-46D2-9E4A-E79F510F5B35" Identifier="fb0f74ae-d5ca-4d76-a713-2051d37758e3">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="MAC1Short" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ff0ba979-894a-4e3c-8359-8045f80602e3" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC1Short" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="649737a7-5f71-452d-93d3-0eba8fcdd6b6" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -695,7 +683,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MAC64To127Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="77f2430b-d302-4388-9096-6f78e65091fa" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC64To127Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="af8f80d7-0369-4cd3-9cec-e6c9d5b460b2" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -703,7 +691,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MAC128To255Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="1fd8922f-0d98-4297-af32-9e74caad9526" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC128To255Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b22823e2-8a0d-49cd-88f1-f77e3e6ff307" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -711,7 +699,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MAC256To511Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="fe82d0a2-fca0-4647-b36b-e82738325a9b" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC256To511Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c770fe1a-9f19-497c-abff-5f3eb24d22c0" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -719,7 +707,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MAC512To1023Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d82c7ad5-b3ac-4eed-a7a9-551d4287e517" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC512To1023Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="3c377d7a-ed28-4858-b259-daabc49d4637" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -727,7 +715,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MAC1024To1518Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="68b6987d-a34f-4030-ad33-5ed6ae141163" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MAC1024To1518Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7733fb5d-3c11-419f-a49a-769281bf5bcd" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -735,7 +723,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="MACLong" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d9449c76-b590-4eb0-bd19-08e4107d55b5" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="MACLong" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="006d581d-df7f-4606-bad1-ee3073197cdf" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -744,11 +732,24 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="919a4977-8a94-4689-a9c0-ef9c6dd7c5f6">
+										<Section Name="Rx Monitor Commands" TypeGUID="5D6E662D-4EFB-415B-AC3E-AA1F155779C7" Identifier="260f3f6f-dd35-4a08-b8e5-d3a0b9b2e54c">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f66622a1-1307-4fda-98b8-242d8ecf3a2a" RowDim="1" ColDim="1" Units="" BitFields="3">
+											<Channel Name="Reset Mode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="bc90076b-7b77-451b-bf2a-0e27f1517a34" RowDim="1" ColDim="1" Units="" BitFields="3">
+												<Description />
+												<Properties />
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+										</Section>
+										<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="992c5fbf-57af-48e0-98e8-d7c763a1899d">
+											<Description />
+											<Properties />
+											<Errors />
+											<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="a20320a2-e832-4b1c-9419-1b004542f00a" RowDim="1" ColDim="1" Units="" BitFields="3">
 												<Description />
 												<Properties />
 												<Errors />
@@ -769,7 +770,7 @@
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>027c5144b0028d8b0dd5dbd8fe9e5e69</MD5>
+										<MD5>7cc92f656589fbcf4ae5802a2200b219</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">

@@ -127,6 +127,7 @@
 		<Item Name="Set Port Name by Config.vi" Type="VI" URL="../Port/Set Port Name by Config.vi"/>
 	</Item>
 	<Item Name="Rx Monitor" Type="Folder">
+		<Item Name="Add Rx Monitor Command Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Command Section.vi"/>
 		<Item Name="Add Rx Monitor Section and Status and Logging.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status and Logging.vi"/>
 		<Item Name="Add Rx Monitor Section and Status Channels.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section and Status Channels.vi"/>
 		<Item Name="Add Rx Monitor Section.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Section.vi"/>
@@ -137,6 +138,7 @@
 		<Item Name="Add Rx Monitor Status.vi" Type="VI" URL="../Rx Monitor/Add Rx Monitor Status.vi"/>
 		<Item Name="Get Rx Monitor All Channels Array.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor All Channels Array.vi"/>
 		<Item Name="Get Rx Monitor Channel Array.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Channel Array.vi"/>
+		<Item Name="Get Rx Monitor Commands Section and Channels.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Commands Section and Channels.vi"/>
 		<Item Name="Get Rx Monitor Error.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Error.vi"/>
 		<Item Name="Get Rx Monitor Queue Status Section and Channels.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Queue Status Section and Channels.vi"/>
 		<Item Name="Get Rx Monitor Size Distribution.vi" Type="VI" URL="../Rx Monitor/Get Rx Monitor Size Distribution.vi"/>

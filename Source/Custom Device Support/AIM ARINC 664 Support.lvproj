@@ -119,8 +119,12 @@
 					<Item Name="Assets" Type="Folder">
 						<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
 						<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
+						<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
+						<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
+						<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
 					</Item>
 					<Item Name="AIM ARINC 664 Loopback.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback/AIM ARINC 664 Loopback.lvclass"/>
+					<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/targets.ini"/>
 				</Item>
 			</Item>
 		</Item>
@@ -569,6 +573,8 @@
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="subTimeDelay.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/TimeDelayBlock.llb/subTimeDelay.vi"/>
 				<Item Name="Generate Temporary File Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Generate Temporary File Path.vi"/>
 				<Item Name="Create File with Incrementing Suffix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Create File with Incrementing Suffix.vi"/>
@@ -579,8 +585,6 @@
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
-				<Item Name="PackedMatrixToFlatVector.vi" Type="VI" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Shared/PackedMatrixToFlatVector.vi"/>
-				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
@@ -768,7 +772,7 @@
 				<Property Name="Destination[3].destName" Type="Str">Top Level</Property>
 				<Property Name="Destination[3].path" Type="Path">../Built/Scripting</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3A6D54B8-A67A-43E2-9342-528F63A3FC62}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{336FB1B7-381C-4EFC-AAF9-FF34C9B5BB22}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AIM ARINC 664 Scripting.lvlib</Property>
@@ -778,6 +782,12 @@
 				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Shared/VsItemMap.vi</Property>
 				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Controls</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[11].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/AIM ARINC 664 System Explorer.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
@@ -820,7 +830,7 @@
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Palette</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[9].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">11</Property>
+				<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
 		</Item>
 	</Item>
@@ -1082,7 +1092,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">308</Property>
+				<Property Name="Bld_version.build" Type="Int">313</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
