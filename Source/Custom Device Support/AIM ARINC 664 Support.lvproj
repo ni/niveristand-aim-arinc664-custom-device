@@ -106,6 +106,7 @@
 				<Item Name="test_FrameEditor.vi" Type="VI" URL="../Tests/System/Manual/test_FrameEditor.vi"/>
 				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
 				<Item Name="Convert Raw Frame File.vi" Type="VI" URL="../Tests/System/Manual/Convert Raw Frame File.vi"/>
+				<Item Name="Get-Set Properties from Cluster (logInfo).vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster (logInfo).vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -636,6 +637,7 @@
 			</Item>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -1050,6 +1052,7 @@ AddOutputFilter chunkFilter
 			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
 			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
+			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
 			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
@@ -1092,7 +1095,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">313</Property>
+				<Property Name="Bld_version.build" Type="Int">315</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
