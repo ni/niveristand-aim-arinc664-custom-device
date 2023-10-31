@@ -638,6 +638,7 @@
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
+			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -1038,6 +1039,7 @@ AddOutputFilter chunkFilter
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
+			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
 			<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
 			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
 			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
@@ -1095,7 +1097,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">316</Property>
+				<Property Name="Bld_version.build" Type="Int">320</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
