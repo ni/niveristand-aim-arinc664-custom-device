@@ -246,7 +246,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="0fb4772d-dcb8-4b56-abd6-9c8ad4b1a2d0">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="6d361893-3a12-4e4c-9218-d7b6b78c8ee8">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -257,15 +257,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="3ef017de-f982-4fb7-9870-b6408643a825">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="7697e939-49a9-45e3-936b-52027acd6949">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="385cd37c-917c-4ff0-ba38-bf24abb9e2aa">
+									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="a0943bf7-e6ad-4c2c-b24a-c953e9172f58">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="f2e84670-a8f7-4ecc-9bda-2b019181b45f">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="177ac778-d93d-4c47-b543-7d9303105b67">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -303,7 +303,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="2ed9bf52-590e-4cb2-a92f-c7f98b9b4b6a">
+											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="c5d8c284-ddfb-4121-a96a-844080a623cf">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.UDPFrame.ID">
@@ -347,7 +347,412 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="496d8e87-5ee7-43a7-b8e3-4b4d89188d33" RowDim="1" ColDim="1" Units="V" BitFields="3">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b52c2236-78ea-4504-b585-9df7d261aace" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="38a58901-2fe1-472e-ad30-b42922ea12ec" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 2" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="bb6b8c7d-cd97-4234-b7bf-72ebd8b1c37c" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 3" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="6157fe3c-9300-43a7-b2d8-5362fa057438" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 4" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="729129fd-443e-4935-8de7-194e758b35c7" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 5" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="eecddbdc-1841-4b91-9b21-00f7afe37265" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 6" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="71b611aa-6581-4594-b974-38b956f444f1" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 7" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9e0d7592-0bbe-47c7-85be-1fa7888c1f0d" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 8" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="30b6be67-9ed8-49df-b0da-2f39e9fa6321" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 9" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c8819741-4af6-4a62-8fbd-e9c9f7e603c5" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 10" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b6e14422-7c34-4280-a530-cebd5ea02580" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 11" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="316728ce-bd59-4395-9e7c-1d8fd587f8a5" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 12" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d21038f7-c78f-4731-8133-6a3a0e7d181d" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 13" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="2e1defeb-0e4d-4761-a356-ca606a4d42e7" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 14" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8fce1416-c883-440f-9e3c-c7c84797de76" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 15" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="83aab8c5-384c-4629-afc9-b606111a3f3f" RowDim="1" ColDim="1" Units="V" BitFields="3">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
@@ -384,11 +789,11 @@
 							<Description />
 							<Properties>
 								<Property Name="user.CD.ConfigurationFile.Path">
-									<DependentFile Type="Relative" Path="UDP_RX_TX_Loopback-Board 0.xml">
+									<DependentFile Type="Relative" Path="UDP_RX_TX_Loopback-Board 0-Parameters 16.xml">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>70357b1856b828a314ee73988e452067</MD5>
+										<MD5>bc21301e6739b08db2f05785c722b66d</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
@@ -460,7 +865,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="bb0721a5-c73e-446f-a8b8-7034adc2b1f2">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="003d5da3-207e-4e62-ae19-1932da8fa085">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -471,15 +876,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="b62c3045-858b-43b0-9352-490b882341b4">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="08ceafb1-a0d5-476f-98ae-62bbb7956379">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="2c8e1a0b-d30d-4c54-ba6f-2add9e650ece">
+									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="541d4954-4ed7-49e4-ae37-24ad285dd4c6">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="d2538d21-e942-4519-b559-d27f83db0cc5">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="64ddf589-b511-4261-a7f8-9a196d76b983">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -526,7 +931,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="a0ed79a2-4f92-4401-8c2a-24ac4504aa95">
+											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="1ac30426-da8c-40bd-8eb6-e80f80245934">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.PortType">
@@ -564,7 +969,412 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="1cad47d4-2c5f-49da-b914-98d5ffd23484" RowDim="1" ColDim="1" Units="V" BitFields="1">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="5e49eb81-fe6d-4071-a588-67f2e4d7ac65" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="be4ce668-515e-4e3b-9d49-9d7b1e2c4c97" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 2" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="30cdd00a-871c-48d4-bf7c-636e7d0d474c" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 3" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4823d29e-aa1b-4a41-a93e-7d86be6a17b4" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 4" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="a26d939d-f930-4785-acf8-e3b00b17c846" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 5" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="dbf60133-1a8c-4f13-9af3-77c7423420cc" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 6" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9d1b8f87-15d5-477c-8278-99e87d954b0b" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 7" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b0f7e19e-305d-46ba-91b6-0434dce3149f" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 8" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4fe20961-e73c-40c5-8338-b0473c4d301d" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 9" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="62b9c395-dea2-4602-b05d-93289cc1f499" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 10" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="658721c9-e6b4-413d-b945-98e26dc298db" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 11" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="557b5f16-ea78-4b30-9dda-43aaac862b9c" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 12" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7be6d31b-5030-42fa-a0ef-ca6990b4c92f" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 13" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="321ef9ea-b33e-4949-b9f4-d78f9c8bd987" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 14" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b25cb939-053b-443c-8b4e-9878301997d4" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 15" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="19ee65e8-0bff-42b3-9716-eaf27790fc23" RowDim="1" ColDim="1" Units="V" BitFields="1">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
@@ -601,11 +1411,11 @@
 							<Description />
 							<Properties>
 								<Property Name="user.CD.ConfigurationFile.Path">
-									<DependentFile Type="Relative" Path="UDP_RX_TX_Loopback-Board 1.xml">
+									<DependentFile Type="Relative" Path="UDP_RX_TX_Loopback-Board 1-Parameters 16.xml">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>0f7f501781f105f9820ba6e543bce4f0</MD5>
+										<MD5>731c612e6e2597c5fd8ff3d2663edd79</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
