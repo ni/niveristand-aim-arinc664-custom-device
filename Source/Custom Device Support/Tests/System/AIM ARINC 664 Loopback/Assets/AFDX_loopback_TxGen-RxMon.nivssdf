@@ -10,7 +10,7 @@
 				<String>AFDX_loopback_TxGen-RxMon</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.7</String>
+				<String>1.0.0.26</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -34,7 +34,7 @@
 						<String>Linux_x64</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>10.0.70.33</String>
+						<String>localhost</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -106,7 +106,11 @@
 						<U16>0</U16>
 					</Property>
 				</Properties>
-				<Errors />
+				<Errors>
+					<Error Key="IPAddress" IsError="true" Code="-1">
+						<Message>Invalid IP address</Message>
+					</Error>
+				</Errors>
 				<Section Name="Hardware" TypeGUID="775504AB-1485-13A6-560018C1F4E3EEE1" Identifier="d23dff9a-ee3b-4743-a195-eb17365e3159">
 					<Description />
 					<Properties />
@@ -759,7 +763,38 @@
 										</Section>
 										<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="67c72282-6b5b-47bd-8e28-0304e889ab0a">
 											<Description />
-											<Properties />
+											<Properties>
+												<Property Name="user.CD.Enabled">
+													<Boolean>true</Boolean>
+												</Property>
+												<Property Name="user.CD.Base Name">
+													<BinaryString>QUlNNjY0bG9n</BinaryString>
+												</Property>
+												<Property Name="user.CD.Log Directory">
+													<BinaryString>L2hvbWUvYWRtaW4=</BinaryString>
+												</Property>
+												<Property Name="user.CD.Log Timestamp">
+													<Boolean>true</Boolean>
+												</Property>
+												<Property Name="user.CD.Segmentation Threshold">
+													<Double>6</Double>
+												</Property>
+												<Property Name="user.CD.Disk Space Percentage">
+													<Double>5</Double>
+												</Property>
+												<Property Name="user.CD.Check Disk Space">
+													<Boolean>true</Boolean>
+												</Property>
+												<Property Name="user.CD.Segment File">
+													<Boolean>true</Boolean>
+												</Property>
+												<Property Name="user.CD.Segment Files By">
+													<U16>0</U16>
+												</Property>
+												<Property Name="user.CD.Timestamp">
+													<Boolean>true</Boolean>
+												</Property>
+											</Properties>
 											<Errors />
 											<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="eccdf0b1-bb10-4433-b6c8-2d1dafaad937" RowDim="1" ColDim="1" Units="" BitFields="3">
 												<Description />
