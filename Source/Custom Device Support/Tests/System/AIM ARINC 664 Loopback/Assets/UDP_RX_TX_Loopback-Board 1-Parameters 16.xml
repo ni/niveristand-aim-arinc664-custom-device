@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BoardId="1">
+  <Port PortId="0">
+    <RxUdpSession VlId="60" VLRange="1" Bag="0" Jitter="0" VLBufSize="32768">
+      <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
+        <Parameter>
+          <name>Param 0</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>0</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 1</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>64</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 2</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>128</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 3</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>192</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 4</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>256</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 5</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>320</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 6</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>384</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 7</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>448</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 8</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>512</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 9</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>576</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 10</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>640</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 11</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>704</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 12</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>768</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 13</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>832</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 14</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>896</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <name>Param 15</name> <direction>incoming</direction> <encoding>BNR</encoding> <signed>true</signed> <startBit>960</startBit> <numberOfBits>64</numberOfBits> <scale>1</scale> <offset>0</offset> <unit>V</unit> <defaultValue>0</defaultValue>
+        </Parameter>
+      </RxCommPort>
+    </RxUdpSession>
+  </Port>
+</Board>

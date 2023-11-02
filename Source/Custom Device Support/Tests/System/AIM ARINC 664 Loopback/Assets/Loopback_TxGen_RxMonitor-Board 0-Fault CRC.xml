@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT" PortConfig="FDX_SINGLE">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame ID="Payload1" InterFrameGap="0" PacketGroupWaitTime="10000" PreambleCount="7" PhysErrorInjection="FDX_TX_FRAME_ERR_CRC" PayloadBufferMode="FDX_TX_FRAME_PBM_STD" PayloadGenerationMode="FDX_TX_FRAME_PGM_USER" NetSelect="FDX_TX_FRAME_ONLY_A" FrameStartMode="FDX_TX_FRAME_START_PGWT" />
+    </TxGenericSession>
+  </Port>
+</Board>

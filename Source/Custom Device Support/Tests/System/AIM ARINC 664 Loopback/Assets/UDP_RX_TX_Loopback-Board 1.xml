@@ -15,7 +15,7 @@
           <unit>V</unit>
           <defaultValue>0</defaultValue>
         </Parameter>
-      </RxCommPort>
+       </RxCommPort>
     </RxUdpSession>
   </Port>
 </Board>
