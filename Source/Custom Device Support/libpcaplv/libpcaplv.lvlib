@@ -8,8 +8,8 @@
 
 </Property>
 	<Item Name="_typedefs" Type="Folder">
-		<Item Name="pcap_pkthdr_type.ctl" Type="VI" URL="../_typedefs/pcap_pkthdr_type.ctl"/>
-		<Item Name="timeval_type.ctl" Type="VI" URL="../_typedefs/timeval_type.ctl"/>
+		<Item Name="pcap_pkthdr_type_x64.ctl" Type="VI" URL="../_typedefs/pcap_pkthdr_type_x64.ctl"/>
+		<Item Name="timeval_type_x64.ctl" Type="VI" URL="../_typedefs/timeval_type_x64.ctl"/>
 	</Item>
 	<Item Name="utilities" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
@@ -22,5 +22,8 @@
 	<Item Name="pcap dump close.vi" Type="VI" URL="../pcap dump close.vi"/>
 	<Item Name="pcap dump open.vi" Type="VI" URL="../pcap dump open.vi"/>
 	<Item Name="pcap dump.vi" Type="VI" URL="../pcap dump.vi"/>
+	<Item Name="pcap flush.vi" Type="VI" URL="../pcap flush.vi"/>
 	<Item Name="pcap open dead.vi" Type="VI" URL="../pcap open dead.vi"/>
+	<Item Name="pcap_pkthdr_type_x86.ctl" Type="VI" URL="../_typedefs/pcap_pkthdr_type_x86.ctl"/>
+	<Item Name="timeval_type_x86.ctl" Type="VI" URL="../_typedefs/timeval_type_x86.ctl"/>
 </Library>

@@ -11,7 +11,7 @@ The custom device supports the following functionality:
 
 ## Using the Custom Device
 
-- Download the latest release package from the [Releases page]().
+- Download the latest release package from the [Releases page](https://www.ni.com/en/support/downloads/software-products/download.aim-arinc-664-driver.html#494504).
 - See the [User Guide](Docs/User%20Guide/User%20Guide.md) for a walkthrough of using the Custom Device.
 - See the [Parameters XML File Schema documentation](Docs/Parameters%20XML%20File/Parameters%20XML%20File.md) for configuring the custom device.
 
@@ -26,10 +26,17 @@ LabVIEW 2020
 
 ## Dependencies
 
+### Windows components
+- [AIM ARINC 664 BSP Driver](https://www.ni.com/en/support/downloads/software-products/download.aim-arinc-664-driver.html#494504)
+- To use the pcap file *logging* feature of the **Monitoring** port mode, you must install [Npcap](https://npcap.com/). Select between one of the three options below:
+  - [Wireshark](https://www.wireshark.org/download.html), which has the option to install Npcap
+  - [Npcap](https://npcap.com/#download) as a standalone package
+  - Installing [winpcap](https://www.winpcap.org/). Consider this option only for legacy systems as Winpcap is obsolete since 2018
+
 ### Real-Time target software components
 
-- AIM ARINC 664 BSP Driver
-  - Must enable the `ni-third-party` feed in MAX to install
+- `AIM ARINC-664 Board Software Package` installed through MAX
+  - Must enable the `ni-third-party` feed to be able to select it for installation
 
 ![Edit feeds](Docs/User%20Guide/Screenshots/max_manage_feeds.PNG)
 
