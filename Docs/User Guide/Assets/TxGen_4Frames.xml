@@ -2,7 +2,7 @@
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
     <TxGenericSession>
-      <TxGenericFrame ID="Frame1" InterFrameGap="9999" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
+      <TxGenericFrame ID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
       <TxGenericFrame ID="Frame2" InterFrameGap="10000" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
       <TxGenericFrame ID="Frame3" InterFrameGap="10000" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
       <TxGenericFrame ID="Frame4" PacketGroupWaitTime="5000" PreambleCount="0" />
@@ -10,7 +10,7 @@
   </Port>
   <Port PortId="1">
     <TxGenericSession>
-      <TxGenericFrame ID="Frame1" InterFrameGap="9999" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
+      <TxGenericFrame ID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
       <TxGenericFrame ID="Frame2" InterFrameGap="10000" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
       <TxGenericFrame ID="Frame3" InterFrameGap="10000" PreambleCount="0" FrameStartMode="FDX_TX_FRAME_START_IFG" />
       <TxGenericFrame ID="Frame4" PacketGroupWaitTime="5000" PreambleCount="0" />
