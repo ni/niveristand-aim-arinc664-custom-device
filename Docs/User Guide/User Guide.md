@@ -43,6 +43,8 @@ Port1 sends frames to Port2. Port2 records the frames into a pcap file that a pa
 
 ![Logging section](Screenshots/System_Explorer_logging_configured.png)
 
+Once logged, the .pcap files are stored on the hard drive of the system where the Veristand Engine is running. If it is a LinuxRT remote system, you have to use one of [Tools Available for File Transfer/Access on NI Linux Real-Time Targets](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YMLnCAO&l=it-IT)  to download the to your local machine. Once this operation is done, you can use tools like [Wireshark](https://www.wireshark.org/) to open and analyze them offline.
+
 Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
 
 ```xml
