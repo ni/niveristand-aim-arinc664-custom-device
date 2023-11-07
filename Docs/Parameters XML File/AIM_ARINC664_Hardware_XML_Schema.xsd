@@ -4,7 +4,7 @@
   <xs:attributeGroup name ="boardGroup" >
     <xs:attribute name="BoardId" default="0" type="xs:int" >
       <xs:annotation>
-        <xs:documentation>The ID of the board. It is a zero index element to enumerate the Arinc-664 boards in the system.</xs:documentation>
+        <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
       </xs:annotation>
     </xs:attribute>
     <xs:attribute name="PortSpeed" default="FDX_100MBIT" >
@@ -31,9 +31,22 @@
   <xs:attributeGroup name="portGroup">
     <xs:attribute name="PortId" use="required" type="xs:int" >
       <xs:annotation>
-        <xs:documentation>The ID of the port. It is a zero index element to enumerate the ports in a Arinc-664 board.</xs:documentation>
+        <xs:documentation>The ID of the board. It is a zero index element to enumerate the AFDX boards in the system.</xs:documentation>
       </xs:annotation>
     </xs:attribute>
+    <!-- xs:attribute name="sessionType" use="required">
+      <xs:annotation>
+        <xs:documentation>The session type for the port (Tx-Generic, VL oriented, or Monitor)</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value ="Tx-Generic" />
+          <xs:enumeration value ="Tx-Udp" />
+          <xs:enumeration value ="Rx-Udp" />
+          <xs:enumeration value ="Rx-Monitor" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute -->
     <xs:attribute name="PortMap" default="0" type="xs:int">
       <xs:annotation>
         <xs:documentation>
@@ -139,7 +152,7 @@
   <xs:attributeGroup name="RxMonitorSessionGroup">
     <xs:attribute name="DefaultCronoMode" default="FDX_RX_DEFAULT_MON_ENA_ALL">
       <xs:annotation>
-        <xs:documentation>Chronologica monitor mode.</xs:documentation>
+        <xs:documentation>The size of the transmit queue. If is zero, internal queue size will be used</xs:documentation>
       </xs:annotation>
       <xs:simpleType>
         <xs:restriction base="xs:string">
@@ -310,6 +323,18 @@
       </xs:choice>   
     <xs:attributeGroup ref ="portGroup" />
   </xs:complexType>
+  <!-- xs:complexType name="SessionModeType" >
+    <xs:annotation>
+      <xs:documentation>Represent the generic type of session or mode of operation for a port.</xs:documentation>
+    </xs:annotation>
+		<xs:sequence>
+      <xs:choice>
+        <xs:element name="TxGenericSession" type="TxGenericSessionType" />
+        <xs:element name="RxMonitorSession" type="RxMonitorSessionType" />
+				<xs:element name="TxUdpSession" type="TxUdpSessionType" />   
+      </xs:choice>      
+    </xs:sequence>
+  </xs:complexType -->
   <xs:complexType name="TxGenericSessionType">
     <xs:annotation>
       <xs:documentation>The session type for Generic Transmit</xs:documentation>
@@ -322,9 +347,13 @@
   </xs:complexType>
   <xs:complexType name="TxGenericFrameType">
     <xs:annotation>
-      <xs:documentation>Type for Header info used to for Tx Generic Frames.</xs:documentation>
+      <xs:documentation>Type for Header info used to for Tx Generif Frames.</xs:documentation>
     </xs:annotation>
-    <xs:attribute name="ID" use="required" type="xs:string" />
+    <xs:sequence>
+      <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="FrameID" use="required" type="xs:string" />
+    <xs:attribute name="PayloadID" use="required" type="xs:string" />
     <xs:attributeGroup ref="txGenericFrameGroup" />
   </xs:complexType>
   <xs:complexType name="RxMonitorSessionType">
@@ -346,12 +375,12 @@
   </xs:complexType>
   <xs:complexType name="TxCommPortType">
     <xs:annotation>
-      <xs:documentation>Tx Connection-oriented port.</xs:documentation>
+      <xs:documentation>TX Sampling Connection-oriented port.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
-    <xs:attribute name="ID" use="required" type="xs:string" />
+    <xs:attribute name="PayloadID" use="required" type="xs:string" />
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="TxCommPortGroup" />
   </xs:complexType>
@@ -362,7 +391,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
-    <xs:attribute name="ID" use="required" type="xs:string" />    
+    <xs:attribute name="PayloadID" use="required" type="xs:string" />    
     <xs:attributeGroup ref ="TxSapPortGroup" />
   </xs:complexType>
   <xs:complexType name="RxUdpSessionType">
@@ -377,12 +406,12 @@
   </xs:complexType>
   <xs:complexType name="RxCommPortType">
     <xs:annotation>
-      <xs:documentation>Rx Connection-oriented port.</xs:documentation>
+      <xs:documentation>RX Connection-oriented port.</xs:documentation>
     </xs:annotation>
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
-    <xs:attribute name="ID" use="required" type="xs:string" />
+    <xs:attribute name="PayloadID" use="required" type="xs:string" />
     <xs:attributeGroup ref="UdpCommPortTypeGroup" />
     <xs:attributeGroup ref ="RxCommPortGroup" />
   </xs:complexType>
@@ -393,7 +422,7 @@
     <xs:sequence>
       <xs:element name="Parameter" type="ParameterType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
-    <xs:attribute name="ID" use="required" type="xs:string" />
+    <xs:attribute name="PayloadID" use="required" type="xs:string" />
     <xs:attributeGroup ref ="RxSapPortGroup" />
   </xs:complexType>
   <xs:complexType name="ParameterType">
