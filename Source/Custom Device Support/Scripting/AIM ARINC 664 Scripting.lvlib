@@ -184,4 +184,5 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
+	<Item Name="Get Tx Generic Frame Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Channels.vi"/>
 </Library>
