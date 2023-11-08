@@ -246,7 +246,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="bfac4c9c-d128-4274-b2fe-46b40e7ddc56">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="818ceda2-9147-4c82-986f-096f34525df4">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -257,11 +257,11 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="56a3d607-8a74-4a1f-a058-001677b48db6">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="6d085e04-124e-4274-80a1-6d28aac4b1a5">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="48eb6fc5-b7cf-4b85-9578-4f999a568869">
+									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="6937d030-fe9b-497c-86af-c0ab7c0a2181">
 										<Description />
 										<Properties>
 											<Property Name="user.CD.QueueSizeIn">
@@ -273,13 +273,25 @@
 											<Property Name="user.CD.StartMode">
 												<I32>1</I32>
 											</Property>
+											<Property Name="user.CD.RawFrame.Map">
+												<Variant>
+													<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+													<Data>AAAB5SAAgAAAAAAQAAgAMP////8AE0AHAA1JbnRlckZyYW1lR2FwABlABwATUGFja2V0R3JvdXBXYWl0VGltZQAXQAUAEVBheWxvYWRCdWZmZXJNb2RlABtABQAVUGF5bG9hZEdlbmVyYXRpb25Nb2RlABNABQANUHJlYW1ibGVDb3VudAALQAcABFNrZXcAAA9ABQAJTmV0U2VsZWN0ABVABQAORnJhbWVTdGFydE1vZGUAABlABwASUGh5c0Vycm9ySW5qZWN0aW9uAAAZQAYAElNlcXVlbmNlTnVtYmVySW5pdAAAG0AGABRTZXF1ZW5jZU51bWJlck9mZnNldAAAXADxAAAAAAAAAAIOQUlNNjY0TFYubHZsaWIYcXVldWVfaGVhZGVyX2dlbmVyaWMuY3RsACxAUAALAAEAAgADAAQABQAGAAcACAAJAAoACwpIZWFkZXJJbmZvAAASQDD/////CVBheWxvYWRJRAA1APEAAAAAAAAAARJSYXdGcmFtZV9lbnRyeS5jdGwAGkBQAAIADAANC2ZyYW1lX2VudHJ5AAoAdAACAAAADgABAA8AAAABAAAABkZyYW1lMQAAAAAAACcQAAAAAAAAAAMBAAAAAP////8AAAAIUGF5bG9hZDEAAAAA</Data>
+												</Variant>
+											</Property>
+											<Property Name="user.CD.Payload.Map">
+												<Variant>
+													<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+													<Data>AAAAniAAgAAAAAAEAAgAMP////8ADUAFAAdOdW1lcmljAAwAQAAB/////wABAAoAdAACAAAAAgABAAMAAAABAAAACFBheWxvYWQxAAAATwMAAAAAPAIAAAEhIAgARQAAPAAAQAABEW2TCgEhAeDgADwAFwAYACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</Data>
+												</Variant>
+											</Property>
 										</Properties>
 										<Errors />
-										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="978eae54-8467-43b7-87fc-2750a4b55477">
+										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="25d6c092-a731-49a4-9941-bed79ad4152a">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f828c47c-e788-4362-92ac-f61a882f2667" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="15305dda-7300-460e-a174-852b61fd7d21" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -287,7 +299,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="696cf8f8-cab8-4b61-b3cc-94ad58150186" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4104b179-e9cb-4135-924c-56a937d534d7" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -295,7 +307,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e5ef9413-a259-49de-80e2-fa493702bdf3" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="16ceb247-605c-49f6-990f-26bd44c79188" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -303,7 +315,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8a2ed378-8e2d-4b8d-a67c-02005fe98c29" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="3d3f01d4-759e-449a-8659-42a7afc91026" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -311,7 +323,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="efc882e6-671b-4451-9f21-aec6a40fcdae" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ff125e20-adb8-447f-bcac-51592cf1f987" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -319,7 +331,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c6c05db4-c43c-416e-9a0e-8f27153144b6" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f84654b9-61f2-4c83-8902-64ba0f25416d" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -327,7 +339,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="39653caa-b1a6-4907-bbff-1e155d638c53" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b89c795f-bc3f-4e3e-81fe-2bb11bfc99f6" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -335,7 +347,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f2c75362-512d-436d-a690-4cfd738011a5" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="82db06a8-6479-4ef9-bcab-172c31ba7bf4" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -344,11 +356,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="1e82a8c7-b4ac-4415-a283-6c94cabbdb37">
+										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="ddf7176d-27e2-430f-b161-f4ec2b4a0eb1">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f1741dc4-1d9e-4b79-a7dd-99af3bd2a4d9" RowDim="1" ColDim="1" Units="" BitFields="3">
+											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="4e398651-3cb4-4288-8f9e-bedc290e7597" RowDim="1" ColDim="1" Units="" BitFields="3">
 												<Description />
 												<Properties />
 												<Errors />
@@ -357,134 +369,20 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Frame0" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="d4873601-6463-464c-a8d3-362e58964e61">
+										<Section Name="Payload1" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="eb135b3a-5ebc-4df3-99b4-66ff9f48ff11">
 											<Description />
 											<Properties>
-												<Property Name="user.CD.UDPFrame.ID">
+												<Property Name="user.CD.Payload.ID">
 													<BinaryString>UGF5bG9hZDE=</BinaryString>
 												</Property>
-												<Property Name="user.CD.RawFrame.ID">
-													<BinaryString>RnJhbWUx</BinaryString>
-												</Property>
-												<Property Name="user.CD.InterFrameGap">
-													<U32>0</U32>
-												</Property>
-												<Property Name="user.CD.PacketGroupWaitTime">
-													<U32>10000</U32>
-												</Property>
-												<Property Name="user.CD.PayloadBufferMode">
-													<U16>0</U16>
-												</Property>
-												<Property Name="user.CD.PayloadGenerationMode">
-													<U16>0</U16>
-												</Property>
-												<Property Name="user.CD.PreambleCount">
-													<U16>0</U16>
-												</Property>
-												<Property Name="user.CD.Skew">
-													<U32>0</U32>
-												</Property>
-												<Property Name="user.CD.NetSelect">
-													<U16>3</U16>
-												</Property>
-												<Property Name="user.CD.FrameStartMode">
-													<U16>1</U16>
-												</Property>
-												<Property Name="user.CD.PhysErrorInjection">
-													<U32>0</U32>
-												</Property>
-												<Property Name="user.CD.SequenceNumberInit">
-													<U16>65535</U16>
-												</Property>
-												<Property Name="user.CD.SequenceNumberOffset">
-													<U16>65535</U16>
-												</Property>
-												<Property Name="user.CD.Frame.ID">
+												<Property Name="user.CD.Payload.RawFrameList">
 													<U32Array>
-														<Elem>3</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>60</Elem>
-														<Elem>2</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>1</Elem>
-														<Elem>33</Elem>
-														<Elem>32</Elem>
-														<Elem>8</Elem>
-														<Elem>0</Elem>
-														<Elem>69</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>60</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>64</Elem>
-														<Elem>0</Elem>
-														<Elem>1</Elem>
-														<Elem>17</Elem>
-														<Elem>109</Elem>
-														<Elem>147</Elem>
-														<Elem>10</Elem>
-														<Elem>1</Elem>
-														<Elem>33</Elem>
-														<Elem>1</Elem>
-														<Elem>224</Elem>
-														<Elem>224</Elem>
-														<Elem>0</Elem>
-														<Elem>60</Elem>
-														<Elem>0</Elem>
-														<Elem>23</Elem>
-														<Elem>0</Elem>
-														<Elem>24</Elem>
-														<Elem>0</Elem>
-														<Elem>40</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
-														<Elem>0</Elem>
 														<Elem>0</Elem>
 													</U32Array>
 												</Property>
 											</Properties>
 											<Errors />
-											<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="3121dae9-ef48-4be9-82e3-6d41a148c855" RowDim="1" ColDim="1" Units="V" BitFields="3">
+											<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="71705194-f49a-4f2e-bc88-e8a24e992ca3" RowDim="1" ColDim="1" Units="V" BitFields="3">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.start index">
@@ -511,7 +409,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b5350082-5cc7-4c82-89eb-31be92f3413b" RowDim="1" ColDim="1" Units="V" BitFields="3">
+											<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="18df3ea7-240a-47d6-b82c-239f7372049c" RowDim="1" ColDim="1" Units="V" BitFields="3">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.start index">
@@ -623,7 +521,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="52e4d040-5d2f-4b8a-94a9-efbda44468eb">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="9135d88c-11bd-4a19-8daf-dbfae6dfdb63">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -634,15 +532,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="fa1575c3-6971-4c73-90b5-a02de4445d5d">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="9d8b3aa2-703f-4cc6-a0b2-4b24ddfe2acf">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="e29f04a2-030a-4bc8-9d7a-1022a6646f39">
+									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="19e5301d-2a1e-4ecb-854f-ef7a8899ee61">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="f2b5aaea-0203-4c10-a265-614b7b06a1d3">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="71daddee-94aa-4e0a-98ae-58e012a38537">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -689,7 +587,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:23-&gt;24" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="cfb692de-3087-41d1-a996-89ec3bbba619">
+											<Section Name="S_0:23-&gt;24" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="37eb613e-7098-4aaf-8cc0-540f294165e8">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.PortType">
@@ -727,7 +625,7 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="5255987b-cc9e-4f45-a44c-ceb524e0f101" RowDim="1" ColDim="1" Units="V" BitFields="1">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="de6d3132-31de-476c-a9a6-77076adbaaa4" RowDim="1" ColDim="1" Units="V" BitFields="1">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
