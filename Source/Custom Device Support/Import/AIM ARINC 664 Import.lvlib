@@ -8,24 +8,25 @@
 
 </Property>
 	<Item Name="_typedefs" Type="Folder">
-		<Item Name="Board Top Level Configuration.ctl" Type="VI" URL="../../Shared/Board Top Level Configuration.ctl"/>
-		<Item Name="board_setup.ctl" Type="VI" URL="../../Shared/board_setup.ctl"/>
-		<Item Name="frame_parameter.ctl" Type="VI" URL="../../Shared/frame_parameter.ctl"/>
-		<Item Name="frame_parameter_definition.ctl" Type="VI" URL="../../Shared/frame_parameter_definition.ctl"/>
-		<Item Name="frame_tx_generic.ctl" Type="VI" URL="../../Shared/frame_tx_generic.ctl"/>
-		<Item Name="frame_tx_generic_seqNumberInit.ctl" Type="VI" URL="../../Shared/frame_tx_generic_seqNumberInit.ctl"/>
-		<Item Name="frame_tx_generic_seqNumberOffset.ctl" Type="VI" URL="../../Shared/frame_tx_generic_seqNumberOffset.ctl"/>
-		<Item Name="port_configuration.ctl" Type="VI" URL="../../Shared/port_configuration.ctl"/>
-		<Item Name="port_rx_udp_comm.ctl" Type="VI" URL="../../Shared/port_rx_udp_comm.ctl"/>
-		<Item Name="port_rx_udp_sap.ctl" Type="VI" URL="../../Shared/port_rx_udp_sap.ctl"/>
-		<Item Name="port_setup.ctl" Type="VI" URL="../../Shared/port_setup.ctl"/>
-		<Item Name="port_tx_udp_comm.ctl" Type="VI" URL="../../Shared/port_tx_udp_comm.ctl"/>
-		<Item Name="port_tx_udp_sap.ctl" Type="VI" URL="../../Shared/port_tx_udp_sap.ctl"/>
-		<Item Name="rx_udp_setup.ctl" Type="VI" URL="../../Shared/rx_udp_setup.ctl"/>
-		<Item Name="session_rx_monitor.ctl" Type="VI" URL="../../Shared/session_rx_monitor.ctl"/>
-		<Item Name="session_tx_generic.ctl" Type="VI" URL="../../Shared/session_tx_generic.ctl"/>
-		<Item Name="tx_generic_setup.ctl" Type="VI" URL="../../Shared/tx_generic_setup.ctl"/>
-		<Item Name="tx_udp_setup.ctl" Type="VI" URL="../../Shared/tx_udp_setup.ctl"/>
+		<Item Name="Board Top Level Configuration.ctl" Type="VI" URL="../_typedefs/Board Top Level Configuration.ctl"/>
+		<Item Name="board_setup.ctl" Type="VI" URL="../_typedefs/board_setup.ctl"/>
+		<Item Name="frame_parameter.ctl" Type="VI" URL="../_typedefs/frame_parameter.ctl"/>
+		<Item Name="frame_parameter_definition.ctl" Type="VI" URL="../_typedefs/frame_parameter_definition.ctl"/>
+		<Item Name="frame_tx_generic.ctl" Type="VI" URL="../_typedefs/frame_tx_generic.ctl"/>
+		<Item Name="frame_tx_generic_seqNumberInit.ctl" Type="VI" URL="../_typedefs/frame_tx_generic_seqNumberInit.ctl"/>
+		<Item Name="frame_tx_generic_seqNumberOffset.ctl" Type="VI" URL="../_typedefs/frame_tx_generic_seqNumberOffset.ctl"/>
+		<Item Name="port_configuration.ctl" Type="VI" URL="../_typedefs/port_configuration.ctl"/>
+		<Item Name="port_logging_properties.ctl" Type="VI" URL="../_typedefs/port_logging_properties.ctl"/>
+		<Item Name="port_rx_udp_comm.ctl" Type="VI" URL="../_typedefs/port_rx_udp_comm.ctl"/>
+		<Item Name="port_rx_udp_sap.ctl" Type="VI" URL="../_typedefs/port_rx_udp_sap.ctl"/>
+		<Item Name="port_setup.ctl" Type="VI" URL="../_typedefs/port_setup.ctl"/>
+		<Item Name="port_tx_udp_comm.ctl" Type="VI" URL="../_typedefs/port_tx_udp_comm.ctl"/>
+		<Item Name="port_tx_udp_sap.ctl" Type="VI" URL="../_typedefs/port_tx_udp_sap.ctl"/>
+		<Item Name="rx_udp_setup.ctl" Type="VI" URL="../_typedefs/rx_udp_setup.ctl"/>
+		<Item Name="session_rx_monitor.ctl" Type="VI" URL="../_typedefs/session_rx_monitor.ctl"/>
+		<Item Name="session_tx_generic.ctl" Type="VI" URL="../_typedefs/session_tx_generic.ctl"/>
+		<Item Name="tx_generic_setup.ctl" Type="VI" URL="../_typedefs/tx_generic_setup.ctl"/>
+		<Item Name="tx_udp_setup.ctl" Type="VI" URL="../_typedefs/tx_udp_setup.ctl"/>
 	</Item>
 	<Item Name="Parse subVIs" Type="Folder">
 		<Item Name="Parse Board Setup.vi" Type="VI" URL="../Parse Board Setup.vi"/>
