@@ -2,12 +2,12 @@
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
     <TxGenericSession>
-      <TxGenericFrame ID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
+      <TxGenericFrame PayloadID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
     </TxGenericSession>
   </Port>
   <Port PortId="1">
     <TxGenericSession>
-      <TxGenericFrame ID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
+      <TxGenericFrame PayloadID="Frame1" PacketGroupWaitTime="5000" PreambleCount="0" />
     </TxGenericSession>
   </Port>
 </Board>
