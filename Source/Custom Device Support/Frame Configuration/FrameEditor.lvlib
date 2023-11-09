@@ -9,17 +9,19 @@
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="prompts" Type="Folder">
+			<Item Name="prompt - file save.vi" Type="VI" URL="../support/prompt - file save.vi"/>
 			<Item Name="prompt - frame added.vi" Type="VI" URL="../support/prompt - frame added.vi"/>
 			<Item Name="prompt - frame exists.vi" Type="VI" URL="../support/prompt - frame exists.vi"/>
 			<Item Name="prompt - frame updated.vi" Type="VI" URL="../support/prompt - frame updated.vi"/>
 			<Item Name="prompt - payload not found.vi" Type="VI" URL="../support/prompt - payload not found.vi"/>
 		</Item>
 		<Item Name="Convert Non-visible Char to Visible Char.vi" Type="VI" URL="../support/Convert Non-visible Char to Visible Char.vi"/>
+		<Item Name="Disable Button.vi" Type="VI" URL="../support/Disable Button.vi"/>
 		<Item Name="Format MAC into String.vi" Type="VI" URL="../support/Format MAC into String.vi"/>
 		<Item Name="Set Boolean Button Text.vi" Type="VI" URL="../support/Set Boolean Button Text.vi"/>
 	</Item>
-	<Item Name="Disable Button.vi" Type="VI" URL="../support/Disable Button.vi"/>
 	<Item Name="Frame Editor.vi" Type="VI" URL="../Frame Editor.vi"/>
 	<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
+	<Item Name="prompt - save and close.vi" Type="VI" URL="../support/prompt - save and close.vi"/>
 	<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
 </Library>
