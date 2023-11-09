@@ -132,7 +132,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="../../../Includes/NIVeriStand_DataServices.dll"/>
-			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../../../../../Custom Device Support/Controls/RxStatus Enum.ctl"/>
+			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../../../../../Custom Device Support/Shared/RxStatus Enum.ctl"/>
 			<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Frame Array File/Set Frame Array File Needed Property.vi"/>
 			<Item Name="Set Frame Id.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Frame/Set Frame Id.vi"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
@@ -448,6 +448,7 @@ AddOutputFilter chunkFilter
 				<Item Name="check log file info default values.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/check log file info default values.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Convert bool array to U8 Array.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
@@ -456,6 +457,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Encode Channels.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Encode Channels.vi"/>
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
@@ -466,6 +468,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Find Tag.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
+				<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Frame Payload Parameters.ctl"/>
 				<Item Name="Frame.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Frame.ctl"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/General Error Handler.vi"/>
@@ -500,7 +503,7 @@ AddOutputFilter chunkFilter
 				<Item Name="nirviCommon.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/express/rvi/timingcommon/nirviCommon.vi"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
-				<Item Name="RawFrame.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/RawFrame.ctl"/>
+				<Item Name="RawFrame_entry.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/RawFrame_entry.ctl"/>
 				<Item Name="Reshape Array to 1D VArray__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Reshape Array to 1D VArray__ogtk.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>

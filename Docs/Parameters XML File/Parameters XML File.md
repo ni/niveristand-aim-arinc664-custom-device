@@ -72,19 +72,6 @@ For the full schema file, see `Parameters_XML_Schema.xsd` in the same directory 
 </Board>
 ```
 
-### Example (Tx Generic with error injection)
-
-```xml
-<?xml version="1.0"?>
-<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT" PortConfig="FDX_SINGLE">
-  <Port PortId="0">
-    <TxGenericSession>
-      <TxGenericFrame ID="Payload1" InterFrameGap="0" PacketGroupWaitTime="10000" PreambleCount="7" PhysErrorInjection="FDX_TX_FRAME_ERR_CRC" PayloadBufferMode="FDX_TX_FRAME_PBM_STD" PayloadGenerationMode="FDX_TX_FRAME_PGM_USER" NetSelect="FDX_TX_FRAME_ONLY_A" FrameStartMode="FDX_TX_FRAME_START_PGWT" />
-    </TxGenericSession>
-  </Port>
-</Board>
-```
-
 ## Supported XML Elements
 The following table describes the XML elements, or tags, you can use in a Parameters XML file. To understand more about each element (e.g. Tx Generic or Monitor) that can be configure, refer to the *Arinc664_Programmers_Guide.pdf* which is installed by the AIM BSP and available at this location: `<Program Files>\AIM GmbH\Arinc 664 Windows BSP <version, e.g. 19.6.0>\Doc`
 

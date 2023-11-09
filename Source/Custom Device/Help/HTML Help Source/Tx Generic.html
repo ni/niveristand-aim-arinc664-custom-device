@@ -21,10 +21,12 @@ or you can open it in Word, edit it, and save it as a .htm or .html file.
 			<hr width="100%" noshade>
 		</noscript>
 		<h1>Tx Generic</h1>
-		<p>This section implements a Generic Transmission Operation in the specific port instantiated.</p>
+		<p>This section implements a Generic Transmission Operation in the specific port instantiated. The table below shows the frames loaded from the Configuration xml file and their properties. Refer to AIM documentation for details.</p>
 		<p>This section has the following grouping:
 			<ul>
-				<li><strong>Status</strong>&#8212;Specifies the status condition of the Generic transmitter.</li>
+				<li><strong>Payload <n></strong>&#8212;A section for each specific payload. Multiple frames could use the same payload.</li>
+            <li><strong>Tx Generic Commands <n></strong>&#8212;This section includes commands to control raw frame generation.</li>
+            <li><strong>Tx Generic Status <n></strong>&#8212;VeriStand Channels that are used to see the "health" of the Tx Generic mode.</li>
 		</p>
 	</body>
 </html> 

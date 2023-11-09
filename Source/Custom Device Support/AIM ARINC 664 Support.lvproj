@@ -138,17 +138,28 @@
 			<Item Name="Generate AIM API Errors.vi" Type="VI" URL="../Utility/Generate AIM API Errors.vi"/>
 			<Item Name="Post-Build Action Scripting.vi" Type="VI" URL="../Utility/Post-Build Action Scripting.vi"/>
 		</Item>
-		<Item Name="Controls" Type="Folder">
-			<Item Name="Monitor Queue Status Enum.ctl" Type="VI" URL="../Controls/Monitor Queue Status Enum.ctl"/>
-			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
-			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
-		</Item>
 		<Item Name="Shared" Type="Folder">
+			<Item Name="controls" Type="Folder">
+				<Item Name="Monitor Queue Status Enum.ctl" Type="VI" URL="../Shared/Monitor Queue Status Enum.ctl"/>
+				<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
+				<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Shared/RxStatus Enum.ctl"/>
+				<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
+				<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
+				<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
+				<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
+				<Item Name="FileSegmentType.ctl" Type="VI" URL="../Shared/FileSegmentType.ctl"/>
+				<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
+				<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Shared/hardware_channels_rx.ctl"/>
+				<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
+				<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
+				<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
+				<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
+				<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
+				<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
+				<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
+			</Item>
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
-			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
-			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Parse Raw Payload Frame.vi" Type="VI" URL="../Frame Configuration/support/Parse Raw Payload Frame.vi"/>
-			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
@@ -623,26 +634,16 @@
 			<Item Name="NationalInstruments.VeriStand.Internal" Type="Document" URL="NationalInstruments.VeriStand.Internal">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
-			<Item Name="FileSegmentType.ctl" Type="VI" URL="../Shared/FileSegmentType.ctl"/>
-			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
-			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
-			<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
-			<Item Name="channel_settings_tx.ctl" Type="VI" URL="../Shared/channel_settings_tx.ctl"/>
-			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
-			<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Shared/hardware_channels_rx.ctl"/>
-			<Item Name="channel_settings_rx.ctl" Type="VI" URL="../Shared/channel_settings_rx.ctl"/>
 			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
 			<Item Name="Update Tree Control.vi" Type="VI" URL="../Frame Configuration/support/Update Tree Control.vi"/>
 			<Item Name="NationalInstruments.VeriStand.ClientAPI" Type="Document" URL="NationalInstruments.VeriStand.ClientAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
 			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
 			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
+			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -792,7 +793,7 @@
 				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/Controls</Property>
+				<Property Name="Source[11].itemID" Type="Ref"></Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[11].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -1053,6 +1054,7 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
+			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
 			<Item Name="frame_file_entry.ctl" Type="VI" URL="../Frame Configuration/controls/frame_file_entry.ctl"/>
 			<Item Name="frame_record_type.ctl" Type="VI" URL="../Frame Configuration/controls/frame_record_type.ctl"/>
@@ -1078,13 +1080,13 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
-			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
-			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Controls/RxStatus Enum.ctl"/>
+			<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
+			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Shared/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="test_LoadFrameEditorFile_v1.vi" Type="VI" URL="../Tests/System/Manual/test_LoadFrameEditorFile_v1.vi"/>
-			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Controls/Tx Generic Queue Status Enum.ctl"/>
+			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
@@ -1102,7 +1104,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">342</Property>
+				<Property Name="Bld_version.build" Type="Int">351</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
