@@ -18,7 +18,9 @@
 		<Item Name="Convert Non-visible Char to Visible Char.vi" Type="VI" URL="../support/Convert Non-visible Char to Visible Char.vi"/>
 		<Item Name="Disable Button.vi" Type="VI" URL="../support/Disable Button.vi"/>
 		<Item Name="Format MAC into String.vi" Type="VI" URL="../support/Format MAC into String.vi"/>
+		<Item Name="Reset Pending Changes.vi" Type="VI" URL="../support/Reset Pending Changes.vi"/>
 		<Item Name="Set Boolean Button Text.vi" Type="VI" URL="../support/Set Boolean Button Text.vi"/>
+		<Item Name="Set Pending Changes.vi" Type="VI" URL="../support/Set Pending Changes.vi"/>
 	</Item>
 	<Item Name="Frame Editor.vi" Type="VI" URL="../Frame Editor.vi"/>
 	<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
