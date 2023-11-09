@@ -80,12 +80,10 @@
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
 	</Item>
 	<Item Name="Frame Array File" Type="Folder">
-		<Item Name="Get Tx Generic Raw Frame List.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Raw Frame List.vi"/>
 		<Item Name="Parse Frame Array File.vi" Type="VI" URL="../Frame Array File/Parse Frame Array File.vi"/>
 		<Item Name="Parse Payload File.vi" Type="VI" URL="../Frame Array File/Parse Payload File.vi"/>
 		<Item Name="Set Frame Array File Needed Property.vi" Type="VI" URL="../Frame Array File/Set Frame Array File Needed Property.vi"/>
 		<Item Name="Set Tx Generic and Tx UDP Frames from Map.vi" Type="VI" URL="../Frame Array File/Set Tx Generic and Tx UDP Frames from Map.vi"/>
-		<Item Name="Set Tx Generic Raw Frame List.vi" Type="VI" URL="../Frame Array File/Set Tx Generic Raw Frame List.vi"/>
 	</Item>
 	<Item Name="Logging" Type="Folder">
 		<Property Name="NI.SortType" Type="Int">3</Property>

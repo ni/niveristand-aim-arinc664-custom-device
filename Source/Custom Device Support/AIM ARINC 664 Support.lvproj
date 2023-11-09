@@ -155,7 +155,6 @@
 				<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
 				<Item Name="monitor_queue_settings.ctl" Type="VI" URL="../Shared/monitor_queue_settings.ctl"/>
 				<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
-				<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 				<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 				<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
 			</Item>
@@ -1081,7 +1080,6 @@ AddOutputFilter chunkFilter
 			</Item>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
-			<Item Name="RawFrame.ctl" Type="VI" URL="../Shared/RawFrame.ctl"/>
 			<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Shared/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
