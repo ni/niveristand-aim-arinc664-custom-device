@@ -40,11 +40,11 @@ The file configures two Ports:
 
 ![Expanded System Definition tree](Screenshots/System_Explorer_tree_expanded_TxRxUDP.png)
 
-Both ports define the same address *quintuplet*) consisting of UDP src/dest ports, IP src/dest addresses and MAC destination address (the VL) to enable a loopback test between the two ports.
+Both ports define the same address *quintuplet* consisting of UDP src/dest ports, IP src/dest addresses and MAC destination address (the VL) to enable a loopback test between the two ports.
 
 
 
-Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
+Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Parameters XML File/Parameters XML File.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
 
 ```xml
 <?xml version="1.0"?>
