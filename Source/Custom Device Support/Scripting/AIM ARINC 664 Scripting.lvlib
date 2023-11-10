@@ -173,6 +173,7 @@
 		<Item Name="Get Tx Generic Frame Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Channels.vi"/>
 		<Item Name="Set Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Frame Header List.vi"/>
 		<Item Name="Set Tx Generic Properties.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Properties.vi"/>
+		<Item Name="Get Tx Generic Frame Payload Map.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Payload Map.vi"/>
 	</Item>
 	<Item Name="Tx UDP" Type="Folder">
 		<Item Name="Add Tx UDP Section and Status Channels.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Section and Status Channels.vi"/>
@@ -183,5 +184,4 @@
 		<Item Name="Get Tx UDP Section and Channels.vi" Type="VI" URL="../Tx UDP/Get Tx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Constants.vi" Type="VI" URL="../Constants.vi"/>
-	<Item Name="Get Tx Generic Frame Payload Map.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Payload Map.vi"/>
 </Library>

@@ -81,6 +81,7 @@ The following table describes the XML elements, or tags, you can use in a Parame
 |→`<Port>`|Yes|xs:int|1 / unbounded|Identifies one of the ports of the board.|
 |→→`<TxGenericSession>`|Yes|xs:int|1|Identifies the Generic Transmit Mode assigned to the parent port.|
 |→→→`<TxGenericFrame>`|Yes|xs:int|1 / unbounded|Identifies a raw frame to be transmitted by this mode and its header configuration.|
+|→→→→`<parameter>`|No|complex|1/unbounded|Opening tag for a Parameter definition.|
 |→→`<TxUdpSession>`|Yes|xs:int|1 / unbounded|Identifies a UDP Port-Oriented Simulation Mode assigned to the parent port.|
 |→→→`<TxCommPort>`|Yes|xs:int|1 / unbounded|Identifies a Tx CommPort for the parent UDP session.|
 |→→→→`<parameter>`|No|complex|1/unbounded|Opening tag for a Parameter definition.|
@@ -116,6 +117,8 @@ Each element has a set of attributes that match the input parameters of AIM driv
 |PortMap|no|`<Port>`|int|Port identifier. 0 indexed - Default value: 0|FdxCmdTxPortInit() |
 |TxStartModeType|no|`<TxGenericSession>`|enum string|Port Configuration. Default: FDX_START<br>Possible values: <br>FDX_STOP<br>FDX_START<br>FDX_START_TRG<br>FDX_START_TIME   |FdxCmdTxControl() |
 |QueueSizeIn|no|`<TxGenericSession>`|int|Size of the Generic Tx Queue. Default value: 0|FdxCmdTxQueueCreate() |
+|FrameID|yes|`<TxGenericSession>`|string|Unique identifier for the raw frame sent through Tx Generic Session. It is used to identify the frame entry in the transfer buffer queue and associated header configuration. |none |
+|PayloadID|yes|`<TxGenericSession>` `<TxSapPort>` `<TxCommPort>` `<RxSapPort>` `<RxCommPort>`|string|Unique identifier for a set of data sent as part of a payload. This is used either by Tx Generic and UDP Comm or SAP ports (Tx and Rx). Multiple Frames (identified with FrameID) can have the same PayloadID associated with it. |none |
 |Count|no|`<TxGenericSession>`|int|Number of times the user defined frame sequence is sent. 0 indexed - Default value: 0 (Endless repeat) |FdxCmdTxControl() |
 |InterFrameGap|no|`<TxGenericFrame>`|int|Transmission delay between start of this frame and end of preceding frame. One unit corresponds to 4 bit times of the current network speed.- Default value: 0 - Range: 0 to 16383 **NOTE:** a value less than 24 may generate a Short interframe gap error condition|FdxCmdTxQueueWrite() |
 |PacketGroupWaitTime|no|`<TxGenericFrame>`|int|The PGWT value defines the time between the start point of the previous frame. Resolution is uSec - Default value: 0|FdxCmdTxQueueWrite() |

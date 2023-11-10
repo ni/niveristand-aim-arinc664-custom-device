@@ -28,30 +28,92 @@ This guide shows two options for configuring the custom device:
 
 The Parameters file is an XML file which configures capabilities and properties for each port of the board. More information about the Parameters file XML schema can be found in `Docs/Parameters XML File/Parameters XML File.md`.
 
+We will now show 2 different examples that explain how to use the differents *modes of operation* that the AIM board supports. To understand more about the **modes** (e.g. Tx Generic or Monitor) that can be configure on each port, refer to the *Arinc664_Programmers_Guide.pdf* which is installed by the AIM BSP and available at this location: `<Program Files>\AIM GmbH\Arinc 664 Windows BSP <version, e.g. 19.6.0>\Doc`
+
+### Example 1: Using Tx and Rx UDP Comm Port modes
+
+This example uses a simple example Parameters file found at `Assets/UDP_RX_TX_Loopback.xml` and a simple payload file found at `Assets/UDP_RX_TX_Loopback.bin`. This file contains the payload data for the frames that have to be tranmitted.
+
+The file configures two Ports:
+- Port1 as Tx UDP with a UDP Port which uses the **commPort - Sampling mode** setup
+- Port2 as Rx UDP with a UDP Port which uses the **commPort - Sampling mode** setup
+
+![Expanded System Definition tree](Screenshots/System_Explorer_tree_expanded_TxRxUDP.png)
+
+Both ports define the same address *quintuplet* consisting of UDP src/dest ports, IP src/dest addresses and MAC destination address (the VL) to enable a loopback test between the two ports.
+
+
+
+Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Parameters XML File/Parameters XML File.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
+
+```xml
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxUdpSession VlId="60" Bag="64" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1518">
+      <TxCommPort PayloadID="Tx1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpSamplingRate="64" UdpMaxMessageSize="512">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxCommPort>
+    </TxUdpSession>
+  </Port>
+  <Port PortId="1">
+    <RxUdpSession VlId="60" VLRange="1" Bag="0" Jitter="0" VLBufSize="32768">
+      <RxCommPort PayloadID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpMaxMessageSize="512">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </RxCommPort>
+    </RxUdpSession>
+  </Port>
+</Board>
+```
+
+### Example 2: Using Tx Generic and Rx Monitoring modes
+
 This example uses a simple example Parameters file found at `Assets/Loopback_TxGen_RxMonitor.xml` and a simple payload file found at `Assets/standard_frames_udp.bin`. This file contains the payload data for the frames that have to be tranmitted.
 
 The file configures two Ports:
-- Port1 as Tx Generic
-- Port2 as Monitor
+- Port1 as **Tx Generic**
+- Port2 as **Rx Monitor**
   - You can configure logging properties to save incoming frames to a [.pcap](https://en.wikipedia.org/wiki/Pcap) file on the target system and analyze it offline
 
-To understand more about the **modes** (e.g. Tx Generic or Monitor) that can be configure on each port, refer to the *Arinc664_Programmers_Guide.pdf* which is installed by the AIM BSP and available at this location: `<Program Files>\AIM GmbH\Arinc 664 Windows BSP <version, e.g. 19.6.0>\Doc`
-
-![Expanded System Definition tree](Screenshots/System_Explorer_tree_expanded.png)
+![Expanded System Definition tree](Screenshots/System_Explorer_tree_expanded_TxGenRxMon.png)
 
 Port1 sends frames to Port2. Port2 records the frames into a pcap file that a packet analyzer software (such as WireShark) can read. To record frames into a .pcap file, Logging must be enabled (see *Logging* page configuration):
 
 ![Logging section](Screenshots/System_Explorer_logging_configured.png)
 
-Below is the Parameters file. Some Session parameters have been left out for the sake of simplicity. Please read the Theory of Operations found at `Docs/Theory of Operations/Theory of Operations.md` to understand the full list of parameters and features you have access to when creating a Parameters xml file.
+Below is the Parameters file for this specific example:
 
 ```xml
 <?xml version="1.0"?>
-<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
-  <Port PortId="0" PortMap="1">
-    <TxGenericSession TxStartModeType="FDX_START" />
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT" PortConfig="FDX_SINGLE">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" InterFrameGap="0" PacketGroupWaitTime="10000" PreambleCount="7" PayloadBufferMode="FDX_TX_FRAME_PBM_STD" PayloadGenerationMode="FDX_TX_FRAME_PGM_USER" NetSelect="FDX_TX_FRAME_ONLY_A" FrameStartMode="FDX_TX_FRAME_START_PGWT" />
+    </TxGenericSession>
   </Port>
-  <Port PortId="1" PortMap="2">
+  <Port PortId="1">
     <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" MaxFileSizeMB="0" />
   </Port>
 </Board>
