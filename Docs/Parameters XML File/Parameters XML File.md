@@ -10,7 +10,7 @@ For the full schema file, see `Parameters_XML_Schema.xsd` in the same directory 
 
 ## XML Parameters File Examples (Compact)
 
-### Example (Tx Generic Session)
+### Example (Tx Generic Session - Basic)
 
 ```xml
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -18,14 +18,106 @@ For the full schema file, see `Parameters_XML_Schema.xsd` in the same directory 
     <TxGenericSession />
 ```
 
-### Example (Tx Generic and Rx Monitor Sessions)
+### Example (Tx Generic and Rx Monitor Sessions with FrameID and PayloadID)
+
+When usign Tx Generic mode you can create complex sequences of frames that can be transmitted with very precise timing. One possible use case is the generation of frames that are associated to multiple Virtual Links that may have different transmission intervals (or BAG - Bandwidth allocation gap). Assuming the scenario below:
+
+![Multiple VL with Tx Generic mode](Screenshots/VLtests-T1_3VL_2bag.png)
+
+You can several frames that can carry a payload associated with the same set of parameters. This is why the XML file enables the use of 2 types of ID:
+- **FrameID** : ID that identifies the specific frame to be sent, with its own header configuration (e.g. Packet Wait Group Time, Sequence Number, Preamble Count)
+- **PayloadID** : ID that identifies the specific payload data that the frame must carry. PayloadID is uses either for Tx Generic or Tx/Rx UDP modes to identify the parameters that are associated to a specific payload
 
 ```xml
-<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BoardId="1" PortSpeed="FDX_10MBIT" PortConfig="FDX_REDUNDANT">
-  <Port PortId="2" PortMap="1">
-    <TxGenericSession QueueSizeIn="3" Count="6" TxStartModeType="FDX_START_TIME" />
-    <RxMonitorSession DefaultCronoMode="FDX_RX_DEFAULT_MON_ENA_GOOD" GlbMonBufferSizeIn="2" TriggerPosition="3" MaxFileSizeMB="4" CaptureMode="FDX_MON_RECORDING" Strobe="FDX_MON_STROBE_START" />
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" PacketGroupWaitTime="64000">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+      <TxGenericFrame FrameID="Frame2" PayloadID="Payload2">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+      <TxGenericFrame FrameID="Frame3" PayloadID="Payload3">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+      <TxGenericFrame FrameID="Frame4" PayloadID="Payload1" PacketGroupWaitTime="64000">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+      <TxGenericFrame FrameID="Frame5" PayloadID="Payload2">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+    </TxGenericSession>
   </Port>
+</Board>
+```
+### Example (Tx Generic Session - CRC Error Injection)
+
+```xml
+<?xml version="1.0"?>
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT" PortConfig="FDX_SINGLE">
+  <Port PortId="0">
+    <TxGenericSession>
+      <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" InterFrameGap="0" PacketGroupWaitTime="10000" PreambleCount="7" PhysErrorInjection="FDX_TX_FRAME_ERR_CRC" PayloadBufferMode="FDX_TX_FRAME_PBM_STD" PayloadGenerationMode="FDX_TX_FRAME_PGM_USER" NetSelect="FDX_TX_FRAME_ONLY_A" FrameStartMode="FDX_TX_FRAME_START_PGWT" />
+    </TxGenericSession>
+  </Port>
+</Board>
 ```
 
 ### Example (Tx and Rx UDP sessions)
@@ -35,7 +127,7 @@ For the full schema file, see `Parameters_XML_Schema.xsd` in the same directory 
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
     <TxUdpSession VlId="60" Bag="64" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1518">
-      <TxCommPort ID="Tx1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpSamplingRate="64" UdpMaxMessageSize="512">
+      <TxCommPort PayloadID="Tx1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpSamplingRate="64" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
           <encoding>BNR</encoding>
@@ -53,7 +145,7 @@ For the full schema file, see `Parameters_XML_Schema.xsd` in the same directory 
   </Port>
   <Port PortId="1">
     <RxUdpSession VlId="60" VLRange="1" Bag="0" Jitter="0" VLBufSize="32768">
-      <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpMaxMessageSize="512">
+      <RxCommPort PayloadID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="24" UdpDstPort="23" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
           <encoding>BNR</encoding>
