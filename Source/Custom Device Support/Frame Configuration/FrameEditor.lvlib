@@ -8,12 +8,14 @@
 		<Item Name="Frame Import UI.vi" Type="VI" URL="../Frame Import UI.vi"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Item Name="prompts" Type="Folder">
 			<Item Name="prompt - file save.vi" Type="VI" URL="../support/prompt - file save.vi"/>
 			<Item Name="prompt - frame added.vi" Type="VI" URL="../support/prompt - frame added.vi"/>
 			<Item Name="prompt - frame exists.vi" Type="VI" URL="../support/prompt - frame exists.vi"/>
 			<Item Name="prompt - frame updated.vi" Type="VI" URL="../support/prompt - frame updated.vi"/>
 			<Item Name="prompt - payload not found.vi" Type="VI" URL="../support/prompt - payload not found.vi"/>
+			<Item Name="prompt - save and close.vi" Type="VI" URL="../support/prompt - save and close.vi"/>
 		</Item>
 		<Item Name="Convert Non-visible Char to Visible Char.vi" Type="VI" URL="../support/Convert Non-visible Char to Visible Char.vi"/>
 		<Item Name="Disable Button.vi" Type="VI" URL="../support/Disable Button.vi"/>
@@ -24,6 +26,5 @@
 	</Item>
 	<Item Name="Frame Editor.vi" Type="VI" URL="../Frame Editor.vi"/>
 	<Item Name="Message Queue.lvlib" Type="Library" URL="../support/Message Queue/Message Queue.lvlib"/>
-	<Item Name="prompt - save and close.vi" Type="VI" URL="../support/prompt - save and close.vi"/>
 	<Item Name="User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/User Event - Stop.lvlib"/>
 </Library>
