@@ -1,2 +1,0 @@
-Config	Rate	Last Fail Reason
-Base AIM ARINC 664 Sys Def.nivssdf	26171.875000	Late, 
