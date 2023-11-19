@@ -1,0 +1,8 @@
+Config	                                                        Rate	        Last Fail Reason
+AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf	        56.000000	Late, Missed_Rate, 
+AFDX_loopback_TxGen-RxMon.nivssdf	                        703.125000	Missed_Rate, 
+AFDX_loopback_TxGen-RxMon_Redundant.nivssdf	                56.000000	Late, Missed_Rate, 
+AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf	78.125000	Late, 
+AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf	        78.125000	Late, Missed_Rate, 
+AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf	                390.625000	Late, Missed_Rate, 
+AFDX_loopback_TxUDP-RxUDP.nivssdf	                        703.125000	Late, Missed_Rate, 
