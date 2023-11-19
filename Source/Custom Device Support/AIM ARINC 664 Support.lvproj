@@ -942,10 +942,10 @@ AddOutputFilter chunkFilter
 					<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
 					<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
 					<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
+					<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
 					<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
 					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
 					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
-					<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
 					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
 				</Item>
 			</Item>
@@ -1096,6 +1096,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
+			<Item Name="UdpBlockMessage.lvlib" Type="Library" URL="../BlockMessage/UdpBlockMessage.lvlib"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
