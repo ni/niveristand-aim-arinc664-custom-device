@@ -44,6 +44,7 @@
 		<Item Name="Get Properties from Cluster.vi" Type="VI" URL="../Custom Device/Get Properties from Cluster.vi"/>
 		<Item Name="Get Properties into Table.vi" Type="VI" URL="../Custom Device/Get Properties into Table.vi"/>
 		<Item Name="Get Configuration File Section.vi" Type="VI" URL="../Port/Get Configuration File Section.vi"/>
+		<Item Name="Get Execution Unit Inline.vi" Type="VI" URL="../Custom Device/Get Execution Unit Inline.vi"/>
 		<Item Name="Set Properties from Cluster.vi" Type="VI" URL="../Custom Device/Set Properties from Cluster.vi"/>
 		<Item Name="Get Ports Section.vi" Type="VI" URL="../Port/Get Ports Section.vi"/>
 		<Item Name="Import Custom Device (In Place).vi" Type="VI" URL="../Custom Device/Import Custom Device (In Place).vi"/>
@@ -56,6 +57,7 @@
 		<Item Name="Remove Custom Device.vi" Type="VI" URL="../Custom Device/Remove Custom Device.vi"/>
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
+		<Item Name="Set Execution Unit Inline.vi" Type="VI" URL="../Custom Device/Set Execution Unit Inline.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
