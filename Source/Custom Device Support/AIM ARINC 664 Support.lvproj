@@ -645,6 +645,10 @@
 			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
+			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -1067,6 +1071,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Global 1.vi" Type="VI" URL="../Tests/System/Manual/Global 1.vi"/>
 			<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../Shared/hardware_channels_rx.ctl"/>
 			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
+			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
 			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
 			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
@@ -1083,6 +1088,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
@@ -1112,7 +1120,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">354</Property>
+				<Property Name="Bld_version.build" Type="Int">358</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
