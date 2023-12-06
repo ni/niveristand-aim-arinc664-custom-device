@@ -68,4 +68,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
+	<Item Name="Get Async Loop Rate.vi" Type="VI" URL="../Get Async Loop Rate.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'3!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!".!#A!-4'^P=#"3982F)%B[!!"C1(!!(A!!2"J"35UA16**4E-A.D9U)%6O:WFO:3ZM&gt;GRJ9B"*&lt;H2F=G:B9W6T,GRW&lt;'FC&amp;E6Y:7.V&gt;'FP&lt;C"6&lt;GFU,GRW9WRB=X-!!"*&amp;?'6D&gt;82J&lt;WYA67ZJ&gt;#"P&gt;81!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!9%"Q!"Y!!%1;15F.)%&amp;335Z$)$9W.#"&amp;&lt;G&gt;J&lt;G5O&lt;(:M;7)137ZU:8*G97.F=SZM&gt;GRJ9B:&amp;?'6D&gt;82J&lt;WYA67ZJ&gt;#ZM&gt;G.M98.T!!!228BF9X6U;7^O)&amp;6O;81A;7Y!6!$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!"!!%!!A#!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!!!!!!*!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342972416</Property>
+	</Item>
 </LVClass>
