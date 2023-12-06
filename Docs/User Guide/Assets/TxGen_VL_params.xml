@@ -2,7 +2,7 @@
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
     <TxGenericSession>
-      <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" PacketGroupWaitTime="64000">
+      <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" PacketGroupWaitTime="10000">
         <Parameter>
           <direction>outgoing</direction>
           <encoding>BNR</encoding>
@@ -80,7 +80,7 @@
           <defaultValue>0</defaultValue>
         </Parameter>
       </TxGenericFrame>
-      <TxGenericFrame FrameID="Frame4" PayloadID="Payload1" PacketGroupWaitTime="64000">
+      <TxGenericFrame FrameID="Frame4" PayloadID="Payload1" PacketGroupWaitTime="10000">
         <Parameter>
           <direction>outgoing</direction>
           <encoding>BNR</encoding>
