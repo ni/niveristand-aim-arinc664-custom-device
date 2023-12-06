@@ -58,6 +58,8 @@
 		<Item Name="Set Board ID.vi" Type="VI" URL="../Custom Device/Set Board ID.vi"/>
 		<Item Name="Set Description.vi" Type="VI" URL="../Custom Device/Set Description.vi"/>
 		<Item Name="Set Execution Unit Inline.vi" Type="VI" URL="../Custom Device/Set Execution Unit Inline.vi"/>
+		<Item Name="Get Async Processing Rates.vi" Type="VI" URL="../Custom Device/Get Async Processing Rates.vi"/>
+		<Item Name="Set Async Processing Rates.vi" Type="VI" URL="../Custom Device/Set Async Processing Rates.vi"/>
 	</Item>
 	<Item Name="Database" Type="Folder">
 		<Item Name="Add Database.vi" Type="VI" URL="../Database/Add Database.vi"/>
