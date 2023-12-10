@@ -246,7 +246,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="f7a4147f-bd14-44b8-9a2d-b070e22f53e2">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="f7cff738-b881-41e3-bc30-f2c7419d3a95">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -257,15 +257,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="0d97b80e-eaa1-4b32-b72b-c3dead3ee802">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="b65002cb-13cf-484a-9ba0-daa1e2adb17e">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="928394de-8c40-4776-8da7-ac9cf84f555c">
+									<Section Name="Tx UDP" TypeGUID="85BBE12C-C4A9-4523-B3FC-3068DB103764" Identifier="6b328678-08c8-474f-b23c-97feb4807e49">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="b1ab8bd9-aa09-4169-bfce-539e3d88972d">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="937814af-19c0-4a3b-9a82-3d7ab96fb736">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -303,7 +303,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="2fa8b099-60d9-4c8a-9325-0cdcb02cb7d0">
+											<Section Name="S_0:24-&gt;23" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="a0a746c7-466f-4188-9e08-fb79a36b86e1">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.UDPFrame.ID">
@@ -335,23 +335,58 @@
 													</Property>
 													<Property Name="user.CD.Frame.ID">
 														<U32Array>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
-															<Elem>10</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
+															<Elem>0</Elem>
 														</U32Array>
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="2954079d-99f1-4371-9dd1-fe2d55c6fccb" RowDim="1" ColDim="1" Units="V" BitFields="3">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f948e701-2bd7-41ab-8b5e-7e4eb5010328" RowDim="1" ColDim="1" Units="V" BitFields="3">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
 															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>6</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="11f074f9-69aa-4499-baaa-e27f5ec0eeb7" RowDim="1" ColDim="1" Units="V" BitFields="3">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>64</I32>
 														</Property>
 														<Property Name="user.CD.size">
 															<I32>64</I32>
@@ -388,7 +423,7 @@
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>757124d78970fb14044cf05360f62c36</MD5>
+										<MD5>ce611ddd6b32399aeeded8e7128efde4</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
@@ -399,7 +434,7 @@
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>6dbb7107c0bd57b27fc095e8f212ad7e</MD5>
+										<MD5>5e73d91b4b54f61a86f5169402228dc2</MD5>
 									</DependentFile>
 								</Property>
 							</Properties>
@@ -460,7 +495,7 @@
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="3b6b1bdd-305c-4d73-a505-34b242271bb1">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="5812a710-69ff-4d48-97cb-bd116b02f3b8">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
@@ -471,15 +506,15 @@
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="bcf10367-8c68-4362-861b-79238380b0b9">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="fa49e611-28ca-4977-a17b-876a0ba6d448">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="9d3fa305-86f8-46cb-a4dd-41fff9153ad0">
+									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="d5fe3d2a-306a-44c9-8370-2d7ea9bd77de">
 										<Description />
 										<Properties />
 										<Errors />
-										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="3d105885-a0e7-4752-9811-df9b92e430c5">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="9b4c6dca-9c6e-4918-a2b6-71cc4f8725ea">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.VlId">
@@ -526,7 +561,7 @@
 												</Property>
 											</Properties>
 											<Errors />
-											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="33a542cb-573c-40a5-adbc-12455ee98bf9">
+											<Section Name="S_0:24-&gt;23" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="2a2793ff-4145-40e0-8b68-3376cf352f7d">
 												<Description />
 												<Properties>
 													<Property Name="user.CD.PortType">
@@ -564,11 +599,38 @@
 													</Property>
 												</Properties>
 												<Errors />
-												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="262ec6ec-e553-4ec2-8854-e5bff9b36b26" RowDim="1" ColDim="1" Units="V" BitFields="1">
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="58f72678-dc66-4705-85d5-2f2048641ee3" RowDim="1" ColDim="1" Units="V" BitFields="1">
 													<Description />
 													<Properties>
 														<Property Name="user.CD.start index">
 															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>6</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+												<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="90fdb625-244f-456a-a6ab-2c9488d86e96" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>64</I32>
 														</Property>
 														<Property Name="user.CD.size">
 															<I32>64</I32>
@@ -605,7 +667,7 @@
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>dc21a0287dff1b1647c0b2a314935d4e</MD5>
+										<MD5>c27e7250cb0ea8fda85281aee90baaff</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
@@ -616,7 +678,7 @@
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>6dbb7107c0bd57b27fc095e8f212ad7e</MD5>
+										<MD5>5e73d91b4b54f61a86f5169402228dc2</MD5>
 									</DependentFile>
 								</Property>
 							</Properties>
