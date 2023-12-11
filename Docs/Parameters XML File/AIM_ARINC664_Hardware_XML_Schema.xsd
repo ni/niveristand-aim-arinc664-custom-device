@@ -444,6 +444,11 @@
             <xs:enumeration value="BNR"/>
             <xs:enumeration value="BCD"/>
             <xs:enumeration value="Discrete"/>
+            <xs:enumeration value="Signed_32"/>
+            <xs:enumeration value="Signed_64"/>
+            <xs:enumeration value="Float_32"/>
+            <xs:enumeration value="Float_64"/>
+            <xs:enumeration value="Opaque"/>         
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
