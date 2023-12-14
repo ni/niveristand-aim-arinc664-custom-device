@@ -2,13 +2,13 @@
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" PortSpeed="FDX_1000MBIT">
   <Port PortId="0" PortMap="0">
     <TxUdpSession VlId="60" Bag="128" NetSelect="FDX_TX_FRAME_BOTH" DomainID="1" SideID="1" LocationID="1" InterfaceID="1" MaxFrameLength="1000" FrameBufferSize="0">
-      <TxCommPort ID="Payload1" PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
+      <TxCommPort PayloadID="Payload1" PortType="FDX_UDP_SAMPLING" PartitionID="1" SubVlId="1" UdpSrcPort="1" UdpDstPort="1" UdpSamplingRate="128" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
         <Parameter>
           <direction>outgoing</direction>
-          <encoding>BCD</encoding>
+          <encoding>Float_64</encoding>
           <signed>true</signed>
           <startBit>0</startBit>
-          <numberOfBits>256</numberOfBits>
+          <numberOfBits>64</numberOfBits>
           <scale>1</scale>
           <offset>0</offset>
           <name>Param 0</name>
@@ -23,10 +23,10 @@
       <RxCommPort PortType="FDX_UDP_SAMPLING" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
         <Parameter>
           <direction>incoming</direction>
-          <encoding>BCD</encoding>
-		  <signed>true</signed>
+          <encoding>Float_64</encoding>
+          <signed>true</signed>
           <startBit>0</startBit>
-          <numberOfBits>256</numberOfBits>
+          <numberOfBits>64</numberOfBits>
           <scale>1</scale>
           <offset>0</offset>
           <name>Param 0</name>
