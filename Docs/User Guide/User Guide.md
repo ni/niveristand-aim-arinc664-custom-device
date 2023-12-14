@@ -178,6 +178,8 @@ The AIM ARINC 664 custom device includes a LabVIEW scripting API to configure th
 To use the scripting API, the optional scripting package must be installed:
 `ni-aim-arinc-664-veristand-20xx-labview-support`
 
+In addition to this package you must install the [AIM ARINC 664 BSP Driver and LabVIEW API](https://www.ni.com/en/support/downloads/software-products/download.aim-arinc-664-driver.html#494504) 2023Q4 or later and once the AIM BSP is installed, run the `aim_gmbh_lib_arinc_664-<a.b.c.d>.vip` VI Package which containes the LabVIEW VIs. Version 1.0.0.18 or later of the .vip is required.
+
 The scripting API includes two example files inside a LabVIEW example project found at the following directory: `C:\Program Files (x86)\National Instruments\LabVIEW 20xx\examples\NI VeriStand Custom Devices\AIM ARINC 664`. It contains two example VIs:
 
 - `Import Parameters Configuration to New AIM ARINC 664 Custom Device.vi` - Demonstrates using the AIM ARINC 664 scripting API to configure the custom device by importing a parameters configuration file.
