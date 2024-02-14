@@ -14,12 +14,12 @@ This custom device consists of several Execution Units and Factories, and this s
 
 ![EngineLibrary](Screenshots/EngineLibrary.png)
 
-| Execution Unit            | Mode          | Responsibility                                                                                    |
+| Execution Unit            | Mode and timing        | Responsibility                                                                                    |
 | ------------------------- | ------------- | ------------------------------------------------------------------------------------------------- |
-| Monitor Execution Unit    | Async Group 1 | Monitor all incoming 664 frames defined in the Raw Frame Array file and logs them to a pcap file  |
-| Rx UDP Execution Unit     | Async Group 1 | Read all incoming 664 frames defined in the Raw Frame Array file                                  |
-| Tx Generic Execution Unit | Async Group 1 | Write all outgoing generic 664 frames defined in the Raw Frame Array file                         |
-| Tx UDP Execution Unit     | Async Group 1 | Write all outgoing 664 messages to a UDP port                                                     |
+| Monitor Execution Unit    | Async - 100 Hz rate (fixed)| Monitor all incoming 664 frames to the specified port. It monitor traffic statistics and, optionally, it logs them to a pcap file. Default read buffer size per port is 2MB |
+| Rx UDP Execution Unit     | Inline or Async (default config) - 100 Hz rate (configurable) | Read all incoming 664 frames on a specific VL and UDP port                                  |
+| Tx Generic Execution Unit | Inline or Async (default config) - 100 Hz rate (configurable) | Write all outgoing generic 664 frames defined in the Payload binary file                        |
+| Tx UDP Execution Unit     | Inline or Async (default config) - 100 Hz rate (configurable) | Write all outfoing 664 frames to a specific VL and UDP port                                                           |
 
 ### Monitor Execution Unit
 - **Initialize**: Creates a Rx Chrono Monitor session, configures the Capture Control setting, and creates the Monitor Queue to be used by later driver calls.
