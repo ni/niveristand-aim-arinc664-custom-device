@@ -650,6 +650,9 @@
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
 			<Item Name="Parse Monitor Record (Multiple).vi" Type="VI" URL="../Shared/Parse Monitor Record (Multiple).vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -1094,6 +1097,9 @@ AddOutputFilter chunkFilter
 			<Item Name="NationalInstruments.VeriStand.SystemStorage" Type="Document" URL="NationalInstruments.VeriStand.SystemStorage">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Parse Monitor Record (Multiple).vi" Type="VI" URL="../Shared/Parse Monitor Record (Multiple).vi"/>
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
@@ -1122,7 +1128,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">377</Property>
+				<Property Name="Bld_version.build" Type="Int">383</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>

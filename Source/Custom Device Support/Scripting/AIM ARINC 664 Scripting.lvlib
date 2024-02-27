@@ -79,6 +79,7 @@
 		<Item Name="Get Frame Channel Refs.vi" Type="VI" URL="../Frame/Get Frame Channel Refs.vi"/>
 		<Item Name="Get Frame Data.vi" Type="VI" URL="../Frame/Get Frame Data.vi"/>
 		<Item Name="Get Frame Id.vi" Type="VI" URL="../Frame/Get Frame Id.vi"/>
+		<Item Name="Get Frame Payload Map.vi" Type="VI" URL="../Frame/Get Frame Payload Map.vi"/>
 		<Item Name="Get Frame Port Reference.vi" Type="VI" URL="../Frame/Get Frame Port Reference.vi"/>
 		<Item Name="Set Frame Data.vi" Type="VI" URL="../Frame/Set Frame Data.vi"/>
 		<Item Name="Set Frame Id.vi" Type="VI" URL="../Frame/Set Frame Id.vi"/>
@@ -176,7 +177,6 @@
 		<Item Name="Get Tx Status Channel Array.vi" Type="VI" URL="../Tx Generic/Get Tx Status Channel Array.vi"/>
 		<Item Name="Get Tx Generic Frame Channels.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Channels.vi"/>
 		<Item Name="Set Tx Generic Frame Header List.vi" Type="VI" URL="../Tx Generic/Set Tx Generic Frame Header List.vi"/>
-		<Item Name="Get Tx Generic Frame Payload Map.vi" Type="VI" URL="../Tx Generic/Get Tx Generic Frame Payload Map.vi"/>
 	</Item>
 	<Item Name="Tx UDP" Type="Folder">
 		<Item Name="Add Tx UDP Section and Status Channels.vi" Type="VI" URL="../Tx UDP/Add Tx UDP Section and Status Channels.vi"/>
