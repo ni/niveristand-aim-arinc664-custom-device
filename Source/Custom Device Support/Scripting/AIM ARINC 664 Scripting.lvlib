@@ -11,6 +11,7 @@
 </Property>
 	<Item Name="Channel" Type="Folder">
 		<Item Name="Add Channel.vi" Type="VI" URL="../Channel/Add Channel.vi"/>
+		<Item Name="Add Parameter.vi" Type="VI" URL="../Channel/Add Parameter.vi"/>
 		<Item Name="Set ENUM Properties.vi" Type="VI" URL="../Channel/Set ENUM Properties.vi"/>
 	</Item>
 	<Item Name="Configuration File" Type="Folder">
@@ -149,6 +150,7 @@
 		<Item Name="Set Rx Monitor Properties.vi" Type="VI" URL="../Rx Monitor/Set Rx Monitor Properties.vi"/>
 	</Item>
 	<Item Name="Rx UDP" Type="Folder">
+		<Item Name="Add Rx UDP information.vi" Type="VI" URL="../Rx UDP/Add Rx UDP information.vi"/>
 		<Item Name="Add Rx UDP Section and Status Channels.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Section and Status Channels.vi"/>
 		<Item Name="Add Rx UDP Status Section.vi" Type="VI" URL="../Rx UDP/Add Rx UDP Status Section.vi"/>
 		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
