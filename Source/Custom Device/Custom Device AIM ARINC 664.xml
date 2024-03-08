@@ -893,6 +893,57 @@
 				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
 			</Item2Launch>
 		</Page>
+		<Page>
+			<Name>
+				<eng>Rx UDP Information Section</eng>
+				<loc>Rx UDP Information Section</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>8CD308E2-B334-4A66-84D5-0ACA5E495365</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Frame Information.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+      		<Page>
+			<Name>
+				<eng>Rx UDP Timestamp</eng>
+				<loc>Rx UDP Timestamp</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>F8FF7027-A744-45DE-B20E-B49377AF10BC</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Receive Time.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
+      		<Page>
+			<Name>
+				<eng>Rx UDP Msg Count</eng>
+				<loc>Rx UDP Msg Count</loc>
+			</Name>
+			<DisallowRenaming>true</DisallowRenaming>
+			<DeleteProtection>true</DeleteProtection>
+			<GUID>20D2061A-1B55-4603-BB73-15A720A5F9F7</GUID>
+			<Glyph>
+				<Type>To Application Data Dir</Type>
+				<Path>System Explorer\Glyphs\NI-XNET Status.png</Path>
+			</Glyph>
+			<Item2Launch>
+				<Type>To Common Doc Dir</Type>
+				<Path>Custom Devices\AIM ARINC 664\Windows\AIM ARINC 664 Configuration.llb\Page Wrapper.vi</Path>
+			</Item2Launch>
+		</Page>
 	</Pages>
 	<CustomXML>
 		<Dummy></Dummy>
