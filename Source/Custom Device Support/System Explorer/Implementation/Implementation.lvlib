@@ -35,6 +35,7 @@
 	<Item Name="RTM" Type="Folder">
 		<Item Name="Add Database RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Database RTM.vi"/>
 		<Item Name="Add Port RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Port RTM.vi"/>
+		<Item Name="Add RxUDP Information RTM.vi" Type="VI" URL="../System Explorer/RTM/Add RxUDP Information RTM.vi"/>
 		<Item Name="Add Timing Channels RTM.vi" Type="VI" URL="../System Explorer/RTM/Add Timing Channels RTM.vi"/>
 		<Item Name="Configure Payload Frames RTM.vi" Type="VI" URL="../System Explorer/RTM/Configure Payload Frames RTM.vi"/>
 		<Item Name="EnableDisable RTM.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable RTM.vi"/>

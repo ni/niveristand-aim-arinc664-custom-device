@@ -158,6 +158,7 @@
 				<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
 				<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 				<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
+				<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../Shared/rx_udp_payload_config.ctl"/>
 			</Item>
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
 			<Item Name="Parse Raw Payload Frame.vi" Type="VI" URL="../Frame Configuration/support/Parse Raw Payload Frame.vi"/>
@@ -1108,6 +1109,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
 			<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
+			<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../Shared/rx_udp_payload_config.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Shared/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -1132,7 +1134,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">392</Property>
+				<Property Name="Bld_version.build" Type="Int">395</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>

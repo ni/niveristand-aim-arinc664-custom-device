@@ -156,6 +156,7 @@
 		<Item Name="Add Rx UDP VLs and UDPs.vi" Type="VI" URL="../Rx UDP/Add Rx UDP VLs and UDPs.vi"/>
 		<Item Name="Add Rx UDP.vi" Type="VI" URL="../Rx UDP/Add Rx UDP.vi"/>
 		<Item Name="Get Rx UDP All Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP All Channels.vi"/>
+		<Item Name="Get Rx UDP information Reference.vi" Type="VI" URL="../Rx UDP/Get Rx UDP information Reference.vi"/>
 		<Item Name="Get Rx UDP Section and Channels.vi" Type="VI" URL="../Rx UDP/Get Rx UDP Section and Channels.vi"/>
 	</Item>
 	<Item Name="Timing" Type="Folder">
