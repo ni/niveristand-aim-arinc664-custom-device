@@ -605,7 +605,6 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
@@ -950,7 +949,6 @@ AddOutputFilter chunkFilter
 					<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
 					<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
 					<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
-					<Item Name="test_RxUDPBlockRead.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDPBlockRead.vi"/>
 					<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
 					<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
 					<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
@@ -958,8 +956,6 @@ AddOutputFilter chunkFilter
 					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
 					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
 					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
-					<Item Name="test_AIM664 UDP Block Read.vi" Type="VI" URL="../Tests/System/Manual/test_AIM664 UDP Block Read.vi"/>
-					<Item Name="test_AIM664 UDP Block Write.vi" Type="VI" URL="../Tests/System/Manual/test_AIM664 UDP Block Write.vi"/>
 					<Item Name="test_UPDtxrxLoopback.vi" Type="VI" URL="../Tests/System/Manual/test_UPDtxrxLoopback.vi"/>
 				</Item>
 			</Item>
@@ -1026,7 +1022,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="Memory Manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Memory Manager/Memory Manager.lvlib"/>
@@ -1134,7 +1129,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">395</Property>
+				<Property Name="Bld_version.build" Type="Int">396</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
