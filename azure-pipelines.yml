@@ -16,6 +16,7 @@ resources:
 stages:
   - template: azure-templates/stages.yml@niveristand-custom-device-build-tools
     parameters:
+      pool: DevCentral-SRD-ADG
       lvVersionsToBuild:
         - version: '2020'
           bitness: '32bit'
@@ -65,7 +66,7 @@ stages:
           target: 'RT PXI Target'
           buildSpec: 'Engine Release'
 
-      releaseVersion: '24.0.0'
+      releaseVersion: '24.0.1'
       buildOutputLocation: 'Source\Built'
       archiveLocation: '\\nirvana\Measurements\VeriStandAddons\aim_arinc_664'
 
