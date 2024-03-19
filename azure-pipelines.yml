@@ -19,7 +19,7 @@ stages:
       pool: DevCentral-SRD-ADG
       lvVersionsToBuild:
         - version: '2020'
-          bitness: '64bit'
+          bitness: '32bit'
         - version: '2021'
           bitness: '64bit'
         - version: '2023'
