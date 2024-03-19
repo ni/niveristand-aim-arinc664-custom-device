@@ -17,5 +17,4 @@
 	<Item Name="Shared Resources.lvclass" Type="LVClass" URL="../Shared Resources/Shared Resources.lvclass"/>
 	<Item Name="Tx Generic Execution Unit.lvclass" Type="LVClass" URL="../Tx Execution Unit/Tx Generic Execution Unit.lvclass"/>
 	<Item Name="Tx UDP Execution Unit.lvclass" Type="LVClass" URL="../Tx UDP Execution Unit/Tx UDP Execution Unit.lvclass"/>
-	<Item Name="Frame Logging.lvlib" Type="Library" URL="../Logging/Frame Logging/Frame Logging.lvlib"/>
 </Library>
