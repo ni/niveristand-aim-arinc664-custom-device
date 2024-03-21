@@ -240,7 +240,7 @@ Each element has a set of attributes that match the input parameters of AIM driv
 |MaxFrameLength|no|`<TxUdpSession>` `<RxUdpSession>`|int|Specifies the maximum length in bytes of frames that can be sent over this VL.- Default value: 0|FdxCmdTxCreateVL() |
 |FrameBufferSize|no|`<TxUdpSession>`|int|Sets the size of the VL frame buffer in bytes.- Default value: 0|FdxCmdTxCreateVL() |
 |PartitionID|no|`<TxCommPort>` `<TxSapPort>`|int|Partition Id.- Default value: 0 - Range: 0 to 31|none |
-|SubVlId|no|`<TxCommPort>` `<TxSapPort>`|int|SubVl Id.- Default value: 1 - Range: 1 to 4|none |
+|SubVlId|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>`|int|SubVl Id.- Default value: 1 - Range: 1 to 4|none |
 |UdpSrcPort|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>`|int| UDP Source Port number.- Default value: 0 - Range: 0 to 1023|FdxCmdRxUDPCreatePort() |
 |UdpDstPort|no|`<TxCommPort>` `<RxCommPort>` `<RxSapPort>`|int| UDP Destination Port number.- Default value: 0 - Range: 0 to 1023|FdxCmdRxUDPCreatePort() |
 |UdpSamplingRate|no|`<TxCommPort>` `<RxCommPort>` `<RxSapPort>`|int| Specifies the message transmission rate for sampling ports in milliseconds and is therefore only applied for sampling ports.- Default value: 1  **NOTE:** the resulting load of a VL with a given set of sampling ports can be calculated by the following formula **(VL-Bag * ((1/Sampling Rate UDP Port 1) + (1/Sampling Rate UDP Port 2) + ...))** and if the caculated VL load value is greater than 1, the VL is overloaded and configured sampling rates can not be met.|FdxCmdTxUDPCreatePort() |

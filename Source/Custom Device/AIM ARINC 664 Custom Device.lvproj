@@ -108,7 +108,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Get Rx Monitor Channel Array.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Rx Monitor/Get Rx Monitor Channel Array.vi"/>
-			<Item Name="Get Timing Section Reference.vi" Type="VI" URL="../../../../../Custom Device Support/Scripting/Timing/Get Timing Section Reference.vi"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -450,6 +449,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Clear Errors.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Convert bool array to U8 Array.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="Convert U8 Array to Bool Array.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Convert U8 Array to Bool Array.vi"/>
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI VeriStand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="Custom Device.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Custom Device/Custom Device.lvlib"/>
@@ -458,6 +458,7 @@ AddOutputFilter chunkFilter
 				<Item Name="DialogType.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Encode Channels.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Encode Channels.vi"/>
+				<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Encoding (Arinc664).ctl"/>
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Error Code Database.vi"/>
@@ -465,6 +466,8 @@ AddOutputFilter chunkFilter
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/instr.lib/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
 				<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Evaluate Tx Generic Start - Stop.vi"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Extract RxUDP Header from Buffer.vi"/>
+				<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Extract Timestamp from RxUDP Header.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
@@ -485,6 +488,7 @@ AddOutputFilter chunkFilter
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="hardware_channels_rx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/hardware_channels_rx.ctl"/>
 				<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/hardware_channels_tx.ctl"/>
+				<Item Name="hz to msec.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/hz to msec.vi"/>
 				<Item Name="Implementation.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Implementation/Implementation.lvlib"/>
 				<Item Name="Interfaces.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Engine/Interfaces/Interfaces.lvlib"/>
 				<Item Name="libpcaplv.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/libpcaplv/libpcaplv.lvlib"/>
@@ -500,11 +504,12 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
-				<Item Name="nirviCommon.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/express/rvi/timingcommon/nirviCommon.vi"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Parse Monitor Record (Multiple).vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/Parse Monitor Record (Multiple).vi"/>
 				<Item Name="RawFrame_entry.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/RawFrame_entry.ctl"/>
 				<Item Name="Reshape Array to 1D VArray__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Reshape Array to 1D VArray__ogtk.vi"/>
+				<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/Shared/rx_udp_payload_config.ctl"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/vi.lib/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set Data Name__ogtk.vi" Type="VI" URL="../../../Includes/AIM ARINC 664 Engine.lvlibp/1abvi3w/user.lib/_OpenG.lib/lvdata/lvdata.llb/Set Data Name__ogtk.vi"/>

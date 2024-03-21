@@ -292,12 +292,14 @@
     <xs:attribute name="SideID" default="0" type="xs:int" />
     <xs:attribute name="LocationID" default="0" type="xs:int" />
     <xs:attribute name="PartitionID" default="0" type="xs:int" />
+    <xs:attribute name="SubVlId" default="1" type="xs:int" />
     <xs:attribute name="UdpSrcPort" default="0" type="xs:int" />
     <xs:attribute name="UdpDstPort" default="0" type="xs:int" />
     <xs:attribute name="UdpNumBufMessages" default="1" type="xs:int" />
     <xs:attribute name="UdpMaxMessageSize" default="0" type="xs:int" />
   </xs:attributeGroup>
   <xs:attributeGroup name="RxSapPortGroup">
+    <xs:attribute name="SubVlId" default="1" type="xs:int" />
     <xs:attribute name="UdpDstPort" default="0" type="xs:int" />
     <xs:attribute name="UdpNumBufMessages" default="0" type="xs:int" />
     <xs:attribute name="UdpMaxMessageSize" default="0" type="xs:int" />

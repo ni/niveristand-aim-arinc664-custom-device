@@ -651,6 +651,9 @@
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
 			<Item Name="Parse Monitor Record (Multiple).vi" Type="VI" URL="../Shared/Parse Monitor Record (Multiple).vi"/>
+			<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../Shared/rx_udp_payload_config.ctl"/>
+			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
+			<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../Shared/Extract Timestamp from RxUDP Header.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -852,7 +855,7 @@
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
 		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
-		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,True;AIM_DEBUG,False;INIT_FLAT,False;SHARED_INIT,False;AIM_API_V15,False;FRAME_REGEN,True;TARGET_TYPE,RT;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEBUG,False;INIT_FLAT,False;SHARED_INIT,False;AIM_API_V15,False;FRAME_REGEN,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
@@ -1069,6 +1072,8 @@ AddOutputFilter chunkFilter
 			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
+			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
+			<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../Shared/Extract Timestamp from RxUDP Header.vi"/>
 			<Item Name="Frame Logging.lvlib" Type="Library" URL="../Engine/Implementation/Logging/Frame Logging/Frame Logging.lvlib"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
@@ -1100,6 +1105,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Payload Map.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Map.ctl"/>
 			<Item Name="Payload Record Type.ctl" Type="VI" URL="../Frame Configuration/controls/Payload Record Type.ctl"/>
 			<Item Name="RawFrame_entry.ctl" Type="VI" URL="../Shared/RawFrame_entry.ctl"/>
+			<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../Shared/rx_udp_payload_config.ctl"/>
 			<Item Name="RxStatus Enum.ctl" Type="VI" URL="../Shared/RxStatus Enum.ctl"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -1124,7 +1130,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">384</Property>
+				<Property Name="Bld_version.build" Type="Int">385</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
@@ -1135,7 +1141,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/Linux_x64</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{0FFCFD0E-FB97-4D0E-B475-DAC2D329C74C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FD2A67A0-6CA7-4169-B01F-A271D91F419C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT PXI Target/AIM ARINC 664 Engine.lvlib</Property>
