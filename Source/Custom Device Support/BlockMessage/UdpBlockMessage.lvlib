@@ -5,9 +5,11 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="_typedefs" Type="Folder">
-		<Item Name="ubm_value_type.ctl" Type="VI" URL="../ubm_value_type.ctl"/>
+		<Item Name="ubm_value_type.ctl" Type="VI" URL="../_typdefes/ubm_value_type.ctl"/>
+		<Item Name="UdpBlockReadInPort_type.ctl" Type="VI" URL="../_typdefes/UdpBlockReadInPort_type.ctl"/>
 	</Item>
 	<Item Name="Add Message.vi" Type="VI" URL="../Add Message.vi"/>
+	<Item Name="Configure Port by Index.vi" Type="VI" URL="../Configure Port by Index.vi"/>
 	<Item Name="Create Udp Block Message.vi" Type="VI" URL="../Create Udp Block Message.vi"/>
 	<Item Name="Set Message Data.vi" Type="VI" URL="../Set Message Data.vi"/>
 </Library>

@@ -957,6 +957,7 @@ AddOutputFilter chunkFilter
 					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
 					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
 					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
+					<Item Name="test_RxUDPBlockRead.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDPBlockRead.vi"/>
 				</Item>
 			</Item>
 		</Item>
@@ -1074,6 +1075,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
 			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
 			<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../Shared/Extract Timestamp from RxUDP Header.vi"/>
+			<Item Name="FdxCmdRxUDPBlockRead(native).vi" Type="VI" URL="../Shared/FdxCmdRxUDPBlockRead(native).vi"/>
 			<Item Name="Frame Logging.lvlib" Type="Library" URL="../Engine/Implementation/Logging/Frame Logging/Frame Logging.lvlib"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="Frame.ctl" Type="VI" URL="../Shared/Frame.ctl"/>
