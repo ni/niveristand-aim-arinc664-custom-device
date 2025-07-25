@@ -43,7 +43,7 @@ LabVIEW 2020
 ![Enable 3rd party](Docs/User%20Guide/Screenshots/max_enable_3rdParty.PNG)
 
 
-### Developing or building from source
+## Developing and building from source
 
 - [LabVIEW 2020 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
 - [AIM ARINC 664 BSP Driver and LabVIEW API](https://www.ni.com/en/support/downloads/software-products/download.aim-arinc-664-driver.html#494504) 2023Q4 or later
@@ -55,6 +55,23 @@ LabVIEW 2020
 - [VeriStand Custom Device Testing Tools](https://github.com/ni/niveristand-custom-device-testing-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-testing-tools/releases)
 - [Microsoft HTML Workshop](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/htmlhelp/microsoft-html-help-downloads )
+
+### Build Steps
+You have to build different components distributed across projects, depending on your stage of development:
+
+<img width="720" height="622" alt="immagine" src="https://github.com/user-attachments/assets/f5787467-155f-4a50-855d-5a5c559ca296" />
+
+In this case, *CD Name* is **AIM ARINC 664** . The order of steps is the following, from the top left of the picture:
+
+1. Open `Source/Custom Device Support/AIM ARINC 664 Support.lvproj` and build the `System Explorer` packed library under `Build Specifications` on `My Computer` target
+2. Build the `Engine` packed library under `Build Specifications` on `My Computer` target
+3. Open `Source/Custom Device/AIM ARINC 664 Custom Device.lvproj` and build the `Configuration Release` packed library under `Build Specifications` on `My Computer` target
+4. Build the `Engine Release` llb under `Build Specifications` on `My Computer` target
+5. Switch to `Source/Custom Device Support/AIM ARINC 664 Support.lvproj` and build the `Engine` packed library under `Build Specifications` on `RT PXI Target` target
+6. Switch to `Source/Custom Device/AIM ARINC 664 Custom Device.lvproj` and build the `Engine Release` packed library under `Build Specifications` on `RT PXI Target` target
+
+Steps 3,4 and 6 are only needed the first time you build the custom device on a new machine. For subsequent builds, you can just rebuild the packed library files (steps 1,2 and 5). Only exceptions are:
+- You add [Action VIs](https://www.ni.com/docs/en-US/bundle/veristand/page/custom-device-action-vi-template.html?srsltid=AfmBOooNJ2NO2Wu3Gslnr1jqdceqiQj8si-yX9SNA_OZQWktCNjqZ9h-) to the Custom Device
 
 ## Git History & Rebasing Policy
 
