@@ -3,23 +3,23 @@
 	<MD5Checksum />
 	<Version Major="2020" Minor="0" Fix="0" Build="0" />
 	<Content>Definition</Content>
-	<Root Name="AFDX_loopback_TxGen-RxMon_Redundant" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
+	<Root Name="Default Project 29" TypeGUID="03D3BA22-1485-13A6-56BD17DA950CCD00" Identifier="59f1934c-9cb1-44eb-92a2-9d4013cc30c7">
 		<Description />
 		<Properties>
 			<Property Name="Name">
-				<String>AFDX_loopback_TxGen-RxMon_Redundant</String>
+				<String>Default Project 29</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.19</String>
+				<String>1.0.0.8</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
 			</Property>
 			<Property Name="Creation Date">
-				<Double>3781020820.05708</Double>
+				<Double>3600957293.3245616</Double>
 			</Property>
 			<Property Name="ChannelDiagrams">
-				<BinaryString>77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxTb3VyY2VGaWxlIENoZWNrc3VtPSIxMzkyODFCNDBEM0YxRTU0MUE5NkY5NzA4ODM3RDVCQUExOEIwNjZERDczNDk5MTg4Nzk4NjJEREYwOEZDMTA1QTVDN0JCQUVBMDBERTQ2MDMxQUU5QjM2MzZFMjcwQ0I2M0YzOTgzMUU1QzY2RTM4OTBGNzIzQTk5MTlCRDY1OSIgVGltZXN0YW1wPSIxRDlGRkIwNDEzM0Y4ODciIHhtbG5zPSJodHRwOi8vd3d3Lm5pLmNvbS9QbGF0Zm9ybUZyYW1ld29yayI+DQoJPFNvdXJjZU1vZGVsRmVhdHVyZVNldD4NCgkJPFBhcnNhYmxlTmFtZXNwYWNlIEFzc2VtYmx5RmlsZVZlcnNpb249IjguNC4wLjQ5NjE5IiBGZWF0dXJlU2V0TmFtZT0iRWRpdG9yIiBOYW1lPSJodHRwOi8vd3d3Lm5pLmNvbS9QbGF0Zm9ybUZyYW1ld29yayIgT2xkZXN0Q29tcGF0aWJsZVZlcnNpb249IjguMS4wLjQ5MTUyIiBWZXJzaW9uPSI4LjEuMC40OTE1MiIgLz4NCgkJPFBhcnNhYmxlTmFtZXNwYWNlIEFzc2VtYmx5RmlsZVZlcnNpb249IjguNC4wLjQ5NjE5IiBGZWF0dXJlU2V0TmFtZT0iVmVyaVN0YW5kIENvcmUgQ29tcG9uZW50cyIgTmFtZT0iaHR0cDovL3d3dy5uaS5jb20vVmVyaVN0YW5kIiBPbGRlc3RDb21wYXRpYmxlVmVyc2lvbj0iOC4yLjAuNDkxNTIiIFZlcnNpb249IjguMi4wLjQ5MTUyIiAvPg0KCQk8QXBwbGljYXRpb25WZXJzaW9uSW5mbyBCdWlsZD0iOC40LjAuNDk1MjMiIE5hbWU9IlZlcmlTdGFuZCIgVmVyc2lvbj0iOC40LjAuNDk2MTkiIC8+DQoJPC9Tb3VyY2VNb2RlbEZlYXR1cmVTZXQ+DQoJPFN5c3RlbURlZmluaXRpb24geG1sbnM9Imh0dHA6Ly93d3cubmkuY29tL1ZlcmlTdGFuZCI+DQoJCTxCYXNlTm9kZVRvQ29udGVudFRhYmxlMj4NCgkJCTxwLlRhYmxlPiZsdDs/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8mZ3Q7DQombHQ7ZGljdGlvbmFyeSZndDsNCgkmbHQ7aXRlbSZndDsNCgkJJmx0O2tleSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7YzgzZTc5N2YtMjIyMy00ZDEzLTg0YzEtOWVkOTI0MzJlYzkyJmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsva2V5Jmd0Ow0KCQkmbHQ7dmFsdWUmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0OzU3M2FiODlhNjFmZjRlYjM5NjJiMjMwMWU2YWFkOWNmJmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsvdmFsdWUmZ3Q7DQoJJmx0Oy9pdGVtJmd0Ow0KJmx0Oy9kaWN0aW9uYXJ5Jmd0OzwvcC5UYWJsZT4NCgkJPC9CYXNlTm9kZVRvQ29udGVudFRhYmxlMj4NCgk8L1N5c3RlbURlZmluaXRpb24+DQoJPEVudm95TWFuYWdlckZpbGUgSWQ9ImFhZDkwYzVmYWMyNTQ5MjZiNGQ1N2Q3NTA4ZWMxNzI5IiB4bWxucz0iaHR0cDovL3d3dy5uaS5jb20vUGxhdGZvcm1GcmFtZXdvcmsiPg0KCQk8RW52b3lNYW5hZ2VyUm9vdEVudm95IElkPSI2N2U4NTkyNDY5NTQ5ZjZiYjdhNjlhNzk0ZjBiMGY4IiBNb2RlbERlZmluaXRpb25UeXBlPSJFbnZveU1hbmFnZXJSb290RW52b3kiIE5hbWU9IlJvb3RFbnZveSIgLz4NCgkJPE5hbWVTY29waW5nRW52b3kgQXV0b21hdGljYWxseVJlc29sdmVVcD0iVHJ1ZSIgSWQ9ImQ1NzNkM2FiZjc2ZjRiZDU5NTE2M2RmYmYzZWNkYmM1IiBOYW1lPSJEZWZhdWx0IFByb2plY3QgMTIubml2c3NkZiIgTmFtZVRyYWNrc0ZpbGVOYW1lPSJUcnVlIj4NCgkJCTxFbWJlZGRlZERlZmluaXRpb25SZWZlcmVuY2UgSWQ9IjYzMjg5NmU4NGJkMjRlMDRiMGYwOGNhNmUzODA1OTE3IiBNb2RlbERlZmluaXRpb25UeXBlPSJ7aHR0cDovL3d3dy5uaS5jb20vVmVyaVN0YW5kfVRhcmdldERlZmluaXRpb24iIE5hbWU9IkNvbnRyb2xsZXIiPg0KCQkJCTxUYXJnZXREZWZpbml0aW9uIElQQWRkcmVzcz0iMTAuMC43MC4zMyIgSWQ9IjI0NzBkYjE4OGZmMzRhZjBiN2NlZmUxNjI1ZDM0MzUzIiBPcGVyYXRpbmdTeXN0ZW09IkxpbnV4X3g2NCIgVGFyZ2V0TmFtZT0iQ29udHJvbGxlciIgeG1sbnM9Imh0dHA6Ly93d3cubmkuY29tL1ZlcmlTdGFuZCI+DQoJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7YzgzZTc5N2YtMjIyMy00ZDEzLTg0YzEtOWVkOTI0MzJlYzkyfSIgSWQ9IjU3M2FiODlhNjFmZjRlYjM5NjJiMjMwMWU2YWFkOWNmIiBOb2RlUGF0aD0iVGFyZ2V0cy9Db250cm9sbGVyIiAvPg0KCQkJCQk8Q2hhbm5lbE1hcHBpbmdEaWFncmFtIElkPSIyNWVmNzIyNTRjNjY0YmNmYjA5OTdjNmYxODMzYzFjYiI+DQoJCQkJCQk8QmFzZU5vZGVUb0NvbnRlbnRUYWJsZTI+DQoJCQkJCQkJPHAuVGFibGU+Jmx0Oz94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPyZndDsNCiZsdDtkaWN0aW9uYXJ5Jmd0Ow0KCSZsdDtpdGVtJmd0Ow0KCQkmbHQ7a2V5Jmd0Ow0KCQkJJmx0O3N0cmluZyZndDszMmUzOGZjNi01OWI0LTQ4MzgtYTFmYi0xYjQ3MjBmMzhhN2QmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy9rZXkmZ3Q7DQoJCSZsdDt2YWx1ZSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7ODZmNjU1MmJjN2Y1NDZkODgyNjI4NzAzYTA2OTBhM2ImbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy92YWx1ZSZndDsNCgkmbHQ7L2l0ZW0mZ3Q7DQoJJmx0O2l0ZW0mZ3Q7DQoJCSZsdDtrZXkmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0OzQ5ZjdhZTU1LTIzNjItNDk2Zi1iZWZjLTMwMjBjNTA4MWEwMCZsdDsvc3RyaW5nJmd0Ow0KCQkmbHQ7L2tleSZndDsNCgkJJmx0O3ZhbHVlJmd0Ow0KCQkJJmx0O3N0cmluZyZndDs5NGJiYTBlYTgzM2E0MjgyODRiZjdmNzBiYmZkMzU0MSZsdDsvc3RyaW5nJmd0Ow0KCQkmbHQ7L3ZhbHVlJmd0Ow0KCSZsdDsvaXRlbSZndDsNCgkmbHQ7aXRlbSZndDsNCgkJJmx0O2tleSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7NGViYWI4OTItY2JiMS00NGFhLWE1MWEtNDhiY2JhZTFkMDU2Jmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsva2V5Jmd0Ow0KCQkmbHQ7dmFsdWUmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0Ozc5ODAzZjE2NjEyYzQ3MTc4OGFmYmVmNGY2ZmJjZWY4Jmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsvdmFsdWUmZ3Q7DQoJJmx0Oy9pdGVtJmd0Ow0KCSZsdDtpdGVtJmd0Ow0KCQkmbHQ7a2V5Jmd0Ow0KCQkJJmx0O3N0cmluZyZndDszYWEyZDM2Mi1kODJlLTQ0OWYtOWY3ZC0xOGRiZmZlNDRmYTkmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy9rZXkmZ3Q7DQoJCSZsdDt2YWx1ZSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7ZjAyMDYyNTVkOTM2NGNlYWI3NjIzMTNiMTVlNTgzZGQmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy92YWx1ZSZndDsNCgkmbHQ7L2l0ZW0mZ3Q7DQombHQ7L2RpY3Rpb25hcnkmZ3Q7PC9wLlRhYmxlPg0KCQkJCQkJPC9CYXNlTm9kZVRvQ29udGVudFRhYmxlMj4NCgkJCQkJCTxVc2VyQ2hhbm5lbHNNYXBwaW5nTm9kZSBCb3VuZHM9IjAgLTUgMTcyIDUwIiBJZD0iZjZkZWQ4NDgyNDRlNGYyMWIxNzRmMzU3N2M4Yzk2YzYiIE5hbWU9IlVzZXIgQ2hhbm5lbHMiIFRlbXBsYXRlPSJMaXN0IiBUeXBlR3VpZD0iMDNEM0I2QjctMTQ4NS0xM0E2LTU2N0JFMUUxRTBERjk5OUEiPg0KCQkJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7NDlmN2FlNTUtMjM2Mi00OTZmLWJlZmMtMzAyMGM1MDgxYTAwfSIgSWQ9Ijk0YmJhMGVhODMzYTQyODI4NGJmN2Y3MGJiZmQzNTQxIiBOb2RlUGF0aD0iVGFyZ2V0cy9Db250cm9sbGVyL1VzZXIgQ2hhbm5lbHMiIC8+DQoJCQkJCQk8L1VzZXJDaGFubmVsc01hcHBpbmdOb2RlPg0KCQkJCQkJPEJhc2ljTWFwcGluZ0RpYWdyYW1Ob2RlIEJvdW5kcz0iMCAyMTUgMTkxIDUwIiBJZD0iN2ZmYThmZjE5YzNkNGQ5NjllOTg4ZTc2YzUxYmEyMzciIE5hbWU9IlN5c3RlbSBDaGFubmVscyIgVGVtcGxhdGU9Ikxpc3QiIFR5cGVHdWlkPSIwM0QzQjc1My0xNDg1LTEzQTYtNTZCMTBFRDA4MjBDRjQxMCI+DQoJCQkJCQkJPEJhc2VOb2RlV3JhcHBlciBCYXNlTm9kZUlkZW50aWZpZXI9Ins0ZWJhYjg5Mi1jYmIxLTQ0YWEtYTUxYS00OGJjYmFlMWQwNTZ9IiBJZD0iNzk4MDNmMTY2MTJjNDcxNzg4YWZiZWY0ZjZmYmNlZjgiIE5vZGVQYXRoPSJUYXJnZXRzL0NvbnRyb2xsZXIvU3lzdGVtIENoYW5uZWxzIiAvPg0KCQkJCQkJPC9CYXNpY01hcHBpbmdEaWFncmFtTm9kZT4NCgkJCQkJCTxBbGlhc01hcHBpbmdOb2RlIEJvdW5kcz0iMCA1MCAxMjMgNTAiIElkPSIxY2IyNzMxZDNkMzM0OGRmOTAxYjFlZDIwNDA4MGIyNCIgTmFtZT0iQWxpYXNlcyIgVGVtcGxhdGU9Ikxpc3QiIFR5cGVHdWlkPSJlMTFmNDUxOS0wOWU2LTRmYjAtOTlkZi0yOTY3YzQzMTNkNjciPg0KCQkJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7M2FhMmQzNjItZDgyZS00NDlmLTlmN2QtMThkYmZmZTQ0ZmE5fSIgSWQ9ImYwMjA2MjU1ZDkzNjRjZWFiNzYyMzEzYjE1ZTU4M2RkIiBOb2RlUGF0aD0iQWxpYXNlcyIgLz4NCgkJCQkJCTwvQWxpYXNNYXBwaW5nTm9kZT4NCgkJCQkJCTxDdXN0b21EZXZpY2UgQm91bmRzPSIwIDE2MCAxODEgNTAiIElkPSJiZGNhZGU1MzAxM2M0ZmRmYTcyZDAwMTk5MTdmYzg0MCIgTmFtZT0iQUlNIEFSSU5DIDY2NCIgVGVtcGxhdGU9Ikxpc3QiIFR5cGVHdWlkPSJFNkQwRjlFQy1FNDdDLTRGQzktOTFGRC0yRTQ1OEFCNkE2NDYiPg0KCQkJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7MzJlMzhmYzYtNTliNC00ODM4LWExZmItMWI0NzIwZjM4YTdkfSIgSWQ9Ijg2ZjY1NTJiYzdmNTQ2ZDg4MjYyODcwM2EwNjkwYTNiIiBOb2RlUGF0aD0iVGFyZ2V0cy9Db250cm9sbGVyL0N1c3RvbSBEZXZpY2VzL0FJTSBBUklOQyA2NjQiIC8+DQoJCQkJCQk8L0N1c3RvbURldmljZT4NCgkJCQkJPC9DaGFubmVsTWFwcGluZ0RpYWdyYW0+DQoJCQkJPC9UYXJnZXREZWZpbml0aW9uPg0KCQkJPC9FbWJlZGRlZERlZmluaXRpb25SZWZlcmVuY2U+DQoJCTwvTmFtZVNjb3BpbmdFbnZveT4NCgk8L0Vudm95TWFuYWdlckZpbGU+DQo8L1NvdXJjZUZpbGU+</BinaryString>
+				<BinaryString>77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxTb3VyY2VGaWxlIENoZWNrc3VtPSJDMzgwNEE4MzVFNUM0QjBCRjY0M0NDQkJCRERFNTE5Q0ZFRDNFOTM0OTQwNTA4RjJFQjRCRDYzMzk4Mjc4QkZENDAxNERDRTFDOTE3MDBEQzQ2RUYwQTg4NzI5RjkzREJGMjYxN0NGQ0JCRUQyMDUwQzY5NUUwMENDNEYyQUQzNCIgVGltZXN0YW1wPSIxREExMUI4M0ZDQkE4MzEiIHhtbG5zPSJodHRwOi8vd3d3Lm5pLmNvbS9QbGF0Zm9ybUZyYW1ld29yayI+DQoJPFNvdXJjZU1vZGVsRmVhdHVyZVNldD4NCgkJPFBhcnNhYmxlTmFtZXNwYWNlIEFzc2VtYmx5RmlsZVZlcnNpb249IjguNC4wLjQ5NjE5IiBGZWF0dXJlU2V0TmFtZT0iRWRpdG9yIiBOYW1lPSJodHRwOi8vd3d3Lm5pLmNvbS9QbGF0Zm9ybUZyYW1ld29yayIgT2xkZXN0Q29tcGF0aWJsZVZlcnNpb249IjguMS4wLjQ5MTUyIiBWZXJzaW9uPSI4LjEuMC40OTE1MiIgLz4NCgkJPFBhcnNhYmxlTmFtZXNwYWNlIEFzc2VtYmx5RmlsZVZlcnNpb249IjguNC4wLjQ5NjE5IiBGZWF0dXJlU2V0TmFtZT0iVmVyaVN0YW5kIENvcmUgQ29tcG9uZW50cyIgTmFtZT0iaHR0cDovL3d3dy5uaS5jb20vVmVyaVN0YW5kIiBPbGRlc3RDb21wYXRpYmxlVmVyc2lvbj0iOC4yLjAuNDkxNTIiIFZlcnNpb249IjguMi4wLjQ5MTUyIiAvPg0KCQk8QXBwbGljYXRpb25WZXJzaW9uSW5mbyBCdWlsZD0iOC40LjAuNDk1MjMiIE5hbWU9IlZlcmlTdGFuZCIgVmVyc2lvbj0iOC40LjAuNDk2MTkiIC8+DQoJPC9Tb3VyY2VNb2RlbEZlYXR1cmVTZXQ+DQoJPFN5c3RlbURlZmluaXRpb24geG1sbnM9Imh0dHA6Ly93d3cubmkuY29tL1ZlcmlTdGFuZCI+DQoJCTxCYXNlTm9kZVRvQ29udGVudFRhYmxlMj4NCgkJCTxwLlRhYmxlPiZsdDs/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04Ij8mZ3Q7DQombHQ7ZGljdGlvbmFyeSZndDsNCgkmbHQ7aXRlbSZndDsNCgkJJmx0O2tleSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7YzgzZTc5N2YtMjIyMy00ZDEzLTg0YzEtOWVkOTI0MzJlYzkyJmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsva2V5Jmd0Ow0KCQkmbHQ7dmFsdWUmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0OzU3M2FiODlhNjFmZjRlYjM5NjJiMjMwMWU2YWFkOWNmJmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsvdmFsdWUmZ3Q7DQoJJmx0Oy9pdGVtJmd0Ow0KJmx0Oy9kaWN0aW9uYXJ5Jmd0OzwvcC5UYWJsZT4NCgkJPC9CYXNlTm9kZVRvQ29udGVudFRhYmxlMj4NCgk8L1N5c3RlbURlZmluaXRpb24+DQoJPEVudm95TWFuYWdlckZpbGUgSWQ9ImFhZDkwYzVmYWMyNTQ5MjZiNGQ1N2Q3NTA4ZWMxNzI5IiB4bWxucz0iaHR0cDovL3d3dy5uaS5jb20vUGxhdGZvcm1GcmFtZXdvcmsiPg0KCQk8RW52b3lNYW5hZ2VyUm9vdEVudm95IElkPSI2N2U4NTkyNDY5NTQ5ZjZiYjdhNjlhNzk0ZjBiMGY4IiBNb2RlbERlZmluaXRpb25UeXBlPSJFbnZveU1hbmFnZXJSb290RW52b3kiIE5hbWU9IlJvb3RFbnZveSIgLz4NCgkJPE5hbWVTY29waW5nRW52b3kgQXV0b21hdGljYWxseVJlc29sdmVVcD0iVHJ1ZSIgSWQ9ImQ1NzNkM2FiZjc2ZjRiZDU5NTE2M2RmYmYzZWNkYmM1IiBOYW1lPSJEZWZhdWx0IFByb2plY3QgMjkubml2c3NkZiIgTmFtZVRyYWNrc0ZpbGVOYW1lPSJUcnVlIj4NCgkJCTxFbWJlZGRlZERlZmluaXRpb25SZWZlcmVuY2UgSWQ9IjYzMjg5NmU4NGJkMjRlMDRiMGYwOGNhNmUzODA1OTE3IiBNb2RlbERlZmluaXRpb25UeXBlPSJ7aHR0cDovL3d3dy5uaS5jb20vVmVyaVN0YW5kfVRhcmdldERlZmluaXRpb24iIE5hbWU9IkNvbnRyb2xsZXIiPg0KCQkJCTxUYXJnZXREZWZpbml0aW9uIElQQWRkcmVzcz0iMTAuMC43MC4zMyIgSWQ9IjI0NzBkYjE4OGZmMzRhZjBiN2NlZmUxNjI1ZDM0MzUzIiBPcGVyYXRpbmdTeXN0ZW09IkxpbnV4X3g2NCIgVGFyZ2V0TmFtZT0iQ29udHJvbGxlciIgeG1sbnM9Imh0dHA6Ly93d3cubmkuY29tL1ZlcmlTdGFuZCI+DQoJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7YzgzZTc5N2YtMjIyMy00ZDEzLTg0YzEtOWVkOTI0MzJlYzkyfSIgSWQ9IjU3M2FiODlhNjFmZjRlYjM5NjJiMjMwMWU2YWFkOWNmIiBOb2RlUGF0aD0iVGFyZ2V0cy9Db250cm9sbGVyIiAvPg0KCQkJCQk8Q2hhbm5lbE1hcHBpbmdEaWFncmFtIElkPSIyNWVmNzIyNTRjNjY0YmNmYjA5OTdjNmYxODMzYzFjYiI+DQoJCQkJCQk8QmFzZU5vZGVUb0NvbnRlbnRUYWJsZTI+DQoJCQkJCQkJPHAuVGFibGU+Jmx0Oz94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPyZndDsNCiZsdDtkaWN0aW9uYXJ5Jmd0Ow0KCSZsdDtpdGVtJmd0Ow0KCQkmbHQ7a2V5Jmd0Ow0KCQkJJmx0O3N0cmluZyZndDszN2NkMmU5Ny1iZjdmLTQ1NGUtODE1NS0zYWU2MWUzMjA3MGEmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy9rZXkmZ3Q7DQoJCSZsdDt2YWx1ZSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7ZmEyYzQyODMyOThiNDE4Nzg3NzliYzVmNzQzMWEzMTImbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy92YWx1ZSZndDsNCgkmbHQ7L2l0ZW0mZ3Q7DQoJJmx0O2l0ZW0mZ3Q7DQoJCSZsdDtrZXkmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0O2UzNTAxM2EwLTFjMjItNDY5ZS04N2QyLWJhM2FlMzEyMDdmZiZsdDsvc3RyaW5nJmd0Ow0KCQkmbHQ7L2tleSZndDsNCgkJJmx0O3ZhbHVlJmd0Ow0KCQkJJmx0O3N0cmluZyZndDsyNjhmNTMyMDkwMDQxNGFhNDQwYzY2NjJkOTI3OTM4Jmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsvdmFsdWUmZ3Q7DQoJJmx0Oy9pdGVtJmd0Ow0KCSZsdDtpdGVtJmd0Ow0KCQkmbHQ7a2V5Jmd0Ow0KCQkJJmx0O3N0cmluZyZndDs0OWY3YWU1NS0yMzYyLTQ5NmYtYmVmYy0zMDIwYzUwODFhMDAmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy9rZXkmZ3Q7DQoJCSZsdDt2YWx1ZSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7OTRiYmEwZWE4MzNhNDI4Mjg0YmY3ZjcwYmJmZDM1NDEmbHQ7L3N0cmluZyZndDsNCgkJJmx0Oy92YWx1ZSZndDsNCgkmbHQ7L2l0ZW0mZ3Q7DQoJJmx0O2l0ZW0mZ3Q7DQoJCSZsdDtrZXkmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0OzRlYmFiODkyLWNiYjEtNDRhYS1hNTFhLTQ4YmNiYWUxZDA1NiZsdDsvc3RyaW5nJmd0Ow0KCQkmbHQ7L2tleSZndDsNCgkJJmx0O3ZhbHVlJmd0Ow0KCQkJJmx0O3N0cmluZyZndDs3OTgwM2YxNjYxMmM0NzE3ODhhZmJlZjRmNmZiY2VmOCZsdDsvc3RyaW5nJmd0Ow0KCQkmbHQ7L3ZhbHVlJmd0Ow0KCSZsdDsvaXRlbSZndDsNCgkmbHQ7aXRlbSZndDsNCgkJJmx0O2tleSZndDsNCgkJCSZsdDtzdHJpbmcmZ3Q7M2FhMmQzNjItZDgyZS00NDlmLTlmN2QtMThkYmZmZTQ0ZmE5Jmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsva2V5Jmd0Ow0KCQkmbHQ7dmFsdWUmZ3Q7DQoJCQkmbHQ7c3RyaW5nJmd0O2YwMjA2MjU1ZDkzNjRjZWFiNzYyMzEzYjE1ZTU4M2RkJmx0Oy9zdHJpbmcmZ3Q7DQoJCSZsdDsvdmFsdWUmZ3Q7DQoJJmx0Oy9pdGVtJmd0Ow0KJmx0Oy9kaWN0aW9uYXJ5Jmd0OzwvcC5UYWJsZT4NCgkJCQkJCTwvQmFzZU5vZGVUb0NvbnRlbnRUYWJsZTI+DQoJCQkJCQk8VXNlckNoYW5uZWxzTWFwcGluZ05vZGUgQm91bmRzPSIwIC01IDE3MiA1MCIgSWQ9ImY2ZGVkODQ4MjQ0ZTRmMjFiMTc0ZjM1NzdjOGM5NmM2IiBOYW1lPSJVc2VyIENoYW5uZWxzIiBUZW1wbGF0ZT0iTGlzdCIgVHlwZUd1aWQ9IjAzRDNCNkI3LTE0ODUtMTNBNi01NjdCRTFFMUUwREY5OTlBIj4NCgkJCQkJCQk8QmFzZU5vZGVXcmFwcGVyIEJhc2VOb2RlSWRlbnRpZmllcj0iezQ5ZjdhZTU1LTIzNjItNDk2Zi1iZWZjLTMwMjBjNTA4MWEwMH0iIElkPSI5NGJiYTBlYTgzM2E0MjgyODRiZjdmNzBiYmZkMzU0MSIgTm9kZVBhdGg9IlRhcmdldHMvQ29udHJvbGxlci9Vc2VyIENoYW5uZWxzIiAvPg0KCQkJCQkJPC9Vc2VyQ2hhbm5lbHNNYXBwaW5nTm9kZT4NCgkJCQkJCTxCYXNpY01hcHBpbmdEaWFncmFtTm9kZSBCb3VuZHM9IjAgMjE1IDE5MSA1MCIgSWQ9IjdmZmE4ZmYxOWMzZDRkOTY5ZTk4OGU3NmM1MWJhMjM3IiBOYW1lPSJTeXN0ZW0gQ2hhbm5lbHMiIFRlbXBsYXRlPSJMaXN0IiBUeXBlR3VpZD0iMDNEM0I3NTMtMTQ4NS0xM0E2LTU2QjEwRUQwODIwQ0Y0MTAiPg0KCQkJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7NGViYWI4OTItY2JiMS00NGFhLWE1MWEtNDhiY2JhZTFkMDU2fSIgSWQ9Ijc5ODAzZjE2NjEyYzQ3MTc4OGFmYmVmNGY2ZmJjZWY4IiBOb2RlUGF0aD0iVGFyZ2V0cy9Db250cm9sbGVyL1N5c3RlbSBDaGFubmVscyIgLz4NCgkJCQkJCTwvQmFzaWNNYXBwaW5nRGlhZ3JhbU5vZGU+DQoJCQkJCQk8QWxpYXNNYXBwaW5nTm9kZSBCb3VuZHM9IjAgNTAgMTIzIDUwIiBJZD0iMWNiMjczMWQzZDMzNDhkZjkwMWIxZWQyMDQwODBiMjQiIE5hbWU9IkFsaWFzZXMiIFRlbXBsYXRlPSJMaXN0IiBUeXBlR3VpZD0iZTExZjQ1MTktMDllNi00ZmIwLTk5ZGYtMjk2N2M0MzEzZDY3Ij4NCgkJCQkJCQk8QmFzZU5vZGVXcmFwcGVyIEJhc2VOb2RlSWRlbnRpZmllcj0iezNhYTJkMzYyLWQ4MmUtNDQ5Zi05ZjdkLTE4ZGJmZmU0NGZhOX0iIElkPSJmMDIwNjI1NWQ5MzY0Y2VhYjc2MjMxM2IxNWU1ODNkZCIgTm9kZVBhdGg9IkFsaWFzZXMiIC8+DQoJCQkJCQk8L0FsaWFzTWFwcGluZ05vZGU+DQoJCQkJCQk8Q3VzdG9tRGV2aWNlIEJvdW5kcz0iMCAxMDUgMTgxIDUwIiBJZD0iYTc0MjUwOTE1ZjM2NGQ5Zjk1OWZmZDBmMzUxMzI3OTUiIE5hbWU9IkFJTSBBUklOQyA2NjQiIFRlbXBsYXRlPSJMaXN0IiBUeXBlR3VpZD0iRTZEMEY5RUMtRTQ3Qy00RkM5LTkxRkQtMkU0NThBQjZBNjQ2Ij4NCgkJCQkJCQk8QmFzZU5vZGVXcmFwcGVyIEJhc2VOb2RlSWRlbnRpZmllcj0iezM3Y2QyZTk3LWJmN2YtNDU0ZS04MTU1LTNhZTYxZTMyMDcwYX0iIElkPSJmYTJjNDI4MzI5OGI0MTg3ODc3OWJjNWY3NDMxYTMxMiIgTm9kZVBhdGg9IlRhcmdldHMvQ29udHJvbGxlci9DdXN0b20gRGV2aWNlcy9BSU0gQVJJTkMgNjY0IiAvPg0KCQkJCQkJPC9DdXN0b21EZXZpY2U+DQoJCQkJCQk8Q3VzdG9tRGV2aWNlIEJvdW5kcz0iMCAxNjAgMTkzIDUwIiBJZD0iYjFlODVlYmNiNWQ4NDYzMWFjOGM2ODAzMzZjODAwOGEiIE5hbWU9IkFJTSBBUklOQyA2NjQgMSIgVGVtcGxhdGU9Ikxpc3QiIFR5cGVHdWlkPSJFNkQwRjlFQy1FNDdDLTRGQzktOTFGRC0yRTQ1OEFCNkE2NDYiPg0KCQkJCQkJCTxCYXNlTm9kZVdyYXBwZXIgQmFzZU5vZGVJZGVudGlmaWVyPSJ7ZTM1MDEzYTAtMWMyMi00NjllLTg3ZDItYmEzYWUzMTIwN2ZmfSIgSWQ9IjI2OGY1MzIwOTAwNDE0YWE0NDBjNjY2MmQ5Mjc5MzgiIE5vZGVQYXRoPSJUYXJnZXRzL0NvbnRyb2xsZXIvQ3VzdG9tIERldmljZXMvQUlNIEFSSU5DIDY2NCAxIiAvPg0KCQkJCQkJPC9DdXN0b21EZXZpY2U+DQoJCQkJCTwvQ2hhbm5lbE1hcHBpbmdEaWFncmFtPg0KCQkJCTwvVGFyZ2V0RGVmaW5pdGlvbj4NCgkJCTwvRW1iZWRkZWREZWZpbml0aW9uUmVmZXJlbmNlPg0KCQk8L05hbWVTY29waW5nRW52b3k+DQoJPC9FbnZveU1hbmFnZXJGaWxlPg0KPC9Tb3VyY2VGaWxlPg==</BinaryString>
 			</Property>
 		</Properties>
 		<Errors />
@@ -192,7 +192,7 @@
 					<Description />
 					<Properties />
 					<Errors />
-					<Section Name="AIM ARINC 664 Tx" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="32e38fc6-59b4-4838-a1fb-1b4720f38a7d">
+					<Section Name="AIM ARINC 664" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="37cd2e97-bf7f-454e-8155-3ae61e32070a">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -228,40 +228,40 @@
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine.lvlibp</RTDestination>
 									<SupportedTarget>Linux_x64</SupportedTarget>
-									<MD5>e3c98e7528569e4ce3e008a615630353</MD5>
+									<MD5>77305becbaf4c99a609f5980ff837882</MD5>
 								</DependentFile>
 							</Property>
 							<Property Name="user.CD.boardId">
 								<U32>0</U32>
 							</Property>
 							<Property Name="user.CD.portSpeed">
-								<U32>5</U32>
+								<U32>0</U32>
 							</Property>
 							<Property Name="user.CD.portConfig">
-								<U32>1</U32>
+								<U32>0</U32>
 							</Property>
 						</Properties>
 						<Errors />
-						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="1c049cf5-6cda-441f-b3ea-1067a08a8981">
+						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="d2859744-4736-4237-964a-2912b5d87568">
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1-2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="e29633e6-16b8-47f5-a15c-a087544a3770">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="dc2ab5a3-f578-45b1-ba88-4943dfc1c0ec">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
 										<U32>0</U32>
 									</Property>
 									<Property Name="user.CD.redundant">
-										<Boolean>true</Boolean>
+										<Boolean>false</Boolean>
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="5d83282a-25b3-4b8d-926d-5c17d5ff84a4">
+								<Section Name="Outgoing" TypeGUID="84DDE259-6DAA-47F4-95FE-5FAF375E7F83" Identifier="fd50d8b7-98d2-4e17-9647-ccd3468552b9">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="72db45d1-d8b6-4d03-95a9-fd3f8df546e6">
+									<Section Name="Tx Generic" TypeGUID="4DFFD447-F0AD-4072-98FE-86FA01F16D58" Identifier="91f3a354-8094-491a-9eef-66aac0eb8a4c">
 										<Description />
 										<Properties>
 											<Property Name="user.CD.QueueSizeIn">
@@ -276,22 +276,22 @@
 											<Property Name="user.CD.RawFrame.Map">
 												<Variant>
 													<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-													<Data>AAAB5SUAgAAAAAAQAAgAMP////8AE0AHAA1JbnRlckZyYW1lR2FwABlABwATUGFja2V0R3JvdXBXYWl0VGltZQAXQAUAEVBheWxvYWRCdWZmZXJNb2RlABtABQAVUGF5bG9hZEdlbmVyYXRpb25Nb2RlABNABQANUHJlYW1ibGVDb3VudAALQAcABFNrZXcAAA9ABQAJTmV0U2VsZWN0ABVABQAORnJhbWVTdGFydE1vZGUAABlABwASUGh5c0Vycm9ySW5qZWN0aW9uAAAZQAYAElNlcXVlbmNlTnVtYmVySW5pdAAAG0AGABRTZXF1ZW5jZU51bWJlck9mZnNldAAAXADxAAAAAAAAAAIOQUlNNjY0TFYubHZsaWIYcXVldWVfaGVhZGVyX2dlbmVyaWMuY3RsACxAUAALAAEAAgADAAQABQAGAAcACAAJAAoACwpIZWFkZXJJbmZvAAASQDD/////CVBheWxvYWRJRAA1APEAAAAAAAAAARJSYXdGcmFtZV9lbnRyeS5jdGwAGkBQAAIADAANC2ZyYW1lX2VudHJ5AAoAdAACAAAADgABAA8AAAABAAAABkZyYW1lMQAAAAAAACcQAAAHAAAAAAMBAAAAAP////8AAAAIUGF5bG9hZDEAAAAA</Data>
+													<Data>AAAB5SUAgAAAAAAQAAgAMP////8AE0AHAA1JbnRlckZyYW1lR2FwABlABwATUGFja2V0R3JvdXBXYWl0VGltZQAXQAUAEVBheWxvYWRCdWZmZXJNb2RlABtABQAVUGF5bG9hZEdlbmVyYXRpb25Nb2RlABNABQANUHJlYW1ibGVDb3VudAALQAcABFNrZXcAAA9ABQAJTmV0U2VsZWN0ABVABQAORnJhbWVTdGFydE1vZGUAABlABwASUGh5c0Vycm9ySW5qZWN0aW9uAAAZQAYAElNlcXVlbmNlTnVtYmVySW5pdAAAG0AGABRTZXF1ZW5jZU51bWJlck9mZnNldAAAXADxAAAAAAAAAAIOQUlNNjY0TFYubHZsaWIYcXVldWVfaGVhZGVyX2dlbmVyaWMuY3RsACxAUAALAAEAAgADAAQABQAGAAcACAAJAAoACwpIZWFkZXJJbmZvAAASQDD/////CVBheWxvYWRJRAA1APEAAAAAAAAAARJSYXdGcmFtZV9lbnRyeS5jdGwAGkBQAAIADAANC2ZyYW1lX2VudHJ5AAoAdAACAAAADgABAA8AAAABAAAABkZyYW1lMQAAAAAAACcQAAAAAAAAAAMBAAAAAP////8AAAAIUGF5bG9hZDEAAAAA</Data>
 												</Variant>
 											</Property>
 											<Property Name="user.CD.Payload.Map">
 												<Variant>
 													<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-													<Data>AAAAjyUAgAAAAAAEAAgAMP////8ADUAFAAdOdW1lcmljAAwAQAAB/////wABAAoAdAACAAAAAgABAAMAAAABAAAACFBheWxvYWQxAAAAQAMAAAAAPAIAAAEhIAgARQAALQAAQAABEW2iCgEhAeDgADwAAQABABkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</Data>
+													<Data>AAAAniUAgAAAAAAEAAgAMP////8ADUAFAAdOdW1lcmljAAwAQAAB/////wABAAoAdAACAAAAAgABAAMAAAABAAAACFBheWxvYWQxAAAATwMAAAAAPAIAAAEhIAgARQAAPAAAQAABEW2TCgEhAeDgADwAFwAYACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</Data>
 												</Variant>
 											</Property>
 										</Properties>
 										<Errors />
-										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="b6dfbb96-db21-4059-98cd-efdcbf01580a">
+										<Section Name="Tx Generic Status" TypeGUID="C7869D6F-30D0-4274-87C5-5BE67BEEE020" Identifier="d3a70154-5180-4e7a-876a-ed59524545b6">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="eab5dada-20c1-4da6-ba06-dd6e4e0ae17f" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="590c198d-b832-4e4b-a702-55fcea50e33e" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties>
 													<Property Name="Value Table">
@@ -322,7 +322,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="45c8e862-5b72-4d27-a774-e5a2500a2afa" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="BytesReloadable" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="82969fc9-628c-4825-9dac-577067598205" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -330,7 +330,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="38007a16-5692-453f-b62a-7303f75370f3" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesSent" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b6519399-77f1-4447-b590-621dc959b96b" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -338,7 +338,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="bf811d98-41df-47b9-bf02-530eb0c93734" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesInCycQueue" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e20721e1-decf-4e8f-9b8c-ec0e89e70bce" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -346,7 +346,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="be0042b0-f8ab-4657-9175-6958f7e760aa" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Status" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="8ef1ed86-cec3-4ef8-9ce2-b494338ebb99" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -354,7 +354,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ef16c525-660b-4a87-8e40-ae5da2fc6089" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="Frames" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e4f3f776-13f6-4e33-b0ce-beb8f2dece7b" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -362,7 +362,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f1213c10-be26-4348-866c-8b907a5a6840" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="TransmitMode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="6ce7c9e4-a7f6-47c2-819d-ba3cb3185098" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -370,7 +370,7 @@
 													<Elem>0</Elem>
 												</DefaultValue>
 											</Channel>
-											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="289b27ed-b6b8-42ad-9610-a3a3111ca458" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Channel Name="FramesPortB" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="5b4cb74f-f5c1-4db0-90a3-cdf267815973" RowDim="1" ColDim="1" Units="" BitFields="1">
 												<Description />
 												<Properties />
 												<Errors />
@@ -379,11 +379,11 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="61581a3f-e8a3-488c-83c7-51692483812b">
+										<Section Name="Tx Generic Commands" TypeGUID="2188B24A-3494-4477-93CF-25CD7C0BEFDF" Identifier="7557a261-e1d7-4a39-8096-f61ed11ac9e9">
 											<Description />
 											<Properties />
 											<Errors />
-											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="52708058-4977-4255-b0f1-4249abc391d0" RowDim="1" ColDim="1" Units="" BitFields="3">
+											<Channel Name="Enable Tx" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7c25756e-8915-44a1-a8a6-a87c0cd609b6" RowDim="1" ColDim="1" Units="" BitFields="3">
 												<Description />
 												<Properties />
 												<Errors />
@@ -392,7 +392,7 @@
 												</DefaultValue>
 											</Channel>
 										</Section>
-										<Section Name="Payload1" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="4731c69e-c947-467c-a726-69796558ced5">
+										<Section Name="Payload1" TypeGUID="E66E8388-7A61-4B6A-926A-BD76449CDED7" Identifier="799a9d07-61b7-43bf-a81e-1a7166ec1d15">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.Payload.ID">
@@ -405,38 +405,92 @@
 												</Property>
 											</Properties>
 											<Errors />
+											<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7a0ac694-fdbe-4bab-a6c5-602f7216a35a" RowDim="1" ColDim="1" Units="V" BitFields="3">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.start index">
+														<I32>0</I32>
+													</Property>
+													<Property Name="user.CD.size">
+														<I32>64</I32>
+													</Property>
+													<Property Name="user.CD.encoding">
+														<U16>0</U16>
+													</Property>
+													<Property Name="user.CD.signed">
+														<Boolean>true</Boolean>
+													</Property>
+													<Property Name="user.CD.scale multiplier">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.scale offset">
+														<Double>0</Double>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
+											<Channel Name="Param 1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="12f4227b-0e77-449b-87e3-ddbbd033537e" RowDim="1" ColDim="1" Units="V" BitFields="3">
+												<Description />
+												<Properties>
+													<Property Name="user.CD.start index">
+														<I32>64</I32>
+													</Property>
+													<Property Name="user.CD.size">
+														<I32>64</I32>
+													</Property>
+													<Property Name="user.CD.encoding">
+														<U16>0</U16>
+													</Property>
+													<Property Name="user.CD.signed">
+														<Boolean>true</Boolean>
+													</Property>
+													<Property Name="user.CD.scale multiplier">
+														<Double>1</Double>
+													</Property>
+													<Property Name="user.CD.scale offset">
+														<Double>0</Double>
+													</Property>
+												</Properties>
+												<Errors />
+												<DefaultValue>
+													<Elem>0</Elem>
+												</DefaultValue>
+											</Channel>
 										</Section>
 									</Section>
 								</Section>
 							</Section>
 						</Section>
-						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="c2a817ad-179d-43e6-a0a7-993f921aa84c">
+						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="497657c1-ebbb-497c-b4fe-d28b82ce093e">
 							<Description />
 							<Properties>
 								<Property Name="user.CD.ConfigurationFile.Path">
-									<DependentFile Type="Relative" Path="Loopback_TxGen_Redundant.xml">
+									<DependentFile Type="Relative" Path="TxGen_Frame_Parameters.xml">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>739cad24399c22e4f57a1c1e4342ef66</MD5>
+										<MD5>d8d561805605de72d63328a212fffd34</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
 									<Boolean>false</Boolean>
 								</Property>
 								<Property Name="user.CD.PayloadFile.Path">
-									<DependentFile Type="Relative" Path="standard_frames_udp.bin">
+									<DependentFile Type="Relative" Path="TxGen_Frame_Parameters.bin">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>fba977e1675bb4ce224786c8ee780669</MD5>
+										<MD5>fb1ee2933b2e7c8ba749dec676910102</MD5>
 									</DependentFile>
 								</Property>
 							</Properties>
 							<Errors />
 						</Section>
 					</Section>
-					<Section Name="AIM ARINC 664 Rx" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="b93e64ff-f5ea-48ab-a55e-551d6b241c82">
+					<Section Name="AIM ARINC 664 1" TypeGUID="E6D0F9EC-E47C-4FC9-91FD-2E458AB6A646" Identifier="e35013a0-1c22-469e-87d2-ba3ae31207ff">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -472,382 +526,181 @@
 									<ForceDownload>false</ForceDownload>
 									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\AIM ARINC 664\AIM ARINC 664 Engine.lvlibp</RTDestination>
 									<SupportedTarget>Linux_x64</SupportedTarget>
-									<MD5>cddbf97108309146bd9a4acc5bd8ba3b</MD5>
+									<MD5>77305becbaf4c99a609f5980ff837882</MD5>
 								</DependentFile>
 							</Property>
 							<Property Name="user.CD.boardId">
 								<U32>1</U32>
 							</Property>
 							<Property Name="user.CD.portSpeed">
-								<U32>5</U32>
+								<U32>0</U32>
 							</Property>
 							<Property Name="user.CD.portConfig">
-								<U32>1</U32>
+								<U32>0</U32>
 							</Property>
 						</Properties>
 						<Errors />
-						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="4ffc23c9-64e3-492d-b248-6ebd8e33c32a">
+						<Section Name="Ports" TypeGUID="A1D05803-877A-4AF1-8556-3AC960D2123E" Identifier="a5d9bb7d-9154-44c8-ae62-77a652d1a1c2">
 							<Description />
 							<Properties />
 							<Errors />
-							<Section Name="Port1-2" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="b5dc5ca6-f022-42d4-b672-1ed331a772c0">
+							<Section Name="Port1" TypeGUID="582DDD9C-BC3D-4862-8B5A-626848E183CB" Identifier="b98d224a-68bc-46d6-b90f-a9ec1447626a">
 								<Description />
 								<Properties>
 									<Property Name="user.CD.port Id">
 										<U32>0</U32>
 									</Property>
 									<Property Name="user.CD.redundant">
-										<Boolean>true</Boolean>
+										<Boolean>false</Boolean>
 									</Property>
 								</Properties>
 								<Errors />
-								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="8a0a44c1-d83d-4d6c-9029-604cf2b72741">
+								<Section Name="Incoming" TypeGUID="5B8531B6-763C-44A7-B58A-6C82ED2F2D56" Identifier="0cdd5fab-5b0e-4697-93b8-10acac653d41">
 									<Description />
 									<Properties />
 									<Errors />
-									<Section Name="Monitor" TypeGUID="B887D8B9-C6CF-4F1C-8F75-15EFFDD5CFFC" Identifier="6eb40e2f-c1d5-4bcb-8a52-f41d7dbe5d41">
+									<Section Name="Rx UDP" TypeGUID="BD85F639-FFC8-443D-8B3E-A57AB37A5B2A" Identifier="6ee23680-3943-468e-940c-e3a1b0b505b8">
 										<Description />
-										<Properties>
-											<Property Name="user.CD.DefaultCronoMode">
-												<U32>1</U32>
-											</Property>
-											<Property Name="user.CD.GlbMonBufferSizeIn">
-												<U32>0</U32>
-											</Property>
-											<Property Name="user.CD.CaptureMode">
-												<U32>1</U32>
-											</Property>
-											<Property Name="user.CD.MaxFileSizeMB">
-												<U32>0</U32>
-											</Property>
-											<Property Name="user.CD.Strobe">
-												<U32>0</U32>
-											</Property>
-											<Property Name="user.CD.TriggerPosition">
-												<U32>0</U32>
-											</Property>
-										</Properties>
+										<Properties />
 										<Errors />
-										<Section Name="Status" TypeGUID="C7B8E643-DB53-4236-A1BD-67967F46ACD2" Identifier="cb9589ae-dbd8-4906-98ee-ddf087621400">
+										<Section Name="VL_60" TypeGUID="AD8B37F3-F79C-4716-A9ED-786B96288466" Identifier="b8e60366-adb4-4bbb-b573-4a36176d7f78">
 											<Description />
-											<Properties />
+											<Properties>
+												<Property Name="user.CD.VlId">
+													<U16>60</U16>
+												</Property>
+												<Property Name="user.CD.VLRange">
+													<U32>1</U32>
+												</Property>
+												<Property Name="user.CD.VerificationMode">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.Bag">
+													<U32>1</U32>
+												</Property>
+												<Property Name="user.CD.Jitter">
+													<U32>1</U32>
+												</Property>
+												<Property Name="user.CD.MaxFrameLength">
+													<U32>1518</U32>
+												</Property>
+												<Property Name="user.CD.MaxSkew">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.VLBufSize">
+													<U32>32768</U32>
+												</Property>
+												<Property Name="user.CD.FilterMode">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.FilterPosition">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.Padding">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.FilterMask">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.FilterData">
+													<U32>0</U32>
+												</Property>
+												<Property Name="user.CD.MinFrameLength">
+													<U32>64</U32>
+												</Property>
+											</Properties>
 											<Errors />
-											<Channel Name="QueueStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c6bdc0f1-e6c4-4435-9377-2042543aa9c0" RowDim="1" ColDim="1" Units="" BitFields="1">
+											<Section Name="S_0:23-&gt;24" TypeGUID="B89465D2-793A-4104-A0ED-B169B72F9E43" Identifier="777dcae0-9033-4ed9-8228-e244f4b272bf">
 												<Description />
 												<Properties>
-													<Property Name="Value Table">
-														<Dictionary>
-															<Elem Key="FDX_MON_STAT_EMPTY">
-																<Double>0</Double>
-															</Elem>
-															<Elem Key="FDX_MON_STAT_FILLED">
-																<Double>1</Double>
-															</Elem>
-															<Elem Key="FDX_MON_STAT_FULL">
-																<Double>2</Double>
-															</Elem>
-															<Elem Key="FDX_MON_STAT_OVERFLOW">
-																<Double>3</Double>
-															</Elem>
-															<Elem Key="FDX_MON_STAT_ERROR">
-																<Double>4</Double>
-															</Elem>
-														</Dictionary>
+													<Property Name="user.CD.PortType">
+														<U16>0</U16>
+													</Property>
+													<Property Name="user.CD.SubVIId">
+														<U32>1</U32>
+													</Property>
+													<Property Name="user.CD.domainID">
+														<U16>1</U16>
+													</Property>
+													<Property Name="user.CD.sideID">
+														<U16>1</U16>
+													</Property>
+													<Property Name="user.CD.locationID">
+														<U16>1</U16>
+													</Property>
+													<Property Name="user.CD.partitionID">
+														<U16>1</U16>
+													</Property>
+													<Property Name="user.CD.UdpSrcPort">
+														<U16>23</U16>
+													</Property>
+													<Property Name="user.CD.UdpDstPort">
+														<U16>24</U16>
+													</Property>
+													<Property Name="user.CD.UdpNumBufMessages">
+														<U32>1</U32>
+													</Property>
+													<Property Name="user.CD.UdpMaxMessageSize">
+														<U32>512</U32>
+													</Property>
+													<Property Name="user.CD.UdpSamplingRate">
+														<U32>0</U32>
 													</Property>
 												</Properties>
 												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="FramesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d7cb3531-d1a7-4d22-a5fe-b04327523d27" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="BytesToRead" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7b781448-d802-4405-887e-0abfcab8bdec" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="RxStatus" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="984f9d3e-1cbd-4f1f-b5a7-d775edd3ad57" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties>
-													<Property Name="Value Table">
-														<Dictionary>
-															<Elem Key="FDX_STAT_STOP">
-																<Double>0</Double>
-															</Elem>
-															<Elem Key="FDX_STAT_RUN">
-																<Double>1</Double>
-															</Elem>
-															<Elem Key="FDX_STAT_ERROR">
-																<Double>2</Double>
-															</Elem>
-														</Dictionary>
-													</Property>
-												</Properties>
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-										</Section>
-										<Section Name="Monitor Utilization" TypeGUID="D9396964-5902-4E2A-82C8-2A696FD85A36" Identifier="744f2741-3752-432e-acf2-fe8a18c5936e">
-											<Description />
-											<Properties />
-											<Errors />
-											<Channel Name="TotalByteCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="644a72e9-88d2-448e-bddb-5a66477c2ad3" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="FrameGoodCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d6934c30-5fa8-4d91-a264-c2e45299d7cc" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="FrameErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7e8e7816-79fd-4b19-ba98-c2dcf4b48017" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="BytesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="738ea489-109a-4315-8497-e799ffab952a" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="FramesPerSecond" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7357ddff-c285-484c-9d23-ee573bcd4591" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-										</Section>
-										<Section Name="Monitor Error" TypeGUID="1B82B94F-FAA8-416B-810A-FCB6E86E6CD6" Identifier="01013abf-7edc-402e-9142-63e0e21a69d1">
-											<Description />
-											<Properties />
-											<Errors />
-											<Channel Name="PhysErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="7bfa2e3c-04ac-4194-8abc-ae3ddb18fdde" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="PreamErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b6f55015-c431-4529-af4a-7cf16f653930" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="UnaligErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ff2ccd69-45ce-4e9b-9c51-29a4acd565f1" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="CRCErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="48a6d734-a476-4136-90c3-e6fb47d0fb34" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="IFGErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="2efbb7a3-2be8-4ddc-bf53-bc94d560914e" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="IPErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f5190bfd-19a6-4732-96a5-cd8f11c1221a" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MACErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c8815dae-c6fb-464d-8262-36c188aff0c2" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="NoSfdErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="590999c1-c6b0-4f7e-a0bd-4ccf2c939050" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="VLLenErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c9df22c0-e52e-4a24-8a70-548d0d78b5db" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="SNIntegrityErrorCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="ed8cb921-976d-4afc-89ad-bf29e74de650" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="TrafShapingViolationCount" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="84107fb5-64ed-4c76-be1e-d7c5b44877c4" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-										</Section>
-										<Section Name="Monitor Size Distribution" TypeGUID="9C3365A4-3BC6-46D2-9E4A-E79F510F5B35" Identifier="6a0c70d2-a9e6-4848-890c-c3c0e0e74f84">
-											<Description />
-											<Properties />
-											<Errors />
-											<Channel Name="MAC1Short" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="cd80aa14-2663-41b0-abc5-8f0c4e306fd4" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MAC64To127Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="833e65bd-b92e-4d88-a32e-963a2cf94ed3" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MAC128To255Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="c478b381-89da-4792-b15a-dcf77e5157b9" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MAC256To511Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="149f1153-65ec-48c8-9d03-bd35e9fa3a64" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MAC512To1023Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="3e35f7cf-fae7-4d2d-ae2b-1f406ae0db68" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MAC1024To1518Count" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b0b2162c-0518-47c8-a293-3df66a08531b" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-											<Channel Name="MACLong" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="5babc80a-8376-43e5-b6bd-a1c62194c20f" RowDim="1" ColDim="1" Units="" BitFields="1">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-										</Section>
-										<Section Name="Rx Monitor Commands" TypeGUID="5D6E662D-4EFB-415B-AC3E-AA1F155779C7" Identifier="faba629d-7bad-4a1b-bb7b-245ae85e1ab9">
-											<Description />
-											<Properties />
-											<Errors />
-											<Channel Name="Reset Mode" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e835d65f-fc0f-44ad-aa16-2e7eb6efd7fe" RowDim="1" ColDim="1" Units="" BitFields="3">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
-										</Section>
-										<Section Name="Logging" TypeGUID="F10A60DD-15A2-4C5A-ACFB-58AB9BD738ED" Identifier="ee98fb7d-9736-4098-89c8-9301c8672c92">
-											<Description />
-											<Properties />
-											<Errors />
-											<Channel Name="Enable Logging" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="68e4b8fe-6316-495b-9f81-4b781296a9cb" RowDim="1" ColDim="1" Units="" BitFields="3">
-												<Description />
-												<Properties />
-												<Errors />
-												<DefaultValue>
-													<Elem>0</Elem>
-												</DefaultValue>
-											</Channel>
+												<Channel Name="Param 0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="552808a1-8aab-457e-b847-72e3071af4c1" RowDim="1" ColDim="1" Units="V" BitFields="1">
+													<Description />
+													<Properties>
+														<Property Name="user.CD.start index">
+															<I32>0</I32>
+														</Property>
+														<Property Name="user.CD.size">
+															<I32>64</I32>
+														</Property>
+														<Property Name="user.CD.encoding">
+															<U16>0</U16>
+														</Property>
+														<Property Name="user.CD.signed">
+															<Boolean>true</Boolean>
+														</Property>
+														<Property Name="user.CD.scale multiplier">
+															<Double>1</Double>
+														</Property>
+														<Property Name="user.CD.scale offset">
+															<Double>0</Double>
+														</Property>
+													</Properties>
+													<Errors />
+													<DefaultValue>
+														<Elem>0</Elem>
+													</DefaultValue>
+												</Channel>
+											</Section>
 										</Section>
 									</Section>
 								</Section>
 							</Section>
 						</Section>
-						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="66db6084-11cc-4e7d-baeb-70f0cfa8a880">
+						<Section Name="Configuration File" TypeGUID="C40B493B-66E6-407A-B069-3D0F2F03B0B0" Identifier="1443e53d-87e4-43d8-83ae-0710877116ab">
 							<Description />
 							<Properties>
 								<Property Name="user.CD.ConfigurationFile.Path">
-									<DependentFile Type="Relative" Path="Loopback_RxMonitor_Redundant.xml">
+									<DependentFile Type="Relative" Path="RxUDP_Frame_Parameters-Board 1.xml">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>5b7cf54130d00132de6cbc22a534f351</MD5>
+										<MD5>e5169494ed75d4a9e6535a15c0e1351c</MD5>
 									</DependentFile>
 								</Property>
 								<Property Name="user.CD.ConfigurationFile.Needed">
 									<Boolean>false</Boolean>
 								</Property>
 								<Property Name="user.CD.PayloadFile.Path">
-									<DependentFile Type="Relative" Path="standard_frames_udp.bin">
+									<DependentFile Type="Relative" Path="TxGen_Frame_Parameters.bin">
 										<Version />
 										<RTDestination />
 										<SupportedTarget />
-										<MD5>fba977e1675bb4ce224786c8ee780669</MD5>
+										<MD5>fb1ee2933b2e7c8ba749dec676910102</MD5>
 									</DependentFile>
 								</Property>
 							</Properties>
