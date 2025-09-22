@@ -267,8 +267,8 @@
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
-    <xs:attribute name="MinFrameLength" default="0" type="xs:int" />
-    <xs:attribute name="MaxFrameLength" default="0" type="xs:int" />
+    <xs:attribute name="MinFrameLength" default="64" type="xs:int" />
+    <xs:attribute name="MaxFrameLength" default="1518" type="xs:int" />
     <xs:attribute name="MaxSkew" default="0" type="xs:int" />
     <xs:attribute name="VLBufSize" default="0" type="xs:int" />
     <xs:attribute name="FilterMode" default="FDX_RX_VL_FLT_DIS">
