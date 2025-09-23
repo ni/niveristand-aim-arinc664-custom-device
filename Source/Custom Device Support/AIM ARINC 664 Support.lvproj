@@ -496,7 +496,7 @@
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
 				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
 				<Item Name="Less Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Comparable/Less Comparable.lvclass"/>
-				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/array/helpers/Sort 1D Array Core.vim"/>
+				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
 				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 				<Item Name="Remove Duplicates From 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Remove Duplicates From 1D Array.vim"/>
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
@@ -659,6 +659,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="U8array2U32.vi" Type="VI" URL="../../../../../Program Files/National Instruments/LabVIEW 2025/instr.lib/AIM GmbH/_AIM 664/helpers/DataParsing/_support/U8array2U32.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -1119,6 +1120,7 @@ AddOutputFilter chunkFilter
 			<Item Name="Tx Generic Queue Status Enum.ctl" Type="VI" URL="../Shared/Tx Generic Queue Status Enum.ctl"/>
 			<Item Name="tx_generic_command.ctl" Type="VI" URL="../Shared/tx_generic_command.ctl"/>
 			<Item Name="Type of Payload.ctl" Type="VI" URL="../Frame Configuration/controls/Type of Payload.ctl"/>
+			<Item Name="U8array2U32.vi" Type="VI" URL="../../../../../Program Files/National Instruments/LabVIEW 2025/instr.lib/AIM GmbH/_AIM 664/helpers/DataParsing/_support/U8array2U32.vi"/>
 			<Item Name="UdpBlockMessage.lvlib" Type="Library" URL="../BlockMessage/UdpBlockMessage.lvlib"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 		</Item>
