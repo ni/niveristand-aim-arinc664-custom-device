@@ -223,7 +223,7 @@ Each element has a set of attributes that match the input parameters of AIM driv
 |PhysErrorInjection|no|`<TxGenericFrame>`|enum string|Can be used to send frames with physical errors. Default: FDX_TX_FRAME_ERR_OFF<br>Possible values: <br>FDX_TX_FRAME_ERR_OFF<br>FDX_TX_FRAME_ERR_CRC<br>FDX_TX_FRAME_ERR_ALI<br>FDX_TX_FRAME_ERR_PRE<br>FDX_TX_FRAME_ERR_PHY |FdxCmdTxQueueWrite() |
 |SequenceNumberInit|no|`<TxGenericFrame>`|int|Can be used to send frames with a specific sequence number (SN).- Default value: 65535|FdxCmdTxQueueWrite() |
 |SequenceNumberOffset|no|`<TxGenericFrame>`|int|After each frame is sent, this offset value is added to the SN of the frame. On the next cycle, the frame is sent with this new SN.- Default value: 65535 - Non default range: 0 to 255|FdxCmdTxQueueWrite() |
-|DefaultCronoMode|no|`<RxMonitorSession>`|enum string|Chronologica monitor mode. Default: FDX_RX_DEFAULT_MON_ENA_ALL<br>Possible values: <br>FDX_RX_DEFAULT_ENA_CNT<br>FDX_RX_DEFAULT_MON_ENA_ALL<br>FDX_RX_DEFAULT_MON_ENA_GOOD |FdxCmdRxModeControl() |
+|DefaultCronoMode|no|`<RxMonitorSession>`|enum string|Chronologica monitor mode. Default: FDX_RX_DEFAULT_MON_ENA_ALL<br>Possible values: <br>FDX_RX_DEFAULT_ENA_CNT<br>FDX_RX_DEFAULT_MON_ENA_ALL<br>FDX_RX_DEFAULT_MON_ENA_GOOD (on BSP versions 19.x and earlier, not supported by 20.x) |FdxCmdRxModeControl() |
 |GlbMonBufferSizeIn|no|`<RxMonitorSession>`|int|It defines the requested size of the monitor buffer for this port resource. This value must be specified in bytes. - Default value: 0|FdxCmdRxModeControl() |
 |TriggerPosition|no|`<RxMonitorSession>`|int|This is a value between 0 and 100 %. - Default value: 0|FdxCmdMonCaptureControl() |
 |MaxFileSizeMB|no|`<RxMonitorSession>`|int|Not used. - Default value: 0|FdxCmdMonCaptureControl() |
@@ -237,8 +237,19 @@ Each element has a set of attributes that match the input parameters of AIM driv
 |SideID|no|`<TxUdpSession>` `<TxSapPort>` `<RxCommPort>`|int|Side Id.- Default value: 0|none |
 |LocationID|no|`<TxUdpSession>` `<TxSapPort>` `<RxCommPort>`|int|Location Id.- Default value: 0|none |
 |InterfaceID|no|`<TxUdpSession>` `<TxSapPort>` `<RxCommPort>`|int|Interface Id.- Default value: 0|none |
-|MaxFrameLength|no|`<TxUdpSession>` `<RxUdpSession>`|int|Specifies the maximum length in bytes of frames that can be sent over this VL.- Default value: 0|FdxCmdTxCreateVL() |
+|MaxFrameLength|no|`<TxUdpSession>` `<RxUdpSession>`|int|Specifies the maximum length in bytes of frames that can be sent over this VL.- Default value: 1518|FdxCmdTxCreateVL() |
 |FrameBufferSize|no|`<TxUdpSession>`|int|Sets the size of the VL frame buffer in bytes.- Default value: 0|FdxCmdTxCreateVL() |
+|VLRange|no|`<RxUdpSession>` |int| Number of VLs to monitor- Default value: 0|FdxCmdRxVLControl() |
+|Jitter|no|`<RxUdpSession>` |int| Maximum allowed jitter value in μs, for the given Virtual Link. - Default value: 1|FdxCmdRxVLControl() |
+|VerificationMode|no|`<RxMonitorSession>` `<RxUdpSession>`|enum string|The Verification mode for the given VL . Default: FDX_RX_VL_CHECK_DISA<br>Possible values: <br>FDX_RX_VL_CHECK_DISA<br>FDX_RX_VL_CHECK_INVPAC<br>FDX_RX_VL_CHECK_SNINTEG<br>FDX_RX_VL_CHECK_FRAMESIZE<br>FDX_RX_VL_CHECK_TRAFIC<br>FDX_RX_VL_CHECK_REDMAM<br>FDX_RX_VL_CHECK_ENA_DEFAULT |FdxCmdRxVLControl() |
+|MinFrameLength|no|`<RxUdpSession>` |int| Minimum length of a MAC frame on this Virtual Link in bytes. - Default value: 64|FdxCmdRxVLControl() |
+|MaxFrameLength|no|`<RxUdpSession>` `<TxUdpSession>` |int| Maximum length of a MAC frame on this Virtual Link in bytes. - Default value: 1518|FdxCmdRxVLControl() |
+|MaxSkew|no|`<RxUdpSession>` |int| The maximum time difference in μs between the arrival time of two redundant frames with the same sequence number.  - Default value: 0|FdxCmdRxVLControl() |
+|VLBufSize|no|`<RxUdpSession>` |int| Size of the local buffer in bytes which should be used to store data of the selected VL.  - Default value: 0|FdxCmdRxVLControl() |
+|FilterMode|no|`<RxUdpSession>`|enum string|Filter Mode of the second level filter. Default: FDX_RX_VL_FLT_DIS<br>Possible values: <br>FDX_RX_VL_FLT_DIS<br>FDX_RX_VL_FLT_ENA<br>FDX_RX_VL_FLT_ENA_INV |FdxCmdRxVLControl() |
+|FilterPosition|no|`<RxUdpSession>` |int| Filter position offset to the start of the AFDX frame, where the value shall be compared.  - Default value: 0|FdxCmdRxVLControl() |
+|FilterMask|no|`<RxUdpSession>` |int| Filter Mask to mask the bits of four consecutive bytes for comparing with the filter data. - Default value: 0|FdxCmdRxVLControl() |
+|FilterData|no|`<RxUdpSession>` |int| Filter Data to compare with the result of masking. - Default value: 0|FdxCmdRxVLControl() |
 |PartitionID|no|`<TxCommPort>` `<TxSapPort>`|int|Partition Id.- Default value: 0 - Range: 0 to 31|none |
 |SubVlId|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>`|int|SubVl Id.- Default value: 1 - Range: 1 to 4|none |
 |UdpSrcPort|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>`|int| UDP Source Port number.- Default value: 0 - Range: 0 to 1023|FdxCmdRxUDPCreatePort() |
@@ -246,16 +257,5 @@ Each element has a set of attributes that match the input parameters of AIM driv
 |UdpSamplingRate|no|`<TxCommPort>` `<RxCommPort>` `<RxSapPort>`|int| Specifies the message transmission rate for sampling ports in milliseconds and is therefore only applied for sampling ports.- Default value: 1  **NOTE:** the resulting load of a VL with a given set of sampling ports can be calculated by the following formula **(VL-Bag * ((1/Sampling Rate UDP Port 1) + (1/Sampling Rate UDP Port 2) + ...))** and if the caculated VL load value is greater than 1, the VL is overloaded and configured sampling rates can not be met.|FdxCmdTxUDPCreatePort() |
 |UdpNumBufMessages|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>` `<RxSapPort>`|int| Number of messages which can be stored by the UDP-Port in the associated queue.- Default value: 1|FdxCmdTxUDPCreatePort() |
 |UdpMaxMessageSize|no|`<TxCommPort>` `<TxSapPort>` `<RxCommPort>` `<RxSapPort>`|int| Maximum size of a message in bytes that can be sent. The size is without the header overhead (MAC, IP and UDP).- Default value: 0 - Range: 0 to 8192|FdxCmdTxUDPCreatePort() |
-|VLRange|no|`<RxCommPort>` |int| Number of VLs to monitor- Default value: 0|FdxCmdRxVLControl() |
-|Jitter|no|`<RxCommPort>` |int| Maximum allowed jitter value in μs, for the given Virtual Link. - Default value: 1|FdxCmdRxVLControl() |
-|VerificationMode|no|`<RxMonitorSession>`|enum string|The Verification mode for the given VL . Default: FDX_RX_VL_CHECK_DISA<br>Possible values: <br>FDX_RX_VL_CHECK_DISA<br>FDX_RX_VL_CHECK_INVPAC<br>FDX_RX_VL_CHECK_SNINTEG<br>FDX_RX_VL_CHECK_FRAMESIZE<br>FDX_RX_VL_CHECK_TRAFIC<br>FDX_RX_VL_CHECK_REDMAM<br>FDX_RX_VL_CHECK_ENA_DEFAULT |FdxCmdRxVLControl() |
-|MinFrameLength|no|`<RxCommPort>` |int| Minimum length of a MAC frame on this Virtual Link in bytes. - Default value: 0|FdxCmdRxVLControl() |
-|MaxFrameLength|no|`<RxCommPort>` |int| Maximum length of a MAC frame on this Virtual Link in bytes. - Default value: 0|FdxCmdRxVLControl() |
-|MaxSkew|no|`<RxCommPort>` |int| The maximum time difference in μs between the arrival time of two redundant frames with the same sequence number.  - Default value: 0|FdxCmdRxVLControl() |
-|VLBufSize|no|`<RxCommPort>` |int| Size of the local buffer in bytes which should be used to store data of the selected VL.  - Default value: 0|FdxCmdRxVLControl() |
-|FilterMode|no|`<RxCommPort>`|enum string|Filter Mode of the second level filter. Default: FDX_RX_VL_FLT_DIS<br>Possible values: <br>FDX_RX_VL_FLT_DIS<br>FDX_RX_VL_FLT_ENA<br>FDX_RX_VL_FLT_ENA_INV |FdxCmdRxVLControl() |
-|FilterPosition|no|`<RxCommPort>` |int| Filter position offset to the start of the AFDX frame, where the value shall be compared.  - Default value: 0|FdxCmdRxVLControl() |
-|FilterMask|no|`<RxCommPort>` |int| Filter Mask to mask the bits of four consecutive bytes for comparing with the filter data. - Default value: 0|FdxCmdRxVLControl() |
-|FilterData|no|`<RxCommPort>` |int| Filter Data to compare with the result of masking. - Default value: 0|FdxCmdRxVLControl() |
 
 
