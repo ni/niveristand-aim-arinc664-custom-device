@@ -3,7 +3,6 @@
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)Z!!!*Q(C=\&gt;7R&lt;2N"%)8B2]-%H,)$ASW]%MT)/6O9&amp;JB+$!Q[=DQNM!679'";9/K1,:T_7YU*7&lt;$&amp;R$9-1X&gt;;[O\&gt;\M[HP?.*'NM\[;WG7^PSR;WP4]P2=ZQ^(ET0LX]`G[ZHT]9`P81N_]0YQ@H6_'70`WH^&amp;`QX.LVOL^P`P&gt;X&gt;`",]]?`"1P/,C&amp;;UJ!8.GMN/26\E26\E26\E3:\E3:\E3:\E12\E12\E12\E*D?ZS5VO=J/0H6TE)B=ZJ+*Y5;C9N*CA[!R&amp;R5@B+4S&amp;J`"QKM*4?!J0Y3E]&gt;&amp;(B+4S&amp;J`!5(I;J]"3?QF.Y#A^4$5G.H2R0Y7&amp;[*:\%EXA34_+BJ"*0!EC+*2-HE]"1=D%Z3$S**`&amp;QK-34?"*0YEE]8&amp;&lt;C34S**`%E(I;-6=GBG8&gt;S0%SDQ".Y!E`A#4R-L=!4?!*0Y!E]F&amp;0A#4Q")CA94!Z"Q;#A1X!3?!)0PR2Y!E`A#4S"BUPD$M69G6ET\_2YD-&gt;YD-&gt;YD)=J:$T'9TT'9TR-+_-R(O-R(O/BF)T(?)T(1%R2SMN-:A;;4C9Q(H\'U_*RFX*)0(;J(V\V1[F_W.10E@LB5.^U^=V5XS4VYKM86&lt;V9[E61`X&amp;KN"KD,K)?0(@5B=]T\51\UA[U(7V,W^$7N.5]^$&gt;XP&amp;QO/J`0/JV//B[0/BQ/WOVWWG[XWGQW7K`87KV7V^@!?`&lt;L#_(RP84(]@[&lt;\`?@0C\W8T]M^F`Y`&gt;HX=`Y8`D``!_^'P&gt;(4'KT2!\AK/VE!!!!!</Property>
 	<Property Name="NI.Lib.LocalName" Type="Str">Communication Bus Template Interfaces</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>

@@ -3,7 +3,6 @@
 	<Property Name="NI.Lib.ContainingLib" Type="Str">Frame Logging.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Frame Logging.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)M!!!*Q(C=\&gt;7R43."&amp;-&lt;RTS?#ESZS4I$=QCPBNA7X]"IA=,KB7`AS!C,L/H!,LQ7XY":]`RF'REC!%U#H%\-]M`P.TMS0X@5C^@:4ON(J7PPV&lt;HPO0ZU0,Q?^\$_VHR=TPNJ`&gt;@SL`7XXH@8@]F^J_G\@\@^O]^5PQ;&gt;`$R:K,S+K+&amp;.*B&gt;KSJS)P]C)P]C)P=J/&lt;X/1G.\H*ETT*ETT*ETT*ATT)ATT)ATT)_U9O=J',(&amp;+R?,&amp;1-7ER18%S&amp;"5@B;@Q&amp;*\#Q[%+4_%J0)7H](#+#E`B+4S&amp;J`!Q4)7H]"3?QF.YG+J,KG`E?!I0U]NYD-&gt;YD-&gt;Y7&amp;,'9Q"G-4/RG13'4+@:-2\D-2ZW:4T'9TT'9TRUSXC-RXC-RXA9UK_+O[:NZ(C92IEH]33?R*.YG&amp;K**`%EHM34?&amp;B/C3@R*)BEQ72S#%I'*3=E"YEH]@",C3@R**\%EXDI[H=I_Z6JGL;2YQE]A3@Q"*\!QR1+0)%H]!3?Q-/U#DS"*`!%HM$$5AI]A3@Q"*"A5::8-&amp;EQ-$AJ#!)00`VJC8[8X#82.WE]P"I0J=&lt;$JP%1;4Q='D&gt;&gt;YW:KX#3.C[^R545OFM:&amp;U0DD..!;')V&amp;.!;X%X8E]U$NK2WVJ4&lt;5GJKI&amp;&lt;6M1T`YR/0RK-0BI0V_L^VOJ_VWK]VGI`6[L7G;N&amp;KNN&amp;QOT[_"/\&lt;T#_(JP43T0`__8=T4!`7(?FT-^RS4@](`ZX`AX;A@OFS$;`18I@]P"Q!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.LVClass.ClassNameVisibleInProbe" Type="Bool">true</Property>
