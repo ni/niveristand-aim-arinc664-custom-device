@@ -7,7 +7,7 @@
     </TxUdpSession>
   </Port>
   <Port PortId="1" PortMap="0">
-    <RxUdpSession VlId="60" VLRange="2" Bag="8" Jitter="0" VerificationMode="FDX_RX_VL_CHECK_DISA" MinFrameLength="0" MaxFrameLength="1000" MaxSkew="0" VLBufSize="32768" FilterMode="FDX_RX_VL_FLT_DIS" FilterPosition="0" FilterMask="0" FilterData="0">
+    <RxUdpSession VlId="60" VLRange="2" Bag="1" Jitter="1" MinFrameLength="64" VerificationMode="FDX_RX_VL_CHECK_DISA" MaxFrameLength="1000" MaxSkew="0" VLBufSize="32768" FilterMode="FDX_RX_VL_FLT_DIS" FilterPosition="0" FilterMask="0" FilterData="0">
       <RxCommPort PortType="FDX_UDP_SAMPLING" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpNumBufMessages="1" UdpMaxMessageSize="1000">
       </RxCommPort>
     </RxUdpSession>

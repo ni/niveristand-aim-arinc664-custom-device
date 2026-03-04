@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BoardId="1" PortSpeed="FDX_100MBIT">
   <Port PortId="0">
-    <RxUdpSession VlId="60" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768">
+    <RxUdpSession VlId="60" VLRange="1" Bag="1" Jitter="1" MinFrameLength="64" MaxFrameLength="1518" VLBufSize="32768">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
@@ -29,7 +29,7 @@
         </Parameter>
       </RxCommPort>
     </RxUdpSession>
-        <RxUdpSession VlId="61" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768">
+        <RxUdpSession VlId="61" VLRange="1" Bag="1" Jitter="1" MinFrameLength="64" MaxFrameLength="1518" VLBufSize="32768">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
@@ -57,7 +57,7 @@
         </Parameter>
       </RxCommPort>
     </RxUdpSession>
-        <RxUdpSession VlId="62" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768">
+        <RxUdpSession VlId="62" VLRange="1" Bag="1" Jitter="1" MinFrameLength="64" MaxFrameLength="1518" VLBufSize="32768">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
