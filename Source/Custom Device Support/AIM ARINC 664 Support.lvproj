@@ -173,6 +173,7 @@
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 			<Item Name="Convert U8 Array to Bool Array.vi" Type="VI" URL="../Shared/Convert U8 Array to Bool Array.vi"/>
+			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Adjust Frame Size.vi" Type="VI" URL="../Shared/Adjust Frame Size.vi"/>
 		</Item>
 		<Item Name="Palette" Type="Folder" URL="../Palette">
@@ -634,7 +635,6 @@
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
-			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
@@ -1109,7 +1109,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">387</Property>
+				<Property Name="Bld_version.build" Type="Int">388</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
