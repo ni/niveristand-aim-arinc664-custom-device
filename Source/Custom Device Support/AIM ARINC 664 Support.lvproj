@@ -165,9 +165,11 @@
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
+			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 			<Item Name="Convert U8 Array to Bool Array.vi" Type="VI" URL="../Shared/Convert U8 Array to Bool Array.vi"/>
+			<Item Name="Adjust Frame Size.vi" Type="VI" URL="../Shared/Adjust Frame Size.vi"/>
 		</Item>
 		<Item Name="Palette" Type="Folder" URL="../Palette">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -628,7 +630,6 @@
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
-			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
 			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
@@ -931,6 +932,7 @@ AddOutputFilter chunkFilter
 					<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
 					<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
 					<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
+					<Item Name="basic - Transmit and Update (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit and Update (from FIle).vi"/>
 					<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
 					<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
 					<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
@@ -940,7 +942,6 @@ AddOutputFilter chunkFilter
 					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
 					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
 					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
-					<Item Name="basic - Transmit and Update (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit and Update (from FIle).vi"/>
 				</Item>
 			</Item>
 		</Item>
@@ -1029,6 +1030,7 @@ AddOutputFilter chunkFilter
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Adjust Frame Size.vi" Type="VI" URL="../Shared/Adjust Frame Size.vi"/>
 			<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
