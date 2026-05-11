@@ -1,7 +1,37 @@
 <?xml version="1.0"?>
-<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" BoardId="1" PortSpeed="FDX_100MBIT">
+<Board xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Port PortId="0">
-    <RxUdpSession VlId="60" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
+    <TxGenericSession>
+       <TxGenericFrame FrameID="Frame1" PayloadID="Payload1" InterFrameGap="0" PacketGroupWaitTime="10000" PreambleCount="7" PayloadBufferMode="FDX_TX_FRAME_PBM_STD" PayloadGenerationMode="FDX_TX_FRAME_PGM_USER" NetSelect="FDX_TX_FRAME_ONLY_A" FrameStartMode="FDX_TX_FRAME_START_PGWT">
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>0</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 0</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+        <Parameter>
+          <direction>outgoing</direction>
+          <encoding>BNR</encoding>
+          <signed>true</signed>
+          <startBit>64</startBit>
+          <numberOfBits>64</numberOfBits>
+          <scale>1</scale>
+          <offset>0</offset>
+          <name>Param 1</name>
+          <unit>V</unit>
+          <defaultValue>0</defaultValue>
+        </Parameter>
+      </TxGenericFrame>
+    </TxGenericSession>
+  </Port>
+  <Port PortId="1">
+    <RxUdpSession VlId="60" VLRange="1" Bag="1" Jitter="1" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
@@ -29,7 +59,7 @@
         </Parameter>
       </RxCommPort>
     </RxUdpSession>
-        <RxUdpSession VlId="61" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
+    <RxUdpSession VlId="61" VLRange="1" Bag="1" Jitter="1" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
@@ -57,7 +87,7 @@
         </Parameter>
       </RxCommPort>
     </RxUdpSession>
-        <RxUdpSession VlId="62" VLRange="1" Bag="0" Jitter="0" MaxFrameLength="1518" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
+    <RxUdpSession VlId="62" VLRange="1" Bag="1" Jitter="1" VLBufSize="32768" MinFrameLength="64" MaxFrameLength="1518">
       <RxCommPort ID="Rx1" DomainID="1" SideID="1" LocationID="1" PartitionID="1" UdpSrcPort="1" UdpDstPort="1" UdpMaxMessageSize="512">
         <Parameter>
           <direction>outgoing</direction>
