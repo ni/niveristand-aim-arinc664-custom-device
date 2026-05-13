@@ -3,7 +3,6 @@
 	<Property Name="NI.Lib.ContainingLib" Type="Str">AIM ARINC 664 Engine.lvlib:Interfaces.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Interfaces.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)^!!!*Q(C=\&gt;5R4C."%)8BRWI$5N^AZ3P5&amp;2Q2LO1%%^=6H'\ID,COY#P-&amp;7IOA'4Z"J91A50W\^\#'#TBB%5)-?-W_(6X^5@0?*$[=3H^V//Z9XTT[0X5'NPZ\V6P,8TK(]@D`O@"B`G(148V6@`,_?0J`#L:+ZXWP_E`=_D\_$[_^P(H\*@APX]0,N1?2,3E"=VJJL&lt;M9Z)H?:)H?:)H?:!(?:!(?:!(O:-\O:-\O:-\O:%&lt;O:%&lt;O:%&lt;?4`*23ZSE5.+&amp;E]73IIG":,"5*3]*:\%EXA3$R_6?"*0YEE]C9=B3DS**`%EHM4$.#7?R*.Y%E`CI638:$`*]31?SCPQ"*\!%XA#$UMK]!3!9,'A=&amp;!%BI,/Y*@!%XA#$\]K]!3?Q".Y!A`&gt;#DS"*`!%HM$$F,YLU48N*-&gt;$'4E?R_.Y()`DI&lt;1=D_.R0)\(]&lt;#=()`D=2$/AEZR#()G/1/=$Y\(]@"$DM@R/"\(YXDI[F@)_]YU44P*]2A?QW.Y$)`BI91-D_%R0)&lt;(]&amp;"7BM@Q'"\$9XB93I&lt;(]"A?!W)MSP)SCBE4D5&amp;'9(BY^&lt;P&amp;_F7+,L&amp;_3H8TKGZ+V=WGOIF5.Y@KIKMOJOICK4:@N;GKT6*NAOK05[&amp;6'.5CKMFNI(;]&lt;WA$&lt;5V&lt;U:;U/7V'G^)G&lt;?I\$^TN&gt;NJM.BK'1?PV7KP63MPF5P0Z8,0:4.0J6*0*Z0!9_-6Z?#!]0Z@O&amp;^?X_]86^G(YP&gt;UPLL@X.X@&lt;$`L``!G?D@KBYT89I\^-BJ8^!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.LVClass.ClassNameVisibleInProbe" Type="Bool">true</Property>

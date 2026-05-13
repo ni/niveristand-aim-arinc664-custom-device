@@ -3,7 +3,6 @@
 	<Property Name="NI.Lib.ContainingLib" Type="Str">AIM ARINC 664 Engine.lvlib:Interfaces.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Interfaces.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+#!!!*Q(C=\:7R&lt;B."%):`%!7N'WLE6ZB8M*1H]#N-1Y%1B2OE5,L)!T!3(:U&lt;'F*:3&amp;&gt;245'&amp;&amp;&amp;GGI+$U!["9ZLPV8(SJUB#&amp;)LMXF\N`&gt;`\ZP,O[3+U^FZ\J=&amp;@L/K:W[NKFY^N2[B]9Z^[.R`N,AX4-&lt;QFF5PGD]5L1?.)I8W08E=F1PRF)Q`XUV,&gt;B@$!&gt;0&gt;U;L[SOBI&lt;U7`EHU'[9&gt;^P`:$,+P[0JM4WWBWXP\TSE^XZGH[D`%"&amp;*"/'%K3^V302%4`2%4`2%$`2!$`2!$`2!&gt;X2(&gt;X2(&gt;X2(.X2$.X2$.X2$&lt;RV&gt;[%)8/EB*];219JI9**."58*,?"+?B#@BY65*4]+4]#1]#1^4F0!E0!F0QJ0QE+;%*_&amp;*?"+?B!?L2J+NI]/4]'#PA#@A#8A#HI#(EAJY!I#A7'!=G)#B9$"Y#(A#HI#(2Q5]!5`!%`!%0!QLY!FY!J[!*_!BJ;V+.*K_I]/$D2Q?B]@B=8A=(KTF]$A]$I`$Y`"14A[0Q_.!/!5&gt;=R$E*$E4H"?(R_(BDRQ?B]@B=8A=(I&lt;;$HF&lt;G:[G\_DQ'$Q'D]&amp;D]"A]7-DA-8A-(I0(Y-&amp;7"I`"9`!90!90J74Q'$Q'DQ&amp;C&amp;+7]$$-DU:BE#!906TMNVH9J'IGV,N8B62V+V7&amp;4(3,6Y6"NOGIT6:OE7HT6IKI73\5)KB_HAF&lt;"K)KIEPO*WH(@%GNC23S*"4%H:M35G03J`XDC&lt;L@4&gt;LP6?LX7;L83=LH59L(1@$\8&lt;$&lt;4&gt;$L6:$+Z_1S]J.^]%)\@J6^8&amp;W=`LSYXPV^=&lt;0Z]P^R]_`(F\0L.R`0^ZV?([\@P$POPL]`XHT\=V``3`_$&lt;K+=;_\*'@Q&amp;^[-T?!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.LVClass.ClassNameVisibleInProbe" Type="Bool">true</Property>
