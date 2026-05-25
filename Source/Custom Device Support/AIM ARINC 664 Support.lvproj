@@ -58,7 +58,7 @@
 	<Property Name="utf.run.statusfile.path" Type="Path">test status log.txt</Property>
 	<Property Name="utf.run.timestamp.flag" Type="Bool">false</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">UNITEST,False;VS_DEBUG,False;OFFLINE,False;AIM_API_V15,False;FRAME_REGEN,True;</Property>
+		<Property Name="CCSymbols" Type="Str">UNITEST,False;VS_DEBUG,True;OFFLINE,False;AIM_API_V15,False;FRAME_REGEN,True;</Property>
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -107,16 +107,13 @@
 				</Item>
 			</Item>
 			<Item Name="Manual" Type="Folder">
-				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
 				<Item Name="test_XMLlvParser.vi" Type="VI" URL="../Tests/System/Manual/test_XMLlvParser.vi"/>
 				<Item Name="test_script_api_Tree.vi" Type="VI" URL="../Tests/System/Manual/test_script_api_Tree.vi"/>
 				<Item Name="Get-Set Properties from Cluster.vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster.vi"/>
+				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
 				<Item Name="test_FrameEditor.vi" Type="VI" URL="../Tests/System/Manual/test_FrameEditor.vi"/>
-				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
-				<Item Name="Convert Raw Frame File.vi" Type="VI" URL="../Tests/System/Manual/Convert Raw Frame File.vi"/>
 				<Item Name="Get-Set Properties from Cluster (logInfo).vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster (logInfo).vi"/>
 				<Item Name="test_pcap.vi" Type="VI" URL="../Tests/System/Manual/test_pcap.vi"/>
-				<Item Name="test_decodeTxGenConfig.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxGenConfig.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -138,11 +135,17 @@
 					<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/targets.ini"/>
 				</Item>
 			</Item>
+			<Item Name="Debug" Type="Folder">
+				<Item Name="TxGen_Export Engine Configuration to File.vi" Type="VI" URL="../Tests/System/Manual/TxGen_Export Engine Configuration to File.vi"/>
+				<Item Name="test_decodeTxGenConfig.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxGenConfig.vi"/>
+				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy PPLs to Includes.vi" Type="VI" URL="../Utility/Copy PPLs to Includes.vi"/>
 			<Item Name="Copy PPLs to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy PPLs to NI VeriStand dir.vi"/>
 			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
+			<Item Name="Post-Build Action ErrorFiles.vi" Type="VI" URL="../Utility/Post-Build Action ErrorFiles.vi"/>
 			<Item Name="Generate AIM API Errors.vi" Type="VI" URL="../Utility/Generate AIM API Errors.vi"/>
 			<Item Name="Post-Build Action Scripting.vi" Type="VI" URL="../Utility/Post-Build Action Scripting.vi"/>
 		</Item>
@@ -840,11 +843,46 @@
 				<Property Name="Source[9].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
+			<Item Name="Error Files" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{071B7D78-EE10-4FA8-BCF0-A27B22D022DD}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Error Files</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[2].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[3].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">/C/ProgramData/National Instruments/InstCache/24.0</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">/C/Users/Administrator/Documents/LabVIEW Data/2024(64-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/ErrorFiles</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action ErrorFiles.vi</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{5F065BC8-9A72-4A4D-9914-2CCAAA49984F}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/ErrorFiles</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/ErrorFiles/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7F08E0C3-36B4-4E00-BE39-32E007ECF43F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Errors</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+			</Item>
 		</Item>
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">10.94.1.17</Property>
+		<Property Name="alias.value" Type="Str">10.94.1.57</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEBUG,False;INIT_FLAT,False;SHARED_INIT,False;AIM_API_V15,False;FRAME_REGEN,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -924,30 +962,38 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
+				<Item Name="Debug" Type="Folder">
+					<Item Name="Execution Units" Type="Folder">
+						<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
+						<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
+						<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
+						<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
+						<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
+					</Item>
+					<Item Name="Modes" Type="Folder">
+						<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
+						<Item Name="basic - Transmit and Update (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit and Update (from FIle).vi"/>
+						<Item Name="test_Receive - Monitor (Multi Record).vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor (Multi Record).vi"/>
+						<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
+						<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
+						<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
+						<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
+					</Item>
+				</Item>
 				<Item Name="Manual" Type="Folder">
 					<Property Name="NI.SortType" Type="Int">3</Property>
-					<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
-					<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
-					<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
-					<Item Name="test_Loopback(Tx Generic - Rx Mon).vi" Type="VI" URL="../Tests/System/Manual/test_Loopback(Tx Generic - Rx Mon).vi"/>
-					<Item Name="test_OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (lowLevel).vi"/>
-					<Item Name="test_OpenClose (Multi Sessions) 2.vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions) 2.vi"/>
-					<Item Name="test_OpenClose (Multi Sessions).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions).vi"/>
-					<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
-					<Item Name="test_Receive - Monitor (Multi Record).vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor (Multi Record).vi"/>
-					<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
-					<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
-					<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
-					<Item Name="basic - Transmit and Update (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit and Update (from FIle).vi"/>
-					<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
-					<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
-					<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
-					<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
-					<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
-					<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
-					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
-					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
-					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
+					<Item Name="Misc" Type="Folder">
+						<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
+						<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
+						<Item Name="test_Loopback(Tx Generic - Rx Mon).vi" Type="VI" URL="../Tests/System/Manual/test_Loopback(Tx Generic - Rx Mon).vi"/>
+						<Item Name="test_OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (lowLevel).vi"/>
+						<Item Name="test_OpenClose (Multi Sessions) 2.vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions) 2.vi"/>
+						<Item Name="test_OpenClose (Multi Sessions).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions).vi"/>
+						<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
+						<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
+						<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
+						<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
+					</Item>
 				</Item>
 			</Item>
 		</Item>
@@ -1111,7 +1157,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">390</Property>
+				<Property Name="Bld_version.build" Type="Int">392</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
