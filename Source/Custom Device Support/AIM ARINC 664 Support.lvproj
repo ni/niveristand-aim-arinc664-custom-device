@@ -124,15 +124,91 @@
 					<Item Name="AIM ARINC 664 Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM ARINC 664 Deployment.lvclass"/>
 				</Item>
 				<Item Name="Loopback" Type="Folder">
-					<Item Name="Assets" Type="Folder">
-						<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
-						<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
-						<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
-						<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
-						<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+					<Item Name="Single Device" Type="Folder">
+						<Item Name="Assets" Type="Folder">
+							<Item Name="_template_AIM_664_HARDWARE_board0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/_template_AIM_664_HARDWARE_board0.xml"/>
+							<Item Name="_template_AIM_664_HARDWARE_board1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/_template_AIM_664_HARDWARE_board1.xml"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
+							<Item Name="Loopback_RxMonitor_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_RxMonitor_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 0.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 1.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor.xml"/>
+							<Item Name="Results.txt" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Results.txt"/>
+							<Item Name="RxUDP_Frame_Parameters-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/RxUDP_Frame_Parameters-Board 1.xml"/>
+							<Item Name="standard_frames_udp.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/standard_frames_udp.bin"/>
+							<Item Name="TxGen_2Frames_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_2Frames_Parameters.xml"/>
+							<Item Name="TxGen_Frame_Parameters.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_Frame_Parameters.bin"/>
+							<Item Name="TxGen_Frame_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_Frame_Parameters.xml"/>
+							<Item Name="UDP_RX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_Loopback_Redundant.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback.bin"/>
+							<Item Name="UDP_RX_TX_Loopback.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback.xml"/>
+							<Item Name="UDP_TX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_TX_Loopback_Redundant.xml"/>
+						</Item>
+						<Item Name="AIM ARINC 664 Loopback-SingleDevice.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/AIM ARINC 664 Loopback-SingleDevice.lvclass"/>
+						<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/targets.ini"/>
 					</Item>
-					<Item Name="AIM ARINC 664 Loopback.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback/AIM ARINC 664 Loopback.lvclass"/>
-					<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/targets.ini"/>
+					<Item Name="Multi Device" Type="Folder">
+						<Item Name="Assets" Type="Folder">
+							<Item Name="_template_AIM_664_HARDWARE_board0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/_template_AIM_664_HARDWARE_board0.xml"/>
+							<Item Name="_template_AIM_664_HARDWARE_board1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/_template_AIM_664_HARDWARE_board1.xml"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
+							<Item Name="Create XML with many configs.vi" Type="VI" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Create XML with many configs.vi"/>
+							<Item Name="Loopback_RxMonitor_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_RxMonitor_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 0.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 1.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor.xml"/>
+							<Item Name="Results.txt" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Results.txt"/>
+							<Item Name="RxUDP_Frame_Parameters-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/RxUDP_Frame_Parameters-Board 1.xml"/>
+							<Item Name="standard_frames_udp.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/standard_frames_udp.bin"/>
+							<Item Name="TxGen_2Frames_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_2Frames_Parameters.xml"/>
+							<Item Name="TxGen_Frame_Parameters.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_Frame_Parameters.bin"/>
+							<Item Name="TxGen_Frame_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_Frame_Parameters.xml"/>
+							<Item Name="UDP_RX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_Loopback_Redundant.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback.bin"/>
+							<Item Name="UDP_RX_TX_Loopback.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback.xml"/>
+							<Item Name="UDP_TX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_TX_Loopback_Redundant.xml"/>
+						</Item>
+						<Item Name="AIM ARINC 664 Loopback-MultiDevice.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/AIM ARINC 664 Loopback-MultiDevice.lvclass"/>
+						<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/targets.ini"/>
+					</Item>
 				</Item>
 			</Item>
 			<Item Name="Debug" Type="Folder">
@@ -647,6 +723,7 @@
 			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
 			<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../Shared/Extract Timestamp from RxUDP Header.vi"/>
 			<Item Name="Decode Channels from Payload Data.vi" Type="VI" URL="../Shared/Decode Channels from Payload Data.vi"/>
+			<Item Name="test_TxGen-RxMon.vi" Type="VI" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/test_TxGen-RxMon.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
