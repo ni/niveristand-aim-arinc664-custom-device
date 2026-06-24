@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="CCSymbols" Type="Str">DEBUG,False;VS_DEBUG,FALSE;PCAP,True;</Property>
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">20.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="utf.calculate.project.code.coverage" Type="Bool">true</Property>
@@ -61,12 +62,16 @@
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.tcp.acl" Type="Str">0800000008000000</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
 		<Property Name="server.tcp.port" Type="Int">0</Property>
-		<Property Name="server.tcp.serviceName" Type="Str">My Computer/VI Server</Property>
+		<Property Name="server.tcp.serviceName" Type="Str"></Property>
 		<Property Name="server.tcp.serviceName.default" Type="Str">My Computer/VI Server</Property>
+		<Property Name="server.vi.access" Type="Str"></Property>
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
+		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Unit" Type="Folder">
@@ -97,19 +102,18 @@
 					</Item>
 					<Item Name="AIM ARINC 664 Import.lvclass" Type="LVClass" URL="../Tests/Unit/Import/AIM ARINC 664 Import.lvclass"/>
 				</Item>
+				<Item Name="EncodeDecode" Type="Folder">
+					<Item Name="AIM ARINC 664 EncodeDecode.lvclass" Type="LVClass" URL="../Tests/Unit/EncodeDecode/AIM ARINC 664 EncodeDecode.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="Manual" Type="Folder">
-				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
 				<Item Name="test_XMLlvParser.vi" Type="VI" URL="../Tests/System/Manual/test_XMLlvParser.vi"/>
 				<Item Name="test_script_api_Tree.vi" Type="VI" URL="../Tests/System/Manual/test_script_api_Tree.vi"/>
 				<Item Name="Get-Set Properties from Cluster.vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster.vi"/>
+				<Item Name="test_decodeMonEntry.vi" Type="VI" URL="../Tests/System/Manual/test_decodeMonEntry.vi"/>
 				<Item Name="test_FrameEditor.vi" Type="VI" URL="../Tests/System/Manual/test_FrameEditor.vi"/>
-				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
-				<Item Name="Convert Raw Frame File.vi" Type="VI" URL="../Tests/System/Manual/Convert Raw Frame File.vi"/>
 				<Item Name="Get-Set Properties from Cluster (logInfo).vi" Type="VI" URL="../Tests/Unit/XML Parsing/Get-Set Properties from Cluster (logInfo).vi"/>
 				<Item Name="test_pcap.vi" Type="VI" URL="../Tests/System/Manual/test_pcap.vi"/>
-				<Item Name="test_decodeTxGenConfig.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxGenConfig.vi"/>
-				<Item Name="test_EncodeDecodeManual.vi" Type="VI" URL="../Tests/System/Manual/test_EncodeDecodeManual.vi"/>
 			</Item>
 			<Item Name="System" Type="Folder">
 				<Item Name="Deployment" Type="Folder">
@@ -120,22 +124,104 @@
 					<Item Name="AIM ARINC 664 Deployment.lvclass" Type="LVClass" URL="../Tests/System/AIM_Deployment/AIM ARINC 664 Deployment.lvclass"/>
 				</Item>
 				<Item Name="Loopback" Type="Folder">
-					<Item Name="Assets" Type="Folder">
-						<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
-						<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
-						<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
-						<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
-						<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+					<Item Name="Single Device" Type="Folder">
+						<Item Name="Assets" Type="Folder">
+							<Item Name="_template_AIM_664_HARDWARE_board0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/_template_AIM_664_HARDWARE_board0.xml"/>
+							<Item Name="_template_AIM_664_HARDWARE_board1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/_template_AIM_664_HARDWARE_board1.xml"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
+							<Item Name="Loopback_RxMonitor_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_RxMonitor_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 0.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor-Board 1.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Loopback_TxGen_RxMonitor.xml"/>
+							<Item Name="Results.txt" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/Results.txt"/>
+							<Item Name="RxUDP_Frame_Parameters-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/RxUDP_Frame_Parameters-Board 1.xml"/>
+							<Item Name="standard_frames_udp.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/standard_frames_udp.bin"/>
+							<Item Name="TxGen_2Frames_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_2Frames_Parameters.xml"/>
+							<Item Name="TxGen_Frame_Parameters.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_Frame_Parameters.bin"/>
+							<Item Name="TxGen_Frame_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/TxGen_Frame_Parameters.xml"/>
+							<Item Name="UDP_RX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_Loopback_Redundant.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 0.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Board 1.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback.bin"/>
+							<Item Name="UDP_RX_TX_Loopback.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_RX_TX_Loopback.xml"/>
+							<Item Name="UDP_TX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/Assets/UDP_TX_Loopback_Redundant.xml"/>
+						</Item>
+						<Item Name="AIM ARINC 664 Loopback-SingleDevice.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/AIM ARINC 664 Loopback-SingleDevice.lvclass"/>
+						<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Single Device/targets.ini"/>
 					</Item>
-					<Item Name="AIM ARINC 664 Loopback.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback/AIM ARINC 664 Loopback.lvclass"/>
-					<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback/targets.ini"/>
+					<Item Name="Multi Device" Type="Folder">
+						<Item Name="Assets" Type="Folder">
+							<Item Name="_template_AIM_664_HARDWARE_board0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/_template_AIM_664_HARDWARE_board0.xml"/>
+							<Item Name="_template_AIM_664_HARDWARE_board1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/_template_AIM_664_HARDWARE_board1.xml"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGen-RxMon_Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGen-RxMon_Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxGenParameters-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP-Multiple Boards.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP-Redundant.nivssdf"/>
+							<Item Name="AFDX_loopback_TxUDP-RxUDP.nivssdf" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/AFDX_loopback_TxUDP-RxUDP.nivssdf"/>
+							<Item Name="Create XML with many configs.vi" Type="VI" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Create XML with many configs.vi"/>
+							<Item Name="Loopback_RxMonitor_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_RxMonitor_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_Redundant.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 0-Fault CRC.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 0.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor-Board 1.xml"/>
+							<Item Name="Loopback_TxGen_RxMonitor.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Loopback_TxGen_RxMonitor.xml"/>
+							<Item Name="Results.txt" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/Results.txt"/>
+							<Item Name="RxUDP_Frame_Parameters-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/RxUDP_Frame_Parameters-Board 1.xml"/>
+							<Item Name="standard_frames_udp.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/standard_frames_udp.bin"/>
+							<Item Name="TxGen_2Frames_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_2Frames_Parameters.xml"/>
+							<Item Name="TxGen_Frame_Parameters.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_Frame_Parameters.bin"/>
+							<Item Name="TxGen_Frame_Parameters.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/TxGen_Frame_Parameters.xml"/>
+							<Item Name="UDP_RX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_Loopback_Redundant.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.bin"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 0.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 0.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Float64.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Float64.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 16.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 16.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Board 1.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Board 1.xml"/>
+							<Item Name="UDP_RX_TX_Loopback-Parameters 160.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback-Parameters 160.xml"/>
+							<Item Name="UDP_RX_TX_Loopback.bin" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback.bin"/>
+							<Item Name="UDP_RX_TX_Loopback.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_RX_TX_Loopback.xml"/>
+							<Item Name="UDP_TX_Loopback_Redundant.xml" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/Assets/UDP_TX_Loopback_Redundant.xml"/>
+						</Item>
+						<Item Name="AIM ARINC 664 Loopback-MultiDevice.lvclass" Type="LVClass" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/AIM ARINC 664 Loopback-MultiDevice.lvclass"/>
+						<Item Name="targets.ini" Type="Document" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/targets.ini"/>
+					</Item>
 				</Item>
+			</Item>
+			<Item Name="Debug" Type="Folder">
+				<Item Name="TxGen_Export Engine Configuration to File.vi" Type="VI" URL="../Tests/System/Manual/TxGen_Export Engine Configuration to File.vi"/>
+				<Item Name="test_decodeTxGenConfig.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxGenConfig.vi"/>
+				<Item Name="test_decodeTxRxUDP config.vi" Type="VI" URL="../Tests/System/Manual/test_decodeTxRxUDP config.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy PPLs to Includes.vi" Type="VI" URL="../Utility/Copy PPLs to Includes.vi"/>
 			<Item Name="Copy PPLs to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy PPLs to NI VeriStand dir.vi"/>
 			<Item Name="Post-Build Action.vi" Type="VI" URL="../Utility/Post-Build Action.vi"/>
+			<Item Name="Post-Build Action ErrorFiles.vi" Type="VI" URL="../Utility/Post-Build Action ErrorFiles.vi"/>
 			<Item Name="Generate AIM API Errors.vi" Type="VI" URL="../Utility/Generate AIM API Errors.vi"/>
 			<Item Name="Post-Build Action Scripting.vi" Type="VI" URL="../Utility/Post-Build Action Scripting.vi"/>
 		</Item>
@@ -164,9 +250,12 @@
 			<Item Name="Get MD5 for File.vi" Type="VI" URL="../Shared/Get MD5 for File.vi"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
 			<Item Name="Build Linux Log Path.vi" Type="VI" URL="../Shared/Build Linux Log Path.vi"/>
+			<Item Name="Encode Payload Data from Channels.vi" Type="VI" URL="../Shared/Encode Payload Data from Channels.vi"/>
 			<Item Name="VsItemMap.vi" Type="VI" URL="../Shared/VsItemMap.vi"/>
 			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 			<Item Name="Convert U8 Array to Bool Array.vi" Type="VI" URL="../Shared/Convert U8 Array to Bool Array.vi"/>
+			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
+			<Item Name="Adjust Frame Size.vi" Type="VI" URL="../Shared/Adjust Frame Size.vi"/>
 		</Item>
 		<Item Name="Palette" Type="Folder" URL="../Palette">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -187,45 +276,11 @@
 		<Item Name="Frame Logging.lvlib" Type="Library" URL="../Engine/Implementation/Logging/Frame Logging/Frame Logging.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Current VIs Parent Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Current VIs Parent Directory__ogtk.vi"/>
-				<Item Name="Array to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array to VCluster__ogtk.vi"/>
-				<Item Name="Get Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name__ogtk.vi"/>
-				<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
-				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
-				<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
-				<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
-				<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
-				<Item Name="Get PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get PString__ogtk.vi"/>
-				<Item Name="Get Last PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Last PString__ogtk.vi"/>
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
-				<Item Name="Array to Array of VData__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array to Array of VData__ogtk.vi"/>
-				<Item Name="Reshape Array to 1D VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Reshape Array to 1D VArray__ogtk.vi"/>
-				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
-				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
-				<Item Name="Set Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Set Data Name__ogtk.vi"/>
-				<Item Name="Get Variant Attributes__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Variant Attributes__ogtk.vi"/>
-				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
-				<Item Name="Current VIs Parents Ref__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Parents Ref__ogtk.vi"/>
-				<Item Name="Strip Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path__ogtk.vi"/>
-				<Item Name="Strip Path - Arrays__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path - Arrays__ogtk.vi"/>
-				<Item Name="Strip Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Strip Path - Traditional__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Scalar__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Array__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative - Root Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Root Path Array__ogtk.vi"/>
-				<Item Name="Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Append Path to Root if Relative - Absolute or Relative Path Array__ogtk.vi"/>
-				<Item Name="Create Dir if Non-Existant__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Create Dir if Non-Existant__ogtk.vi"/>
-				<Item Name="Build Path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path__ogtk.vi"/>
-				<Item Name="Build Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional__ogtk.vi"/>
-				<Item Name="Build Path - File Names Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names Array__ogtk.vi"/>
-				<Item Name="Build Path - File Names and Paths Arrays__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names and Paths Arrays__ogtk.vi"/>
-				<Item Name="Build Path - Traditional - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - Traditional - path__ogtk.vi"/>
-				<Item Name="Build Path - File Names Array - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names Array - path__ogtk.vi"/>
-				<Item Name="Build Path - File Names and Paths Arrays - path__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Build Path - File Names and Paths Arrays - path__ogtk.vi"/>
-				<Item Name="Current VIs Reference__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Current VIs Reference__ogtk.vi"/>
-				<Item Name="File Exists__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists__ogtk.vi"/>
-				<Item Name="File Exists - Scalar__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Scalar__ogtk.vi"/>
-				<Item Name="File Exists - Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/File Exists - Array__ogtk.vi"/>
+				<Item Name="openg_file.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/openg_file.lvlib"/>
+				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+				<Item Name="openg_array.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/openg_array.lvlib"/>
+				<Item Name="openg_application_control.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/openg_application_control.lvlib"/>
+				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
@@ -603,6 +658,22 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Encoding and Decoding.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Encoding and Decoding/Encoding and Decoding.lvlib"/>
+				<Item Name="Has LLB Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Has LLB Extension.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
+				<Item Name="Get VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get VI Library File Info.vi"/>
+				<Item Name="Librarian File Info Out.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File Info Out.ctl"/>
+				<Item Name="Librarian.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian.vi"/>
+				<Item Name="Librarian File Info In.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File Info In.ctl"/>
+				<Item Name="Librarian File List.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File List.ctl"/>
+				<Item Name="Librarian Get Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian Get Info.vi"/>
+				<Item Name="Librarian Path Location.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian Path Location.vi"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="Librarian Set Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian Set Info.vi"/>
+				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
+				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
@@ -638,15 +709,12 @@
 			<Item Name="NationalInstruments.VeriStand.Internal" Type="Document" URL="NationalInstruments.VeriStand.Internal">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
 			<Item Name="Update Tree Control.vi" Type="VI" URL="../Frame Configuration/support/Update Tree Control.vi"/>
 			<Item Name="NationalInstruments.VeriStand.ClientAPI" Type="Document" URL="NationalInstruments.VeriStand.ClientAPI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="Build Windows Log Path.vi" Type="VI" URL="../Shared/Build Windows Log Path.vi"/>
-			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
-			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Frame Payload Parameters.ctl" Type="VI" URL="../Shared/Frame Payload Parameters.ctl"/>
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
@@ -654,6 +722,8 @@
 			<Item Name="rx_udp_payload_config.ctl" Type="VI" URL="../Shared/rx_udp_payload_config.ctl"/>
 			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
 			<Item Name="Extract Timestamp from RxUDP Header.vi" Type="VI" URL="../Shared/Extract Timestamp from RxUDP Header.vi"/>
+			<Item Name="Decode Channels from Payload Data.vi" Type="VI" URL="../Shared/Decode Channels from Payload Data.vi"/>
+			<Item Name="test_TxGen-RxMon.vi" Type="VI" URL="../Tests/System/AIM ARINC 664 Loopback-Multi Device/test_TxGen-RxMon.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine" Type="Packed Library">
@@ -675,7 +745,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Built/Support/Windows</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{44C0C4AE-EAF1-4328-887A-988958EB191A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B1AB8897-4D37-477E-843E-2E4EDC9E55E4}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AIM ARINC 664 Engine.lvlib</Property>
@@ -803,7 +873,7 @@
 				<Property Name="Source[11].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[11].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[11].itemID" Type="Ref"></Property>
+				<Property Name="Source[11].itemID" Type="Ref">/</Property>
 				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[11].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -850,11 +920,46 @@
 				<Property Name="Source[9].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
+			<Item Name="Error Files" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{071B7D78-EE10-4FA8-BCF0-A27B22D022DD}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Error Files</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[2].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[3].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">/C/ProgramData/National Instruments/InstCache/24.0</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">/C/Users/Administrator/Documents/LabVIEW Data/2024(64-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/ErrorFiles</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action ErrorFiles.vi</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{5F065BC8-9A72-4A4D-9914-2CCAAA49984F}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/ErrorFiles</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/ErrorFiles/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{7F08E0C3-36B4-4E00-BE39-32E007ECF43F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Errors</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+			</Item>
 		</Item>
 	</Item>
 	<Item Name="RT PXI Target" Type="RT PXI Chassis">
 		<Property Name="alias.name" Type="Str">RT PXI Target</Property>
-		<Property Name="alias.value" Type="Str">10.0.70.33</Property>
+		<Property Name="alias.value" Type="Str">10.94.1.57</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,x64;VS_DEBUG,False;AIM_DEBUG,False;INIT_FLAT,False;SHARED_INIT,False;AIM_API_V15,False;FRAME_REGEN,True;TARGET_TYPE,RT;</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
 		<Property Name="host.ResponsivenessCheckPingDelay" Type="UInt">5000</Property>
@@ -934,29 +1039,38 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="System" Type="Folder">
+				<Item Name="Debug" Type="Folder">
+					<Item Name="Execution Units" Type="Folder">
+						<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
+						<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
+						<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
+						<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
+						<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
+					</Item>
+					<Item Name="Modes" Type="Folder">
+						<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
+						<Item Name="basic - Transmit and Update (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit and Update (from FIle).vi"/>
+						<Item Name="test_Receive - Monitor (Multi Record).vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor (Multi Record).vi"/>
+						<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
+						<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
+						<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
+						<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
+					</Item>
+				</Item>
 				<Item Name="Manual" Type="Folder">
 					<Property Name="NI.SortType" Type="Int">3</Property>
-					<Item Name="test_Exec Unit.vit" Type="VI" URL="../Tests/System/Manual/test_Exec Unit.vit"/>
-					<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
-					<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
-					<Item Name="test_Loopback(Tx Generic - Rx Mon).vi" Type="VI" URL="../Tests/System/Manual/test_Loopback(Tx Generic - Rx Mon).vi"/>
-					<Item Name="test_OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (lowLevel).vi"/>
-					<Item Name="test_OpenClose (Multi Sessions) 2.vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions) 2.vi"/>
-					<Item Name="test_OpenClose (Multi Sessions).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions).vi"/>
-					<Item Name="test_Receive - Monitor.vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor.vi"/>
-					<Item Name="test_Receive - Monitor (Multi Record).vi" Type="VI" URL="../Tests/System/Manual/test_Receive - Monitor (Multi Record).vi"/>
-					<Item Name="test_Rx Exec Unit (Monitor).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (Monitor).vi"/>
-					<Item Name="test_Tx Exec Unit (Generic).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (Generic).vi"/>
-					<Item Name="basic - Transmit (from FIle).vi" Type="VI" URL="../Tests/System/Manual/basic - Transmit (from FIle).vi"/>
-					<Item Name="test_Rx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Rx Exec Unit (UDP).vi"/>
-					<Item Name="test_RxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_RxUDP.vi"/>
-					<Item Name="test_Tx Exec Unit (UDP).vi" Type="VI" URL="../Tests/System/Manual/test_Tx Exec Unit (UDP).vi"/>
-					<Item Name="test_TxUDP.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDP.vi"/>
-					<Item Name="test_TxUDPBlockWrite.vi" Type="VI" URL="../Tests/System/Manual/test_TxUDPBlockWrite.vi"/>
-					<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
-					<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
-					<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
-					<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
+					<Item Name="Misc" Type="Folder">
+						<Item Name="test_Loop OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (lowLevel).vi"/>
+						<Item Name="test_Loop OpenClose (Session).vi" Type="VI" URL="../Tests/System/Manual/test_Loop OpenClose (Session).vi"/>
+						<Item Name="test_Loopback(Tx Generic - Rx Mon).vi" Type="VI" URL="../Tests/System/Manual/test_Loopback(Tx Generic - Rx Mon).vi"/>
+						<Item Name="test_OpenClose (lowLevel).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (lowLevel).vi"/>
+						<Item Name="test_OpenClose (Multi Sessions) 2.vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions) 2.vi"/>
+						<Item Name="test_OpenClose (Multi Sessions).vi" Type="VI" URL="../Tests/System/Manual/test_OpenClose (Multi Sessions).vi"/>
+						<Item Name="test_ConfigureBoard.vi" Type="VI" URL="../Tests/System/Manual/test_ConfigureBoard.vi"/>
+						<Item Name="test_Restart.vi" Type="VI" URL="../Tests/System/Manual/test_Restart.vi"/>
+						<Item Name="test_Pointers.vi" Type="VI" URL="../Tests/System/Manual/test_Pointers.vi"/>
+						<Item Name="test_BlocRWtest.vi" Type="VI" URL="../Tests/System/Manual/test_BlocRWtest.vi"/>
+					</Item>
 				</Item>
 			</Item>
 		</Item>
@@ -967,23 +1081,8 @@ AddOutputFilter chunkFilter
 				<Item Name="EthFrameManagement.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIM GmbH/_AIM 664/helpers/EthFrameManagement/EthFrameManagement.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
-				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
-				<Item Name="Array to Array of VData__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array to Array of VData__ogtk.vi"/>
-				<Item Name="Array to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array to VCluster__ogtk.vi"/>
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
-				<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
-				<Item Name="Get Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name__ogtk.vi"/>
-				<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
-				<Item Name="Get Last PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Last PString__ogtk.vi"/>
-				<Item Name="Get PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get PString__ogtk.vi"/>
-				<Item Name="Get Variant Attributes__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Variant Attributes__ogtk.vi"/>
-				<Item Name="Reshape Array to 1D VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Reshape Array to 1D VArray__ogtk.vi"/>
-				<Item Name="Set Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Set Data Name__ogtk.vi"/>
-				<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
-				<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
-				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
-				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
+				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Advanced System Definition.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NI VeriStand Advanced SysDef API/SysDef API/Advanced System Definition.lvlib"/>
@@ -1011,6 +1110,7 @@ AddOutputFilter chunkFilter
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
+				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
@@ -1021,7 +1121,9 @@ AddOutputFilter chunkFilter
 				<Item Name="Less Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Less/Less Functor/Less Functor.lvclass"/>
 				<Item Name="Less.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Less.vim"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="Memory Manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Memory Manager/Memory Manager.lvlib"/>
@@ -1033,6 +1135,7 @@ AddOutputFilter chunkFilter
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="NIVeriStand_DataServices.dll" Type="Document" URL="/&lt;vilib&gt;/NI VeriStand/Custom Device API/data/NIVeriStand_DataServices.dll"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) U64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) U64.vi"/>
@@ -1044,18 +1147,19 @@ AddOutputFilter chunkFilter
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Sort 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Sort 1D Array Core.vim"/>
 				<Item Name="Sort 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 1D Array.vim"/>
-				<Item Name="Static Errors.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Memory Manager/Static Errors.lvlib"/>
 				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/Numeric/sub_Random U32.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
+				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="VS Inline Async API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/NIVS Inline Async API/_VS Inline Async API/VS Inline Async API.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="Adjust Frame Size.vi" Type="VI" URL="../Shared/Adjust Frame Size.vi"/>
 			<Item Name="AIM ARINC 664 Import.lvlib" Type="Library" URL="../Import/AIM ARINC 664 Import.lvlib"/>
 			<Item Name="AIM ARINC 664 Scripting.lvlib" Type="Library" URL="../Scripting/AIM ARINC 664 Scripting.lvlib"/>
 			<Item Name="AIM Error Code to CD Error Code.vi" Type="VI" URL="../Shared/AIM Error Code to CD Error Code.vi"/>
@@ -1066,10 +1170,11 @@ AddOutputFilter chunkFilter
 			<Item Name="check log file info default values.vi" Type="VI" URL="../Shared/check log file info default values.vi"/>
 			<Item Name="Convert bool array to U8 Array.vi" Type="VI" URL="../Shared/Convert bool array to U8 Array.vi"/>
 			<Item Name="Convert U8 Array to Bool Array.vi" Type="VI" URL="../Shared/Convert U8 Array to Bool Array.vi"/>
+			<Item Name="Decode Channels from Payload Data.vi" Type="VI" URL="../Shared/Decode Channels from Payload Data.vi"/>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Encode Channels.vi" Type="VI" URL="../Shared/Encode Channels.vi"/>
+			<Item Name="Encode Payload Data from Channels.vi" Type="VI" URL="../Shared/Encode Payload Data from Channels.vi"/>
 			<Item Name="Encoding (Arinc664).ctl" Type="VI" URL="../Shared/Encoding (Arinc664).ctl"/>
 			<Item Name="Evaluate Tx Generic Start - Stop.vi" Type="VI" URL="../Shared/Evaluate Tx Generic Start - Stop.vi"/>
 			<Item Name="Extract RxUDP Header from Buffer.vi" Type="VI" URL="../Shared/Extract RxUDP Header from Buffer.vi"/>
@@ -1084,7 +1189,6 @@ AddOutputFilter chunkFilter
 			<Item Name="hardware_channels_tx.ctl" Type="VI" URL="../Shared/hardware_channels_tx.ctl"/>
 			<Item Name="hz to msec.vi" Type="VI" URL="../Shared/hz to msec.vi"/>
 			<Item Name="libpcaplv.lvlib" Type="Library" URL="../libpcaplv/libpcaplv.lvlib"/>
-			<Item Name="Log_Configuration.ctl" Type="VI" URL="../Engine/Implementation/Logging/Frame Logging/Log_Configuration.ctl"/>
 			<Item Name="logFileInfo_types.ctl" Type="VI" URL="../Shared/logFileInfo_types.ctl"/>
 			<Item Name="loggingThreshold_types.ctl" Type="VI" URL="../Shared/loggingThreshold_types.ctl"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
@@ -1130,7 +1234,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Utility/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{7EA79AFE-9433-4612-9B49-D2972EB5FCB8}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/Linux_x64</Property>
-				<Property Name="Bld_version.build" Type="Int">385</Property>
+				<Property Name="Bld_version.build" Type="Int">394</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AIM ARINC 664 Engine.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/Linux_x64/AIM ARINC 664 Engine.lvlibp</Property>
